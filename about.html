@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> full moon, full life </title>
+      <meta name="description" content="venture life, burn your dread!">
+      <link rel="stylesheet" href="https://unpkg.com/98.css">
+      <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/siteicon.png">
+       <style>
+         ::-webkit-scrollbar{
+display:none;
+}
+         @font-face {
+  font-family: ms gothic;
+  src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
+}
+                .top{
+            z-index: 99;
+            background-color:white;
+            border-bottom: 1px dashed grey;
+            position: fixed;
+            width:100%;
+            top: 0;
+            left: 0;
+            padding: 3px;
+        }
+        
+        .test{
+            width: 330px;
+            height: 460px;
+            margin: auto;
+            font-size: 13px;
+            margin-top: 50px;
+            color: #000000;
+            background: white;
+            background:
+            border-image: url('https://i.imgur.com/NJa4bp2.png') 8 fill round;
+            padding: 3px;
+            box-shadow: 0px 0px 10px 10px white;
+            transform: translate(-50%, -50%);
+            margin-top: 150px;
+         transform:scale(1.1)
+        }
+
+        .test2{
+            width: 350px;
+            height: 190px;
+            margin: auto;
+            color: #000000;
+            background-image: url("https://file.garden/Zagf2LAXJwHlct9M/dramaaaaaa.png");
+            background-size: 360px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .introtext { 
+            position: relative;
+            z-index: 5;
+            padding: 60px;
+            margin-top: -50px;
+            text-align: center;
+            color: white;
+            font-size: 14.6px;
+            line-height: 24px;
+        }
+        .image {
+            border: 3px double black;
+            width: 115px;
+            height: 115px;
+            margin-left: -10px;
+            margin-top: -55px;
+            transform: rotate(-10deg);
+            z-index: 3;
+            box-shadow: 0px 0px 2px 2px white;
+            filter: drop-shadow( 0 -2px #1b53fe) drop-shadow( 2px 0 #1b53fe) drop-shadow( 0 -1px #1b53fe) drop-shadow( -3px 0 #1b53fe);
+        }
+
+        .image img {
+            width: 115px
+        }
+        
+        
+        body{
+            content: "";
+        background-image: url(abt/abtBG.jpg);
+        background-size: cover;
+            background-position: center;
+            color: #000000;
+            background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/5afd6210-f29b-4f83-920f-54d3dc1e65c7/dda5kjr-139cfdc8-ba23-4875-a87f-1bf934aee15a.jpg") no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      position: absolute;
+      font-family: ms gothic;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+            z-index: -1; 
+        }
+
+        .makoto { 
+            width: 20px;
+            margin-top: -530px;
+            margin-right: 500px;
+        }
+
+        .makoto img {
+            z-index: 0;
+            margin-top: 120px;
+            right: -280px;
+            position: relative; 
+            width: 190px;
+            pointer-events: none;
+            filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1b53fe) drop-shadow( 0 -1px #1b53fe) drop-shadow( -3px 0 #1b53fe);
+        
+        }
+        mark {
+  background-color: white;
+  color: #1b53fe;
+  border-radius: 3px;
+  padding: 2px;
+  padding-left: 13px;
+  padding-right: 17px;
+  filter: drop-shadow( 0 -2px #1b53fe) drop-shadow( 2px 0 #1b53fe) drop-shadow( 0 -1px #1b53fe) drop-shadow( -3px 0 #1b53fe);
+}
+
+       </style>
+       <body>
+       <script type="text/javascript">
+        // <![CDATA[
+        var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc"); // colours for top, right, bottom and left borders and background of bubbles
+        var bubbles=66; // how many bubbles are moving at any given time
+        var over_or_under="over"; // set to "over" for bubbles to always be on top, or "under" to allow them to float behind other objects
+        
+        /****************************
+        *   JavaScript Bubble Bath  *
+        *(c)2010-13 mf2fm web-design*
+        *  http://www.mf2fm.com/rv  *
+        * DON'T EDIT BELOW THIS BOX *
+        ****************************/
+        
+        var swide=800;
+        var shigh=600;
+        var bubb=new Array();
+        var bubbx=new Array();
+        var bubby=new Array();
+        var bubbs=new Array();
+        var boddie;
+        var ie_version=(navigator.appVersion.indexOf("MSIE")!=-1)?parseFloat(navigator.appVersion.split("MSIE")[1]):false;
+        
+        function addLoadEvent(funky) {
+          var oldonload=window.onload;
+          if (typeof(oldonload)!='function') window.onload=funky;
+          else window.onload=function() {
+            if (oldonload) oldonload();
+            funky();
+          }
+        }
+        
+        addLoadEvent(bubba);
+        
+        function bubba() { if (document.getElementById) {
+          var i, rats, div;
+          boddie=document.createElement("div");
+          boddie.style.position="fixed";
+          boddie.style.top="0px";
+          boddie.style.left="0px";
+          boddie.style.overflow="visible";
+          boddie.style.width="1px";
+          boddie.style.height="1px";
+          boddie.style.backgroundColor="transparent";
+          boddie.style.zIndex="0";
+          document.body.appendChild(boddie);
+          set_width();
+          for (i=0; i<bubbles; i++) {
+            rats=createDiv("3px", "3px");
+        
+            div=createDiv("auto", "auto");
+            rats.appendChild(div);
+            div=div.style;
+            div.top="1px";
+            div.left="0px";
+            div.bottom="1px";
+            div.right="0px";
+            div.borderLeft="1px solid "+colours[3];
+            div.borderRight="1px solid "+colours[1];
+        
+            div=createDiv("auto", "auto");
+            rats.appendChild(div);
+            div=div.style;
+            div.top="0px";
+            div.left="1px";
+            div.right="1px";
+            div.bottom="0px"
+            div.borderTop="1px solid "+colours[0];
+            div.borderBottom="1px solid "+colours[2];
+        
+            div=createDiv("auto", "auto");
+            rats.appendChild(div);
+            div=div.style;
+            div.left="1px";
+            div.right="1px";
+            div.bottom="1px";
+            div.top="1px";
+            div.backgroundColor=colours[4];
+            if (ie_version && ie_version<10) div.filter="alpha(opacity=50)";
+            else div.opacity=0.5;
+        
+            boddie.appendChild(rats);
+            bubb[i]=rats.style;
+            bubb[i].zIndex=(over_or_under=="over")?"1001":"0";
+          }
+          bubble();
+        }}
+        
+        function bubble() {
+          var c;
+          for (c=0; c<bubbles; c++) if (!bubby[c] && Math.random()<0.333) {
+            bubb[c].left=(bubbx[c]=Math.floor(swide/6+Math.random()*swide/1.5)-10)+"px";
+            bubb[c].top=(bubby[c]=shigh)+"px";
+            bubb[c].width="3px";
+            bubb[c].height="3px"
+            bubb[c].visibility="visible";
+            bubbs[c]=3;
+            break;
+          }
+          for (c=0; c<bubbles; c++) if (bubby[c]) update_bubb(c);
+          setTimeout("bubble()", 40);
+        }
+        
+        function update_bubb(i) {
+          if (bubby[i]) {
+            bubby[i]-=bubbs[i]/2+i%2;
+            bubbx[i]+=(i%5-2)/5;
+            if (bubby[i]>0 && bubbx[i]>0 && bubbx[i]<swide) {
+              if (Math.random()<bubbs[i]/shigh*2 && bubbs[i]++<8) {
+                bubb[i].width=bubbs[i]+"px";
+                bubb[i].height=bubbs[i]+"px";
+              }
+              bubb[i].top=bubby[i]+"px";
+              bubb[i].left=bubbx[i]+"px";
+            }
+            else {
+              bubb[i].visibility="hidden";
+              bubby[i]=0;
+              return;
+            }
+          }
+        }
+        
+        window.onresize=set_width;
+        function set_width() {
+          var sw_min=999999;
+          var sh_min=999999;
+          if (document.documentElement && document.documentElement.clientWidth) {
+            if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+            if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+          }
+          if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+            if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+            if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+          }
+          if (document.body.clientWidth) {
+            if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+            if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+          }
+          if (sw_min==999999 || sh_min==999999) {
+            sw_min=800;
+            sh_min=600;
+          }
+          swide=sw_min;
+          shigh=sh_min;
+        }
+        
+        function createDiv(height, width) {
+          var div=document.createElement("div");
+          div.style.position="absolute";
+          div.style.height=height;
+          div.style.width=width;
+          div.style.overflow="hidden";
+          div.style.backgroundColor="transparent";
+          return (div);
+        }
+        // ]]>
+        </script>
+        
+            
+            </div>
+            <div class="test">
+                
+                <div class="test2"><div class="introtext"><i><mark><b>basil or delta! </b></mark><br> 17, he/him (it/its pref)<br>chronic  shut-in</i></div></div>
+                       <br>
+                       <div class="image">
+                      <img src="https://file.garden/Zagf2LAXJwHlct9M/f85dd4a50454142c80c291ab328fc5c5%20(1).jpg" width="130px"> 
+                    </div>
+                    <br>
+                      <div style="padding-left: 130px; padding-top: 7px;width: 58.5%; overflow-y: hidden; overflow-x: hidden; float:center; display:box; height: 103px; margin-top: -110px; background: #1c2158; color: white; right: 50px; z-index: -2;"> hihi! ^o^/ as the above text said, i'm basil / delta, the webmaster of this site! if you care about enneagram stuff, i'm an istp-t 6w7 so/sx type 2 sanguine. :P </div>
+            <br>
+            <div>
+                        <p style="border: 1px solid #1b53fe; border-image: linear-gradient(white, #1b53fe) 1; padding: 7px; background: white; margin-top: -25px; width: 317px; box-shadow: 0px 0px 10px 2px white;">despite my site name, i do not have and / or follow a 'dni' criteria! i block freely!   </p>
+                        <center><img src="https://caterpie.crd.co/assets/images/gallery16/d0ffd56b.png?v=31fdc6f6" width=160px></center>
+                    <div style="width: 100%; height: 150px; overflow-y: scroll; padding: 6px;">
+                           to explain more about, well, <i>myself</i>, i'm simply just... a specimen on the internet! a virtual ghost, haunting the parts that i enjoy the most. my friends ( hello tbgc & friends house! <b><3</b> ) characterize me as a loser ( endearingly ) and funny! both of which are probably true.
+                           <br> 
+                           <br> for stuff that i enjoy, i currently like twitch streamers <b>( prezoh, chiblee,</b> aksually ) & have also been obsessed with persona <b>3</b>! i also  love poetry, coding (obviously), rpgs, omori, oneshot,  it's always sunny ( + charmac )  and much more. 
+                    <b><u></u></b> 
+        </div>
+    </div>
+        <div class="makoto">
+            <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-02-19_203729892-removebg-preview.png">
+        </div>
+   </body> 
+   
