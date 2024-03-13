@@ -1,234 +1,270 @@
+
 <!DOCTYPE html>
 <html>
-   <head>
+  <head>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title> full moon, full life </title>
-      <meta name="description" content="venture life, burn your dread!">
-      <link rel="stylesheet" href="https://unpkg.com/98.css">
-      <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/siteicon.png">
-       <style>
-         ::-webkit-scrollbar{
-display:none;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> full moon, full life </title>
+    <meta name="description" content="venture life, burn your dread!">
+    <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/siteicon.png">
+</script>      
+    <style>
+
+::-webkit-scrollbar {
+width: 10px;
+height: 20px;
 }
-         @font-face {
+
+::-webkit-scrollbar-track {
+background: white; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #ff1273; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #a0798c; 
+}
+
+                 @font-face {
   font-family: ms gothic;
   src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
 }
 
+@font-face {
+    font-family: ms pgothic;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
-        .test{
-            width:320px;
-            height: 250px;
-            margin: auto;
-            font-size: 13px;
-            margin-left: 120px;
-            color: #faeae3;
-            display: block;
-            text-shadow: 0 0 2px #ca1526, 0 0 23px #869598, 0 0 2px #b2bcbd;
-            background: #00000098;
-            padding: 3px;
-            box-shadow: 0px 0px 3px 3px #0f1015;
-            margin-top: 150px;
-            transform:scale(1.3);
-        }
+body {
+    color: #000000;
+    background: url("https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-13_025022848.png") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    font-family: 'MS pGothic';
+    top: 5%;
+    right: 0;
+    bottom: 0px;
+    left: 0%;
+}
 
-        .introtext { 
-            position: relative;
-            z-index: 5;
-            padding: 60px;
-            width: 270px;
-            margin-top: -120px;
-            margin-right: 150px;
-            text-align: center;
-            color: white;
-            font-size: 14.6px;
-            line-height: 24px;
-        }
-        .image {
-            border: 3px double black;
-            width: 95px;
-            height: 95px;
-            margin-left: 5px;
-            margin-top: -55px;
-            z-index: 3;
-            transform:rotate(-6deg);
+.position {
+    width: 715px;
+    margin: auto;
+}
 
-            filter: drop-shadow( 0 -2px #0f1015) drop-shadow( 2px 0 #04858b) drop-shadow( 0 -1px #ca1526) drop-shadow( -3px 0 #ca1526);
-        }
+.nanase1 {
+  width: 100.8%;
+  height: 130px;
+  background: url('https://static.tumblr.com/d83qsi7/ijfnqc8fj/box2.png') center;
+  background-size: 715px 660px;
+  background-position-y: 0px;
+  background-position-x: 3px;
+}
+.nanase1 img {
+    height: 106.2px;
+    margin-top: 23.3px;
+    margin-left: 6px;
+    border-bottom: 5px double #232434;
+}
 
-        .image img {
-            width: 95px;
-  
-            height: 95px;
-            filter: drop-shadow( 0 -2px #0f1015) drop-shadow( 2px 0 #04858b) drop-shadow( 0 -1px #ca1526) drop-shadow( -3px 0 #ca1526);
-        }
-        
-        
-        body{
-            color: #000000;
-            background: url("https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-05_044217817.png") no-repeat fixed center;
-         -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-      position: absolute;
-      font-family: ms gothic;
-      font-family: 'MS pGothic', sans-serif;
-      top: 15%;
-      right: 0;
-      bottom: 0px;
-      left: 35%;
-        }
+.test {
+  width: 713px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0.5%;
+  background: url('https://static.tumblr.com/d83qsi7/ijfnqc8fj/box2.png') center;
+  background-size: 715px 527px;
+  background-position-y: -25px;
+  background-position-x: 3px;
+  height: 496px;
+}
 
-        .makoto { 
-            width: 20px;
-            margin-top: -530px;
-            margin-right: 500px;
-        }
+#position2 {
+  width:200%;
+  padding:5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+  justify-content: center;
+}
 
-        .makoto img {
-            z-index: 0;
-            margin-top: 340px;
-            right: -220px;
-            position: relative; 
-            width: 240px;
-            pointer-events: none;
-            transform:rotate(8deg);
-            filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #0f1015) drop-shadow( 0 -1px #ca1526) drop-shadow( -3px 0 #ca1526);
-        
-        }
+.column {
+  width:173px;
+}
 
-        .hand1 { 
-            width: 20px;
-            margin-top: -530px;
-            margin-right: 500px;
-        }
+.left{
+  width:170px;
+  margin-top:5px;
 
-        .hand1 img {
-            z-index: 0;
-            margin-top: 280px;
-            right: 40px;
-            position: relative; 
-            width: 70px;
-            pointer-events: none;
-            transform:rotate(-3deg);
-            filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #0f1015) drop-shadow( 0 -1px #0f1015) drop-shadow( -3px 0 #ca1526);
-        
-        }
+  padding:12px;
+  background:#f8f8f0;
+  background: url('https://static.tumblr.com/d83qsi7/Kronqdn7t/box3.png') center;
+  background-size: 191px 279px;
+  background-position-y: 0px;
+  background-position-x: 2px;
+}
 
-        .hand2 { 
-            width: 20px;
-            margin-top: -530px;
-            margin-right: 500px;
-        }
+.left2{
+  width:170px;
+  margin-top:5px;
+  padding:12px;
+  height: 147px;
+  background:#f8f8f0;
+  background: url('https://static.tumblr.com/d83qsi7/Kronqdn7t/box3.png') center;
+  background-size: 191px 170px;
+  background-position-y: 0px;
+  background-position-x: 2px;
+}
 
-        .hand2 img {
-            z-index: 0;
-            margin-top: 150px;
-            right: -280px;
-            position: relative; 
-            width: 70px;
-            pointer-events: none;
-            transform:rotate(-50deg);
-            filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #ca1526) drop-shadow( 0 -1px #04858b) drop-shadow( -3px 0 #04858b);
-        
-        }
-        mark {
-  background-color: white;
-  color: #1b53fe;
+a {
+  color:#bc5c8c;
+}
+
+a:hover{
+  color: #a0798c;
+  transition: color 1s;
+}
+
+.about {
+  width:425px;
+  background: url('https://static.tumblr.com/d83qsi7/ijfnqc8fj/box2.png') center;
+  background-size: 446px 448px;
+  background-position-y: 0px;
+  background-position-x: 2px;
+  margin-top:6px;
+  padding-top: 49px;
+  padding: 10px;
+  padding-left: 15px;
+  margin-left:50px;
+  height:430px;
+}
+
+mark {
+  background-color: transparent;
+  color: #bc5cb1;
   border-radius: 3px;
   text-shadow: none;
 }
 
-.test b { 
-  color: #04858b;
-  text-shadow: 0 0 2px #324e53, 0 0 23px #324e53, 0 0 2px #324e53;
+.amount {
+    height: 12px;
+    float: left;
 }
 
-.introtext b {
-  color: #1b53fe;
+#hp { 
+    background-color: #ff1273; 
+    width: 17%; 
 }
+#sp { 
+    background-color: #4dbbbd; 
+    width: 20%; 
+}
+
+hr { 
+    border: 0;
+height: 1px;
+    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 @media only screen and (max-width: 640px) {
-#test{
-  display: block;
-  width:100%;
-}
-
 body {
-    transform:scale(0.8);
-    left: -20%;
-    font-family: ms gothic;
+    transform:scale(0.9);
+    font-family: ms pgothic;
     background-size: cover;
-}
- 
-.makoto img{
-  width: 110px;
-  margin-top: 420px;
-  margin-left: 45px;
-
+    top: 5%;
+      right: 40;
+      bottom: 0px;
+      left: -45%;
 }
 
-.hand1 img {
-  margin-top: 400px;
+.test {
+width: 640px;
+height: 593px;
 }
- 
-#blinkies{
-  order: 2;
-  margin-top:10px;
-  left: 220px;
-}
- 
-#sitebutton{
-  display:none;
 
+.left { 
+  order: 3;
+  margin-left: -100px;
+  margin-top: -168px;
+  position: absolute;
+}
+
+.left2 {
+  order: 3;
+  margin-left: 110px;
+  margin-top: -60px;
+  position: absolute;
+}
+
+.nanase1 {
+  width: 640px;
+  height: 130px;
+  left: 50px;
+  float: right;
+  background: url('https://static.tumblr.com/d83qsi7/ijfnqc8fj/box2.png') center;
+  background-size: 635px 650px;
+  background-position-y: 0px;
+  background-position-x: 3px;
+  
+}
+.nanase1 img {
+  width: 630px;
+}
  
 }
-}
-       </style>
+</style>
+  </head>
+  <body>
 
+<div class="position">
+  <div class="nanase1">
+<img src="https://files.catbox.moe/qgda4y.png">
+  </div>
+
+  <div class="test">
+    <div id="position2">
+      <div class="column">
+
+        <div class="left">
+        <img src="https://static.wikia.nocookie.net/1bitheart/images/6/63/7389572.png" width=170>
+        welcome to my page, where you can learn more about, well... <mark><i>me!</i></mark>
+        <br>
+        <br>
+        <mark><a href="https://dni.neocities.org/myabout/aboutme" target="info">about me</a></mark>⠀ ・ ⠀<mark><a href="https://dni.neocities.org/myabout/interests" target="info">interests</a></mark><br><mark><a href="https://dni.neocities.org/myabout/friends" target="info">friends</a></mark>⠀ ・ ⠀<mark><a href="/index">go back</a></mark>
       
-        
-        
-       <body>
-       
-        
-            
-            </div>
-            
-            <div class="test">
-                       <div class="image">
-                        <a title='art cred: kelcair' href='https://twitter.com/kelcair' style='filter:none;'><img src="https://file.garden/Zagf2LAXJwHlct9M/opera_oBFG3Sgv9H.png" width="130px"></a> 
-                    </div>
-                    <br>
-                      <div style="padding-left: 120px; padding-top: 2px;width: 62%; border: 3px double #04858b; padding-top:3px; padding-bottom: 17px; overflow-y: hidden; overflow-x: hidden; float:center; display:box; height:70px; margin-top: -110px; background: linear-gradient(0deg, rgba(24,8,16,1) 46%, rgba(202,21,38,1) 96%);; color: white; right: 50px; z-index: -2;"> <br><b>who am i?</b> i'm basil / delta, <br>the webmaster of this site! he/him!! im a guy!! seventeen <br><p style="border-image: linear-gradient(#FFFFFF00, #FFFFFF00) 1; border: 3px double #ca1526; text-align:center; font-size: 10px; padding-top: 2px; padding-bottom: 2px; margin-right: 20px;" >coded with <b>love</b> !!  <i>est. 6/20/23</i></p></div>
+    </div>
+        <div class="left2">
             <br>
-            <div>
-                        <p style="border-image: linear-gradient(#FFFFFF00, #FFFFFF00) 1; padding: 7px; padding-top: -2px; margin-top: -18px; width: 305px; height: 1px; text-align:center; text-shadow: none;" > <marquee>it's full moon again, <font color="#ca1526"><b>crazy how time flies!</b></marquee> </p>
+            if you want the short version, hi! i'm <mark>basil!!</mark> <br> 17 years old and the <mark>webmaster</mark> of this site! lover of many things and enthusiast of <mark>many more.</mark> i love my friends and my boyfriend very much!! <br> <br> 
+      </ul>
+        </div></div>
+      <div class="center">
+      <div class="about">
 
-                    <div style="width: 92.6%; height: 160px; margin-left: 5px; overflow-y: scroll; color: black; padding: 6px; background: #ffffff; text-shadow: none; border-style:double; border-color:#04858b; border-width: 2px; box-shadow: 0px 0px 2px 2px #04858b;">
-                           to explain more about, well, <i><mark>myself</mark></i>, i'm simply just... a specimen on the internet. a virtual ghost of sorts!
-
-                           <br> 
-                           <br> i'm into lots of things such as twitch streamers <b>(<mark>prezoh, chiblee,</mark></b> aksually , hunter_hhhh , bigt<b>)</b> , persona <b><mark>3</mark></b> <b>(</b>akihiko sanada my best friend<b>)</b>, music, poetry, coding, omori, oneshot, phighting, it's always sunny, the yard, and more!
-                           <br> <br> i love my friends and my husband more than anything and am eternally grateful for them!! <br> <br> i consider myself to be very introverted, surrounded by nothing but screens and the vastness of the internet! i hope to get to explore even more of it and get to know more amazing people online!
-                    <b><u></u></b> 
+        <br
+        <br>       <div id="health">
+           <b>HP</b>
+            17/<text style="font-size: 12px;">18</text> </div>
+            <span class="bar"><div class="amount" id="hp"></div></span>
+            <br>
+            <b>SP</b> 18/<text style="font-size: 12px;">18</text> <br>
+            <span class="bar"><span class="amount" id="sp"></span></span>
+            <br>
+            <hr>
+            <iframe src="https://dni.neocities.org/myabout/aboutme" style="height:340px; width:440px; margin-left: -10px; border: 0;" name="info"></iframe>
+            <br>
         </div>
-        
-    </div>
-    
-        <div class="makoto">
-            <img src="https://file.garden/Zagf2LAXJwHlct9M/glorp.png">
-        </div>
-
-        <div class="hand1">
-          <img src="https://file.garden/Zagf2LAXJwHlct9M/handright.png">
       </div>
-      <div class="hand2">
-        <img src="https://file.garden/Zagf2LAXJwHlct9M/handleft.png">
-    </div>
-       
-   </body> 
-   
+
+  </body>
+</html>
