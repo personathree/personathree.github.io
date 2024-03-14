@@ -24,6 +24,24 @@
          });
       </script>
       <style>
+
+::-webkit-scrollbar {
+width: 10px;
+height: 20px;
+}
+
+::-webkit-scrollbar-track {
+background: #1a1a7a; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #0ed9f5; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #404a4b; 
+transition: 0.9s;
+}
       @font-face {
   font-family: ms gothic;
   src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
@@ -38,8 +56,8 @@
 
          #position {
          position: absolute;
-         top: 20%;
-         left: 62%;
+         top: 25%;
+         left: 60%;
          transform: translate(-50%, -50%);
          transform:scale(1.0)
          }
@@ -61,28 +79,24 @@
          cursor: help;
          font-weight: bold;
          color: #43494b;
+         background: white;
+         box-shadow: 3px 2px 2px #0ed9f5;
+         border: 2px solid white;
+         transition: 0.9s;
+         border-radius: 25px;
+         padding-left: 5px;
+         padding-right: 5px;
          }
          .box {
          display: inline-block;
-         width: 490px;
-         height: 246px;
-         background: url("https://file.garden/Zagf2LAXJwHlct9M/textbox4") no-repeat center;
+         width: 480px;
+         height: 110px;
+         border: 4px double #1a1a7a;
+         background: url("https://i.pinimg.com/564x/13/ae/83/13ae834449b58d6dba2a4bd99097cf8f.jpg") no-repeat center;
+        
         }
 
-         .image {
-         float: left;
-         width: 135px;
-         height: auto;
-         z-index: 5;
-         }
-         .image img {
-         width: 140px;
-         margin-top: 6px;
-         margin-right: 20px !important;
-         transform: rotate(-2deg);
-         filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -1px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-
-         }
+         
          .about {
              margin-top: -120px;
              margin-right: 50px;
@@ -117,35 +131,10 @@
          color: black;
          font-size: 20px;
          }
-         #links{
-    border:1px solid black; 
-    color: #ffffff;
-    background: #1a1a7a;
-    text-align:center;
-    padding:5px;
-    width:350px;
-    margin-left: 128px;
-    font-size: 16px;
-    top: -130px !important;
-    margin-top: -0px;
-    margin:10 auto;
-    z-index: -3;
-    font-family: ms gothic;
-    border-radius: 6px;
-    transform:rotate(-1deg)
-}
-#links ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    justify-content: space-evenly;
-    z-index: -3;
-}
 #main {
     margin-top: -90px !important;
     width:442px; 
-    height: 220px;
+    height: 260px;
     margin:0 auto; 
     text-align:justify; 
     border:3px double black; 
@@ -159,98 +148,156 @@
     background: #ffffff;
 }
 
-#sitebutton { 
-        position: absolute;
-        font-size: 15px;
-    margin-top: -315px;
-    margin-left: -180px;
-       border: 2px #1a1a7a double;
-         background: #FFFFFF;
-         overflow-y: scroll;
-         color: #000000;
-         padding: 4px;
-         width: 150px;
-         height: 90px;
-         font-family: ms gothic;
-} 
+#info { 
+    width: 355px;
+    height: 82px;
+    line-height: 15px;
+margin-top: 17px;
+    padding-top: 72px;
+    font: ms pgothic;
+}
+
+
+#links{
+    border:1px solid black; 
+    color: #ffffff;
+    background: #1a1a7a;
+    text-align:center;
+    padding:5px;
+    width:145px;
+    position: absolute;
+    margin-left: -173px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    top: -5px !important;
+    margin-top: -0px;
+    margin:10 auto;
+    z-index: 3 !important;
+    font-family: ms gothic;
+    border-radius: 6px;
+    line-height: 25px;
+
+}
 
 #blinkies { 
         position: absolute;
+        border-radius: 6px;
         font-size: 15px;
-    margin-top: -200px;
-    margin-left: -180px;
-       border: 2px #1a1a7a double;
-         background: #FFFFFF;
-         overflow-y: scroll;
-         color: #000000;
+    margin-top: -160px;
+    margin-left: -170px;
+    border:1px solid black; 
+    color: #1a1a7a;
+    background: #ffffff;
+    overflow-y: scroll;
          padding: 4px;
-         height: 190px;
-         width: 150px;
+         height: 186px;
+         width:150px;
          font-family: ms gothic;
 } 
 
-#makoter { 
-        position: absolute;
-        font-size: 15px;
-    margin-top: 20px;
-    margin-left: -180px;
-       border: 2px #1a1a7a double;
-         background: #FFFFFF;
-         overflow-y: hidden;
-         overflow-x: hidden;
-         color: #000000;
-         padding: 4px;
-         height: 100px;
-         width: 380px;
-         font-family: ms gothic;
-         
-} 
-
-#makoter img {
-    margin-top:-125px;
-    margin-left: -10px;
-    
+#blinkies a:hover{ 
+    cursor: help;
+         font-weight: bold;
+         transition: 0.9s;
+         border-radius: 0px;
+         padding-left: 0px;
+         padding-right: 0px;
 }
 
-#updatelog { 
-        position: absolute;
-        font-size: 15px;
-        margin-top: 20px;
-    margin-left: 220px;
-       border: 2px #1a1a7a double;
-         background: #FFFFFF;
-         overflow-y: scroll;
-         color: #000000;
-         padding: 4px;
-         height: 100px;
-         width: 257px;
-         font-family: ms gothic;
-} 
+#blinkies img {
+    filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #FFFFFF) drop-shadow( 0 -1px #FFFFFF) drop-shadow( -3px 0 #FFFFFF);
+}
+
+#newmakoto {
+    position: absolute;
+    margin-top: -390px;
+    right: -110px;
+    filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -1px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+transform:rotate(3deg);
+z-index: 5;
+pointer-events: none;
+}
+
+#newmakoto img {
+    width: 280px;
+}
 #statuscafe {
     padding: 0em;
+    background: white;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -80px;
+    border-radius: 10px;
+    box-shadow: 4px 3px 3px #1a1a7a;
+    border: 2px solid 1a1a7a;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    #statuscafe a {
+        color:#1a1a7a;
+    }
 	
-		}
+		
 #statuscafe-username {
     margin-bottom: -0.1em;
-        text-align:center;
+        text-align:left;
         color:#414c53;
-         font-size:0.8em;
+         font-size:1em;
          letter-spacing: 0.02em;
          background: transparent;
          
          
 		}
 #statuscafe-content {
-    font-size: 0.7em;
-    text-align:center;
+    font-size: 0.9em;
+    text-align:left;
     background: transparent;
     letter-spacing: 0em;
     width: auto;
     font-family: ms gothic;
     padding: 5px;
       -webkit-text-stroke: 0.2px #1b1d27;
-      color: #FFFFFF;
+      color: black;
 		}
+
+        mark { 
+            border: 2px solid #1a1a7a;
+            color: #1a1a7a;
+            font-weight: bold;
+            font-size: 16px;
+            background: white;
+            border-radius: 25px;
+            line-height: 5px;
+        }
+
+        .marquee {
+            width: 96%;
+            height: 16px;
+            right: 9px;
+            padding:3px;
+            position: absolute;
+            border-width:2px;
+            font-size: 13px;
+            z-index: 1;
+            border: 2px solid black;
+            margin-top:55px;
+            background:#1a1a7a;
+            color: white;
+            }
+
+            .marquee mark {
+                border: 2px solid #1a1a7a;
+            color: #1a1a7a;
+            font-weight: bold;
+            font-size: 13px;
+            background: white;
+            border-radius: 25px;
+            padding-left: 5px;
+            padding-right: 5px;
+            line-height: 5px;
+            }
         /* Below is the mobile optimisation. Mess with it if you want. */
 @media only screen and (max-width: 640px) {
 #box{
@@ -269,15 +316,17 @@
 }
 
 #links{
-  margin-top:1px;
-  order:1;
+  margin-top:350px;
+  left: 459px;
+  order:3;
+  z-index: 5;
 }
  
 #blinkies{
   order: 2;
-  margin-top:36px;
-  left: 185px;
-  height: 100px;
+  margin-top:45px;
+  left: 249px;
+  height: 130px;
 }
  
 #sitebutton{
@@ -289,17 +338,7 @@
  
 }
 
-#makoter {
-    margin-top: -500px;
-    margin-left: 50px;
-}
 
-#updatelog{ 
-    margin-top:36px;
-  left: -55px;
-  height: 100px;
-  width: 165px;
-}
 }
       </style>
    <body>
@@ -312,23 +351,27 @@
 <br>
 <br>
 <br>
-            <div class="image">
-               <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-02-25_223051505-removebg-preview%20(1).png">
+
+<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div><script src="https://status.cafe/current-status.js?name=basil" defer></script></div>
+            <div class="marquee">
+                <marquee>est . 6/23 ♡ <mark>coded with love!</mark>⠀⠀⠀⠀upd. 3/13⠀⠀⠀⠀<a href="https://arab.org/click-to-help/palestine/">from the river to the sea, palestine will be free</a></marquee>
             </div>
             <div id="links">
-                <ul>
-                <li><img src="https://file.garden/Zagf2LAXJwHlct9M/makoto" width=20px> <a href="/about">webmaster</a></li>
-                <li><img src="https://file.garden/Zagf2LAXJwHlct9M/akihito" width=20px> <a href="/blog"> blog</a></li>
-                <li><img src="https://file.garden/Zagf2LAXJwHlct9M/yukari" width=20px> <a href="https://vgen.co/calvin/portfolio">my art</a></li>
-                <li><img src="https://file.garden/Zagf2LAXJwHlct9M/ken" width=20px> <a href="/resources">resources</a></li>
-                </ul>
+                
+                <img src="https://file.garden/Zagf2LAXJwHlct9M/makoto" width=20px> <a href="/about">webmaster</a>
+                <br>
+                <img src="https://file.garden/Zagf2LAXJwHlct9M/akihito" width=20px> <a href="/blog"> blog</a>
+                <br>
+                <img src="https://file.garden/Zagf2LAXJwHlct9M/yukari" width=20px> <a href="https://vgen.co/calvin/portfolio">my art</a>
+                <br>
+                <img src="https://file.garden/Zagf2LAXJwHlct9M/ken" width=20px> <a href="/resources">resources</a>
+            
             </div>
             <div class="about">
-               <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=basil" defer></script> 
             <br>
             
                
-               <div style="overflow-y:auto; margin-left: 50px;padding:0px; overflow-wrap:break-word; background: transparent; color: #0ed9f5; text-align:right; width:260px; font-size: 12px;">currently playing: persona 3 reload  ♡ 🌙</div>
+      
             </div>
          
          <div class="blinkies2">
@@ -338,12 +381,10 @@
          <marquee class="marq" direction="right" scrollamount="15" behavior="scroll"></marquee>
       </div>
        <div id="main">
-              <br>
-              
-              <br>
-              <br>
 
-              hello hello! welcome to my digital graveyard. <img src="https://caterpie.crd.co/assets/images/gallery08/6263e802.gif?v=31fdc6f6"> <br><br>this place will be constantly updated, constantly a work in progress as i constantly seek to improve on my coding and to make this a place that feels like <i>mine,</i> a place i can proudly show and have people see this and be like "oh, cool! this is basil!" i hope you enjoy! ^--^
+    <div id="info"> <font color="#1a1a7a"><b>hello!</b></font> <img src="https://caterpie.crd.co/assets/images/gallery08/da0c8c05.gif?v=f7b7a140"> welcome to <mark>⠀dni.lol⠀</mark>, my <b>digital graveyard!</b> ୨୧  i wanted to make a site where i can be, well... <i><u>myself!</u></i> and that's what this serves to be! i wanted this site to both be an introduction to myself as a person, especially if you found this off of one of my <b>social medias</b>, but also an escape from the internet as a whole.</b> </div>
+
+             
 <br>
               
     
@@ -532,6 +573,7 @@
             width:482px; /* width of the player */
             margin-top: 1px;
             margin-left: -20px;
+            border-radius: 18px;
             
         }
      
@@ -625,30 +667,21 @@
         }
     </style>
     </div>
-    <div id="sitebutton">
-        <b> my site button! </b>
-            <br>
-        link if you wish!
-        <br>
-        <br>
-        <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-02-20_012800454.png" width=90px>
-        <br>
-        
-    </div>
+    <div id="newmakoto"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-13_180318227.png"></div>
     <div id="blinkies">
         <div style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #1a1a7a; color: #ffffff; text-align:center; width:120px; font-size: 13px;">a bunch of buttons i've collected!</div>
     
         <br>
-        <b<a href="https://twitter.com/prezoh" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/prezoh.png" border=0 width=30px></a>
+        <a href="https://twitter.com/prezoh" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/prezoh.png" border=0 width=30px></a>
               <a href="https://twitter.com/chibleee" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/chiblee.png" border=0 width=30px></a> 
               <a href="http://fan.koukeisha.net/duvet-fanlisting/" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/duvet.png" border=0 width=30px></a>
       <a href="https://powerup.i-heart-you.net/n64/" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/n64.png" border=0 width=30px></a>
       <a href="https://zanarkand.neocities.org/stardust/yume/fl" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/yumenikki.png" border=0 width=30px> <a href="http://www.marheavenj.net/emu/" target="_blank"><img src="https://files.catbox.moe/q9u77b.jpg" border=0 width=30px></a></a>
-        <img src="https://files.catbox.moe/fm1ec4.png" width=60px> <img src="https://y2k.neocities.org/buttons/built_with_microsoft_notepad.gif" width=60px> <img src="https://buttonwall.neocities.org/vganime.gif" width=60px> <img src="https://88by31.neocities.org/music/bimpy.gif" width=60px> <img src="https://88by31.neocities.org/music/mafumafu.gif" width=60px> <img src="https://88by31.neocities.org/misc/paradise.gif" width=60px> <img src="https://88by31.neocities.org/misc/lovevirus.gif" width=60px> <img src="https://88by31.neocities.org/games/reisen.png" width=60px> <img src="https://88by31.neocities.org/games/bob.gif" width=60px> <img src="https://88by31.neocities.org/games/emulate.gif" width=60px> <img src="https://88by31.neocities.org/music/csh.gif" width=60px> <img src="https://88by31.neocities.org/music/radiohead.png" width=60px> <img src="https://88by31.neocities.org/anime/madoka.gif" width=60px> <img src="https://88by31.neocities.org/games/yumenikki2.gif" width="60px"> <img src="https://88by31.neocities.org/misc/BUT_ilovemyfriends.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/cutie-angels.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/miku.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/nerv.png" width="60px"> <img src="https://neonaut.neocities.org/images/buttons/neocitizens/25nightcord.png" width="60px"> <img src="https://cyber.dabamos.de/88x31/destinysoulmates.gif" width="60px"> <img src="https://cyber.dabamos.de/88x31/n64.gif" width="60px"> <img src="https://cyber.dabamos.de/88x31/sitaani.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/gbanet.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/himenolover.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/ltt.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/monar.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/thatwhitehand.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/unknown_003.png" width=60px> <img src="https://capstasher.neocities.org/88x31Buttons/sitebutton.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/seedyourtorrents.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/ratpilled.gif" width=60px> <img src="https://neonaut.neocities.org/images/buttons/neocitizens/ubiquitous.png" width=60px>   </marquee>
+        <img src="https://files.catbox.moe/fm1ec4.png" width=60px> <img src="https://y2k.neocities.org/buttons/built_with_microsoft_notepad.gif" width=60px> <img src="https://buttonwall.neocities.org/vganime.gif" width=60px> <img src="https://88by31.neocities.org/music/bimpy.gif" width=60px> <img src="https://88by31.neocities.org/music/mafumafu.gif" width=60px> <img src="https://88by31.neocities.org/misc/paradise.gif" width=60px> <img src="https://88by31.neocities.org/misc/lovevirus.gif" width=60px> <img src="https://88by31.neocities.org/games/reisen.png" width=60px> <img src="https://88by31.neocities.org/games/bob.gif" width=60px> <img src="https://88by31.neocities.org/games/emulate.gif" width=60px> <img src="https://88by31.neocities.org/music/csh.gif" width=60px> <img src="https://88by31.neocities.org/music/radiohead.png" width=60px> <img src="https://88by31.neocities.org/anime/madoka.gif" width=60px> <img src="https://88by31.neocities.org/games/yumenikki2.gif" width="60px"> <img src="https://88by31.neocities.org/misc/BUT_ilovemyfriends.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/cutie-angels.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/miku.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/nerv.png" width="60px"> <img src="https://neonaut.neocities.org/images/buttons/neocitizens/25nightcord.png" width="60px"> <img src="https://cyber.dabamos.de/88x31/destinysoulmates.gif" width="60px"> <img src="https://cyber.dabamos.de/88x31/n64.gif" width="60px"> <img src="https://cyber.dabamos.de/88x31/sitaani.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/gbanet.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/himenolover.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/ltt.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/monar.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/thatwhitehand.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/unknown_003.png" width=60px> <img src="https://capstasher.neocities.org/88x31Buttons/sitebutton.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/seedyourtorrents.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/ratpilled.gif" width=60px> <img src="https://neonaut.neocities.org/images/buttons/neocitizens/ubiquitous.png" width=60px> <img src="https://file.garden/Zagf2LAXJwHlct9M/IMG_2130.gif" width=60px>   </marquee>
         
     </div>
-    <div id="makoter"><img src="https://i.pinimg.com/564x/13/ae/83/13ae834449b58d6dba2a4bd99097cf8f.jpg" width="400px" padding-top="160px";></div>
-    <div id="updatelog"><div style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #1a1a7a; color: #ffffff; text-align:center; width:auto; font-size: 13px;">site update log!</div> 2 / 20 -- huge site updates. about finished + revamp home page + added more buttons + can officially softlaunch!!  <br> <br> 2 / 25 -- index page changes &&. home page change. blog started (not on page yet) <br> <br> 3 / 13 -- entire new about page + progress on blog + small index page edits (nothing huge)  </div>
+    
+    <div id="updatelog"><div style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #1a1a7a; color: #ffffff; text-align:center; width:auto; font-size: 13px;"> <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-02-20_012800454.png" width=60px float=left> site button! feel free to link (〃＾▽＾〃)</div>
 </div>
 
         
