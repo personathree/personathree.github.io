@@ -47,3 +47,24 @@ font-size: 0px;
 .track.now {
   color: #0ed9f5;
 }
+
+
+@media only screen and (max-width: 640px) {
+  .lastfm { 
+    margin-top: -5px;
+  left: -319px;
+}
+.lastfm .slimScrollDiv {
+  width: 180px !important;
+}
+.slimScrollDiv {
+  height: 162px !important;
+}
+.lastfm .scrbls {
+  font-size: 13px;
+  width: 190px;
+  margin-left: -20px;
+  text-align: right;
+  z-index: 3;
+}
+}
