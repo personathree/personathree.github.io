@@ -1,836 +1,2325 @@
 
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+
+
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title> full moon, full life </title>
-      <meta name="description" content="venture life, burn your dread!">
-      <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/siteicon.png">
-      <link rel="stylesheet" href="https://unpkg.com/98.css">
-      <style>
+
+
+<head>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title> full moon, full life </title>
+
+
+<meta name="description" content="venture life, burn your dread!">
+
+
+<link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/siteicon.png">
+
+
+<link rel="stylesheet" href="https://unpkg.com/98.css">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+<script>window.jQuery || document.write('<script src="https://static.tumblr.com/qxrkgx6/q6kmgn2w2/jquery-1.8.3.min.js"><\/script>')</script>
+
+
+<script src="https://static.tumblr.com/rtrqcib/VGGnlh8rf/jquery.style-my-tooltips.min.js"></script><script>(function($){$(document).ready(function(){$("a[title]").style_my_tooltips({tip_follows_cursor:true,tip_delay_time:0,tip_fade_speed:0,attribute:"title"});});})(jQuery);</script>
+
+
+<script>
+
+
+jQuery(document).ready(function($){
+
+
+$('#content .post:first-of-type').each(function(){
+
+
+$(this).css({
+
+
+'margin-top' : $('#header').outerHeight() + 25 + 'px'
+
+
+});
+
+
+});
+
+
+});
+
+
+</script>
+
+
+<style>
+
+
+
+
+
 
 ::-webkit-scrollbar {
+
+
 width: 10px;
+
+
 height: 20px;
+
+
 }
+
+
+
+
+
 
 ::-webkit-scrollbar-track {
-background: #1a1a7a; 
+
+
+background: #1a1a7a;
+
+
 }
+
+
+
+
+
 
 ::-webkit-scrollbar-thumb {
-background: #0ed9f5; 
+
+
+background: #0ed9f5;
+
+
 }
+
+
+
+
+
 
 ::-webkit-scrollbar-thumb:hover {
-background: #404a4b; 
+
+
+background: #404a4b;
+
+
 transition: 0.9s;
+
+
 }
 
-      @font-face {
-  font-family: ms gothic;
-  src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
-}
+
 @font-face {
-    font-family: bios;
-    src: url(https://dl.dropbox.com/s/vlxjtnvrl9s0snp/Nintendo-DS-BIOS.ttf);
-}
-@font-face {
-    font-family: ms pgothic;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
-}
-@font-face {
-    font-family: basiic;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
+
+
+font-family: ms gothic;
+
+
+src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
+
+
 }
 
-         #wait {
-         position: absolute;
-         top: 20%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         transform:scale(1.1)
-         }
-         body {
-         background: url("https://file.garden/Zagf2LAXJwHlct9M/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.gif") no-repeat fixed center;
-         -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-         text-align: center;
-         font-family: ms gothic;
-         }
-         a {
-         color: #0ed9f5;
-         text-decoration: none;
-         transition: 0.3s;
-         }
-         a:hover {
-         cursor: help;
-         font-weight: bold;
-         color: #43494b;
-         background: white;
-         box-shadow: 3px 2px 2px #0ed9f5;
-         border: 2px solid white;
-         transition: 0.9s;
-         border-radius: 25px;
-         padding-left: 5px;
-         padding-right: 5px;
-         }
-         .train {
-         display: inline-block;
-         width: 480px;
-         height: 110px;
-         border: 4px double #1a1a7a;
-         background: url("https://i.pinimg.com/736x/85/f4/b0/85f4b063cdc20a447ed1671722c30125.jpg") no-repeat center;
-         background-size: 560px;
-         background-position-y: -210px;
-         background-position-x: -5px;
-        
-        }       
-         .about {
-             margin-top: -120px;
-             margin-right: 50px;
-             padding-top: 0px;
-         font-size: 19px;
-         color: #FFFFFF;
-         float: right;
-         font-family: ms gothic;
-         width: 330px;
-         height: 150px;
-         border: 0px solid black;
-         overflow-y: hidden;
-         overflow-x: hidden;
-         }
-         .blinkies1 {
-         margin: 0px;
-         }
-         .blinkies2 {
-         margin-top: 2px;
-         }
-         .marq {
-         color: white;
-         filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
-         font-family: ms gothic;
-         font-size: 25px;
-         line-height: 1.1em;
-         padding: 0em;
-         width: 370px;
-         }
-         p {
-         margin: 0;
-         color: black;
-         font-size: 20px;
-         }
-#hii {
-    margin-top: -90px !important;
-    width:442px; 
-    height: 310px;
-    margin:0 auto; 
-    text-align:justify; 
-    border:3px double black; 
-    max-height:40%; 
-    padding:3px 3px 3px 3px;
-    z-index: -1;
-    font-size: 15px;
-    padding-left: 20px;
-    font-family: MS PGothic;
-    padding-right: 20px;
-    background: #ffffff;
+
+
+
+
+
+@font-face {
+
+
+font-family: bios;
+
+
+src: url(https://dl.dropbox.com/s/vlxjtnvrl9s0snp/Nintendo-DS-BIOS.ttf);
+
+
 }
 
-#info { 
-    width: 375px;
-    height: 290px;
-    overflow-y: hidden;
-    line-height: 15px;
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Handjet:wght@100;200;300;600&display=swap');
+
+
+
+
+
+
+@font-face {
+
+
+font-family: ms pgothic;
+
+
+src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
+
+
+}
+
+
+
+
+
+
+#position {
+
+
+position: absolute;
+
+
+top: 25%;
+
+
+left: 60%;
+
+
+transform: translate(-50%, -50%);
+
+
+transform:scale(1.1)
+
+
+}
+
+
+body {
+
+
+background: url("https://file.garden/Zagf2LAXJwHlct9M/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.gif") no-repeat fixed center;
+
+
+-webkit-background-size: cover;
+
+
+-moz-background-size: cover;
+
+
+-o-background-size: cover;
+
+
+background-size: cover;
+
+
+text-align: center;
+
+
+font-family: ms gothic;
+
+
+}
+
+
+a {
+
+
+color: #0ed9f5;
+
+
+text-decoration: none;
+
+
+transition: 0.3s;
+
+
+}
+
+
+a:hover {
+
+
+cursor: help;
+
+
+font-weight: bold;
+
+
+color: #43494b;
+
+
+background: white;
+
+
+box-shadow: 3px 2px 2px #0ed9f5;
+
+
+border: 2px solid white;
+
+
+transition: 0.9s;
+
+
+border-radius: 25px;
+
+
+padding-left: 5px;
+
+
+padding-right: 5px;
+
+
+}
+
+
+.box {
+
+
+display: inline-block;
+
+
+width: 480px;
+
+
+height: 110px;
+
+
+border: 4px double #1a1a7a;
+
+
+background: url("https://i.pinimg.com/736x/85/f4/b0/85f4b063cdc20a447ed1671722c30125.jpg") no-repeat center;
+
+
+background-size: 540px;
+
+
+background-position-y: -210px;
+
+
+background-position-x: 15px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.about {
+
+
+margin-top: -120px;
+
+
+margin-right: 50px;
+
+
+padding-top: 0px;
+
+
+font-size: 19px;
+
+
+color: #FFFFFF;
+
+
+float: right;
+
+
+font-family: ms gothic;
+
+
+width: 330px;
+
+
+height: 150px;
+
+
+border: 0px solid black;
+
+
+overflow-y: hidden;
+
+
+overflow-x: hidden;
+
+
+}
+
+
+.blinkies1 {
+
+
+margin: 0px;
+
+
+}
+
+
+.blinkies2 {
+
+
+margin-top: 2px;
+
+
+}
+
+
+.marq {
+
+
+color: white;
+
+
+filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+
+
+font-family: ms gothic;
+
+
+font-size: 25px;
+
+
+line-height: 1.1em;
+
+
+padding: 0em;
+
+
+width: 370px;
+
+
+}
+
+
+p {
+
+
+margin: 0;
+
+
+color: black;
+
+
+font-size: 20px;
+
+
+}
+
+
+#main {
+
+
+margin-top: -90px !important;
+
+
+width:442px;
+
+
+height: 310px;
+
+
+margin:0 auto;
+
+
+text-align:justify;
+
+
+border:3px double black;
+
+
+max-height:40%;
+
+
+padding:3px 3px 3px 3px;
+
+
+z-index: -1;
+
+
+font-size: 15px;
+
+
+padding-left: 20px;
+
+
+font-family: MS PGothic;
+
+
+padding-right: 20px;
+
+
+background: #ffffff;
+
+
+}
+
+
+
+
+
+
+#info {
+
+
+width: 375px;
+
+
+height: 290px;
+
+
+overflow-y: hidden;
+
+
+line-height: 15px;
+
+
 margin-top: 5px;
-    padding-top: 90px;
-    padding-right: 20px;
-    font-family: basiic;
-    font-size: 13.9px;
+
+
+padding-top: 90px;
+
+
+padding-right: 20px;
+
+
+font: ms pgothic;
+
+
 }
+
+
+
+
+
+
+
+
 
 
 #links{
-    border:1px solid black; 
-    color: #ffffff;
-    background: #1a1a7a;
-    text-align:left; 
-    padding:5px;
-    width:123px;
-    height: 105px;
-    position: absolute;
-    margin-left: -163px;
-    padding-top: 14px;
-    padding-left: 25px;
-    padding-bottom: 10px;
-    padding-right: -20px; 
-    font-size: 15px;
-    top: -5px !important;
-    margin-top: 4.4px;
-    margin:10 auto;
-    z-index: 3 !important;
-    font-family: basiic;
-    font-size: 13.9px;
-    font-weight: bold; 
-    border-top-left-radius: 35%;
-    border-bottom-left-radius: 00%;
-    border-bottom-right-radius: 00%;
-    line-height: 25px;
+
+
+border:1px solid black;
+
+
+color: #ffffff;
+
+
+background: #1a1a7a;
+
+
+text-align:center;
+
+
+padding:5px;
+
+
+width:143px;
+
+
+position: absolute;
+
+
+margin-left: -163px;
+
+
+padding-top: 14px;
+
+
+padding-bottom: 10px;
+
+
+font-size: 15px;
+
+
+top: -5px !important;
+
+
+margin-top: 4.4px;
+
+
+margin:10 auto;
+
+
+z-index: 3 !important;
+
+
+font-family: ms gothic;
+
+
+border-top-left-radius: 35px;
+
+
+border-bottom-left-radius: 00%;
+
+
+line-height: 25px;
+
+
+
+
+
 
 }
 
-#blinkies { 
-    position: absolute;
-    border-radius: 6px;        
-    font-size: 15px;
-    margin-top: -187px;
-    margin-left: -159px;
-    border:1px solid black; 
-    color: #1a1a7a;
-    background: #ffffff;
-    overflow-y: scroll;
-         padding: 4px;
-         height: 212px;
-         width:145px;
-         font-family: ms gothic;
-         border-top-left-radius: 0%;
-    border-bottom-left-radius: 0px;
-    box-shadow: -2px 1px 1px #0ed9f5;
-} 
 
-#blinkies a:hover{ 
-    cursor: help;
-         font-weight: bold;
-         transition: 0.9s;
-         border-radius: 0px;
-         padding-left: 0px;
-         padding-right: 0px;
+
+
+
+
+#blinkies {
+
+
+position: absolute;
+
+
+border-radius: 6px;
+
+
+font-size: 15px;
+
+
+margin-top: -164px;
+
+
+margin-left: -159px;
+
+
+border:1px solid black;
+
+
+color: #1a1a7a;
+
+
+background: #ffffff;
+
+
+overflow-y: scroll;
+
+
+padding: 4px;
+
+
+height: 189px;
+
+
+width:145px;
+
+
+font-family: ms gothic;
+
+
+border-top-left-radius: 0%;
+
+
+border-bottom-left-radius: 35px;
+
+
 }
+
+
+
+
+
+
+#blinkies a:hover{
+
+
+cursor: help;
+
+
+font-weight: bold;
+
+
+transition: 0.9s;
+
+
+border-radius: 0px;
+
+
+padding-left: 0px;
+
+
+padding-right: 0px;
+
+
+}
+
+
+
+
+
 
 #blinkies img {
-    filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #FFFFFF) drop-shadow( 0 -1px #FFFFFF) drop-shadow( -3px 0 #FFFFFF);
+
+
+filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #FFFFFF) drop-shadow( 0 -1px #FFFFFF) drop-shadow( -3px 0 #FFFFFF);
+
+
 }
+
+
+
+
+
 
 #newmakoto {
-    position: absolute;
-    margin-top: -390px;
-    right: -110px;
-    filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -1px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+
+
+position: absolute;
+
+
+margin-top: -390px;
+
+
+right: -110px;
+
+
+filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -1px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+
+
 transform:rotate(5deg);
+
+
 z-index: 5;
+
+
 pointer-events: none;
+
+
 }
+
+
+
+
+
 
 #newmakoto img {
-    width: 280px;
+
+
+width: 280px;
+
+
 }
+
+
+
+
+
 
 #linkdiv {
-    position: absolute;
-    margin-left: -163px;
-    z-index: 5;
-    margin-top: 95px;
+
+
+position: absolute;
+
+
+margin-left: -163px;
+
+
+z-index: 5;
+
+
+margin-top: 120px;
+
+
 }
+
+
+
+
+
 
 #linkdiv img {
-    width: 154px;
-    box-shadow: 4px 3px 3px #1a1a7a; 
+
+
+width: 154px;
+
+
 }
 
+
+
+
+
+
 #dnilol{
-    filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-    color: white;
+
+
+filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+
+
+color: white;
+
+
 position: absolute;
+
+
 font-size: 30px;
+
+
 font-family: bios;
+
+
 letter-spacing: 5px;
+
+
 padding-left: 20px;
+
+
 margin-top: 70px;
-transition: .4s ease; 
+
+
+transition: .4s ease;
+
+
 }
+
+
+
+
+
+
+#dnilol i:hover{
+
+
+transition: .4s ease;
+
+
+font-size: 25px;
+
+
+letter-spacing: 10px;
+
+
+}
+
+
+
+
 
 
 #statuscafe {
-    padding: 0em;
-    background: white;
-    position: absolute;
-    margin-left: -5px;
-    margin-top: -50px;
-    border-radius: 10px;
-    box-shadow: 4px 3px 3px #1a1a7a;
-    border: 2px solid 1a1a7a;
-    padding-left: 10px;
-    padding-right: 10px;
+
+
+padding: 0em;
+
+
+background: white;
+
+
+position: absolute;
+
+
+margin-left: -5px;
+
+
+margin-top: -50px;
+
+
+border-radius: 10px;
+
+
+box-shadow: 4px 3px 3px #1a1a7a;
+
+
+border: 2px solid 1a1a7a;
+
+
+padding-left: 10px;
+
+
+padding-right: 10px;
+
+
 }
 
-    #statuscafe a {
-        color:#1a1a7a;
-    }
+
+
+
+
+
+#statuscafe a {
+
+
+color:#1a1a7a;
+
+
+}
+
+
 	
+
+
 		
+
+
 #statuscafe-username {
-    margin-bottom: -0.1em;
-        text-align:left;
-        color:#414c53;
-         font-size:1em;
-         letter-spacing: 0.02em;
-         background: transparent;
-         
-         
-		}
-#statuscafe-content {
-font-size: 0.9em;
+
+
+margin-bottom: -0.1em;
+
+
 text-align:left;
+
+
+color:#414c53;
+
+
+font-size:1em;
+
+
+letter-spacing: 0.02em;
+
+
 background: transparent;
+
+
+
+
+
+
+
+
+
+
+		}
+
+
+#statuscafe-content {
+
+
+font-size: 0.9em;
+
+
+text-align:left;
+
+
+background: transparent;
+
+
 letter-spacing: 0em;
+
+
 width: auto;
+
+
 font-family: ms gothic;
+
+
 padding: 5px;
+
+
 -webkit-text-stroke: 0.2px #1b1d27;
+
+
 color: black;
+
+
+		}
+
+
+
+
+
+
+mark {
+
+
+border: 2px solid #1a1a7a;
+
+
+color: #1a1a7a;
+
+
+font-weight: bold;
+
+
+font-size: 16px;
+
+
+background: white;
+
+
+border-radius: 25px;
+
+
+line-height: 5px;
+
+
 }
 
-mark { 
-border: 2px solid #1a1a7a;
-color: #1a1a7a;
-font-weight: bold;
-font-size: 16px;
-            background: white;
-            border-radius: 25px;
-            line-height: 5px;
-        }
+
+
+
+
 
 .marquee {
+
+
 width: 96%;
+
+
 height: 16px;
+
+
 right: 9px;
+
+
 padding:3px;
+
+
 position: absolute;
+
+
 border-width:2px;
+
+
 font-size: 13px;
+
+
 z-index: 1;
+
+
 border: 2px solid black;
+
+
 margin-top:55px;
+
+
 background:#1a1a7a;
+
+
 color: white;
+
+
 }
+
+
+
+
+
 
 .marquee mark {
+
+
 border: 2px solid #1a1a7a;
+
+
 color: #1a1a7a;
+
+
+font-weight: bold;
+
+
 font-size: 13px;
+
+
 background: white;
+
+
 border-radius: 25px;
+
+
 padding-left: 5px;
+
+
 padding-right: 5px;
+
+
 line-height: 5px;
+
+
 }
 
-.anotherkoto {
-    position: absolute;
-}
-.anotherkoto img {
-    position: absolute;
-    width: 145px;
-    margin-left: 494px;
-    border-top-right-radius: 35px;
-    border-bottom-left-radius: 0px;
-    margin-top: -385px;
-    z-index: -2 !important;
-    box-shadow: 4px 3px 3px #1a1a7a;
-    border: 3px double #1a1a7a;
-}
 
-.chatango {
-    position: absolute;
-    margin-top: -460px;
-    margin-left: -662px;
-    z-index: -1;
-    box-shadow: 4px 3px 3px #0ed9f5;
-}
+/* Below is the mobile optimisation. Mess with it if you want. */
 
-.lastfm {
-color: white;
-margin-top: -280px;
-margin-left: 490px;
-position: absolute;
-filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-}
-.lastfm .lfm-img {
-width: 0px;
-}
-.lastfm .maravillosoTitulo {
-width: 10px;
-font-size: 0px;
-}
-.lastfm .scrbls {
-  font-size: 13px;
-  width: 90px;
-  margin-left: 80px;
-  text-align: right;
-  z-index: 3;
-}
-.lastfm .slimScrollDiv {
-  width: 180px !important;
-} 
-.slimScrollDiv {
-  height: 232px !important;
-}
-.lastfm .track {
-  text-align: right;
-  padding: 4px;
-  border: 1px solid #fff;
-  background: #1a1a7a;
-  color: white;
-  width: 95px;
-  margin: 2px;
-  border-radius: 10px;
-}
-.lastfm .img > img {
-  width: 40px;
-  border: 1px white solid;
-  margin-top: 2px;
-  border-radius: 5px;
-}
-.lastfm .shd-cntA { 
-    display: none;
-}
-.track.now {
-  color: #0ed9f5;
-}
 
-        /* Below is the mobile optimisation. Mess with it if you want. */
 @media only screen and (max-width: 640px) {
-#box {
-  display: block;
-  width:100%;
-  background-size: auto 100%;
+
+
+#box{
+
+
+display: block;
+
+
+width:100%;
+
+
+background-size: auto 100%;
+
+
 }
 
-#wait {
-    left: -30px;
-    transform:scale(0.8)
+
+
+
+
+
+#position {
+
+
+left: -30px;
+
+
+transform:scale(0.8)
+
+
 }
- 
-#hii {
-    font-size: 13px;
+
+
+
+
+
+
+#main {
+
+
+font-size: 13px;
+
+
 }
+
+
+
+
+
 
 #links{
-  margin-top:428px;
-  left: 499px;
-  order:3;
-  z-index: 5;
-  border-top-left-radius: 0px;
-    border-bottom-right-radius: 35px;
+
+
+margin-top:400px;
+
+
+left: 439px;
+
+
+order:3;
+
+
+z-index: 5;
+
+
+border-top-left-radius: 0px;
+
+
+border-bottom-right-radius: 35px;
+
+
 }
- 
+
+
+
+
+
+
 #blinkies{
-  order: 2;
-  margin-top:45px;
-  left: 160px;
-  height: 150px; 
-  border-bottom-left-radius: 35px;
+
+
+order: 2;
+
+
+margin-top:45px;
+
+
+left: 269px;
+
+
+height: 150px; border-bottom-left-radius: 35px;
+
+
 }
- 
-#linkdiv {
-left: 499px;
-margin-top:348px; 
-}
+
+
+
+
+
 
 #sitebutton{
-  order: 3;
-  margin-top:36px;
-  left: 515px;
-  height: 100px;
-}
 
-.lastfm { 
-    margin-top: -5px;
-  left: -319px;
-}
-.lastfm .slimScrollDiv {
-  width: 180px !important;
-}
-.slimScrollDiv {
-  height: 162px !important;
-}
-.lastfm .scrbls {
-  font-size: 13px;
-  width: 190px;
-  margin-left: -20px;
-  text-align: right;
-  z-index: 3;
-}
 
-.chatango {
-    display: none;
-}
+order: 3;
 
-.anotherkoto {
-    display: none;
-}
 
-#buttons {
-    display: none;
-}
+margin-top:36px;
+
+
+left: 515px;
+
+
+height: 100px;
+
+
+
+
+
+
+
+
 
 
 }
-      </style>
-   <body>
-      <div id="wait">
-         <div class="blinkies1">
-            <div id="dnilol"><i>dni.lol</i></div>
-         </div>
-         <div class="train">
+
+
+
+
+
+
+
+
+
+
+}
+
+
+</style>
+
+
+<body>
+
+
+<div id="position">
+
+
+<div class="blinkies1">
+
+
+<div id="dnilol"><i>dni.lol</i></div>
+
+
+</div>
+
+
+<div class="box">
+
+
 <br>
+
+
 <br>
+
+
 <br>
+
+
+
+
+
 
 <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div><script src="https://status.cafe/current-status.js?name=basil" defer></script></div>
-            <div class="marquee">
-                <marquee>works best on pc⠀⠀⠀⠀established 6/20/23 ♡ <mark>coded with love!</mark>⠀⠀⠀⠀upd. 4/6/24⠀⠀⠀⠀<a href="https://arab.org/click-to-help/palestine/">from the river to the sea, palestine will be free</a></marquee>
-            </div>
-            <div id="links">
-                
-                <img src="https://file.garden/Zagf2LAXJwHlct9M/makoto" width=20px> <a href="/about">webmaster</a>
-                <br>
-                <img src="https://file.garden/Zagf2LAXJwHlct9M/ken " width=20px> <a href="/blog"> blog</a>
-                <br>
-                <img src="https://file.garden/Zagf2LAXJwHlct9M/akihito" width=20px> <a href="/resources">resources</a>
-                <br>
-                <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-24_005649087.png" width="20px"> <a href="/shrines">shrines</a>
-            
-            </div>
-            <div id="linkdiv"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-24_013649221.png"></div>
-            <div class="about">
-            <br>
-            
-               
-      
-            </div>
-         
-         <div class="blinkies2">
-            
-            
-         </div>
-         
-      </div>
-       <div id="hii">
-    <div id="info"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-23_181300943.png" width=120px align=left overflow-y=scroll> <font color="#1a1a7a"><b>hello!</b></font> <img src="https://caterpie.crd.co/assets/images/gallery08/da0c8c05.gif?v=f7b7a140"> welcome to <mark>⠀my site⠀</mark>, my <b>digital graveyard!</b> ୨୧  i wanted to make a place devoid of all of the parts that <br> can make social media draining to <br> look at. i wanted a quiet escape, <br> a place to simply be myself, and that's what this is! <br> <br> this site will forever be a work in progress, being <br> updated as much as i feel like it, changing alongside  <br> me in a sense! <br> <br> </div>    
-<br>
-              <br>
-      <div id="musicplayer">
-        <div>
-            <marquee scrollamount="0" class="songtitle"></marquee>
-        </div>
- 
-        <table class="controls">
-            <tr>
-                <td>
-                    <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
-                </td>
-                <td>
-                    <div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-play"></i></div>
-                </td>
-                <td>
-                    <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
-                </td>
-            </tr>
-        </table>
- 
-        <div class="seeking">
-            <div class="current-time">00:00</div>
- 
-            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
- 
-            <div class="total-duration">0:00</div>
-        </div>
- 
-        <audio id="music" src=""></audio> 
-    </div>
-    
-    <script>
-        // initiate variables
-        let track_name = document.querySelector(".songtitle");
- 
-        let playpause_btn = document.querySelector(".playpause-track");
-        let next_btn = document.querySelector(".next-track");
-        let prev_btn = document.querySelector(".prev-track");
- 
-        let seek_slider = document.querySelector(".seek_slider");
-        let curr_time = document.querySelector(".current-time");
-        let total_duration = document.querySelector(".total-duration");
- 
-        let track_index = 0;
-        let isPlaying = false;
-        let updateTimer;
-        
-        // create new audio element
-        let curr_track = document.getElementById("music");
-        
-        //
-        // DEFINE YOUR SONGS HERE!!!!!
-        // MORE THAN FOUR SONGS CAN BE ADDED!!
-        // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
-        // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
-        let track_list = [
-                        {
-                name:" ",
-                path:"https://file.garden/Zagf2LAXJwHlct9M/youtube_SeTrtuyj9cI_audio.mp3"
-            },
-            {
-                name:" ",
-                path:"https://file.garden/Zagf2LAXJwHlct9M/youtube_l6gAVW-YoPw_audio.mp3"
-            },
-            {
-                name:" ",
-                path:"https://file.garden/Zagf2LAXJwHlct9M/youtube_Yfw7Sr940hY_audio.mp3"
-            },
-        ];
-        //
-        //
-        //
-        //
-        //
- 
-        function loadTrack(track_index) {
-            clearInterval(updateTimer);
-            resetValues();
- 
-            // load a new track
-            curr_track.src = track_list[track_index].path;
-            curr_track.load();
-            
-            // update details of the track
-            track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
- 
-            // set an interval of 1000 milliseconds for updating the seek slider
-            updateTimer = setInterval(seekUpdate, 1000);
-            
-            // move to the next track if the current one finishes playing 
-            curr_track.addEventListener("ended", nextTrack);
-        }
- 
-        // reset values
-        function resetValues() {
-            curr_time.textContent = "0:00";
-            total_duration.textContent = "0:00";
-            seek_slider.value = 0;
-        }
- 
-        // checks if song is playing
-        function playpauseTrack() {
-            if (!isPlaying) playTrack();
-            else pauseTrack();
-        }
- 
-        // plays track when play button is pressed
-        function playTrack() {
-            curr_track.play();
-            isPlaying = true;
-            
-            // replace icon with the pause icon
-            playpause_btn.innerHTML = '<i class="fas fa-pause"></i>';
-        }
- 
-        // pauses track when pause button is pressed
-        function pauseTrack() {
-            curr_track.pause();
-            isPlaying = false;
-            
-            // replace icon with the play icon
-            playpause_btn.innerHTML = '<i class="fas fa-play"></i>';
-        }
- 
-        // moves to the next track
-        function nextTrack() {
-            if (track_index < track_list.length - 1)
-                track_index += 1;
-            else track_index = 0;
-            loadTrack(track_index);
-            playTrack();
-        }
- 
-        // moves to the previous track
-        function prevTrack() {
-            if (track_index > 0)
-                track_index -= 1;
-            else track_index = track_list.length;
-            loadTrack(track_index);
-            playTrack();
-        }
- 
-        // seeker slider
-        function seekTo() {
-            seekto = curr_track.duration * (seek_slider.value / 100);
-            curr_track.currentTime = seekto;
-        }
- 
-        function seekUpdate() {
-            let seekPosition = 0;
-            
-            // check if the current track duration is a legible number
-            if (!isNaN(curr_track.duration)) {
-                seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-                seek_slider.value = seekPosition;
-                
-            // calculate the time left and the total duration
-            let currentMinutes = Math.floor(curr_track.currentTime / 60);
-            let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
-            let durationMinutes = Math.floor(curr_track.duration / 60);
-            let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
-                
-            // adding a zero to the single digit time values
-            if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
-            if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
-            if (currentMinutes < 10) { currentMinutes = currentMinutes; }
-            if (durationMinutes < 10) { durationMinutes = durationMinutes; }
- 
-            curr_time.textContent = currentMinutes + ":" + currentSeconds;
-            total_duration.textContent = durationMinutes + ":" + durationSeconds;
-          }
-        }
-        
-        // load the first track in the tracklist
-        loadTrack(track_index);
-    </script>
-    <style>
-        #musicplayer{
-            background:#1a1a7a; /* background color of player */
-            border:px solid ; /* border around player */
-            width:492px; /* width of the player */
-            margin-top: -152px;
-            margin-left: -23px;
-            border-radius: 18px;
-            
-        }
-     
-        .songtitle{
-            padding:5px; /* padding around song title */
-            border-bottom:0px solid black; /* border under song title */
-            font-size: 1px;
-            display:block;
-            color: #1a1a7a;
-            
-        }
-     
-        .controls{
-            font-size:16px !important; /* size of controls */
-            background-color: #1a1a7a; /* background color of controls */
-            text-align:center;
-            width:100%;
-        }
-     
-        .controls td{
-            padding:8px 5px 0px 5px; /* padding around controls */
-        }
-     
-        .seeking{
-            background-color:#1a1a7a; /* background color of seeking bar */
-            display:flex;
-            justify-content: space-evenly;
-            padding:5px; /* padding around seeking bar */
-        }
-     
-        .current-time{
-            padding-right:5px;
-            color: #0ed9f5;
-        }
-     
-        .total-duration{
-            padding-left:5px;
-            color: #0ed9f5;
-        }
-     
-        i.fas:hover{
-            cursor:help;
-        }
-     
-        i.fas.fa-pause, i.fas.fa-play, i.fas.fa-forward, i.fas.fa-backward{
-            color:#FFFFFF; /* color of controls */
-        }
-        
-        input[type=range] {
-            width: 100%;
-            background-color: #1a1a7a; /* background color of seeking bar - make the color same as .seeking background color */
-        }
-        
-        input[type=range]:focus {
-            outline: none;
-        }
-        
-        /* settings for chrome browsers */
-        input[type=range]::-webkit-slider-runnable-track {
-            width: 100%;
-            height: 2px; /* thickness of seeking track */
-            cursor: help;
-            background: #FFFFFF; /* color of seeking track */
-        }
-        
-        input[type=range]::-webkit-slider-thumb {
-            height: 10px; /* height of seeking square */
-            width: 10px; /* width of seeking square */
-            border-radius: 0px; /* change to 5px if you want a circle seeker */
-            background: #0ed9f5; /* color of seeker square */
-            cursor: help;
-            -webkit-appearance: none;
-            margin-top: -4.5px; 
-        }
-        
-        /* settings for firefox browsers */
-        input[type=range]::-moz-range-track {
-            width: 100%;
-            height: 2px; /* thickness of seeking track */
-            cursor: help;
-            background: #FFFFFF; /* color of seeking track */
-        }
-        
-        input[type=range]::-moz-range-thumb {
-            height: 10px; /* height of seeking square */
-            width: 10px; /* width of seeking square */
-            border-radius: 0px; /* change to 5px if you want a circle seeker */
-            background: #0ed9f5; /* color of seeker square */
-            cursor: help;
-            border:none;
-        }
-    </style>
-    </div>
-    <div id="newmakoto"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-13_180318227.png"></div>
-    <div id="blinkies"> <br>
-<a href="https://twitter.com/prezoh" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/prezoh.png" width=35px></a>
-              <a href="https://twitter.com/chibleee" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/chiblee.png" width=35px></a> 
-              <a href="http://fan.koukeisha.net/duvet-fanlisting/" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/duvet.png" width=35px></a>
-      <a href="https://powerup.i-heart-you.net/n64/" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/n64.png" width=35px></a>
-      <a href="https://zanarkand.neocities.org/stardust/yume/fl" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/yumenikki.png" width=35px></a> <img src="https://files.catbox.moe/q9u77b.jpg" width=35px> <a href="http://fan.winterlantern.net/naoto/naoto.php"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_232128067.png" width=35px></a> <a href="https://moondvsted.neocities.org/fan/oneshot/"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_232634313.png" width=35px></a> <a href="https://fan.piratesboard.net/akihiko/"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_232941561.png" width="35px"></a> <a href="https://like-knives.org/junpei/"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_233113154.png" width=35px></a> <a href="https://shinjiro.after-death.org/site.php"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_233137700.png" width=35px></a> <a href="https://fan.after-death.org/p3/rules.php"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_233236839.png" width=35px></a> <a href="https://www.marheavenj.net/madoka/"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_233408054.png" width=35px></a> <a href="https://imaginary.nu/tails/"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_233545735.png" width=35px></a> <a href="https://michiru.org/pikachu/"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_233638776.png" width=35px></a>
-         
-        
-    </div>
-    
-    <div id="updatelog"><div style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #1a1a7a; color: #ffffff; text-align:center; width:auto; font-size: 13px;"> <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-02-20_012800454.png" width=60px float=left> site button! feel free to link (〃＾▽＾〃)</div>
-</div>
-<div id="buttons"> <div style="overflow-y:auto; overflow-x:hidden; margin-left: -160px; padding:6px; overflow-wrap:break-word; background: #1a1a7a; color: #ffffff; text-align:center; width:798px; margin-top: 10px; font-size: 13px; position: absolute; box-shadow: -2px 2px 1px #0ed9f5; border-top-left-radius: 0%; border-bottom-left-radius: 20%; border-bottom-right-radius: 20%;"> <marquee><img src="https://files.catbox.moe/fm1ec4.png" width=60px> <img src="https://y2k.neocities.org/buttons/built_with_microsoft_notepad.gif" width=60px> <img src="https://buttonwall.neocities.org/vganime.gif" width=60px> <img src="https://88by31.neocities.org/music/bimpy.gif" width=60px> <img src="https://88by31.neocities.org/music/mafumafu.gif" width=60px> <img src="https://88by31.neocities.org/misc/paradise.gif" width=60px> <img src="https://88by31.neocities.org/misc/lovevirus.gif" width=60px> <img src="https://88by31.neocities.org/games/reisen.png" width=60px> <img src="https://88by31.neocities.org/games/bob.gif" width=60px> <img src="https://88by31.neocities.org/games/emulate.gif" width=60px> <img src="https://88by31.neocities.org/music/csh.gif" width=60px> <img src="https://88by31.neocities.org/music/radiohead.png" width=60px> <img src="https://88by31.neocities.org/anime/madoka.gif" width=60px> <img src="https://88by31.neocities.org/games/yumenikki2.gif" width="60px"> <img src="https://88by31.neocities.org/misc/BUT_ilovemyfriends.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/cutie-angels.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/miku.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/nerv.png" width="60px"> <img src="https://neonaut.neocities.org/images/buttons/neocitizens/25nightcord.png" width="60px"> <img src="https://cyber.dabamos.de/88x31/destinysoulmates.gif" width="60px"> <img src="https://cyber.dabamos.de/88x31/n64.gif" width="60px"> <img src="https://cyber.dabamos.de/88x31/sitaani.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/gbanet.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/himenolover.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/ltt.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/monar.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/thatwhitehand.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/unknown_003.png" width=60px> <img src="https://capstasher.neocities.org/88x31Buttons/sitebutton.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/seedyourtorrents.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/ratpilled.gif" width=60px> <img src="https://neonaut.neocities.org/images/buttons/neocitizens/ubiquitous.png" width=60px> <img src="https://file.garden/Zagf2LAXJwHlct9M/persona3button.png" width=60px> <img src="https://file.garden/Zagf2LAXJwHlct9M/846ctg.gif" width=60px> <img src="https://blinkiesyay.neocities.org/buttons/neko.gif" width="60px"> <img src="https://souppluto.neocities.org/B_rena.gif" width="60px"> <img src="https://souppluto.neocities.org/collection/tumblr_f171aa74082afb50c8b4ca929f85b1fd_96d4d8b9_500.webp" width=60px> <img src="https://fustilugz.neocities.org/buttons/toro.png" width="60px"> <img src="https://fustilugz.neocities.org/buttons/13/peee.jpg" width="60px"> <img src="https://fustilugz.neocities.org/buttons/13/msnexp.gif" width="60px"> <img src="https://fustilugz.neocities.org/buttons/13/catsdrinking.gif" width="60px"> <img src="https://fustilugz.neocities.org/buttons/13/bu12.gif" width=60px> <img src="https://fustilugz.neocities.org/buttons/7/7/babybitmap%20(3).gif" width="60px"> <img src="https://p3p.neocities.org/imgs/p3pbutton.png" width="60px"></marquee></div></div>
-<div>
-    <div>
-</div>
-<div class="lastfm"></div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://melchor629.github.io/Last.fm-Web-Widget/lastSongs.comp.js"></script>
-<script>$(".lastfm").lastSongs('isaacwhom', 'e7dff00d4e7bc40af76f63fd82a0436b')</script>
+
+
+<div class="marquee">
+
+
+<marquee>works best on pc⠀⠀⠀⠀established 6/20/23 ♡ <mark>coded with love!</mark>⠀⠀⠀⠀upd. 4/5/24⠀⠀⠀⠀<a href="https://arab.org/click-to-help/palestine/">from the river to the sea, palestine will be free</a></marquee>
+
+
 </div>
 
-<div class="anotherkoto"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-06_002416359.png"></div>
-<div class="chatango">
-    <iframe src="https://www3.cbox.ws/box/?boxid=3536876&boxtag=MwXrYA" width="250" height="250" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
-</div>    
-    </div>
-   
-    <br> 
-    </div>
-        </div>
-   </body> 
+
+<div id="links">
+
+
+
+
+
+
+<img src="https://file.garden/Zagf2LAXJwHlct9M/makoto" width=20px> <a href="/about">webmaster</a>
+
+
+<br>
+
+
+<img src="https://file.garden/Zagf2LAXJwHlct9M/ken " width=20px> <a href="/blog"> blog</a>
+
+
+<br>
+
+
+<img src="https://file.garden/Zagf2LAXJwHlct9M/yukari" width=20px> <a href="https://twitter.com/basiIdni">my art</a>
+
+
+<br>
+
+
+<img src="https://file.garden/Zagf2LAXJwHlct9M/akihito" width=20px> <a href="/resources">resources</a>
+
+
+<br>
+
+
+<img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-24_005649087.png" width="20px"> <a href="/shrines">shrines</a>
+
+
+
+
+
+
+</div>
+
+
+<div id="linkdiv"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-24_013649221.png"></div>
+
+
+<div class="about">
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="blinkies2">
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<marquee class="marq" direction="right" scrollamount="15" behavior="scroll"></marquee>
+
+
+</div>
+
+
+<div id="main">
+
+
+<div id="info"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-23_181300943.png" width=120px align=left overflow-y=scroll> <font color="#1a1a7a"><b>hello!</b></font> <img src="https://caterpie.crd.co/assets/images/gallery08/da0c8c05.gif?v=f7b7a140"> welcome to <mark>⠀my site⠀</mark>, my <b>digital graveyard!</b> ୨୧ i wanted to make a place devoid of all of the parts that <br> can make social media draining to <br> look at. i wanted a quiet escape, <br> a place to simply be myself, and that's what this is! <br> <br> this site will forever be a work in progress, being <br> updated as much as i feel like it, as this site has <br> become something i've grown fond of.. <script type="text/javascript" src="//counter.websiteout.com/js/32/5/0/0"></script> <br> <br> </div>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+<div id="musicplayer">
+
+
+<div>
+
+
+<marquee scrollamount="0" class="songtitle"></marquee>
+
+
+</div>
+
+
+
+
+
+
+<table class="controls">
+
+
+<tr>
+
+
+<td>
+
+
+<div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
+
+
+</td>
+
+
+<td>
+
+
+<div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-play"></i></div>
+
+
+</td>
+
+
+<td>
+
+
+<div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+
+
+
+
+<div class="seeking">
+
+
+<div class="current-time">00:00</div>
+
+
+
+
+
+
+<input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
+
+
+
+
+
+<div class="total-duration">0:00</div>
+
+
+</div>
+
+
+
+
+
+
+<audio id="music" src=""></audio>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+// initiate variables
+
+
+let track_name = document.querySelector(".songtitle");
+
+
+
+
+
+
+let playpause_btn = document.querySelector(".playpause-track");
+
+
+let next_btn = document.querySelector(".next-track");
+
+
+let prev_btn = document.querySelector(".prev-track");
+
+
+
+
+
+
+let seek_slider = document.querySelector(".seek_slider");
+
+
+let curr_time = document.querySelector(".current-time");
+
+
+let total_duration = document.querySelector(".total-duration");
+
+
+
+
+
+
+let track_index = 0;
+
+
+let isPlaying = false;
+
+
+let updateTimer;
+
+
+
+
+
+
+// create new audio element
+
+
+let curr_track = document.getElementById("music");
+
+
+
+
+
+
+//
+
+
+// DEFINE YOUR SONGS HERE!!!!!
+
+
+// MORE THAN FOUR SONGS CAN BE ADDED!!
+
+
+// JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+
+
+// CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+
+
+let track_list = [
+
+
+{
+
+
+name:" ",
+
+
+path:"https://file.garden/Zagf2LAXJwHlct9M/youtube_SeTrtuyj9cI_audio.mp3"
+
+
+},
+
+
+{
+
+
+name:" ",
+
+
+path:"https://file.garden/Zagf2LAXJwHlct9M/youtube_l6gAVW-YoPw_audio.mp3"
+
+
+},
+
+
+{
+
+
+name:" ",
+
+
+path:"https://file.garden/Zagf2LAXJwHlct9M/youtube_Yfw7Sr940hY_audio.mp3"
+
+
+},
+
+
+];
+
+
+//
+
+
+//
+
+
+//
+
+
+//
+
+
+//
+
+
+
+
+
+
+function loadTrack(track_index) {
+
+
+clearInterval(updateTimer);
+
+
+resetValues();
+
+
+
+
+
+
+// load a new track
+
+
+curr_track.src = track_list[track_index].path;
+
+
+curr_track.load();
+
+
+
+
+
+
+// update details of the track
+
+
+track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+
+
+
+
+
+
+// set an interval of 1000 milliseconds for updating the seek slider
+
+
+updateTimer = setInterval(seekUpdate, 1000);
+
+
+
+
+
+
+// move to the next track if the current one finishes playing
+
+
+curr_track.addEventListener("ended", nextTrack);
+
+
+}
+
+
+
+
+
+
+// reset values
+
+
+function resetValues() {
+
+
+curr_time.textContent = "0:00";
+
+
+total_duration.textContent = "0:00";
+
+
+seek_slider.value = 0;
+
+
+}
+
+
+
+
+
+
+// checks if song is playing
+
+
+function playpauseTrack() {
+
+
+if (!isPlaying) playTrack();
+
+
+else pauseTrack();
+
+
+}
+
+
+
+
+
+
+// plays track when play button is pressed
+
+
+function playTrack() {
+
+
+curr_track.play();
+
+
+isPlaying = true;
+
+
+
+
+
+
+// replace icon with the pause icon
+
+
+playpause_btn.innerHTML = '<i class="fas fa-pause"></i>';
+
+
+}
+
+
+
+
+
+
+// pauses track when pause button is pressed
+
+
+function pauseTrack() {
+
+
+curr_track.pause();
+
+
+isPlaying = false;
+
+
+
+
+
+
+// replace icon with the play icon
+
+
+playpause_btn.innerHTML = '<i class="fas fa-play"></i>';
+
+
+}
+
+
+
+
+
+
+// moves to the next track
+
+
+function nextTrack() {
+
+
+if (track_index < track_list.length - 1)
+
+
+track_index += 1;
+
+
+else track_index = 0;
+
+
+loadTrack(track_index);
+
+
+playTrack();
+
+
+}
+
+
+
+
+
+
+// moves to the previous track
+
+
+function prevTrack() {
+
+
+if (track_index > 0)
+
+
+track_index -= 1;
+
+
+else track_index = track_list.length;
+
+
+loadTrack(track_index);
+
+
+playTrack();
+
+
+}
+
+
+
+
+
+
+// seeker slider
+
+
+function seekTo() {
+
+
+seekto = curr_track.duration * (seek_slider.value / 100);
+
+
+curr_track.currentTime = seekto;
+
+
+}
+
+
+
+
+
+
+function seekUpdate() {
+
+
+let seekPosition = 0;
+
+
+
+
+
+
+// check if the current track duration is a legible number
+
+
+if (!isNaN(curr_track.duration)) {
+
+
+seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+
+
+seek_slider.value = seekPosition;
+
+
+
+
+
+
+// calculate the time left and the total duration
+
+
+let currentMinutes = Math.floor(curr_track.currentTime / 60);
+
+
+let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+
+
+let durationMinutes = Math.floor(curr_track.duration / 60);
+
+
+let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+
+
+
+
+
+
+// adding a zero to the single digit time values
+
+
+if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+
+
+if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+
+
+if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+
+
+if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+
+
+
+
+
+
+curr_time.textContent = currentMinutes + ":" + currentSeconds;
+
+
+total_duration.textContent = durationMinutes + ":" + durationSeconds;
+
+
+}
+
+
+}
+
+
+
+
+
+
+// load the first track in the tracklist
+
+
+loadTrack(track_index);
+
+
+</script>
+
+
+<style>
+
+
+#musicplayer{
+
+
+background:#1a1a7a; /* background color of player */
+
+
+border:px solid ; /* border around player */
+
+
+width:492px; /* width of the player */
+
+
+margin-top: -152px;
+
+
+margin-left: -23px;
+
+
+border-radius: 18px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.songtitle{
+
+
+padding:5px; /* padding around song title */
+
+
+border-bottom:0px solid black; /* border under song title */
+
+
+font-size: 1px;
+
+
+display:block;
+
+
+color: #1a1a7a;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.controls{
+
+
+font-size:16px !important; /* size of controls */
+
+
+background-color: #1a1a7a; /* background color of controls */
+
+
+text-align:center;
+
+
+width:100%;
+
+
+}
+
+
+
+
+
+
+.controls td{
+
+
+padding:8px 5px 0px 5px; /* padding around controls */
+
+
+}
+
+
+
+
+
+
+.seeking{
+
+
+background-color:#1a1a7a; /* background color of seeking bar */
+
+
+display:flex;
+
+
+justify-content: space-evenly;
+
+
+padding:5px; /* padding around seeking bar */
+
+
+}
+
+
+
+
+
+
+.current-time{
+
+
+padding-right:5px;
+
+
+color: #0ed9f5;
+
+
+}
+
+
+
+
+
+
+.total-duration{
+
+
+padding-left:5px;
+
+
+color: #0ed9f5;
+
+
+}
+
+
+
+
+
+
+i.fas:hover{
+
+
+cursor:help;
+
+
+}
+
+
+
+
+
+
+i.fas.fa-pause, i.fas.fa-play, i.fas.fa-forward, i.fas.fa-backward{
+
+
+color:#FFFFFF; /* color of controls */
+
+
+}
+
+
+
+
+
+
+input[type=range] {
+
+
+width: 100%;
+
+
+background-color: #1a1a7a; /* background color of seeking bar - make the color same as .seeking background color */
+
+
+}
+
+
+
+
+
+
+input[type=range]:focus {
+
+
+outline: none;
+
+
+}
+
+
+
+
+
+
+/* settings for chrome browsers */
+
+
+input[type=range]::-webkit-slider-runnable-track {
+
+
+width: 100%;
+
+
+height: 2px; /* thickness of seeking track */
+
+
+cursor: help;
+
+
+background: #FFFFFF; /* color of seeking track */
+
+
+}
+
+
+
+
+
+
+input[type=range]::-webkit-slider-thumb {
+
+
+height: 10px; /* height of seeking square */
+
+
+width: 10px; /* width of seeking square */
+
+
+border-radius: 0px; /* change to 5px if you want a circle seeker */
+
+
+background: #0ed9f5; /* color of seeker square */
+
+
+cursor: help;
+
+
+-webkit-appearance: none;
+
+
+margin-top: -4.5px;
+
+
+}
+
+
+
+
+
+
+/* settings for firefox browsers */
+
+
+input[type=range]::-moz-range-track {
+
+
+width: 100%;
+
+
+height: 2px; /* thickness of seeking track */
+
+
+cursor: help;
+
+
+background: #FFFFFF; /* color of seeking track */
+
+
+}
+
+
+
+
+
+
+input[type=range]::-moz-range-thumb {
+
+
+height: 10px; /* height of seeking square */
+
+
+width: 10px; /* width of seeking square */
+
+
+border-radius: 0px; /* change to 5px if you want a circle seeker */
+
+
+background: #0ed9f5; /* color of seeker square */
+
+
+cursor: help;
+
+
+border:none;
+
+
+}
+
+
+</style>
+
+
+</div>
+
+
+<div id="newmakoto"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-13_180318227.png"></div>
+
+
+<div id="blinkies">
+
+
+<div style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #1a1a7a; color: #ffffff; text-align:center; width:120px; font-size: 13px;">buttons !</div>
+
+
+
+
+
+
+<br>
+
+
+<a href="https://twitter.com/prezoh" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/prezoh.png" border=0 width=30px></a>
+
+
+<a href="https://twitter.com/chibleee" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/chiblee.png" border=0 width=30px></a>
+
+
+<a href="http://fan.koukeisha.net/duvet-fanlisting/" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/duvet.png" border=0 width=30px></a>
+
+
+<a href="https://powerup.i-heart-you.net/n64/" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/n64.png" border=0 width=30px></a>
+
+
+<a href="https://zanarkand.neocities.org/stardust/yume/fl" target="_blank"><img src="https://file.garden/Zagf2LAXJwHlct9M/yumenikki.png" border=0 width=30px> <a href="http://www.marheavenj.net/emu/" target="_blank"><img src="https://files.catbox.moe/q9u77b.jpg" border=0 width=30px></a></a>
+
+
+<img src="https://files.catbox.moe/fm1ec4.png" width=60px> <img src="https://y2k.neocities.org/buttons/built_with_microsoft_notepad.gif" width=60px> <img src="https://buttonwall.neocities.org/vganime.gif" width=60px> <img src="https://88by31.neocities.org/music/bimpy.gif" width=60px> <img src="https://88by31.neocities.org/music/mafumafu.gif" width=60px> <img src="https://88by31.neocities.org/misc/paradise.gif" width=60px> <img src="https://88by31.neocities.org/misc/lovevirus.gif" width=60px> <img src="https://88by31.neocities.org/games/reisen.png" width=60px> <img src="https://88by31.neocities.org/games/bob.gif" width=60px> <img src="https://88by31.neocities.org/games/emulate.gif" width=60px> <img src="https://88by31.neocities.org/music/csh.gif" width=60px> <img src="https://88by31.neocities.org/music/radiohead.png" width=60px> <img src="https://88by31.neocities.org/anime/madoka.gif" width=60px> <img src="https://88by31.neocities.org/games/yumenikki2.gif" width="60px"> <img src="https://88by31.neocities.org/misc/BUT_ilovemyfriends.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/cutie-angels.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/miku.gif" width="60px"> <img src="https://plasticdino.neocities.org/buttons/nerv.png" width="60px"> <img src="https://neonaut.neocities.org/images/buttons/neocitizens/25nightcord.png" width="60px"> <img src="https://cyber.dabamos.de/88x31/destinysoulmates.gif" width="60px"> <img src="https://cyber.dabamos.de/88x31/n64.gif" width="60px"> <img src="https://cyber.dabamos.de/88x31/sitaani.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/gbanet.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/himenolover.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/ltt.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/monar.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/thatwhitehand.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/unknown_003.png" width=60px> <img src="https://capstasher.neocities.org/88x31Buttons/sitebutton.png" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/seedyourtorrents.gif" width="60px"> <img src="https://capstasher.neocities.org/88x31Buttons/ratpilled.gif" width=60px> <img src="https://neonaut.neocities.org/images/buttons/neocitizens/ubiquitous.png" width=60px> <img src="https://file.garden/Zagf2LAXJwHlct9M/persona3button.png" width=60px> <img src="https://file.garden/Zagf2LAXJwHlct9M/846ctg.gif" width=60px> </marquee>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div id="updatelog"><div style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #1a1a7a; color: #ffffff; text-align:center; width:auto; font-size: 13px;"> <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-02-20_012800454.png" width=60px float=left> site button! feel free to link (〃＾▽＾〃)</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+
+
+
+
+
