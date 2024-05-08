@@ -1,380 +1,203 @@
 
-<!DOCTYPE html>
+
 <html>
-  <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> full moon, full life </title>
-    <meta name="description" content="venture life, burn your dread!">
-    <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/siteicon.png">
-</script>      
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>until my life is exhausted</title>
 
-::-webkit-scrollbar {
-width: 10px;
-height: 20px;
-}
-
-::-webkit-scrollbar-track {
-background: white; 
-}
-
-::-webkit-scrollbar-thumb {
-background: #1a1a7a; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #a0798c; 
-}
-
-                 @font-face {
-  font-family: ms gothic;
-  src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
-}
-
-@font-face {
-    font-family: ms pgothic;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
-}
-
+<style>
 @font-face {
   font-family: p3;
   src: url(https://file.garden/Zagf2LAXJwHlct9M/9usuuk.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@font-face {
+    font-family: dogica;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/dogicapixel.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: black; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: white; 
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #404a4b; 
+    transition: 0.9s;
+    }
+
+#position {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: scale(1.5);
+  }
 
 body {
-    color: #000000;
-    background: url("https://file.garden/Zagf2LAXJwHlct9M/youtube_RwfV9N2RlgI_1920x1080_h264(1)%20(online-video-cutter.com).gif") no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+   padding:30px;
+  text-align:center;
+   color: black;
+ font-family: arial;
+ font-size:25px;
+}
+
+    #scroll3 {
+    height: 120px;
+    color: white;
+    width: 250px;
+    padding-left: 50px;
+    padding-right: 23px;
+    padding-top: 10px;
+    border: 3px solid #ccc;
+    font-family: dogica;
+    font-size: 9px;
+    line-height: 14px;
+    overflow: auto;
     position: absolute;
-    font-family: 'MS pGothic';
-    top: 20%;
-    right: 30%;
-    bottom: 0px;
-    left: 0%;
-}
-
-.position {
-    width: 765px;
-    margin: auto;
+    margin-left: 30px;
+    margin-top: 63px;
+    z-index: 3;
+    background: black;
+    box-shadow: black 2px 2px 3px 2px;
+    }
     
+    .content {
+        padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: black;
 }
 
-.test {
-  width: 713px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 0.5%;
-  height: 466px;
-}
+    #akihiko {
+        position: absolute;
+        z-index: 5;
+    }
 
-#position2 {
-  width:200%;
-  padding:5px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  margin: auto;
-  justify-content: center;
-  filter: drop-shadow( 0 3px #1bcdec) drop-shadow( 2px 0 #1bcdec) drop-shadow( 0 -2px white) drop-shadow( -3px 0 white);
-}
+    #akihiko img {
+        position: absolute;
+        margin-left: -90px;
+        filter: drop-shadow(0px 1px transparent) drop-shadow(0 3px black) drop-shadow(2px 0 black) drop-shadow(2px 0 black);
+    }
 
-.column {
-  width:173px;
-}
+    #title {
+        position: absolute;
+        font-family: p3;
+        font-weight: bold;
+        font-size: 19px;
+        margin-left: 290px;
+        margin-top: 185px;
+        width: 320px;
+        z-index: 5;
+        color: white;
+        text-align: left;
+        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    }
 
-.left{
-  width:320px;
-  margin-top:5px;
-  margin-left: -20px;
-height: 420px;
-  padding:12px;
-  background:#f8f8f0;
-  background: url('https://file.garden/Zagf2LAXJwHlct9M/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.gif') center;
-  background-size: 592px 510px;
-  background-position-y: -55px;
-  background-position-x: -250px;
-  box-shadow: #1a1a7a 2px 2px 3px 3px;
-  border: 2px ridge #004475;
-}
+    #moretext {
+        position: absolute;
+        font-family: p3;
+        font-weight: bold;
+        font-size: 13px;
+        margin-left:-10px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+        width: 320px;
+        color: white;
+        text-align: left;
 
-.left img {
-  margin-top: -5px;
-  margin-left: -2px;
-  width: 160px;
-  filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-}
-
-.left2{
-  width:160px;
-  margin-top:-231px;
-  margin-left: -20px;
-  font-size: 15px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 20px;
-  height: 230px;
-  background:#000046;
-text-align: center;
-  box-shadow: #1bcdec 3px -3px 0px 0px;
-  box-shadow: #1bcdec -3px 3px 0px 0px;
-  color: white;
-  
+        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    }
+     
+mark {
+    background: white; 
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 a {
-  color:#bc5c8c;
+    color: white;
 }
 
-a:hover{
-  color: #a0798c;
-  transition: color 1s;
+a:hover {
+    color: #404a4b; 
 }
 
-.about {
-  width:485px;
-  background: white;
-  border: 4px double white;;
-    border-radius: 10px;
-  margin-top:6px;
-  padding-top: 49px;
-  padding: 10px;
-  padding-left: 15px;
-  margin-left:-12px;
-  height:430px;
-  background: url('https://file.garden/Zagf2LAXJwHlct9M/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.gif') center;
-  background-size: 892px 510px;
-  background-position-y: -55px;
-  background-position-x: -380px;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+.collapsible {
+background: black;
+font-family: dogica;
+  color: #8f8f8f;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 9px;
 }
 
-.eyes {
-  position: absolute;
-  z-index: 3 !important;
-}
-
-.eyes img {
-  width: 230px;
-  margin-top: -255px;
-  margin-left: 565px;
-  z-index: 3 !important;
-  transform: rotate(0deg);
-}
-
-mark {
-  background-color: transparent;
-  color: #3993d4;
-  border-radius: 3px;
-  text-shadow: none;
-}
-
-.socialstext a {
-  color: #6ae7fd;
-  text-decoration:none
-}
-
-.socialstext a:hover {
-  color: #000000;
-  transition: 1s;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-weight: bold;
-}
-
-.socialstext b {
-  color: #004475;
-}
-
-.amount {
-    height: 12px;
-    float: left;
-}
-
-#hp { 
-    background-color: #3eb1bb; 
-    width: 20%; 
-}
-#sp { 
-    background-color: #bb983e; 
-    width: 10%; 
-    margin-left: 25px;
-}
-
-hr { 
-    border: 0;
-height: 1px;
-    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-.stare {
-  position: absolute;
-  z-index: 5 !important;
-  transform: rotate(0deg);
-  margin-top: -5px;
-}
-
-.stare img {
-  position: absolute;
-  width: 210px;
-  margin-top: 2px;
-  margin-left: -30px;
-  z-index: 11 !important;
-}
-
-.coffee {
-position: absolute;  
-width: 120px;
-z-index: 2;
-  transform: rotate(0deg);
-}
-
-.coffee img {
-  position: absolute;
-  width: 150px;
-  margin-left: -185px;
-  margin-top: 280px;
-  z-index: 2;
-  transform: rotate(0deg);
-  filter: drop-shadow( 0 3px #1bcdec) drop-shadow( 2px 0 #1bcdec) drop-shadow( 0 -2px white) drop-shadow( -3px 0 white);
-}
-
-.glerp {
-  position: absolute;
-}
-
-.glerp img {
-  position: absolute;
-  width: 225px;
-  margin-left: 260px;
-  margin-top: 205px;
-  border-radius: 9px;
-  filter: drop-shadow( 0 3px #1bcdec) drop-shadow( 2px 0 #1bcdec) drop-shadow( 0 -2px white) drop-shadow( -3px 0 white);
-  z-index: 2;
-
-}
 
 @media only screen and (max-width: 640px) {
-body {
-    transform:scale(0.8);
-    font-family: ms pgothic;
-    background-size: cover;
-    top: 20%;
-      right: 40;
-      bottom: 0px;
-      left: -30%;
+    #position {
+    left: 0px;
+    transform:scale(1.3)
 }
 
-.test {
-width: 640px;
-height: 519px;
+#scroll3 { 
+    width: 180px;
 }
 
-.left { 
-  order: 3;
-  margin-left: -160px;
-  margin-top: -168px;
-  position: absolute;
-  height: 143px;
-  width: 460px;
-  background-size: 792px 510px;
-  background-position-y: -55px;
-  background-position-x: -250px;
+#title {
+    margin-left: 180px;
+    top: 10px;
+}
 }
 
-.left2 {
-  order: 3;
-  margin-left: 20px;
-  margin-top: -250px;
-  height: 80px;
-  width: 160px;
-  position: absolute;
-  border: double 3px 
-}
-
-.eyes {
-  position: absolute;
-  margin-top: -150px;
-  margin-left: 120px;
-  display: none;
-}
-
-.eyes img {
-  width: 210px;
-  margin-top: -10px;
-  margin-left: -28px;
-}
-
-.socials {
-  position: absolute;
-  margin-left: 260px;
-  margin-top: -20px;
-}
-
-.stare img {
-  margin-left: 155px;
-  margin-top: -145px;
-}
-
-.socialstext {
-  position: absolute;
-  margin-left: 310px;
-  margin-top: -10px;
-  z-index: 5;
-}
-
-
-</style>
-  </head>
-
-  <body>
-
-<div class="position">
-  <div class="test">
-    <div id="position2">
-      <div class="column">
-
-        <div class="left">
-          
-        <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-01_211701163.png" width=150>
-        <br>
-        <br>
-        <div class="stare"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-24_031428721.png" style="z-index: 10 !important;"></div>
-    </div>
-    <div class="eyes"><img src="https://file.garden/Zagf2LAXJwHlct9M/i%20will%20embrace%20the%20feeling.png"></div>
-        <div class="left2">
-
-         <b>basil</b> / <mark>calvin</mark> <img src="https://graphic.neocities.org/eva4.gif" width="25"> he/him <br> autistic istp-t 6w7 
-         <br> 17 yo internet loser
-
-         <br>
-         <br>
-         <br>
-         <iframe src="https://dni.neocities.org/myabout/current" style="height:100px; width:195px; margin-left: -9px; display:flex; margin-top: 46px; border: none;" name="info3"></iframe>
-      
-        </div></div>
-      <div class="center">
-      <div class="about">
-<div class="coffee">
-  <img src="https://files.catbox.moe/i563mt.png"></div>
-  <div class="glerp">
-    <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-04-01_220046623.png"</div>
-        <br
-        <br>
-            <iframe src="https://dni.neocities.org/myabout/aboutme" style="height:270px; background:white; width:260px; margin-left: -12px; margin-top: -22px; border: 2px double #1a1a7a; border-radius: 8px;" name="info"></iframe>
-            <br>
-            <iframe src="https://dni.neocities.org/myabout/interests" style="height:192px; background:white; width:230px; margin-left: 256px; display:flex; margin-top: -277px; border:2px double #1a1a7a; border-radius: 10px;" name="info2"></iframe>
-            
-<br>
-            <iframe src="https://dni.neocities.org/myabout/friends" style="height:130px; background:white; width:500px; z-index: -2 !important; margin-left: -12px; display:flex; margin-top: 79px; border:2px double #1a1a7a; border-radius: 10px;" name="info3"></iframe>
-        </div>
+    </style>
+    <body>
+    <div id="position"> <div id="title"><a href="/index">go back?</a></div><div id="scroll3">
+    HII! this is a very temporary page! <br>  im <mark>siff</mark>.. but you can call me siffrin or basil! welcome to  my home on the internet!  
+     <br> <br> unfortunately mentally ill.. but its okay! i won't get into nor will i bore you with the specifics, just know it affects how i may interact with people! <br> <br> <mark>but siff, who are <i>you?</i></mark> <br> a question that i never really know how to answer!  i'm a 17 year old nonbinary shut--in coder  who really loves my <b>buddies!!!</b> and the internet, of course! <br> <br> <mark>what do you like, siff?</mark> weh!  i like many things! most prominently, i enjoy <b>prezoh, chiblee, </b> aksually, alan wake, <b>persona 3,</b> in stars and time, coding, and 
+     <button class="collapsible">so much more!</button> 
+     <div class="content">
+        <p>milk inside / outside a bag of milk, oneshot, nichijou, the world ends with you, ultrakill, hotline miami, and it's always sunny in philadelphia to name a few!</p>
       </div>
-  </body>
+     
+     
+    <br>  <img src="https://file.garden/Zagf2LAXJwHlct9M/Actor1.png" width=20> <mark>a note from siff!</mark> <br> i'll make a full coherent list of my interests and info about me once i finish this page entirely! for now, it's simply on my backlog!
+     <br> <br> thank you for reading this short introduction! i hope we cross paths again, but if not, i hope the internet finds you well, traveler! <br> <br>   
+    </div>
+
+    
+
+    <div id="akihiko"><img src="https://file.garden/Zagf2LAXJwHlct9M/sifftalk.png" width=190></div></div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+
+</body>
 </html>
