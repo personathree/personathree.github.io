@@ -22,7 +22,7 @@
     }
     @font-face {
         font-family: bios;
-        src: url(https://dl.dropbox.com/s/vlxjtnvrl9s0snp/Nintendo-DS-BIOS.ttf);
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
     }
     @font-face {
         font-family: ms pgothic;
@@ -35,7 +35,7 @@
     
              #wait {
              position: absolute;
-             top: 20%;
+             top: 14%;
              left: 50%;
              transform: translate(-50%, -50%);
              transform:scale(1.1)
@@ -71,10 +71,10 @@
              width: 480px;
              height: 110px;
              border: 4px double #1a1a7a;
-             background: url("https://i.pinimg.com/736x/85/f4/b0/85f4b063cdc20a447ed1671722c30125.jpg") no-repeat center;
+             background: url("https://file.garden/Zagf2LAXJwHlct9M/newsite/image_2024-05-06_052905000.png") no-repeat center;
              background-size: 560px;
-             background-position-y: -210px;
-             background-position-x: -5px;
+             background-position-y: -20px;
+             background-position-x: -70px;
             
             }       
              .about {
@@ -136,6 +136,7 @@
     margin-top: 5px;
         padding-top: 90px;
         padding-right: 20px;
+        letter-spacing: 0.4px;
         font-family: ms ui gothic;
         font-size: 13.9px;
     }
@@ -179,7 +180,7 @@
         border:1px solid black; 
         color: #1a1a7a;
         background: #ffffff;
-        overflow-y: scroll;
+        overflow-y: hidden;
              padding: 4px;
              height: 212px;
              width:145px;
@@ -204,16 +205,16 @@
     
     #newmakoto {
         position: absolute;
-        margin-top: -390px;
-        right: -110px;
+        margin-top: -290px;
+        right: -58px;
         filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -1px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-    transform:rotate(5deg);
+    transform:rotate(deg);
     z-index: 5;
     pointer-events: none;
     }
     
     #newmakoto img {
-        width: 280px;
+        width: 180px;
     }
     
     #linkdiv {
@@ -285,10 +286,12 @@
     border: 2px solid #1a1a7a;
     color: #1a1a7a;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13.8px;
                 background: white;
                 border-radius: 25px;
                 line-height: 5px;
+                padding-left: 3px;
+                padding-right: 4px;
             }
     
     .marquee {
@@ -322,8 +325,8 @@
     }
     .anotherkoto img {
         position: absolute;
-        width: 145px;
-        margin-left: 494px;
+        width: 155px;
+        margin-left: 488px;
         border-top-right-radius: 35px;
         border-bottom-left-radius: 0px;
         margin-top: -385px;
@@ -334,11 +337,55 @@
     
     .chatango {
         position: absolute;
-        margin-top: -460px;
-        margin-left: -662px;
+        margin-top: -420px;
+        margin-left: -542px;
         z-index: -1;
         box-shadow: 4px 3px 3px #0ed9f5;
     }
+
+    .updates {
+        position: absolute;
+        width: 238px;
+        height: 115px;
+        background: white;
+        border: 3px double;
+        padding: 3px;
+        margin-left: 250px;
+        margin-top: 60px;
+        box-shadow: -2px 1px 1px #0ed9f5;
+        overflow-y: scroll;
+    }
+
+    .shiki {
+        position: absolute;
+        width: 20px;
+        margin-left: 114px;
+        margin-top: 60px;
+        filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+    }
+
+    .shiki img {
+        width: 125px;
+    }
+
+    .siff {
+        position: absolute;
+        width: 20px;
+        margin-left: 510px;
+        margin-top: 60px;
+        filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 35px;
+    }
+
+    .siff img {
+        width: 136px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 35px;
+    }
+
+
+
     
             /* Below is the mobile optimisation. Mess with it if you want. */
     @media only screen and (max-width: 640px) {
@@ -402,8 +449,46 @@
     }
     
     #buttons {
-        display: none;
+  display: none;
     }
     
+    .player, .title-bar, .window, .musicplayer, .window-body {
+        display: none;
+    }
+
+.shiki {
+    margin-top: -536px;
+}
+
+    .shiki img {
+        width: 136px;
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 0px;
+        margin-left: -113px;
+    }
+
+    .siff {
+        margin-top: -536px;
+        margin-left: 193px;
+    }
+
+    .siff img {
+        width: 140px;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 0px;
+        margin-left: 156px;
+    }
+
+    .updates {
+margin-left: 140px;
+margin-top: -540px;
+height: 129px;
+width: 200px;
+    } 
+
+    
+    .updatelog {
+     font-size: 12px;   
+    }
     
     }
