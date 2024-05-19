@@ -1,0 +1,504 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: #180c18;; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: #ff9218; 
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #404a4b; 
+    transition: 0.9s;
+    }
+    
+          @font-face {
+      font-family: ms gothic;
+      src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
+    }
+    @font-face {
+        font-family: bios;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
+    }
+    @font-face {
+        font-family: ms pgothic;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
+    }
+    @font-face {
+        font-family: basiic;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
+    }
+    
+             #wait {
+             position: absolute;
+             top: 14%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             transform:scale(1.1)
+             }
+             body {
+             background: url("https://steamcommunity.com/economy/profilebackground/items/420530/9d8536eb577ef677f1ce5789f58133cc8afe8280.jpg") no-repeat fixed center;
+             -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+             text-align: center;
+             font-family: ms gothic;
+             }
+             a {
+             color: #ffdf29;
+             text-decoration: none;
+             transition: 0.3s;
+             }
+             a:hover {
+             cursor: help;
+             font-weight: bold;
+             color: #ff9218;
+             background: #180c18;
+             box-shadow: 3px 2px 2px #ff9218;
+             border: 2px solid #b54d18;
+             transition: 0.9s;
+             border-radius: 25px;
+             padding-left: 5px;
+             padding-right: 5px;
+             }
+             .train {
+             display: inline-block;
+             width: 480px;
+             height: 110px;
+             border: 4px double #b54d18;
+             background: url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/420530/d76272f9289a558ce234ab80109bd4b4a3707eeb.jpg") no-repeat center;
+             background-size: 560px;
+             background-position-y: -140px;
+             background-position-x: -70px;
+            
+            }       
+             .about {
+                 margin-top: -120px;
+                 margin-right: 50px;
+                 padding-top: 0px;
+             font-size: 19px;
+             color: #FFFFFF;
+             float: right;
+             font-family: ms gothic;
+             width: 330px;
+             height: 150px;
+             border: 0px solid black;
+             overflow-y: hidden;
+             overflow-x: hidden;
+             }
+             .blinkies1 {
+             margin: 0px;
+             }
+             .blinkies2 {
+             margin-top: 2px;
+             }
+             .marq {
+             color: white;
+             filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+             font-family: ms gothic;
+             font-size: 25px;
+             line-height: 1.1em;
+             padding: 0em;
+             width: 370px;
+             }
+             p {
+             margin: 0;
+             color: black;
+             font-size: 20px;
+             }
+    #hii {
+        margin-top: -90px !important;
+        width:442px; 
+        height: 310px;
+        margin:0 auto; 
+        text-align:justify; 
+        border:3px double #ff9218; 
+        max-height:40%; 
+        padding:3px 3px 3px 3px;
+        z-index: -1;
+        font-size: 15px;
+        padding-left: 20px;
+        font-family: MS PGothic;
+        padding-right: 20px;
+        color: white;
+        background: #180c18;
+    }
+    
+    #info { 
+        width: 375px;
+        height: 290px;
+        overflow-y: hidden;
+        line-height: 15px;
+    margin-top: 5px;
+        padding-top: 90px;
+        padding-right: 20px;
+        letter-spacing: 0.4px;
+        font-family: ms ui gothic;
+        font-size: 13.9px;
+    }
+    
+    
+    #links{
+        border:1px solid black; 
+        color: #ffffff;
+        background: #180c18;
+        text-align:left; 
+        padding:5px;
+        width:123px;
+        height: 105px;
+        position: absolute;
+        margin-left: -163px;
+        padding-top: 14px;
+        padding-left: 25px;
+        padding-bottom: 10px;
+        padding-right: -20px; 
+        font-size: 15px;
+        top: -5px !important;
+        margin-top: 4.4px;
+        margin:10 auto;
+        z-index: 3 !important;
+        font-family: MS UI Gothic;
+        font-size: 13.9px;
+        font-weight: bold; 
+        border-top-left-radius: 35%;
+        border-bottom-left-radius: 00%;
+        border-bottom-right-radius: 00%;
+        line-height: 25px;
+    
+    }
+    
+    #blinkies { 
+        position: absolute;
+        border-radius: 6px;        
+        font-size: 15px;
+        margin-top: -187px;
+        margin-left: -159px;
+        border:1px solid black; 
+        color: #b54d18;
+        background: #180c18;
+        overflow-y: hidden;
+             padding: 4px;
+             height: 212px;
+             width:145px;
+             font-family: ms gothic;
+             border-top-left-radius: 0%;
+        border-bottom-left-radius: 0px;
+        box-shadow: -2px 1px 1px #b54d18;
+    } 
+    
+    #blinkies a:hover{ 
+        cursor: help;
+             font-weight: bold;
+             transition: 0.9s;
+             border-radius: 0px;
+             padding-left: 0px;
+             padding-right: 0px;
+    }
+
+    
+    #newmakoto {
+        position: absolute;
+        margin-top: -290px;
+        right: -58px;
+        filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #ff9218) drop-shadow( 0 -1px #ff9218) drop-shadow( -3px 0 #b54d18);
+    transform:rotate(deg);
+    z-index: 5;
+    pointer-events: none;
+    }
+    
+    #newmakoto img {
+        width: 180px;
+    }
+    
+    #linkdiv {
+        position: absolute;
+        margin-left: -133px;
+        z-index: 5;
+        margin-top: 85px;
+    }
+    
+    #linkdiv img {
+        width: 94px;
+        box-shadow: 4px 3px 3px #b54d18; 
+    }
+    
+    #dnilol{
+        filter: drop-shadow( 0 3px #b54d18) drop-shadow( 2px 0 #b54d18) drop-shadow( 0 -2px #ff9218) drop-shadow( -3px 0 #ff9218);
+        color: white;
+    position: absolute;
+    font-size: 30px;
+    font-family: bios;
+    letter-spacing: 5px;
+    padding-left: 20px;
+    margin-top: 70px;
+    transition: .4s ease; 
+    }
+    
+    
+    #statuscafe {
+        padding: 0em;
+        background: #180c18;
+        position: absolute;
+        margin-left: -5px;
+        margin-top: -50px;
+        border-radius: 10px;
+        box-shadow: 4px 3px 3px #b54d18;
+        border: 2px solid 1a1a7a;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+        #statuscafe a {
+            color:#b54d18; 
+        }
+        
+            
+    #statuscafe-username {
+        margin-bottom: -0.1em;
+            text-align:left;
+            color:#414c53;
+             font-size:1em;
+             letter-spacing: 0.02em;
+             background: transparent;
+             
+             
+            }
+    #statuscafe-content {
+    font-size: 0.9em;
+    text-align:left;
+    background: transparent;
+    letter-spacing: 0em;
+    width: auto;
+    font-family: ms gothic;
+    padding: 5px;
+    -webkit-text-stroke: 0.2px #1b1d27;
+    color: white;
+    }
+    
+    mark { 
+        color: #ff9218;    
+        box-shadow: 3px 2px 2px #ff9218;
+        border: 2px solid #b54d18;
+    font-weight: bold;
+    font-size: 13.8px;
+    background: #180c18;
+                border-radius: 25px;
+                line-height: 5px;
+                padding-left: 3px;
+                padding-right: 4px;
+            }
+    
+    .marquee {
+    width: 96%;
+    height: 16px;
+    right: 9px;
+    padding:3px;
+    position: absolute;
+    border-width:2px;
+    font-size: 13px;
+    z-index: 1;
+    border: 2px solid #ff9218;
+    margin-top:55px;
+    background:#b54d18;
+    color: #ffffff;
+    }
+    
+    .marquee mark {
+    border: 2px solid #1a1a7a;
+    color: #1a1a7a;
+    font-size: 13px;
+    background: white;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 5px;
+    }
+    
+    .anotherkoto {
+        position: absolute;
+    }
+    .anotherkoto img {
+        position: absolute;
+        width: 155px;
+        margin-left: 488px;
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 0px;
+        margin-top: -385px;
+        z-index: -2 !important;
+        box-shadow: 4px 3px 3px #180c18;
+        border: 3px double #b54d18;
+    }
+    
+    .chatango {
+        position: absolute;
+        margin-top: -420px;
+        margin-left: -542px;
+        z-index: -1;
+        box-shadow: 4px 3px 3px #ff9218;
+    }
+
+    .updates {
+        position: absolute;
+        width: 238px;
+        height: 115px;
+        background: #180c18;
+        color: white;
+        border: 3px double;
+        padding: 3px;
+        margin-left: 250px;
+        margin-top: 60px;
+        box-shadow: -2px 1px 1px #ff9218;
+        overflow-y: scroll;
+    }
+
+    .updates b {
+color: #ff9218
+    }
+
+    .shiki {
+        position: absolute;
+        width: 20px;
+        margin-left: 114px;
+        margin-top: 60px;
+        filter: drop-shadow( 0 3px #ff9218) drop-shadow( 2px 0 #b54d18) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+    }
+
+    .shiki img {
+        width: 125px;
+    }
+
+    .siff {
+        position: absolute;
+        width: 20px;
+        margin-left: 510px;
+        margin-top: 60px;
+        filter: drop-shadow( 0 3px #ff9218) drop-shadow( 2px 0 #b54d18) drop-shadow( 0 -2px #b54d18) drop-shadow( -3px 0 #b54d18);
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 35px;
+    }
+
+    .siff img {
+        width: 136px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 35px;
+    }
+
+    .switchbutton {
+        position: absolute;
+        margin-top: -409px;
+        margin-left: 365px;
+        width: 160px;
+    }
+
+
+    
+            /* Below is the mobile optimisation. Mess with it if you want. */
+    @media only screen and (max-width: 640px) {
+    #box {
+      display: block;
+      width:100%;
+      background-size: auto 100%;
+    }
+    
+    #wait {
+        left: -30px;
+        transform:scale(0.8)
+    }
+     
+    #hii {
+        font-family: ms gothic;
+        font-size: 13px;
+    }
+    
+    #info {
+        font-family: ms gothic;
+        letter-spacing: -1px;
+    }
+    
+    #links{
+      margin-top:428px;
+      left: 499px;
+      order:3;
+      z-index: 5;
+      border-top-left-radius: 0px;
+        border-bottom-right-radius: 35px;
+        font-family: ms gothic;
+    }
+     
+    #blinkies{
+      order: 2;
+      margin-top:45px;
+      left: 160px;
+      height: 150px; 
+      border-bottom-left-radius: 35px;
+    }
+     
+    #linkdiv {
+    left: 499px;
+    margin-top:348px; 
+    }
+    
+    #sitebutton{
+      order: 3;
+      margin-top:36px;
+      left: 515px;
+      height: 100px;
+    }
+    
+    .chatango {
+        display: none;
+    }
+    
+    .anotherkoto {
+        display: none;
+    }
+    
+    #buttons {
+  display: none;
+    }
+    
+    .player, .title-bar, .window, .musicplayer, .window-body {
+        display: none;
+    }
+
+.shiki {
+    margin-top: -536px;
+}
+
+    .shiki img {
+        width: 136px;
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 0px;
+        margin-left: -113px;
+    }
+
+    .siff {
+        margin-top: -536px;
+        margin-left: 193px;
+    }
+
+    .siff img {
+        width: 140px;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 0px;
+        margin-left: 156px;
+    }
+
+    .updates {
+margin-left: 140px;
+margin-top: -540px;
+height: 129px;
+width: 200px;
+    } 
+
+    
+    .updatelog {
+     font-size: 12px;   
+    }
+    
+    }
