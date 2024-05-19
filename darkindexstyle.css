@@ -144,7 +144,7 @@
     
     
     #links{
-        border:1px solid black; 
+        border: 1px double #b54d18;
         color: #ffffff;
         background: #180c18;
         text-align:left; 
@@ -188,7 +188,7 @@
              font-family: ms gothic;
              border-top-left-radius: 0%;
         border-bottom-left-radius: 0px;
-        box-shadow: -2px 1px 1px #b54d18;
+        border: 2px double #b54d18;
     } 
     
     #blinkies a:hover{ 
@@ -217,14 +217,14 @@
     
     #linkdiv {
         position: absolute;
-        margin-left: -133px;
+        margin-left: -155px;
         z-index: 5;
-        margin-top: 85px;
+        margin-top: 93px;
     }
     
     #linkdiv img {
-        width: 94px;
-        box-shadow: 4px 3px 3px #b54d18; 
+        width: 135px;
+        border: 3px double #b54d18;
     }
     
     #dnilol{
