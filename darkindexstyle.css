@@ -307,17 +307,7 @@
     background:#b54d18;
     color: #ffffff;
     }
-    
-    .marquee mark {
-    border: 2px solid #1a1a7a;
-    color: #1a1a7a;
-    font-size: 13px;
-    background: white;
-    border-radius: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
-    line-height: 5px;
-    }
+
     
     .anotherkoto {
         position: absolute;
