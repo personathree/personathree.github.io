@@ -13,8 +13,8 @@
     position: absolute;
     top: 40%;
     left: 40%;
-    transform: translate(-40%, -70%);
-    transform: scale(1.1);
+    transform: translate(-40%, -0%);
+    transform: scale(1.6);
     }
     body {
     background: url("https://file.garden/Zagf2LAXJwHlct9M/2zfixgyq76881.gif") no-repeat fixed center;
@@ -71,7 +71,7 @@ src: url(https://file.garden/Zagf2LAXJwHlct9M/shovel-knight-extended.ttf);
     width: 410px;
     height: 57px;
     margin-left: -10px;
-    margin-top: 115px;
+    margin-top: -25px;
     padding-top: 23px;
     padding-left: 13px;
     padding-right: 14px;
@@ -90,8 +90,8 @@ src: url(https://file.garden/Zagf2LAXJwHlct9M/shovel-knight-extended.ttf);
 z-index: -1;
 width: 100px;
     position: absolute;
-    margin-top: 115px;
-    margin-left: -531px;
+    margin-top: -25px;
+    margin-left: -530px;
     display: inline-block;
 }
 
@@ -100,7 +100,23 @@ color: #1c77df;
 background: #ffffff00;
 }
 
+.song {
+    width: 100px;
+    margin-top: 320px;
+}
+
+.song audio {
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+    margin-left: 70px;
+}
+
 @media only screen and (max-width: 640px) {
+
+    #position {
+    transform: scale(1.1);
+    }
 
 body {
     background-size: cover;
@@ -117,7 +133,10 @@ body {
     position: absolute;
     margin-top: -75px;
     margin-left: -284px;
-    
+}
+
+.song audio {
+    margin-left: -20px;
 }
 
 
@@ -125,14 +144,22 @@ body {
  </style>
 <body>
  <div id="position">
+    
     <div class="box">
-       
        <div class="about">
                 <font color="#1c77df">shovel knight</font>: this page has not been made yet... or you put in a <font color="#1bb1de">random</font> url. either way, <a href="/index.html">scram!</a> 
           </div>
 
      <div class="milkchan">
         <img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-05-27_225944978.png" width=90>
+        <br>
+        <br>
+
+    </div>
+<div class="song">
+    <audio controls autoplay preload>
+        <source src="https://file.garden/Zagf2LAXJwHlct9M/youtube_hZCX7Et0Rfw_audio.mp3" type="audio/mp3">
+      </audio>
     </div>
 
 </body> 
