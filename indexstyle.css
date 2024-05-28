@@ -38,7 +38,7 @@
              top: 14%;
              left: 50%;
              transform: translate(-50%, -50%);
-             transform:scale(1.1)
+             transform:scale(1.1);
              }
              body {
              background: url("https://file.garden/Zagf2LAXJwHlct9M/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.gif") no-repeat fixed center;
@@ -126,15 +126,16 @@
         font-family: MS PGothic;
         padding-right: 20px;
         background: #ffffff;
+        background:linear-gradient(-269deg, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #1a1a7a, #1a1a7a);
     }
     
     #info { 
-        width: 375px;
+        width: 365px;
         height: 290px;
         overflow-y: hidden;
         line-height: 15px;
     margin-top: 5px;
-        padding-top: 90px;
+        padding-top: 100px;
         padding-right: 20px;
         letter-spacing: 0.4px;
         font-family: ms ui gothic;
@@ -143,7 +144,7 @@
     
     
     #links{
-        border:1px solid black; 
+        border:1px solid white; 
         color: #ffffff;
         background: #1a1a7a;
         text-align:left; 
@@ -179,15 +180,16 @@
         margin-left: -159px;
         border:1px solid black; 
         color: #1a1a7a;
-        background: #ffffff;
+        background: #1a1a7a;
         overflow-y: hidden;
-             padding: 4px;
+        overflow-x: hidden;
+             padding: 0px;
              height: 212px;
-             width:145px;
+             width:154px;
              font-family: ms gothic;
              border-top-left-radius: 0%;
         border-bottom-left-radius: 0px;
-        box-shadow: -2px 1px 1px #0ed9f5;
+        border: 1px solid #0ed9f5;
     } 
     
     #blinkies a:hover{ 
@@ -199,13 +201,11 @@
              padding-right: 0px;
     }
     
-    #blinkies img {
-        filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #FFFFFF) drop-shadow( 0 -1px #FFFFFF) drop-shadow( -3px 0 #FFFFFF);
-    }
+
     
     #newmakoto {
         position: absolute;
-        margin-top: -290px;
+        margin-top: -190px;
         right: -58px;
         filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -1px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
     transform:rotate(deg);
@@ -221,7 +221,7 @@
         position: absolute;
         margin-left: -163px;
         z-index: 5;
-        margin-top: 95px;
+        margin-top: 82px;
     }
     
     #linkdiv img {
@@ -237,7 +237,7 @@
     font-family: bios;
     letter-spacing: 5px;
     padding-left: 20px;
-    margin-top: 70px;
+    margin-top: 80px;
     transition: .4s ease; 
     }
     
@@ -247,7 +247,7 @@
         background: white;
         position: absolute;
         margin-left: -5px;
-        margin-top: -50px;
+        margin-top: -60px;
         border-radius: 10px;
         box-shadow: 4px 3px 3px #1a1a7a;
         border: 2px solid 1a1a7a;
@@ -264,14 +264,14 @@
         margin-bottom: -0.1em;
             text-align:left;
             color:#414c53;
-             font-size:1em;
+             font-size:13px;
              letter-spacing: 0.02em;
              background: transparent;
              
              
             }
     #statuscafe-content {
-    font-size: 0.9em;
+    font-size: 12px;
     text-align:left;
     background: transparent;
     letter-spacing: 0em;
@@ -295,15 +295,15 @@
             }
     
     .marquee {
-    width: 96%;
+    width: 473px;
     height: 16px;
-    right: 9px;
+    right: 2px;
     padding:3px;
     position: absolute;
     border-width:2px;
     font-size: 13px;
     z-index: 1;
-    border: 2px solid black;
+    border: 2px solid white;
     margin-top:55px;
     background:#1a1a7a;
     color: white;
@@ -329,7 +329,7 @@
         margin-left: 488px;
         border-top-right-radius: 35px;
         border-bottom-left-radius: 0px;
-        margin-top: -385px;
+        margin-top: -387px;
         z-index: -2 !important;
         box-shadow: 4px 3px 3px #1a1a7a;
         border: 3px double #1a1a7a;
@@ -346,11 +346,12 @@
     .updates {
         position: absolute;
         width: 238px;
-        height: 115px;
+        height: 118px;
         background: white;
+        font-size: 12px;
         border: 3px double;
-        padding: 3px;
-        margin-left: 250px;
+        padding: px;
+        margin-left: 120px;
         margin-top: 60px;
         box-shadow: -2px 1px 1px #0ed9f5;
         overflow-y: scroll;
@@ -359,29 +360,34 @@
     .shiki {
         position: absolute;
         width: 20px;
-        margin-left: 114px;
-        margin-top: 60px;
+        margin-left: 368px;
+        margin-top: 58px;
+        border-bottom-right-radius: 35px;
         filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
     }
 
     .shiki img {
-        width: 125px;
+        width: 90px;
     }
 
     .siff {
         position: absolute;
-        width: 20px;
-        margin-left: 510px;
+        width: 89px;
+        height: 118px;
+        background: white;
+        font-size: 12px;
+        border: 3px double;
+        padding: px;
+        margin-left: 555px;
         margin-top: 60px;
-        filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-        border-top-left-radius: 0px;
+        box-shadow: -2px 1px 1px #0ed9f5;
+        overflow-y: hidden;
+        overflow-x: hidden;
         border-bottom-right-radius: 35px;
     }
 
-    .siff img {
-        width: 136px;
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 35px;
+    .siff a {
+        color: #1a1a7a 
     }
 
     .switchbutton {
@@ -391,10 +397,63 @@
         width: 120px;
     }
 
+    .newbg {
+        pointer-events: none;
+        z-index: -5; 
+        background: #1a1a7a;
+        width: 822px;
+        margin-left: -170px;
+        margin-top: -395px;
+        height: 585px;
+        position: absolute;
+        border: 4px double #ffffff;
+        border-radius: 35px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 55px;
+    }
+
+    .creds {
+position: absolute;
+font-family: "Bios";
+margin-top: 195px;
+right: -150px;
+font-size: 19px;
+color: white; 
+filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+    }
+
+    .transring {
+        position: absolute;
+        font-family: "Bios";
+        margin-top: -405px;
+        right: -240px;
+        font-size: 19px;
+        color: white; 
+        filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+    }
+.transring img {
+    width: 120px;
+}
+
+.siff2{
+ position: absolute;
+ margin-left: 459px;
+ margin-top: 55px;
+ }
+
+ .siff2 img {
+    width: 90px;
+ }
+
 
     
             /* Below is the mobile optimisation. Mess with it if you want. */
     @media only screen and (max-width: 640px) {
+
+        body {
+            background-size: cover;
+        }
+        
     #box {
       display: block;
       width:100%;
@@ -417,8 +476,8 @@
     }
     
     #links{
-      margin-top:428px;
-      left: 499px;
+      margin-top:468px;
+      left: 515px;
       order:3;
       z-index: 5;
       border-top-left-radius: 0px;
@@ -428,15 +487,16 @@
      
     #blinkies{
       order: 2;
-      margin-top:45px;
+      margin-top:59px;
       left: 160px;
-      height: 150px; 
+      height: 180px; 
       border-bottom-left-radius: 35px;
     }
      
     #linkdiv {
     left: 499px;
-    margin-top:348px; 
+    left: 515px;
+    margin-top:368px; 
     }
     
     #sitebutton{
@@ -463,38 +523,46 @@
     }
 
 .shiki {
-    margin-top: -536px;
+   display: none;
 }
 
-    .shiki img {
-        width: 136px;
-        border-top-left-radius: 35px;
-        border-bottom-right-radius: 0px;
-        margin-left: -113px;
-    }
 
     .siff {
-        margin-top: -536px;
-        margin-left: 193px;
-    }
-
-    .siff img {
-        width: 140px;
-        border-top-right-radius: 35px;
-        border-bottom-right-radius: 0px;
-        margin-left: 156px;
+ display: none;
     }
 
     .updates {
-margin-left: 140px;
-margin-top: -540px;
-height: 129px;
-width: 200px;
+display: none;
     } 
+
+    .transring {
+        left: 190px;
+    margin-top: -420px;
+    }
 
     
     .updatelog {
      font-size: 12px;   
     }
+
+    .newbg {
+        width: 520px;
+        height: 620px;
+        margin-left: -10px;
+        margin-top: -410px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
     
+.creds {
+    left: 140px;
+    margin-top: 210px;
+}
+
+.siff2 {
+    display: none;
+}
+
     }
