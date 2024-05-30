@@ -9,10 +9,32 @@
   font-family: p3;
   src: url(https://file.garden/Zagf2LAXJwHlct9M/9usuuk.ttf);
 }
+@font-face {
+      font-family: ms gothic;
+      src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
+    }
+    @font-face {
+        font-family: bios;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
+    }
+    @font-face {
+        font-family: ms pgothic;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
+    }
+    @font-face {
+        font-family: basiic;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
+    }
+
+::-webkit-scrollbar {
+display: none;
+    }
+    
+
 
 #position {
   position: absolute;
-  top: 30%;
+  top: 23%;
   left: 35%;
   transform: scale(1.5);
   }
@@ -23,23 +45,55 @@ body {
    color: black;
  font-family: arial;
  font-size:25px;
+ background: url("https://file.garden/Zagf2LAXJwHlct9M/newbg.png") no-repeat fixed center;
+        -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;      
+      cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto;   
+      
 }
 
     #scroll3 {
-    height: 100px;
+    height: 105px;
     width: 150px;
-    padding: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
     border: 3px double #ccc;
-    border-radius: 10px;
-    font-family: arial;
+    font-family: ms pgothic;
     font-size: 12px;
     overflow: auto;
     position: absolute;
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 95px;
+    line-height: 13px;
     z-index: 3;
-    background: white;
+    background: #00000099;
+    color: white; 
     box-shadow: black 2px 2px 3px 2px;
+    border-image: url('https://file.garden/Zagf2LAXJwHlct9M/wem.png') 4 fill round;
+    }
+
+    #scroll4 {
+    height: 80px;
+    width: 205px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 3px double #ccc;
+    font-family: ms pgothic;
+    font-size: 12px;
+    overflow: auto;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 235px;
+    line-height: 13px;
+    z-index: 3;
+    background: #00000099;
+    color: white; 
+    box-shadow: black 2px 2px 3px 2px;
+    border-image: url('https://file.garden/Zagf2LAXJwHlct9M/wem.png') 4 fill round;
     }
 
     #akihiko {
@@ -89,6 +143,114 @@ mark {
     padding-right: 5px;
 }
 
+.bios {
+    font-family: bios;
+    text-align: left;
+}
+
+@keyframes flicker {
+0% {
+opacity: 0.27861;
+}
+5% {
+opacity: 0.34769;
+}
+10% {
+opacity: 0.23604;
+}
+15% {
+opacity: 0.90626;
+}
+20% {
+opacity: 0.18128;
+}
+25% {
+opacity: 0.83891;
+}
+30% {
+opacity: 0.65583;
+}
+35% {
+opacity: 0.67807;
+}
+40% {
+opacity: 0.26559;
+}
+45% {
+opacity: 0.84693;
+}
+50% {
+opacity: 0.96019;
+}
+55% {
+opacity: 0.08594;
+}
+60% {
+opacity: 0.20313;
+}
+65% {
+opacity: 0.71988;
+}
+70% {
+opacity: 0.53455;
+}
+75% {
+opacity: 0.37288;
+}
+80% {
+opacity: 0.71428;
+}
+85% {
+opacity: 0.70419;
+}
+90% {
+opacity: 0.7003;
+}
+95% {
+opacity: 0.36108;
+}
+100% {
+opacity: 0.24387;
+}
+}
+ 
+#wrapper::after {
+content: " ";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(18, 16, 16, 0.1);
+opacity: 0;
+z-index: 2;
+pointer-events: none;
+animation: flicker 0.15s infinite;
+}
+#wrapper::before{
+content: " ";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+z-index: 2;
+background-size: 100% 2px, 3px 100%;
+pointer-events: none;
+}
+
+button { 
+    background: #7f817e; 
+    color: white;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 8px;
+}
+
 @media only screen and (max-width: 640px) {
     #position {
     left: -40px;
@@ -97,12 +259,30 @@ mark {
 }
 
     </style>
-    <body>
-    <div id="position"> <div id="title">ONTO THE<br> NEXT BOUT.</div><div id="scroll3">
-    laalalala ... calvin he/him unfortunate case of <a title="ask for sources"><mark>introjectism</mark></a> i enjoy playing and drawing... huge persona 3, milk inside a bag of milk, prezoh, and chiblee enthusiast i love making friends no dni just be normal ^_^
-    </div>
-    <div id="moretext">MASSDESTRUCTION</div>
 
-    <div id="akihiko"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-03-25_002621641.png" width=190></div></div>
+<SCRIPT>
+    function ShowAndHide() {
+        var x = document.getElementById('scroll4');
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    </SCRIPT>
+
+    
+    <body>
+        
+    <div id="position"> <div id="title">ONTO THE<br> NEXT BOUT.</div><div id="scroll3"> <div id="wrapper"> </div><mark>info</mark> <b>siff</b>rin or <i>basil</i>.. 17 y/o nonbinary (he/they) <img src="https://caterpie.crd.co/assets/images/gallery09/61674e5f.gif?v=f7b7a140" width=20px> autistic pwdid / unlisted <BUTTON ONCLICK="ShowAndHide()">++</BUTTON> 
+    <br> <br> <mark>likes</mark> <i>prezoh, chiblee,</i> persona 3, <i>akishinji,</i> twewy, milk inside a bag of milk, lobcorp, <i>girls last tour</i>
+   
+</div>
+
+<DIV ID="scroll4" STYLE="display:none"> <div id="wrapper">
+    <mark>byi</mark> im not the most active outside of close circles and forget to reply on occasion but its usually nothing personal 
+<br> <br> very selective with sharing <mark>system</mark> info, friends are free to ask whatever </DIV> </div>
+    <div id="akihiko"><img src="https://file.garden/Zagf2LAXJwHlct9M/akirecolor.png" width=190></div></div>
+</div>
 </body>
 </html>
