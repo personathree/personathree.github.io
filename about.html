@@ -13,6 +13,10 @@
         ::-webkit-scrollbar{
 display:none;
 }
+
+::-moz-o-scrollbar{
+display: none;
+} 
 @font-face {
       font-family: ms gothic;
       src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
@@ -33,7 +37,9 @@ display:none;
         font-family: anime;
         src: url(https://file.garden/Zagf2LAXJwHlct9M/animeace2_reg.ttf);
     }
-
+.noscroll {
+    position: absolute;
+}
     #position {
     position: absolute;
     top: 12%;
@@ -42,16 +48,19 @@ display:none;
     transform: scale(1.18);
     }
     body {
-       
         background: url("https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-08_231708044.png") no-repeat fixed center, linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
     text-align: center;
+    -moz-o-font-smoothing: grayscale;
     background-blend-mode: color-burn;
     }
-
+    html {
+scrollbar-width: 0px;
+-webkit-font-smoothing: none;
+}
     .about {
 	width:383px;
 	height:289px;
@@ -70,7 +79,7 @@ position: absolute;
 	text-align:center;
     position: absolute;
     font-family: ms gothic;
-    font-size: 14px;
+    font-size: 13px;
         width: 265px;
         height: 145px;
         z-index: 3;
@@ -79,9 +88,9 @@ position: absolute;
         padding-top:12px;
         border-radius: 74px;
         padding-left: 15px;
-        padding-right: 8px;
+        padding-right: 14px;
         border-bottom-right-radius: 69px;
-        border-bottom-left-radius: 78px;
+        border-bottom-left-radius: 28px;
         border-top-right-radius: 48px;
         border-top-left-radius: 56px;
         box-shadow: 1px 1px 1px black;
@@ -89,21 +98,23 @@ position: absolute;
 
     .scroll2 {
 	background-color:#FFFFFF;
-	margin-left:20px;
+	margin-left:14px;
 	margin-top:130px;
 	text-align:center;
     position: absolute;
     font-family: ms gothic;
-    font-size: 14px;
+    font-size: 13px;
         width: 220px;
         height: 150px;
         overflow-y: scroll;
         border: 1px solid black; 
         padding-top:12px;
+        padding-left: 13px;
+        padding-right: 13px;
         border-radius: 74px;
         border-bottom-right-radius: 69px;
-        border-top-left-radius: 56px;
-
+        border-top-left-radius: 76px;
+border-bottom-left-radius: 49px;
         box-shadow: 1px 1px 1px black;
         
     }
@@ -115,7 +126,7 @@ position: absolute;
 	text-align:center;
     position: absolute;
     font-family: ms gothic;
-    font-size: 14px;
+    font-size: 13px;
     width: 224px;
     height: 110px;
         z-index: 3;
@@ -139,7 +150,7 @@ position: absolute;
 	text-align:left;
     position: absolute;
     font-family: ms gothic;
-    font-size: 14px;
+    font-size: 13px;
         width: 224px;
         height: 205px;
         z-index: 3;
@@ -150,7 +161,7 @@ position: absolute;
         padding-left: 15px;
         padding-right: 8px;
         border-bottom-right-radius: 69px;
-        border-bottom-left-radius: 56px;
+        border-bottom-left-radius: 0px;
         border-top-right-radius: 48px;
         border-top-left-radius: 36px;
         box-shadow: 1px 1px 1px black;
@@ -255,6 +266,7 @@ position: absolute;
         width: 690px;
         z-index: -3;
         border-radius: 2px;
+        border-top-right-radius: 48px;
     }
 
     .bg2 {
@@ -267,6 +279,7 @@ position: absolute;
         width: 418px;
         z-index: -2;
         border-radius: 2px;
+        border-bottom-left-radius: 48px;
     }
 
     .girls {
@@ -290,6 +303,7 @@ position: absolute;
         margin-top: -32px;
         pointer-events: none;
         
+        
     }
 
     .hands1 img {
@@ -297,6 +311,7 @@ position: absolute;
         background: linear-gradient(360deg, rgba(0,0,0,0) 58%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 96%);
         border: 3px double black;
         pointer-events: none;
+        border-top-right-radius: 48px;
     }
 
     .hands2 {
@@ -394,10 +409,12 @@ body {
 
 .scroll2 {
 border-bottom-left-radius: 56px;
+font-family: ms gothic;
 }
 
 .scroll1 {
     height: 155px;
+    font-family: ms gothic;
 }
 
 .scroll4 {
@@ -405,6 +422,7 @@ border-bottom-left-radius: 56px;
     margin-top: 590px;
     height: 160px;
     width: 180px;
+    font-family: ms gothic;
 }
 
 .scroll3 {
@@ -412,6 +430,7 @@ border-bottom-left-radius: 56px;
     width: 150px;
     height: 160px;
     margin-top: 590px;
+    font-family: ms gothic;
 }
 
 .hands1 {
@@ -430,16 +449,17 @@ margin-top: 520px;
 }
  </style>
 <body>
+    <div id="noscroll">
  <div id="position">
 
     <div class="metext"><h2>chapter 047: silence</h2></div>
 
-<div class="about"><div class="scroll2"><b>siff</b>rin <i>or</i> basil <br> they/them , 17 <br> <br> i hope to use this site to leave my mark on the internet in some form! i don't want it to be anything huge, just something that shows that... hey, i'm here, i'm alive! 
+<div class="about"><div class="scroll2"><b>siff</b>rin <i>or</i> basil <br> they/them , 17 <br> <br> i hope to use this site to leave my mark on the internet in some form! i don't want it to be anything huge, just something that shows that... hey, i'm here, i'm alive! like i just climbed a really high mountain and put down the flag at the top! 
 </div>
 </div>
     
 
-<div class="scroll1">for more about me as a person, i'm a neurodivergent artist / coder who resides in my room a lot due to both physical and mental illness, but i won't bore you with that.  i take comfort in the web and the vastness of it! my friends describe me as a loser (endearingly) and that checks out a lot! i'm an avid twitch <br> watcher outside of this. </div>
+<div class="scroll1">for more about me as a person, i'm a neurodivergent artist / coder who resides in my room a lot due to both physical and mental illness, but i won't bore you with that.  i take comfort in the web and the vastness of it! my friends describe me as a loser (endearingly) and that checks out a lot! i'm also an avid twitch watcher! <br> despite the site name, i have no dni criteria. test your luck with me! </div>
 <div class="scroll3"><span class="anime">yuu-chan's friends!</span> <br> hover over icons to see names <br> not a complete list! 
     
 <br>
@@ -485,7 +505,7 @@ not a friend  but the best big sister i couldve ever asked for!
     <h1>content creators</h1>
     <mark><b>prezoh</b></mark>, <b>chiblee</b>, aksually, bigt
     <h1>media </h1>
-    dick figures, it's always sunny, smiling friends, <mark><b>slugterra</b></mark>, <br> i saw the tv glow
+    dick figures, it's always sunny, smiling friends, <mark><b>slugterra</b></mark>, <br> i saw the tv glow, the bear
     <h1>characters</h1>
     <b>akihiko sanada,</b> <b>makoto yuki,</b> <mark><b>milk chan,</b></mark> <b>yuuri</b>, <b>siffrin</b>, <b>basil</b>, stranger, niko oneshot, alan wake, tarr fortnite
     <br>
