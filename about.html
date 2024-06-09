@@ -1,203 +1,507 @@
-
-
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>until my life is exhausted</title>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ⏑　siffspace </title>
+    <meta name="description" content="venture life, burn your dread!">
+    <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/Actor1.png">
+</script>  
 
 <style>
+        ::-webkit-scrollbar{
+display:none;
+}
 @font-face {
-  font-family: p3;
-  src: url(https://file.garden/Zagf2LAXJwHlct9M/9usuuk.ttf);
-}
-
-@font-face {
-    font-family: dogica;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/dogicapixel.ttf);
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    height: 20px;
+      font-family: ms gothic;
+      src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
     }
-    
-    ::-webkit-scrollbar-track {
-    background: black; 
+    @font-face {
+        font-family: bios;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
     }
-    
-    ::-webkit-scrollbar-thumb {
-    background: white; 
+    @font-face {
+        font-family: ms pgothic;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
     }
-    
-    ::-webkit-scrollbar-thumb:hover {
-    background: #404a4b; 
-    transition: 0.9s;
+    @font-face {
+        font-family: basiic;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
+    }
+    @font-face {
+        font-family: anime;
+        src: url(https://file.garden/Zagf2LAXJwHlct9M/animeace2_reg.ttf);
     }
 
-#position {
-  position: absolute;
-  top: 30%;
-  left: 35%;
-  transform: scale(1.5);
-  }
-
-body {
-   padding:30px;
-  text-align:center;
-   color: black;
- font-family: arial;
- font-size:25px;
-}
-
-    #scroll3 {
-    height: 120px;
-    color: white;
-    width: 250px;
-    padding-left: 50px;
-    padding-right: 23px;
-    padding-top: 10px;
-    border: 3px solid #ccc;
-    font-family: dogica;
-    font-size: 9px;
-    line-height: 14px;
-    overflow: auto;
+    #position {
     position: absolute;
-    margin-left: 30px;
-    margin-top: 63px;
-    z-index: 3;
-    background: black;
-    box-shadow: black 2px 2px 3px 2px;
+    top: 12%;
+    left: 30%;
+    transform: translate(-40%, -0%);
+    transform: scale(1.18);
     }
-    
-    .content {
-        padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: black;
+    body {
+       
+        background: url("https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-08_231708044.png") no-repeat fixed center, linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+    text-align: center;
+    background-blend-mode: color-burn;
+    }
+
+    .about {
+	width:383px;
+	height:289px;
+	padding:4px;
+	margin:3px;
+	background:url('https://file.garden/Zagf2LAXJwHlct9M/chuuyito.png') no-repeat 10% -20%, url('https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-08_031256959.png') repeat-x scroll;
+position: absolute;
+    background-size:240px, 350px;
+	overflow:hidden;
 }
 
-    #akihiko {
-        position: absolute;
-        z-index: 5;
+    .scroll1 {
+        background-color:#FFFFFF;
+	margin-left:3px;
+	margin-top:350px;
+	text-align:center;
+    position: absolute;
+    font-family: ms gothic;
+    font-size: 14px;
+        width: 265px;
+        height: 145px;
+        z-index: 3;
+        overflow-y: scroll;
+        border: 1px solid black; 
+        padding-top:12px;
+        border-radius: 74px;
+        padding-left: 15px;
+        padding-right: 8px;
+        border-bottom-right-radius: 69px;
+        border-bottom-left-radius: 78px;
+        border-top-right-radius: 48px;
+        border-top-left-radius: 56px;
+        box-shadow: 1px 1px 1px black;
     }
 
-    #akihiko img {
-        position: absolute;
-        margin-left: -90px;
-        filter: drop-shadow(0px 1px transparent) drop-shadow(0 3px black) drop-shadow(2px 0 black) drop-shadow(2px 0 black);
+    .scroll2 {
+	background-color:#FFFFFF;
+	margin-left:20px;
+	margin-top:130px;
+	text-align:center;
+    position: absolute;
+    font-family: ms gothic;
+    font-size: 14px;
+        width: 220px;
+        height: 150px;
+        overflow-y: scroll;
+        border: 1px solid black; 
+        padding-top:12px;
+        border-radius: 74px;
+        border-bottom-right-radius: 69px;
+        border-top-left-radius: 56px;
+
+        box-shadow: 1px 1px 1px black;
+        
     }
 
-    #title {
-        position: absolute;
-        font-family: p3;
-        font-weight: bold;
-        font-size: 19px;
-        margin-left: 290px;
-        margin-top: 185px;
-        width: 320px;
-        z-index: 5;
-        color: white;
-        text-align: left;
-        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    .scroll3 {
+        background-color:#FFFFFF;
+        margin-left:415px;
+        margin-top:100px;
+	text-align:center;
+    position: absolute;
+    font-family: ms gothic;
+    font-size: 14px;
+    width: 224px;
+    height: 110px;
+        z-index: 3;
+        overflow-y: scroll;
+        border: 2px solid black; 
+        padding-top:12px;
+        border-radius: 74px;
+        padding-left: 15px;
+        padding-right: 8px;
+        border-bottom-right-radius: 48px;
+        border-bottom-left-radius: 56px;
+        border-top-right-radius: 48px;
+        border-top-left-radius: 38px;
+        box-shadow: 1px 1px 1px black;
     }
 
-    #moretext {
-        position: absolute;
-        font-family: p3;
-        font-weight: bold;
-        font-size: 13px;
-        margin-left:-10px;
-        margin-top: 5px;
-        letter-spacing: 1px;
-        width: 320px;
-        color: white;
-        text-align: left;
-
-        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    .scroll4 {
+        background-color:#FFFFFF;
+	margin-left:415px;
+	margin-top:300px;
+	text-align:left;
+    position: absolute;
+    font-family: ms gothic;
+    font-size: 14px;
+        width: 224px;
+        height: 205px;
+        z-index: 3;
+        overflow-y: scroll;
+        border: 2px solid black; 
+        padding-top:12px;
+        border-radius: 74px;
+        padding-left: 15px;
+        padding-right: 8px;
+        border-bottom-right-radius: 69px;
+        border-bottom-left-radius: 56px;
+        border-top-right-radius: 48px;
+        border-top-left-radius: 36px;
+        box-shadow: 1px 1px 1px black;
     }
-     
-mark {
-    background: white; 
-    color: black;
-    font-weight: bold;
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
 
-a {
-    color: white;
-}
-
-a:hover {
-    color: #404a4b; 
-}
-
-.collapsible {
-background: black;
-font-family: dogica;
-  color: #8f8f8f;
-  cursor: pointer;
-  border: none;
+    .metext {
+        position: absolute;
+        z-index: 4;
+        width: 220px;
+        margin-top: -49px;
+        
+        margin-left: -18px;
+    }
+    .metext h2 {
+  text-shadow: 1px 1px 1px black;
+  color: white;
   text-align: left;
-  outline: none;
-  font-size: 9px;
+  font-family: bios;
+  font-size: 19px;
+  background: linear-gradient(90deg, #000, #FFFFFF30);
+  border: 2px solid white;
+  padding: 5px;
+  letter-spacing: 1px;
+  padding-right: 5px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 5px;
+    }
+
+    .scroll3 h2, .scroll4 h1 {
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  text-align: left;
+  font-family: bios;
+  font-size: 19px;
+  background: linear-gradient(90deg, #000, gray, #FFFFFF90);
+  border: 2px solid white;
+  padding: 5px;
+  padding-right: 2px;
+  width: 239px;
+  margin-left: -11px;
+  letter-spacing: 1px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 22px;
+  box-shadow: 1px 1px 1px black;
+    }
+
+    .anime {
+        font-family: anime;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center !important;
+    }
+
+    .div1 {
+        position: absolute;
+        margin-top: 280px;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .div1 img {
+        width: 400px;
+        pointer-events: none;
+    }
+
+
+    .text1 {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: -50px;
+        pointer-events: none;
+        transform: rotate(-4deg);
+        
+    }
+
+    .text1 img {
+        width: 80px;
+        pointer-events: none;
+        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px #FFFFFF) drop-shadow(1px 0 #FFFFFF) drop-shadow(-3px 0 #FFFFFF);
+    }
+
+    .text2 {
+        position: absolute;
+        margin-top:40px;
+        margin-left: 290px;
+        pointer-events: none;
+    }
+
+    .text2 img {
+        width: 100px;
+        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px #FFFFFF) drop-shadow(1px 0 #FFFFFF) drop-shadow(-3px 0 #FFFFFF);
+        pointer-events: none;
+    }
+
+    .bg1 {
+        position: absolute;
+        margin-top: -40px;
+        margin-left: -25px;
+        border: 4px double black;
+        border-image: url('https://file.garden/Zagf2LAXJwHlct9M/wwwht.png') 5 fill round;
+        height: 564px; 
+        width: 690px;
+        z-index: -3;
+        border-radius: 2px;
+    }
+
+    .bg2 {
+        position: absolute;
+        margin-top: -33px;
+        margin-left: -15px;
+        border: 4px double black;
+        background: linear-gradient(360deg, rgba(0,0,0,0) 58%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 96%);
+        height: 550px; 
+        width: 418px;
+        z-index: -2;
+        border-radius: 2px;
+    }
+
+    .girls {
+        position: absolute;
+        margin-left: 260px;
+        margin-top: 120px;
+        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px #FFFFFF) drop-shadow(1px 0 #FFFFFF) drop-shadow(-3px 0 #FFFFFF);
+        pointer-events: none;
+    }
+
+    .girls img {
+        width: 140px;
+        filter: saturate(0%);
+        pointer-events: none;
+       
+    }
+
+    .hands1 {
+        position: absolute;
+        margin-left: 415px;
+        margin-top: -32px;
+        pointer-events: none;
+        
+    }
+
+    .hands1 img {
+        width: 245px;
+        background: linear-gradient(360deg, rgba(0,0,0,0) 58%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 96%);
+        border: 3px double black;
+        pointer-events: none;
+    }
+
+    .hands2 {
+        position: absolute;
+        margin-left: 415px;
+        margin-top: 232px;
+        pointer-events: none;
+        
+    }
+
+    .hands2 img {
+        width: 245px;
+        background: linear-gradient(360deg, rgba(0,0,0,0) 58%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 96%);
+        border: 3px double black;
+        pointer-events: none;
+    }
+
+    .art2 {
+        position: absolute;
+        margin-top: 350px;
+        margin-left: 225px;
+        pointer-events: none;
+    }
+
+    .art2 img {
+        width: 165px;
+        pointer-events: none;
+    }
+
+
+    .scroll4 mark {
+    color: #2e2e2e;
+    font-size: 13.8px;
+                background: #a6a6a6; 
+                border-radius: 10px;
+                padding-left: 2px;
+                padding-right: 4px;
+            }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
 }
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: #000;
+    background: white; 
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    top: 48%;
+    left: -15%
+ }
+          
+ .tooltiptext {
+    border:3px double black;
+    font-size: 9px;         
+          }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+    
+}    
+/* name / tooltip temp <div class="tooltip"> <img src="link"  width="65px" ><span class="tooltiptext">name</span></div> */ 
 
 @media only screen and (max-width: 640px) {
+
     #position {
-    left: 0px;
-    transform:scale(1.3)
+    transform: scale(0.88);
+    left: 10%;
+    top: 7%;
+    }
+
+body {
+    background-size: cover;
 }
 
-#scroll3 { 
+.bg1 {
+    height: 814px; 
+        width: 425px;
+}
+.bg2 {
+    height: 804px; 
+        width: 410px;
+}
+
+.div1 {
+    margin-left: -2px;
+}
+
+.scroll2 {
+border-bottom-left-radius: 56px;
+}
+
+.scroll1 {
+    height: 155px;
+}
+
+.scroll4 {
+    margin-left: 0px;
+    margin-top: 590px;
+    height: 160px;
     width: 180px;
 }
 
-#title {
-    margin-left: 180px;
-    top: 10px;
-}
+.scroll3 {
+    margin-left: 215px;
+    width: 150px;
+    height: 160px;
+    margin-top: 590px;
 }
 
-    </style>
-    <body>
-    <div id="position"> <div id="title"><a href="/index">go back?</a></div><div id="scroll3">
-    HII! this is a very temporary page! <br>  im <mark>siff</mark>.. but you can call me siffrin or basil! welcome to  my home on the internet!  
-     <br> <br> unfortunately mentally ill.. but its okay! i won't get into nor will i bore you with the specifics, just know it affects how i may interact with people! <br> <br> <mark>but siff, who are <i>you?</i></mark> <br> a question that i never really know how to answer!  i'm a 17 year old nonbinary shut--in coder  who really loves my <b>buddies!!!</b> and the internet, of course! <br> <br> <mark>what do you like, siff?</mark> weh!  i like many things! most prominently, i enjoy <b>prezoh, chiblee, </b> aksually, alan wake, <b>persona 3,</b> in stars and time, coding, and 
-     <button class="collapsible">so much more!</button> 
-     <div class="content">
-        <p>milk inside / outside a bag of milk, oneshot, nichijou, the world ends with you, ultrakill, hotline miami, and it's always sunny in philadelphia to name a few!</p>
-      </div>
-     
-     
-    <br>  <img src="https://file.garden/Zagf2LAXJwHlct9M/Actor1.png" width=20> <mark>a note from siff!</mark> <br> i'll make a full coherent list of my interests and info about me once i finish this page entirely! for now, it's simply on my backlog!
-     <br> <br> thank you for reading this short introduction! i hope we cross paths again, but if not, i hope the internet finds you well, traveler! <br> <br>   
-    </div>
+.hands1 {
+    display: none;
+}
 
+.hands2 {
+margin-left: 2px;
+margin-top: 520px;
+}
+
+.hands2 img{
+    width: 380px;
+}
+
+}
+ </style>
+<body>
+ <div id="position">
+
+    <div class="metext"><h2>chapter 047: silence</h2></div>
+
+<div class="about"><div class="scroll2"><b>siff</b>rin <i>or</i> basil <br> they/them , 17 <br> <br> i hope to use this site to leave my mark on the internet in some form! i don't want it to be anything huge, just something that shows that... hey, i'm here, i'm alive! 
+</div>
+</div>
     
 
-    <div id="akihiko"><img src="https://file.garden/Zagf2LAXJwHlct9M/sifftalk.png" width=190></div></div>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            } 
-          });
-        }
-        </script>
+<div class="scroll1">for more about me as a person, i'm a neurodivergent artist / coder who resides in my room a lot due to both physical and mental illness, but i won't bore you with that.  i take comfort in the web and the vastness of it! my friends describe me as a loser (endearingly) and that checks out a lot! i'm an avid twitch <br> watcher outside of this. </div>
+<div class="scroll3"><span class="anime">yuu-chan's friends!</span> <br> hover over icons to see names <br> not a complete list! 
+    
+<br>
+<br>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/mik.png"  width="65px" ><span class="tooltiptext">mika </span></div> 
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/tob.png"  width="65px" ><span class="tooltiptext">tobey </span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/jj.png"  width="65px" ><span class="tooltiptext">JJ </span></div>
+<div class="tooltip"><img src="https://file.garden/Zagf2LAXJwHlct9M/frien/wis.png"  width="65px" ><span class="tooltiptext">wisp </span></div> 
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/01.png"  width="65px" ><span class="tooltiptext">ame </span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/02.png"  width="65px" ><span class="tooltiptext">connie</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/03.png"  width="65px" ><span class="tooltiptext">mae</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/04.png"  width="65px" ><span class="tooltiptext">fuji</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/05.png"  width="65px" ><span class="tooltiptext">eve</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/06.png"  width="65px" ><span class="tooltiptext">froyo</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/07.png"  width="65px" ><span class="tooltiptext">ashley</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/08.png"  width="65px" ><span class="tooltiptext">ivory</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/09.png"  width="65px" ><span class="tooltiptext">crow</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/010.png"  width="65px" ><span class="tooltiptext">becky</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/011.png"  width="65px" ><span class="tooltiptext">mari</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/012.png"  width="65px" ><span class="tooltiptext">prince</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/013.png"  width="65px" ><span class="tooltiptext">adrina</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/014.png"  width="65px" ><span class="tooltiptext">waffle</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/015.png"  width="65px" ><span class="tooltiptext">red</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/016.png"  width="65px" ><span class="tooltiptext">yhs</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/017.png"  width="65px" ><span class="tooltiptext">gecko</span></div>
+<h2>+++ </h2>
+<br>
+not a friend  but the best big sister i couldve ever asked for!
+<br> <br> 
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/ki.png"  width="65px" ><span class="tooltiptext">me & kiwo ^_^</span></div>
+<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/ki2.png"  width="65px" ><span class="tooltiptext">also us.. we;re  the best!!</span></div>
 
-</body>
-</html>
+<br> 
+<br> 
+</div>
+<div class="scroll4"><span class="anime"><center>....things that i enjoy</center></span>
+ <mark>highlighted</mark> is special interest
+
+<h1>games</h1>
+<b>persona 3</b>/5, omori, in stars and time, hotline miami, <mark><b>alan wake!!</b></mark>, <mark>milk inside a bag of milk</mark>, oneshot, cave story, lobcorp, the world ends with you
+    <h1>animanga</h1>
+    nichijou, <b>girls last tour</b>, space patrol luluco, kill la kill
+    <h1>content creators</h1>
+    <mark><b>prezoh</b></mark>, <b>chiblee</b>, aksually, bigt
+    <h1>media </h1>
+    dick figures, it's always sunny, smiling friends, <mark><b>slugterra</b></mark>, <br> i saw the tv glow
+    <h1>characters</h1>
+    <b>akihiko sanada,</b> <b>makoto yuki,</b> <mark><b>milk chan,</b></mark> <b>yuuri</b>, <b>siffrin</b>, <b>basil</b>, stranger, niko oneshot, alan wake, tarr fortnite
+    <br>
+    <br> 
+</div>
+<div class="art2"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-09_013441564.png"></div>
+
+<div class="div1"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-08_032422287.png"></div>
+
+<div class="text1"><img src="https://file.garden/Zagf2LAXJwHlct9M/weeeeeehh.png"></div>
+<div class="text2"><img src="https://file.garden/Zagf2LAXJwHlct9M/fweeeh.png"></div> 
+
+<div class="girls"><img src="https://file.garden/Zagf2LAXJwHlct9M/fjhsilufhsdif.png"></div>
+<div class="hands1"><img src="https://file.garden/Zagf2LAXJwHlct9M/opera_tY7HUg3aYs.png"></div>
+<div class="hands2"><img src="https://file.garden/Zagf2LAXJwHlct9M/opera_B3cu6D1ysH.png"></div>
+
+<div class="bg2"></div>
+<div class="bg1"></div>
+</body> 
