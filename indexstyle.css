@@ -38,7 +38,7 @@
              top: 14%;
              left: 50%;
              transform: translate(-50%, -50%);
-             transform:scale(1.1);
+             transform:scale(1.2);
              }
              body {
              background: url("https://file.garden/Zagf2LAXJwHlct9M/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.gif") no-repeat fixed center;
@@ -71,10 +71,10 @@
              width: 480px;
              height: 110px;
              border: 4px double #1a1a7a;
-             background: url("https://file.garden/Zagf2LAXJwHlct9M/newsite/image_2024-05-06_052905000.png") no-repeat center;
+             background: url("https://file.garden/Zagf2LAXJwHlct9M/makoto-yuki-aigis.gif") no-repeat center;
              background-size: 560px;
-             background-position-y: -20px;
-             background-position-x: -70px;
+             background-position-y: -90px;
+             background-position-x: 0px;
             
             }       
              .about {
@@ -150,40 +150,44 @@
         text-align:left; 
         padding:5px;
         width:123px;
-        height: 105px;
+        height: 115px;
         position: absolute;
         margin-left: -163px;
-        padding-top: 14px;
+        padding-top: 7px;
         padding-left: 25px;
-        padding-bottom: 10px;
+        padding-bottom: 16px;
         padding-right: -20px; 
-        font-size: 15px;
         top: -5px !important;
-        margin-top: 4.4px;
         margin:10 auto;
         z-index: 3 !important;
         font-family: MS UI Gothic;
-        font-size: 13.9px;
+        font-size: 12.5px;
         font-weight: bold; 
         border-top-left-radius: 35%;
         border-bottom-left-radius: 00%;
         border-bottom-right-radius: 00%;
-        line-height: 25px;
+        line-height: 20px;
     
+    }
+
+    #links br {
+        color: white;
+        width: 120px;
+        height: 12px;
     }
     
     #blinkies { 
         position: absolute;
         border-radius: 6px;        
         font-size: 15px;
-        margin-top: -187px;
+        margin-top: -179px;
         margin-left: -159px;
         border:1px solid black; 
         color: #1a1a7a;
         background: #1a1a7a;
         overflow-y: hidden;
         overflow-x: hidden;
-             padding: 0px;
+
              height: 212px;
              width:154px;
              font-family: ms gothic;
@@ -205,23 +209,23 @@
     
     #newmakoto {
         position: absolute;
-        margin-top: -190px;
-        right: -58px;
+        margin-top: -260px;
+        right: -48px;
         filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -1px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-    transform:rotate(deg);
+    transform:rotate(3deg);
     z-index: 5;
     pointer-events: none;
     }
     
     #newmakoto img {
-        width: 180px;
+        width: 155px;
     }
     
     #linkdiv {
         position: absolute;
         margin-left: -163px;
         z-index: 5;
-        margin-top: 82px;
+        margin-top: 89px;
     }
     
     #linkdiv img {
@@ -322,6 +326,7 @@
     
     .anotherkoto {
         position: absolute;
+        
     }
     .anotherkoto img {
         position: absolute;
@@ -333,6 +338,7 @@
         z-index: -2 !important;
         box-shadow: 4px 3px 3px #1a1a7a;
         border: 3px double #1a1a7a;
+        filter: brightness(86%); 
     }
     
     .chatango {
@@ -346,12 +352,12 @@
     .updates {
         position: absolute;
         width: 238px;
-        height: 118px;
+        height: 124px;
         background: white;
         font-size: 12px;
         border: 3px double;
         padding: px;
-        margin-left: 120px;
+        margin-left: 112px;
         margin-top: 60px;
         box-shadow: -2px 1px 1px #0ed9f5;
         overflow-y: scroll;
@@ -360,10 +366,10 @@
     .shiki {
         position: absolute;
         width: 20px;
-        margin-left: 368px;
-        margin-top: 58px;
+        height: 20px;
+        margin-left: 346px;
+        margin-top: 53px;
         border-bottom-right-radius: 35px;
-        filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
     }
 
     .shiki img {
@@ -373,7 +379,7 @@
     .siff {
         position: absolute;
         width: 89px;
-        height: 118px;
+        height: 124px;
         background: white;
         font-size: 12px;
         border: 3px double;
@@ -400,16 +406,20 @@
     .newbg {
         pointer-events: none;
         z-index: -5; 
-        background: #1a1a7a;
-        width: 822px;
+        background: url('https://bettysgraphics.neocities.org/images/backgrounds/water.gif');
+        background-color: #1a1a7a;
+        background-blend-mode: multiply;
+        width: 832px;
         margin-left: -170px;
         margin-top: -395px;
-        height: 585px;
+        height: 590px;
         position: absolute;
-        border: 4px double #ffffff;
+        border: 2px solid black;
         border-radius: 35px;
         border-bottom-left-radius: 0px;
         border-top-left-radius: 55px;
+        
+        
     }
 
     .creds {
@@ -445,6 +455,23 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     width: 90px;
  }
 
+ #blinkies h2 {
+	position: relative;
+    height: 26px; 
+    width: 100%;
+	font-size: 12px;
+    font-family: ms gothic;
+	background: url('https://file.garden/Zagf2LAXJwHlct9M/whe.gif');
+    background-size:160px;
+    background-position-y:-30px;
+	font-weight:bold;
+	color: #1a1a7a;
+	text-shadow: -1px 0 #0ed9f5, 0 1px #0ed9f5, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+	display: inline-block;
+	margin:0;
+	padding-top:3px;
+}
+
 
     
             /* Below is the mobile optimisation. Mess with it if you want. */
@@ -462,7 +489,8 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     
     #wait {
         left: -30px;
-        transform:scale(0.8)
+        transform:scale(0.8);
+        top: 180px;
     }
      
     #hii {
@@ -478,6 +506,7 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     #links{
       margin-top:468px;
       left: 515px;
+      width: 105px;
       order:3;
       z-index: 5;
       border-top-left-radius: 0px;
@@ -496,7 +525,11 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     #linkdiv {
     left: 499px;
     left: 515px;
-    margin-top:368px; 
+    margin-top:355px; 
+    }
+
+    #linkdiv img {
+        width: 135px;
     }
     
     #sitebutton{
@@ -523,16 +556,29 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     }
 
 .shiki {
-   display: none;
+   position: absolute;
+   margin-top: -535px;
+   margin-left: 280px;
+   z-index: -1
 }
 
 
     .siff {
- display: none;
+        position: absolute;
+        margin-left: 5px;
+        margin-top: -530px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 127px;
     }
 
     .updates {
-display: none;
+        position: absolute;
+        margin-left: 104px;
+        padding-left: 3px;
+        margin-top: -530px;
+        width: 170px;
+        height: 126px;
     } 
 
     .transring {
@@ -546,10 +592,10 @@ display: none;
     }
 
     .newbg {
-        width: 520px;
-        height: 620px;
+        width: 510px;
+        height: 760px;
         margin-left: -10px;
-        margin-top: -410px;
+        margin-top: -540px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 50px;
