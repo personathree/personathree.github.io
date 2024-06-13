@@ -141,6 +141,7 @@
         font-family: ms ui gothic;
         font-size: 13.9px;
         -moz-font-family: ms gothic;
+        -o-font-family: ms gothic;
     }
     
     
@@ -471,7 +472,7 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
 	display: inline-block;
 	margin:0;
 	padding-top:3px;
-
+ }
 
 
     
@@ -487,6 +488,7 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
       width:100%;
       background-size: auto 100%;
     }
+
     
     #wait {
         left: -30px;
@@ -583,8 +585,8 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     } 
 
     .transring {
-        left: 190px;
-    margin-top: -420px;
+        left: 220px;
+    margin-top: -35px;
     }
 
     
@@ -612,4 +614,4 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     display: none;
 }
 
-    }
+    
