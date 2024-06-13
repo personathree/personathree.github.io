@@ -48,7 +48,12 @@
       background-size: cover;
              text-align: center;
              font-family: ms gothic;
+             -moz-o-font-smoothing: grayscale;
              }
+             html {
+                scrollbar-width: 0px;
+                -webkit-font-smoothing: none;
+                }
              a {
              color: #0ed9f5;
              text-decoration: none;
@@ -507,7 +512,7 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     }
     
     #links{
-      margin-top:468px;
+      margin-top:448px;
       left: 515px;
       width: 105px;
       order:3;
@@ -614,4 +619,4 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     display: none;
 }
 
-    
+}
