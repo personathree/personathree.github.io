@@ -331,7 +331,7 @@
     }
     .anotherkoto img {
         position: absolute;
-        width: 155px;
+        width: 165px;
         margin-left: 488px;
         border-top-right-radius: 35px;
         border-bottom-left-radius: 0px;
@@ -437,7 +437,7 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
         position: absolute;
         display: flex;
         font-family: "Bios";
-        margin-top: -35px;
+        margin-top: -36px;
         right: -10px;
         width: 285px;
         color: white; 
@@ -471,7 +471,7 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
 	display: inline-block;
 	margin:0;
 	padding-top:3px;
-}
+
 
 
     
