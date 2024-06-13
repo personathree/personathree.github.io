@@ -140,6 +140,7 @@
         letter-spacing: 0.4px;
         font-family: ms ui gothic;
         font-size: 13.9px;
+        -moz-font-family: ms gothic;
     }
     
     
@@ -436,10 +437,9 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
         position: absolute;
         display: flex;
         font-family: "Bios";
-        margin-top: -405px;
-        right: -240px;
+        margin-top: -35px;
+        right: -10px;
         width: 285px;
-        font-size: 19px;
         color: white; 
         transform:scale(0.6);
         filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
