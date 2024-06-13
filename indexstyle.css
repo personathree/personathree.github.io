@@ -38,7 +38,7 @@
              top: 14%;
              left: 50%;
              transform: translate(-50%, -50%);
-             transform:scale(1.2);
+             transform:scale(1.17);
              }
              body {
              background: url("https://file.garden/Zagf2LAXJwHlct9M/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.gif") no-repeat fixed center;
@@ -457,7 +457,8 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
 
  #blinkies h2 {
 	position: relative;
-    height: 26px; 
+    height: 20px;
+    padding-bottom: 2px; 
     width: 100%;
 	font-size: 12px;
     font-family: ms gothic;
