@@ -441,12 +441,9 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
         width: 285px;
         font-size: 19px;
         color: white; 
-        transform:scale(0.9);
+        transform:scale(0.6);
         filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
     }
-.transring img {
-    width: 110px;
-}
 
 .siff2{
  position: absolute;
