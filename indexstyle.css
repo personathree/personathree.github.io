@@ -501,7 +501,7 @@ filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -
     .transring {
         position: absolute;
         font-family: "Bios";
-        margin-top: -14px;
+        margin-top: -11px;
         right: -22px;
         width: 335px;
         color: white; 
@@ -539,9 +539,7 @@ filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -
 	padding-top:3px;
  }
 
-#updatelog img {
-    border: 2px solid black;
-}
+
 
 
     
