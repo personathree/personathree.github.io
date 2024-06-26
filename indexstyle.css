@@ -169,7 +169,7 @@
         background: #00001d;
         text-align:left; 
         padding:5px;
-        width:134px;
+        width:139px;
         height: 110px;
         margin-top: 5px;
         position: absolute;
@@ -250,16 +250,16 @@
     
     #newmakoto {
         position: absolute;
-        margin-top: -260px;
-        right: -35px;
+        margin-top: -290px;
+        right: -135px;
         filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #70a3b2) drop-shadow( 0 -1px #70a3b2) drop-shadow( -3px 0 #70a3b2);
-    transform:rotate(-3deg);
+    transform:rotate(-2deg);
     z-index: 5;
     pointer-events: none;
     }
     
     #newmakoto img {
-        width: 115px;
+        width: 335px;
     }
     
     #linkdiv {
@@ -393,7 +393,7 @@
         margin-left: 488px;
         border-top-right-radius: 35px;
         border-bottom-left-radius: 0px;
-        margin-top: -390px;
+        margin-top: -389px;
         z-index: -2 !important;
         box-shadow: 4px 3px 3px #1a1a7a;
         border: 3px double #1a1a7a;
