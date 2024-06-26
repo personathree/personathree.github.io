@@ -474,9 +474,9 @@
     .newbg {
         pointer-events: none;
         z-index: -5; 
-        background: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%20590.gif');
+        background: url('https://file.garden/Zagf2LAXJwHlct9M/whe.gif');
         background-color: #05081bf1;
-        background-blend-mode: color; 
+        background-blend-mode: soft-light; 
         width: 832px;
         margin-left: -170px;
         margin-top: -395px;
@@ -504,10 +504,10 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
         display: flex;
         font-family: "Bios";
         margin-top: -36px;
-        right: -10px;
-        width: 285px;
+        right: -43px;
+        width: 335px;
         color: white; 
-        transform:scale(0.6);
+        transform:scale(0.7);
         filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
     }
 
