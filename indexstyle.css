@@ -47,7 +47,7 @@
       -o-background-size: cover;
       background-size: cover;
              text-align: center;
-             font-family:  "ＭＳ Ｐゴシック";
+             font-family:  ms gothic;
              -moz-o-font-smoothing: grayscale;
              }
              html {
@@ -145,8 +145,8 @@
         padding-top: 100px;
         padding-right: 20px;
         letter-spacing: 0.4px;
-        font-family:  "ＭＳ Ｐゴシック";
-        font-size: 13.9px;
+        font-family:  ms gothic;
+        font-size: 12.2px; 
         -moz-font-family: ms gothic;
         -o-font-family: ms gothic;
     }
@@ -181,8 +181,8 @@
         top: -5px !important;
         margin:10 auto;
         z-index: 3 !important;
-        font-family:  "ＭＳ Ｐゴシック";
-        font-size: 11px;
+        font-family:  ms gothic;
+        font-size: 12px;
         font-weight: bold; 
         border-top-left-radius: 22%;
         border-bottom-left-radius: 00%;
@@ -360,6 +360,7 @@
     border: 1px dashed #327e7e;
     margin-top:55px;
     background:#00001d;
+    font-family:  ms gothic;
     color: rgb(116, 150, 158);
     }
     
@@ -415,10 +416,8 @@
         width: 238px;
         height: 124px;
         background:linear-gradient(180deg, #00001d, #00001d, #00001d, #00001d, #00001d, #00001d, #060a0a, #0a1e2c); 
-        font-size: 12px;
+        font-size: 13px;
         border: 3px double;
-        font-family:  "ＭＳ Ｐゴシック";
-        letter-spacing: 0.4px;
         margin-left: 107px;
         margin-top: 60px;
         overflow-y: scroll;
@@ -507,11 +506,12 @@ filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -
         position: absolute;
         display: flex;
         font-family: "Bios";
-        margin-top: -36px;
+        margin-top: -66px;
         right: -43px;
         width: 335px;
+        height: 235px;
         color: white; 
-        transform:scale(0.7);
+        transform:scale(1.0);
         filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
     }
 
