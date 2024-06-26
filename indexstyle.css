@@ -501,12 +501,12 @@ filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -
     .transring {
         position: absolute;
         font-family: "Bios";
-        margin-top: -43px;
-        right: 202px;
+        margin-top: -14px;
+        right: -22px;
         width: 335px;
         color: white; 
         transform:scale(0.7);
-        filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+    
     }
 
 .siff2{
