@@ -4,11 +4,11 @@
     }
     
     ::-webkit-scrollbar-track {
-    background: #1a1a7a; 
+    background: #28668f; 
     }
     
     ::-webkit-scrollbar-thumb {
-    background: #0ed9f5; 
+    background: #70b0b2; 
     }
     
     ::-webkit-scrollbar-thumb:hover {
@@ -35,13 +35,13 @@
     
              #wait {
              position: absolute;
-             top: 14%;
-             left: 50%;
+             top: 10%;
+             left: 20%;
              transform: translate(-50%, -50%);
              transform:scale(1.17);
              }
              body {
-             background: url("https://file.garden/Zagf2LAXJwHlct9M/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.gif") no-repeat fixed center;
+             background: url("https://file.garden/Zagf2LAXJwHlct9M/youtube_RwfV9N2RlgI_1920x1080_h264(1)%20(online-video-cutter.com).gif") no-repeat fixed center;
              -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -55,7 +55,7 @@
                 -webkit-font-smoothing: none;
                 }
              a {
-             color: #0ed9f5;
+             color: #70b0b2;
              text-decoration: none;
              transition: 0.3s;
              }
@@ -77,6 +77,8 @@
              height: 110px;
              border: 4px double #1a1a7a;
              background: url("https://file.garden/Zagf2LAXJwHlct9M/makoto-yuki-aigis.gif") no-repeat center;
+             background-color: #313238;
+        background-blend-mode: overlay; 
              background-size: 560px;
              background-position-y: -90px;
              background-position-x: 0px;
@@ -122,16 +124,16 @@
         height: 310px;
         margin:0 auto; 
         text-align:justify; 
-        border:3px double black; 
+        border:3px outset  #4e627a; 
         max-height:40%; 
         padding:3px 3px 3px 3px;
         z-index: -1;
         font-size: 15px;
         padding-left: 20px;
         font-family: MS PGothic;
-        padding-right: 20px;
-        background: #ffffff;
-        background:linear-gradient(-269deg, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #1a1a7a, #1a1a7a);
+        padding-right: 20px; 
+        background: #70b0b2;  
+        background:linear-gradient(-269deg, #00001d, #00001d, #00001d, #00001d, #00001d, #00001d, #192229, #192229);
     }
     
     #info { 
@@ -148,68 +150,99 @@
         -moz-font-family: ms gothic;
         -o-font-family: ms gothic;
     }
+
+    #info mark { 
+        border: 0px;
+        color: #34cdcf;
+        font-size: 13.8px;
+                    background: #1b1d27;
+                    border-radius: 0px;
+                    line-height: 5px;
+                    padding-left: 3px;
+                    padding-right: 4px;
+                }
     
     
     #links{
-        border:1px solid white; 
-        color: #ffffff;
-        background: #1a1a7a;
+        border:1px solid #28668f; 
+        color: #70a3b2;
+        background: #00001d;
         text-align:left; 
         padding:5px;
-        width:123px;
-        height: 115px;
+        width:134px;
+        height: 110px;
+        margin-top: 5px;
         position: absolute;
         margin-left: -163px;
         padding-top: 7px;
-        padding-left: 25px;
+        padding-left: 15px;
         padding-bottom: 16px;
         padding-right: -20px; 
         top: -5px !important;
         margin:10 auto;
         z-index: 3 !important;
-        font-family: MS UI Gothic;
-        font-size: 12.5px;
+        font-family: MS PGothic; 
+        font-size: 13px;
         font-weight: bold; 
-        border-top-left-radius: 35%;
+        border-top-left-radius: 25%;
         border-bottom-left-radius: 00%;
         border-bottom-right-radius: 00%;
         line-height: 20px;
     
     }
 
+    #links a:hover {
+        border: 0px;
+        color: #34cdcf;
+        font-size: 13.8px;
+                    background: #1b1d27;
+                    border-radius: 0px;
+                    line-height: 5px;
+                    padding-left: 3px;
+                    padding-right: 47px;
+                }
+
     #links br {
         color: white;
         width: 120px;
         height: 12px;
+    }
+
+    #links button {
+        width: 100%;
+        background: #00001d;
+        border:1px solid #28668f; 
     }
     
     #blinkies { 
         position: absolute;
         border-radius: 6px;        
         font-size: 15px;
-        margin-top: -179px;
+        margin-top: -174px;
         margin-left: -159px;
         border:1px solid black; 
-        color: #1a1a7a;
-        background: #1a1a7a;
+        color: #00001d;
+        background: #00001d;
         overflow-y: hidden;
         overflow-x: hidden;
-
              height: 212px;
              width:154px;
              font-family: ms gothic;
              border-top-left-radius: 0%;
         border-bottom-left-radius: 0px;
-        border: 1px solid #0ed9f5;
     } 
     
     #blinkies a:hover{ 
         cursor: help;
              font-weight: bold;
              transition: 0.9s;
-             border-radius: 0px;
-             padding-left: 0px;
-             padding-right: 0px;
+                            background: #1b1d27;
+                            border-radius: 0px;
+                            line-height: 5px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            box-shadow: none;
+                        
     }
     
 
@@ -217,15 +250,15 @@
     #newmakoto {
         position: absolute;
         margin-top: -260px;
-        right: -48px;
-        filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -1px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-    transform:rotate(3deg);
+        right: -35px;
+        filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #70a3b2) drop-shadow( 0 -1px #70a3b2) drop-shadow( -3px 0 #70a3b2);
+    transform:rotate(-3deg);
     z-index: 5;
     pointer-events: none;
     }
     
     #newmakoto img {
-        width: 155px;
+        width: 115px;
     }
     
     #linkdiv {
@@ -242,8 +275,8 @@
     }
     
     #dnilol{
-        filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
-        color: white;
+        filter: drop-shadow( 0 3px #394758) drop-shadow( 2px 0 #00001d) drop-shadow( 0 -2px #00001d) drop-shadow( -3px 0 #00001d);
+        color: #72a4aa;
     position: absolute;
     font-size: 30px;
     font-family: bios;
@@ -256,26 +289,31 @@
     
     #statuscafe {
         padding: 0em;
-        background: white;
+        background: #00001d;
         position: absolute;
-        margin-left: -5px;
-        margin-top: -60px;
+        margin-left: 679px;
+        margin-top: 272px;
         border-radius: 10px;
-        box-shadow: 4px 3px 3px #1a1a7a;
-        border: 2px solid 1a1a7a;
+        box-shadow: -1px -1px 1px #45a0a0;
+        border: 3px double #327e7e;
         padding-left: 10px;
         padding-right: 10px;
+        border-bottom-right-radius: 35px;
+        width: 227px;
     }
     
         #statuscafe a {
-            color:#1a1a7a;
+            color:#24f7fa;
+        }
+        #statuscafe a:hover {
+            color: #00001d;
         }
         
             
     #statuscafe-username {
         margin-bottom: -0.1em;
             text-align:left;
-            color:#414c53;
+            color:#70b0b2;
              font-size:13px;
              letter-spacing: 0.02em;
              background: transparent;
@@ -291,23 +329,22 @@
     font-family: ms gothic;
     padding: 5px;
     -webkit-text-stroke: 0.2px #1b1d27;
-    color: black;
+    color: #b9dddf;
     }
     
     mark { 
-    border: 2px solid #1a1a7a;
-    color: #1a1a7a;
-    font-weight: bold;
-    font-size: 13.8px;
-                background: white;
-                border-radius: 25px;
-                line-height: 5px;
-                padding-left: 3px;
-                padding-right: 4px;
-            }
+        border: 0px;
+        color: #34cdcf;
+        font-size: 13.8px;
+                    background: #1b1d27;
+                    border-radius: 0px;
+                    line-height: 5px;
+                    padding-left: 3px;
+                    padding-right: 4px;
+                }
     
     .marquee {
-    width: 473px;
+    width: 476px;
     height: 16px;
     right: 2px;
     padding:3px;
@@ -315,10 +352,12 @@
     border-width:2px;
     font-size: 13px;
     z-index: 1;
-    border: 2px solid white;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border: 1px dashed #327e7e;
     margin-top:55px;
-    background:#1a1a7a;
-    color: white;
+    background:#00001d;
+    color: rgb(116, 150, 158);
     }
     
     .marquee mark {
@@ -331,6 +370,17 @@
     padding-right: 5px;
     line-height: 5px;
     }
+
+    .marquee a { 
+        border: 0px;
+        color: #34cdcf;
+        font-size: 13.8px;
+                    background: #1b1d27;
+                    border-radius: 0px;
+                    line-height: 5px;
+                    padding-left: 3px;
+                    padding-right: 4px;
+                }
     
     .anotherkoto {
         position: absolute;
@@ -338,36 +388,35 @@
     }
     .anotherkoto img {
         position: absolute;
-        width: 165px;
+        width: 166px;
         margin-left: 488px;
         border-top-right-radius: 35px;
         border-bottom-left-radius: 0px;
-        margin-top: -387px;
+        margin-top: -390px;
         z-index: -2 !important;
         box-shadow: 4px 3px 3px #1a1a7a;
         border: 3px double #1a1a7a;
-        filter: brightness(86%); 
+        filter: brightness(63%); 
     }
     
     .chatango {
         position: absolute;
-        margin-top: -420px;
-        margin-left: -542px;
+        margin-top: -376px;
+        margin-left: 682px;
         z-index: -1;
-        box-shadow: 4px 3px 3px #0ed9f5;
+        border: 2px solid #1b1d27; 
     }
 
     .updates {
         position: absolute;
         width: 238px;
         height: 124px;
-        background: white;
+        background:linear-gradient(180deg, #00001d, #00001d, #00001d, #00001d, #00001d, #00001d, #060a0a, #0a1e2c); 
         font-size: 12px;
         border: 3px double;
         padding: px;
-        margin-left: 112px;
+        margin-left: 107px;
         margin-top: 60px;
-        box-shadow: -2px 1px 1px #0ed9f5;
         overflow-y: scroll;
     }
 
@@ -388,21 +437,32 @@
         position: absolute;
         width: 89px;
         height: 124px;
-        background: white;
+        color: #93d7e0;
+        background:linear-gradient(0deg, #00001d, #00001d, #00001d, #00001d, #00001d, #233636, #28668f, #28668f); 
         font-size: 12px;
         border: 3px double;
         padding: px;
-        margin-left: 555px;
+        margin-left: 558px;
         margin-top: 60px;
-        box-shadow: -2px 1px 1px #0ed9f5;
         overflow-y: hidden;
         overflow-x: hidden;
         border-bottom-right-radius: 35px;
     }
 
     .siff a {
-        color: #1a1a7a 
+        color: #93d7e0; 
     }
+
+    .siff a:hover { 
+        border: 0px;
+        color: #34cdcf;
+        font-size: 13.8px;
+                    background: #1b1d27;
+                    border-radius: 0px;
+                    line-height: 5px;
+                    padding-left: 3px;
+                    padding-right: 7px;
+                }
 
     .switchbutton {
         position: absolute;
@@ -414,15 +474,14 @@
     .newbg {
         pointer-events: none;
         z-index: -5; 
-        background: url('https://bettysgraphics.neocities.org/images/backgrounds/water.gif');
-        background-color: #1a1a7a;
-        background-blend-mode: multiply;
+        background: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%20590.gif');
+        background-color: #05081bf1;
+        background-blend-mode: color; 
         width: 832px;
         margin-left: -170px;
         margin-top: -395px;
         height: 590px;
         position: absolute;
-        border: 2px solid black;
         border-radius: 35px;
         border-bottom-left-radius: 0px;
         border-top-left-radius: 55px;
@@ -470,15 +529,21 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
 	font-size: 12px;
     font-family: ms gothic;
 	background: url('https://file.garden/Zagf2LAXJwHlct9M/whe.gif');
+    background-color: #2f2d33f1;
+    background-blend-mode: soft-light; 
     background-size:160px;
     background-position-y:-30px;
 	font-weight:bold;
 	color: #1a1a7a;
-	text-shadow: -1px 0 #0ed9f5, 0 1px #0ed9f5, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+	text-shadow: -1px 0 #b9dddf, 0 1px #b9dddf, 1px 0 #b9dddf, 0 -1px #FFFFFF;
 	display: inline-block;
 	margin:0;
 	padding-top:3px;
  }
+
+#updatelog img {
+    border: 2px solid black;
+}
 
 
     
@@ -618,6 +683,11 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
 
 .siff2 {
     display: none;
+}
+
+#statuscafe {
+    margin-left: 240px;
+    margin-top: -60px;
 }
 
 }
