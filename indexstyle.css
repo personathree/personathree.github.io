@@ -486,8 +486,6 @@
         border-radius: 35px;
         border-bottom-left-radius: 0px;
         border-top-left-radius: 55px;
-        
-        
     }
 
     .creds {
@@ -502,10 +500,9 @@ filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -
 
     .transring {
         position: absolute;
-        display: flex;
         font-family: "Bios";
-        margin-top: -39px;
-        right: -42px;
+        margin-top: -43px;
+        right: 202px;
         width: 335px;
         color: white; 
         transform:scale(0.7);
@@ -663,8 +660,9 @@ filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -
     } 
 
     .transring {
-        left: 220px;
-    margin-top: -35px;
+        display: flex; 
+        left: -10px;
+    margin-top: -43px;
     }
 
     
@@ -681,6 +679,7 @@ filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -
         border-top-right-radius: 0px;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
+        background-size: 992px;
     }
     
 .creds {
