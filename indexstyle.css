@@ -47,7 +47,7 @@
       -o-background-size: cover;
       background-size: cover;
              text-align: center;
-             font-family: ms gothic;
+             font-family:  "ＭＳ Ｐゴシック";
              -moz-o-font-smoothing: grayscale;
              }
              html {
@@ -130,7 +130,7 @@
         z-index: -1;
         font-size: 15px;
         padding-left: 20px;
-        font-family: MS PGothic;
+        font-family: MS Gothic;
         padding-right: 20px; 
         background: #70b0b2;  
         background:linear-gradient(-269deg, #00001d, #00001d, #00001d, #00001d, #00001d, #00001d, #192229, #192229);
@@ -145,7 +145,7 @@
         padding-top: 100px;
         padding-right: 20px;
         letter-spacing: 0.4px;
-        font-family: ms pgothic;
+        font-family:  "ＭＳ Ｐゴシック";
         font-size: 13.9px;
         -moz-font-family: ms gothic;
         -o-font-family: ms gothic;
@@ -174,20 +174,20 @@
         margin-top: 5px;
         position: absolute;
         margin-left: -163px;
-        padding-top: 7px;
-        padding-left: 15px;
+        padding-top: -2px;
+        padding-left: 10px;
         padding-bottom: 16px;
         padding-right: -20px; 
         top: -5px !important;
         margin:10 auto;
         z-index: 3 !important;
-        font-family: MS PGothic; 
-        font-size: 13px;
+        font-family:  "ＭＳ Ｐゴシック";
+        font-size: 11px;
         font-weight: bold; 
-        border-top-left-radius: 25%;
+        border-top-left-radius: 22%;
         border-bottom-left-radius: 00%;
         border-bottom-right-radius: 00%;
-        line-height: 20px;
+        line-height: 17px;
     
     }
 
@@ -199,7 +199,8 @@
                     border-radius: 0px;
                     line-height: 5px;
                     padding-left: 3px;
-                    padding-right: 47px;
+                    padding-right: 35px;
+                    box-shadow: none;
                 }
 
     #links br {
@@ -298,6 +299,7 @@
         border: 3px double #327e7e;
         padding-left: 10px;
         padding-right: 10px;
+        font-family:  "ＭＳ Ｐゴシック";
         border-bottom-right-radius: 35px;
         width: 227px;
     }
@@ -326,7 +328,8 @@
     background: transparent;
     letter-spacing: 0em;
     width: auto;
-    font-family: ms gothic;
+    font-family:  "ＭＳ Ｐゴシック";
+    letter-spacing: 0.9px;
     padding: 5px;
     -webkit-text-stroke: 0.2px #1b1d27;
     color: #b9dddf;
@@ -414,7 +417,8 @@
         background:linear-gradient(180deg, #00001d, #00001d, #00001d, #00001d, #00001d, #00001d, #060a0a, #0a1e2c); 
         font-size: 12px;
         border: 3px double;
-        padding: px;
+        font-family:  "ＭＳ Ｐゴシック";
+        letter-spacing: 0.4px;
         margin-left: 107px;
         margin-top: 60px;
         overflow-y: scroll;
@@ -439,7 +443,7 @@
         height: 124px;
         color: #93d7e0;
         background:linear-gradient(0deg, #00001d, #00001d, #00001d, #00001d, #00001d, #233636, #28668f, #28668f); 
-        font-size: 12px;
+        font-size: 11px;
         border: 3px double;
         padding: px;
         margin-left: 558px;
@@ -447,6 +451,7 @@
         overflow-y: hidden;
         overflow-x: hidden;
         border-bottom-right-radius: 35px;
+        letter-spacing: 0.7px;
     }
 
     .siff a {
@@ -462,6 +467,7 @@
                     line-height: 5px;
                     padding-left: 3px;
                     padding-right: 7px;
+                    box-shadow: none;
                 }
 
     .switchbutton {
@@ -474,9 +480,7 @@
     .newbg {
         pointer-events: none;
         z-index: -5; 
-        background: url('https://file.garden/Zagf2LAXJwHlct9M/whe.gif');
-        background-color: #05081bf1;
-        background-blend-mode: soft-light; 
+        background: url('https://file.garden/Zagf2LAXJwHlct9M/ezgif-1-4d72f86a78.gif'); 
         width: 832px;
         margin-left: -170px;
         margin-top: -395px;
@@ -494,9 +498,9 @@ position: absolute;
 font-family: "Bios";
 margin-top: 195px;
 right: -150px;
-font-size: 19px;
-color: white; 
-filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -2px #1a1a7a) drop-shadow( -3px 0 #1a1a7a);
+font-size: 16px;
+color: 93d7e0; 
+filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -2px #1b1d27) drop-shadow( -3px 0 #1a1a7a);
     }
 
     .transring {
@@ -578,9 +582,11 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     }
     
     #links{
-      margin-top:448px;
+      margin-top:455px;
+      line-height: 23px;
       left: 515px;
-      width: 105px;
+      height: 125px;
+      width: 125px;
       order:3;
       z-index: 5;
       border-top-left-radius: 0px;
@@ -599,7 +605,7 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
     #linkdiv {
     left: 499px;
     left: 515px;
-    margin-top:355px; 
+    margin-top:370px; 
     }
 
     #linkdiv img {
@@ -644,6 +650,8 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         height: 127px;
+        font-family: ms gothic;
+        letter-spacing: 0.2px;
     }
 
     .updates {
@@ -653,6 +661,8 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
         margin-top: -530px;
         width: 170px;
         height: 126px;
+        font-family: ms gothic;
+        letter-spacing: 0px;
     } 
 
     .transring {
@@ -688,6 +698,17 @@ filter: drop-shadow( 0 3px #1a1a7a) drop-shadow( 2px 0 #1a1a7a) drop-shadow( 0 -
 #statuscafe {
     margin-left: 240px;
     margin-top: -60px;
+    font-family: ms gothic;
+    letter-spacing: 0px;
+}
+
+#statuscafe-content {
+    font-family: ms gothic;
+        letter-spacing: 0px;
+}
+
+.marquee {
+    font-family: ms gothic;
 }
 
 }
