@@ -1,708 +1,398 @@
 ::-webkit-scrollbar {
     width: 10px;
     height: 20px;
-    }
-    
-    ::-webkit-scrollbar-track {
-    background: #28668f; 
-    }
-    
-    ::-webkit-scrollbar-thumb {
-    background: #70b0b2; 
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-    background: #404a4b; 
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #28668f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #70b0b2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #404a4b;
     transition: 0.9s;
-    }
-    
-          @font-face {
-      font-family: ms gothic;
-      src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
-    }
-    @font-face {
-        font-family: bios;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
-    }
-    @font-face {
-        font-family: ms pgothic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
-    }
-    @font-face {
-        font-family: basiic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
-    }
-    
-             #wait {
-             position: absolute;
-             top: 10%;
-             left: 20%;
-             transform: translate(-50%, -50%);
-             transform:scale(1.17);
-             }
-             body {
-             background: url("https://file.garden/Zagf2LAXJwHlct9M/youtube_RwfV9N2RlgI_1920x1080_h264(1)%20(online-video-cutter.com).gif") no-repeat fixed center;
-             -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-             text-align: center;
-             font-family:  ms gothic;
-             -moz-o-font-smoothing: grayscale;
-             }
-             html {
-                scrollbar-width: 0px;
-                -webkit-font-smoothing: none;
-                }
-             a {
-             color: #70b0b2;
-             text-decoration: none;
-             transition: 0.3s;
-             }
-             a:hover {
-             cursor: help;
-             font-weight: bold;
-             color: #43494b;
-             background: white;
-             box-shadow: 3px 2px 2px #0ed9f5;
-             border: 2px solid white;
-             transition: 0.9s;
-             border-radius: 25px;
-             padding-left: 5px;
-             padding-right: 5px;
-             }
-             .train {
-             display: inline-block;
-             width: 480px;
-             height: 110px;
-             border: 4px double #1a1a7a;
-             background: url("https://file.garden/Zagf2LAXJwHlct9M/makoto-yuki-aigis.gif") no-repeat center;
-             background-color: #313238;
-        background-blend-mode: overlay; 
-             background-size: 560px;
-             background-position-y: -90px;
-             background-position-x: 0px;
-            
-            }       
-             .about {
-                 margin-top: -120px;
-                 margin-right: 50px;
-                 padding-top: 0px;
-             font-size: 19px;
-             color: #FFFFFF;
-             float: right;
-             font-family: ms gothic;
-             width: 330px;
-             height: 150px;
-             border: 0px solid black;
-             overflow-y: hidden;
-             overflow-x: hidden;
-             }
-             .blinkies1 {
-             margin: 0px;
-             }
-             .blinkies2 {
-             margin-top: 2px;
-             }
-             .marq {
-             color: white;
-             filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
-             font-family: ms gothic;
-             font-size: 25px;
-             line-height: 1.1em;
-             padding: 0em;
-             width: 370px;
-             }
-             p {
-             margin: 0;
-             color: black;
-             font-size: 20px;
-             }
-    #hii {
-        margin-top: -90px !important;
-        width:442px; 
-        height: 310px;
-        margin:0 auto; 
-        text-align:justify; 
-        border:3px outset  #4e627a; 
-        max-height:40%; 
-        padding:3px 3px 3px 3px;
-        z-index: -1;
-        font-size: 15px;
-        padding-left: 20px;
-        font-family: MS Gothic;
-        padding-right: 20px; 
-        background: #70b0b2;  
-        background:linear-gradient(-269deg, #00001d, #00001d, #00001d, #00001d, #00001d, #00001d, #192229, #192229);
-    }
-    
-    #info { 
-        width: 365px;
-        height: 290px;
-        overflow-y: hidden;
-        line-height: 15px;
-    margin-top: 5px;
-        padding-top: 100px;
-        padding-right: 20px;
-        letter-spacing: 0.4px;
-        font-family:  ms gothic;
-        font-size: 12.2px; 
-        -moz-font-family: ms gothic;
-        -o-font-family: ms gothic;
-    }
+}
 
-    #info mark { 
-        border: 0px;
-        color: #34cdcf;
-        font-size: 13.8px;
-                    background: #1b1d27;
-                    border-radius: 0px;
-                    line-height: 5px;
-                    padding-left: 3px;
-                    padding-right: 4px;
-                }
-    
-    
-    #links{
-        border:1px solid #28668f; 
-        color: #70a3b2;
-        background: #00001d;
-        text-align:left; 
-        padding:5px;
-        width:139px;
-        height: 110px;
-        margin-top: 5px;
-        position: absolute;
-        margin-left: -163px;
-        padding-top: -2px;
-        padding-left: 10px;
-        padding-bottom: 16px;
-        padding-right: -20px; 
-        top: -5px !important;
-        margin:10 auto;
-        z-index: 3 !important;
-        font-family:  ms gothic;
-        font-size: 12px;
-        font-weight: bold; 
-        border-top-left-radius: 22%;
-        border-bottom-left-radius: 00%;
-        border-bottom-right-radius: 00%;
-        line-height: 17px;
-    
-    }
+@font-face {
+    font-family: ms gothic;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
+}
 
-    #links a:hover {
-        border: 0px;
-        color: #34cdcf;
-        font-size: 13.8px;
-                    background: #1b1d27;
-                    border-radius: 0px;
-                    line-height: 5px;
-                    padding-left: 3px;
-                    padding-right: 35px;
-                    box-shadow: none;
-                }
-
-    #links br {
-        color: white;
-        width: 120px;
-        height: 12px;
-    }
-
-    #links button {
-        width: 100%;
-        background: #00001d;
-        border:1px solid #28668f; 
-    }
-    
-    #blinkies { 
-        position: absolute;
-        border-radius: 6px;        
-        font-size: 15px;
-        margin-top: -174px;
-        margin-left: -159px;
-        border:1px solid black; 
-        color: #00001d;
-        background: #00001d;
-        overflow-y: hidden;
-        overflow-x: hidden;
-             height: 212px;
-             width:154px;
-             font-family: ms gothic;
-             border-top-left-radius: 0%;
-        border-bottom-left-radius: 0px;
-    } 
-    
-    #blinkies a:hover{ 
-        cursor: help;
-             font-weight: bold;
-             transition: 0.9s;
-                            background: #1b1d27;
-                            border-radius: 0px;
-                            line-height: 5px;
-                            padding-left: 0px;
-                            padding-right: 0px;
-                            box-shadow: none;
-                        
-    }
-    
-
-    
-    #newmakoto {
-        position: absolute;
-        margin-top: -290px;
-        right: -135px;
-        filter: drop-shadow( 0 -2px #FFFFFF) drop-shadow( 2px 0 #70a3b2) drop-shadow( 0 -1px #70a3b2) drop-shadow( -3px 0 #70a3b2);
-    transform:rotate(-2deg);
-    z-index: 5;
-    pointer-events: none;
-    }
-    
-    #newmakoto img {
-        width: 335px;
-    }
-    
-    #linkdiv {
-        position: absolute;
-        margin-left: -163px;
-        z-index: 5;
-        margin-top: 89px;
-        -moz-margin-top: 84px;
-    }
-    
-    #linkdiv img {
-        width: 154px;
-        box-shadow: 4px 3px 3px #1a1a7a; 
-    }
-    
-    #dnilol{
-        filter: drop-shadow( 0 3px #394758) drop-shadow( 2px 0 #00001d) drop-shadow( 0 -2px #00001d) drop-shadow( -3px 0 #00001d);
-        color: #72a4aa;
-    position: absolute;
-    font-size: 30px;
+@font-face {
     font-family: bios;
-    letter-spacing: 5px;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
+}
+
+@font-face {
+    font-family: ms pgothic;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
+}
+
+@font-face {
+    font-family: basiic;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
+}
+
+@font-face {
+    font-family: cyborg;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/CyborgSister.ttf);
+}
+
+
+#wait {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: scale(1.30);
+}
+
+body {
+    background: url("https://file.garden/Zagf2LAXJwHlct9M/image_2024-07-04_012219749.png") no-repeat fixed center, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-family: ms gothic;
+    -moz-o-font-smoothing: grayscale;
+}
+
+html {
+    scrollbar-width: 0px;
+    -webkit-font-smoothing: none;
+}
+
+a {
+    color: #dbdbdb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    border: 0px;
+    color: #50635d;
+    background: #1b1d27;
+    border-radius: 0px;
+    padding-left: 3px;
+    padding-right: 35px;
+    box-shadow: none;
+}
+
+.train {
+    display: inline-block;
+    width: 480px;
+    height: 90px;
+}
+
+.marq {
+    color: white;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    font-family: ms gothic;
+    font-size: 25px;
+    line-height: 1.1em;
+    padding: 0em;
+    width: 370px;
+}
+
+p {
+    margin: 0;
+    color: black;
+    font-size: 20px;
+}
+
+#hii {
+    margin-top: -90px !important;
+    width: 442px;
+    height: 375px;
+    border: 1px dotted white;
+    padding: 3px 3px 3px 3px;
+    font-size: 15px;
     padding-left: 20px;
-    margin-top: 80px;
-    transition: .4s ease; 
-    }
-    
-    
-    #statuscafe {
-        padding: 0em;
-        background: #00001d;
-        position: absolute;
-        margin-left: 679px;
-        margin-top: 272px;
-        border-radius: 10px;
-        box-shadow: -1px -1px 1px #45a0a0;
-        border: 3px double #327e7e;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-bottom-right-radius: 35px;
-        width: 227px;
-    }
-    
-        #statuscafe a {
-            color:#24f7fa;
-        }
-        #statuscafe a:hover {
-            color: #00001d;
-        }
-        
-            
-    #statuscafe-username {
-        margin-bottom: -0.1em;
-            text-align:left;
-            color:#70b0b2;
-             font-size:13px;
-             letter-spacing: 0.02em;
-             background: transparent;
-             
-             
-            }
-    #statuscafe-content {
+    padding-right: 20px;
+    background: #00000097;
+}
+
+#info {
+    width: 490px;
+    height: 290px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    line-height: 15px;
+    margin-top: 5px;
+    margin-left: -12px;
+    padding-top: 90px;
+    padding-right: 15px;
+    letter-spacing: 0.4px;
+    font-family: bios;
+    font-size: 14.2px;
+}
+
+#info mark {
+    border: 0px;
+    color: #34cdcf;
+    font-size: 13.8px;
+    background: #000000;
+    border-radius: 0px;
+    line-height: 5px;
+    padding-left: 3px;
+    padding-right: 4px;
+}
+
+
+#links {
+    text-align: left;
+    padding: 5px;
+    width: 139px;
+    height: 130px;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: -133px;
+    padding-top: -2px;
+    padding-bottom: 16px;
+    top: -5px !important;
+    margin: 10 auto;
+    z-index: 6 !important;
+    font-family: bios;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+#links a {
+    color: #dbdbdb;
+}
+
+#links a:hover {
+    border: 0px;
+    color: #50635d;
+}
+
+
+#statuscafe {
+    padding: 0em;
+    position: absolute;
+    margin-left: -159px;
+    margin-top: 179px;
+    border: 1px dotted white;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 130px;
+    font-family: 'bios';
+    background: #000000;
+}
+
+#statuscafe-username {
+    margin-bottom: -0.1em;
+    text-align: left;
+    color: #6b6b6b;
     font-size: 12px;
-    text-align:left;
+    letter-spacing: 0.02em;
+    background: transparent;
+}
+
+#statuscafe-content {
+    font-size: 15px;
+    text-align: left;
     background: transparent;
     letter-spacing: 0em;
     width: auto;
     padding: 5px;
     -webkit-text-stroke: 0.2px #1b1d27;
-    color: #b9dddf;
-    }
-    
-    mark { 
-        border: 0px;
-        color: #34cdcf;
-        font-size: 13.8px;
-                    background: #1b1d27;
-                    border-radius: 0px;
-                    line-height: 5px;
-                    padding-left: 3px;
-                    padding-right: 4px;
-                }
-    
-    .marquee {
-    width: 476px;
-    height: 16px;
-    right: 2px;
-    padding:3px;
+    color: #ebebeb;
+}
+
+mark {
+    border: 0px;
+    color: #34cdcf;
+    font-size: 13.8px;
+    background: #1b1d27;
+    border-radius: 0px;
+    line-height: 5px;
+    padding-left: 3px;
+    padding-right: 4px;
+}
+
+.marquee {
+    width: 470px;
+    height: 15px;
+    right: 0px;
+    padding: 3px;
     position: absolute;
-    border-width:2px;
-    font-size: 13px;
+    border-width: 2px;
+    font-size: 14px;
     z-index: 1;
     padding-top: 2px;
     padding-bottom: 5px;
-    border: 1px dashed #327e7e;
-    margin-top:55px;
-    background:#00001d;
-    font-family:  ms gothic;
-    color: rgb(116, 150, 158);
-    }
-    
-    .marquee mark {
-    border: 2px solid #1a1a7a;
-    color: #1a1a7a;
-    font-size: 13px;
-    background: white;
-    border-radius: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
-    line-height: 5px;
-    }
+    border: 4px double #d1d1d1;
+    margin-top: -62px;
+    background: #000000;
+    font-family: bios;
+    color: #ebebeb;
+}
 
-    .marquee a { 
-        border: 0px;
-        color: #34cdcf;
-        font-size: 13.8px;
-                    background: #1b1d27;
-                    border-radius: 0px;
-                    line-height: 5px;
-                    padding-left: 3px;
-                    padding-right: 4px;
-                }
-    
-    .anotherkoto {
-        position: absolute;
-        
-    }
-    .anotherkoto img {
-        position: absolute;
-        width: 166px;
-        margin-left: 488px;
-        border-top-right-radius: 35px;
-        border-bottom-left-radius: 0px;
-        margin-top: -389px;
-        z-index: -2 !important;
-        box-shadow: 4px 3px 3px #1a1a7a;
-        border: 3px double #1a1a7a;
-        filter: brightness(63%); 
-    }
-    
-    .chatango {
-        position: absolute;
-        margin-top: -376px;
-        margin-left: 682px;
-        z-index: -1;
-        border: 2px solid #1b1d27; 
-    }
+.chatango {
+    position: absolute;
+    margin-top: 0px;
+    z-index: -1;
+    border: 2px solid #1b1d27;
+}
 
-    .updates {
-        position: absolute;
-        width: 238px;
-        height: 124px;
-        background:linear-gradient(180deg, #00001d, #00001d, #00001d, #00001d, #00001d, #00001d, #060a0a, #0a1e2c); 
-        font-size: 13px;
-        border: 3px double;
-        margin-left: 107px;
-        margin-top: 60px;
-        overflow-y: scroll;
-    }
+.transring {
+    position: absolute;
+    font-family: "Bios";
+    margin-top: -11px;
+    right: 60px;
+    width: 335px;
+    color: white;
+    transform: scale(0.7);
+}
 
-    .shiki {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        margin-left: 346px;
-        margin-top: 53px;
-        border-bottom-right-radius: 35px;
-    }
+#current {
+    position: absolute;
+    width: 109px;
+    margin-top: -10px; 
+    padding-left: 2px;
+    padding-right: 4px; 
+    font-family: bios;
+    height: 115px;
+    z-index: 9;
+    background:#00000099;
+    border: 2px dotted white;
+    top: 430px !important;
+    left: 364px !important;
+    color: white;
 
-    .shiki img {
-        width: 90px;
-    }
+}
 
-    .siff {
-        position: absolute;
-        width: 89px;
-        height: 124px;
-        color: #93d7e0;
-        background:linear-gradient(0deg, #00001d, #00001d, #00001d, #00001d, #00001d, #233636, #28668f, #28668f); 
-        font-size: 11px;
-        border: 3px double;
-        padding: px;
-        margin-left: 558px;
-        margin-top: 60px;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        border-bottom-right-radius: 35px;
-        letter-spacing: 0.7px;
-    }
+#basil {
+    position: absolute;
+    top: 430px !important;
+    left: 370px !important;
+}
 
-    .siff a {
-        color: #93d7e0; 
-    }
 
-    .siff a:hover { 
-        border: 0px;
-        color: #34cdcf;
-        font-size: 13.8px;
-                    background: #1b1d27;
-                    border-radius: 0px;
-                    line-height: 5px;
-                    padding-left: 3px;
-                    padding-right: 7px;
-                    box-shadow: none;
-                }
 
-    .switchbutton {
-        position: absolute;
-        margin-top: -405px;
-        margin-left: 385px;
-        width: 120px;
-    }
-
-    .newbg {
-        pointer-events: none;
-        z-index: -5; 
-        background: url('https://file.garden/Zagf2LAXJwHlct9M/ezgif-1-4d72f86a78.gif'); 
-        background-size: 820px;
-        width: 832px;
-        margin-left: -170px;
-        margin-top: -395px;
-        height: 590px;
-        position: absolute;
-        border-radius: 35px;
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 55px;
-    }
-
-    .creds {
-position: absolute;
-font-family: "Bios";
-margin-top: 195px;
-right: -150px;
-font-size: 16px;
-color: 93d7e0; 
-filter: drop-shadow( 0 3px #1b1d27) drop-shadow( 2px 0 #1b1d27) drop-shadow( 0 -2px #1b1d27) drop-shadow( -3px 0 #1a1a7a);
-    }
-
-    .transring {
-        position: absolute;
-        font-family: "Bios";
-        margin-top: -11px;
-        right: -22px;
-        width: 335px;
-        color: white; 
-        transform:scale(0.7);
-    
-    }
-
-.siff2{
- position: absolute;
- margin-left: 459px;
- margin-top: 55px;
- }
-
- .siff2 img {
-    width: 90px;
- }
-
- #blinkies h2 {
-	position: relative;
+#links h2 {
+    position: relative;
     height: 20px;
-    padding-bottom: 2px; 
+    padding-bottom: 2px;
     width: 100%;
-	font-size: 12px;
+    font-size: 12px;
     font-family: ms gothic;
-	background: url('https://file.garden/Zagf2LAXJwHlct9M/whe.gif');
+    background: url('https://file.garden/Zagf2LAXJwHlct9M/whe.gif');
     background-color: #2f2d33f1;
-    background-blend-mode: soft-light; 
-    background-size:160px;
-    background-position-y:-30px;
-	font-weight:bold;
-	color: #1a1a7a;
-	text-shadow: -1px 0 #b9dddf, 0 1px #b9dddf, 1px 0 #b9dddf, 0 -1px #FFFFFF;
-	display: inline-block;
-	margin:0;
-	padding-top:3px;
- }
+    background-blend-mode: soft-light;
+    background-size: 160px;
+    background-position-y: -30px;
+    font-weight: bold;
+    color: #1a1a7a;
+    text-shadow: -1px 0 #b9dddf, 0 1px #b9dddf, 1px 0 #b9dddf, 0 -1px #FFFFFF;
+    display: inline-block;
+    margin: 0;
+    padding-top: 3px;
+}
+
+#chiyuu {
+    position: absolute;
+    margin-left: -165px;
+    margin-top: -50px;
+    color: white; 
+    font-family: bios; 
+    filter:saturate(25%);
+}
+
+#chiyuu img {
+    width: 200px; 
+    filter:saturate(0%);
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px white) drop-shadow(1px 0 white) drop-shadow(-1px 0 black);
+}
 
 
 
+/* Below is the mobile optimisation. Mess with it if you want. */
+@media only screen and (max-width: 640px) {
 
-    
-            /* Below is the mobile optimisation. Mess with it if you want. */
-    @media only screen and (max-width: 640px) {
-
-        body {
-            background-size: cover;
-        }
-        
-    #box {
-      display: block;
-      width:100%;
-      background-size: auto 100%;
+    body {
+        background-size: cover;
     }
 
-    
+    #box {
+        display: block;
+        width: 100%;
+        background-size: auto 100%;
+    }
+
+
     #wait {
         left: -30px;
-        transform:scale(0.8);
-        top: 180px;
+        transform: scale(0.8);
+        top: 120px;
     }
-     
+
     #hii {
         font-family: ms gothic;
         font-size: 13px;
     }
-    
+
     #info {
         font-family: ms gothic;
         letter-spacing: -1px;
     }
-    
-    #links{
-      margin-top:455px;
-      line-height: 23px;
-      left: 515px;
-      height: 125px;
-      width: 125px;
-      order:3;
-      z-index: 5;
-      border-top-left-radius: 0px;
+
+    #links {
+        margin-top: 425px;
+        line-height: 23px;
+        left: 495px;
+        height: 125px;
+        width: 125px;
+        order: 3;
+        z-index: 5;
+        border-top-left-radius: 0px;
         border-bottom-right-radius: 35px;
         font-family: ms gothic;
     }
-     
-    #blinkies{
-      order: 2;
-      margin-top:59px;
-      left: 160px;
-      height: 180px; 
-      border-bottom-left-radius: 35px;
-    }
-     
-    #linkdiv {
-    left: 499px;
-    left: 515px;
-    margin-top:370px; 
-    }
 
-    #linkdiv img {
-        width: 135px;
-    }
-    
-    #sitebutton{
-      order: 3;
-      margin-top:36px;
-      left: 515px;
-      height: 100px;
-    }
-    
     .chatango {
         display: none;
     }
-    
-    .anotherkoto {
-        display: none;
-    }
-    
-    #buttons {
-  display: none;
-    }
-    
-    .player, .title-bar, .window, .musicplayer, .window-body {
-        display: none;
-    }
-
-.shiki {
-   position: absolute;
-   margin-top: -535px;
-   margin-left: 280px;
-   z-index: -1
-}
-
-
-    .siff {
-        position: absolute;
-        margin-left: 5px;
-        margin-top: -530px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        height: 127px;
-        font-family: ms gothic;
-        letter-spacing: 0.2px;
-    }
-
-    .updates {
-        position: absolute;
-        margin-left: 104px;
-        padding-left: 3px;
-        margin-top: -530px;
-        width: 170px;
-        height: 126px;
-        font-family: ms gothic;
-        letter-spacing: 0px;
-    } 
 
     .transring {
-        display: flex; 
+        display: flex;
         left: -10px;
-    margin-top: -43px;
+        margin-top: 143px;
     }
 
-    
-    .updatelog {
-     font-size: 12px;   
-    }
-
-    .newbg {
-        width: 510px;
-        height: 760px;
-        margin-left: -10px;
-        margin-top: -540px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        background-size: 992px;
-    }
-    
-.creds {
-    left: 140px;
-    margin-top: 210px;
-}
-
-.siff2 {
-    display: none;
-}
-
-#statuscafe {
-    margin-left: 240px;
-    margin-top: -60px;
-    font-family: ms gothic;
-    letter-spacing: 0px;
-}
-
-#statuscafe-content {
-    font-family: ms gothic;
+    #statuscafe {
+        margin-left: 10px;
+        margin-top: 380px;
+        font-family: bios;
         letter-spacing: 0px;
-}
+    }
 
-.marquee {
-    font-family: ms gothic;
-}
+    #statuscafe-content {
+        font-family: bios;
+        letter-spacing: 0px;
+    }
 
+    .marquee {
+        font-family: ms gothic;
+    }
+
+    #chiyuu {
+        margin-left: 290px;
+        margin-top: -590px;
+    }
+
+    #chiyuu img {
+        width: 160px;
+    }
+
+    #current {
+display: none; 
+    }
 }
