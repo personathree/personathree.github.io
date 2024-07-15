@@ -1,288 +1,221 @@
-
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>until my life is exhausted</title>
 
-<style>
-@font-face {
-  font-family: p3;
-  src: url(https://file.garden/Zagf2LAXJwHlct9M/9usuuk.ttf);
-}
-@font-face {
-      font-family: ms gothic;
-      src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
-    }
-    @font-face {
-        font-family: bios;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
-    }
-    @font-face {
-        font-family: ms pgothic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
-    }
-    @font-face {
-        font-family: basiic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
-    }
-
-::-webkit-scrollbar {
-display: none;
-    }
-    
-
-
-#position {
-  position: absolute;
-  top: 23%;
-  left: 35%;
-  transform: scale(1.5);
-  }
-
-body {
-   padding:30px;
-  text-align:center;
-   color: black;
- font-family: arial;
- font-size:25px;
- background: url("https://file.garden/Zagf2LAXJwHlct9M/newbg.png") no-repeat fixed center;
-        -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;      
-      cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto;   
-      
-}
-
-    #scroll3 {
-    height: 105px;
-    width: 150px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-top: 10px;
-    border: 3px double #ccc;
-    font-family: ms pgothic;
-    font-size: 12px;
-    overflow: auto;
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 95px;
-    line-height: 13px;
-    z-index: 3;
-    background: #00000099;
-    color: white; 
-    box-shadow: black 2px 2px 3px 2px;
-    border-image: url('https://file.garden/Zagf2LAXJwHlct9M/wem.png') 4 fill round;
-    }
-
-    #scroll4 {
-    height: 80px;
-    width: 205px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-top: 10px;
-    border: 3px double #ccc;
-    font-family: ms pgothic;
-    font-size: 12px;
-    overflow: auto;
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 235px;
-    line-height: 13px;
-    z-index: 3;
-    background: #00000099;
-    color: white; 
-    box-shadow: black 2px 2px 3px 2px;
-    border-image: url('https://file.garden/Zagf2LAXJwHlct9M/wem.png') 4 fill round;
-    }
-
-    #akihiko {
-        position: absolute;
-    }
-
-    #akihiko img {
-        position: absolute;
-        margin-left: 120px;
-        filter: drop-shadow(0px 1px transparent) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
-    }
-
-    #title {
-        position: absolute;
-        font-family: p3;
-        font-weight: bold;
-        font-size: 19px;
-        margin-left: 50px;
-        margin-top: 60px;
-        width: 320px;
-        color: white;
-        text-align: left;
-        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
-    }
-
-    #moretext {
-        position: absolute;
-        font-family: p3;
-        font-weight: bold;
-        font-size: 13px;
-        margin-left:-10px;
-        margin-top: 5px;
-        letter-spacing: 1px;
-        width: 320px;
-        color: white;
-        text-align: left;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
-    }
-     
-mark {
-    background: #7f817e; 
-    color: white;
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.bios {
-    font-family: bios;
-    text-align: left;
-}
-
-@keyframes flicker {
-0% {
-opacity: 0.27861;
-}
-5% {
-opacity: 0.34769;
-}
-10% {
-opacity: 0.23604;
-}
-15% {
-opacity: 0.90626;
-}
-20% {
-opacity: 0.18128;
-}
-25% {
-opacity: 0.83891;
-}
-30% {
-opacity: 0.65583;
-}
-35% {
-opacity: 0.67807;
-}
-40% {
-opacity: 0.26559;
-}
-45% {
-opacity: 0.84693;
-}
-50% {
-opacity: 0.96019;
-}
-55% {
-opacity: 0.08594;
-}
-60% {
-opacity: 0.20313;
-}
-65% {
-opacity: 0.71988;
-}
-70% {
-opacity: 0.53455;
-}
-75% {
-opacity: 0.37288;
-}
-80% {
-opacity: 0.71428;
-}
-85% {
-opacity: 0.70419;
-}
-90% {
-opacity: 0.7003;
-}
-95% {
-opacity: 0.36108;
-}
-100% {
-opacity: 0.24387;
-}
-}
- 
-#wrapper::after {
-content: " ";
-display: block;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: rgba(18, 16, 16, 0.1);
-opacity: 0;
-z-index: 2;
-pointer-events: none;
-animation: flicker 0.15s infinite;
-}
-#wrapper::before{
-content: " ";
-display: block;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-z-index: 2;
-background-size: 100% 2px, 3px 100%;
-pointer-events: none;
-}
-
-button { 
-    background: #7f817e; 
-    color: white;
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 8px;
-}
-
-@media only screen and (max-width: 640px) {
-    #position {
-    left: -40px;
-    transform:scale(1.3)
-}
-}
-
-    </style>
-
-<SCRIPT>
-    function ShowAndHide() {
-        var x = document.getElementById('scroll4');
-        if (x.style.display == 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> the dying creek flows </title>
+    <meta name="description" content="venture life, burn your dread!">
+    <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/Actor1.png">
+    <link rel="stylesheet" rel="stylesheet" type="text/css" media="all" href="indexstyle.css">
+    <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: bios;
+            src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
         }
-    }
-    </SCRIPT>
 
-    
-    <body>
-        
-    <div id="position"> <div id="title">ONTO THE<br> NEXT BOUT.</div><div id="scroll3"> <div id="wrapper"> </div><mark>info</mark> <b>siff</b>rin or <i>basil</i>.. 17 y/o nonbinary (he/they) <img src="https://caterpie.crd.co/assets/images/gallery09/61674e5f.gif?v=f7b7a140" width=20px> autistic pwdid / unlisted <BUTTON ONCLICK="ShowAndHide()">++</BUTTON> 
-    <br> <br> <mark>likes</mark> <i>prezoh, chiblee,</i> persona 3, <i>akishinji,</i> twewy, milk inside a bag of milk, lobcorp, <i>girls last tour</i>
-   
-</div>
+        @font-face {
+            font-family: cyborg;
+            src: url(https://file.garden/Zagf2LAXJwHlct9M/CyborgSister.ttf);
+        }
 
-<DIV ID="scroll4" STYLE="display:none"> <div id="wrapper">
-    <mark>byi</mark> im not the most active outside of close circles and forget to reply on occasion but its usually nothing personal 
-<br> <br> very selective with sharing <mark>system</mark> info, friends are free to ask whatever </DIV> </div>
-    <div id="akihiko"><img src="https://file.garden/Zagf2LAXJwHlct9M/akirecolor.png" width=190></div></div>
-</div>
-</body>
-</html>
+        body {
+            color: #c0c0c0;
+            height: 100%;
+            overflow-y: hidden;
+            font-family: 'bios';
+            line-height: 15px;
+            text-align: left;
+            background: none;
+        }
+
+        mark {
+            border: 0px;
+            color: #837b7b;
+            font-size: 16px;
+            background: #1b1d27;
+            border-radius: 0px;
+            line-height: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        #calender {
+            position: absolute;
+            margin-left: 135px;
+            margin-top: 210px;
+        }
+
+        #info1 {
+            position: absolute;
+            width: 380px;
+            height: 115px;
+            padding: 12px;
+            margin-top: 40px;
+            margin-left: 50px;
+            border: 2px dotted white;
+        }
+
+        #update {
+            position: absolute;
+            margin-top: 192px;
+            width: 85px;
+            margin-left: 378px;
+            font-size: 12px;
+        }
+
+        #newmakoto {
+            position: absolute;
+            margin-top: -15px;
+            right: 350px;
+            pointer-events: none;
+        }
+
+        #newmakoto img {
+            width: 155px;
+            filter: saturate(25%);
+        }
+
+        .metext {
+            position: absolute;
+            z-index: 4;
+            width: 220px;
+            margin-top: -22px;
+            margin-left: -8px;
+        }
+
+        .metext h2 {
+            text-shadow: 1px 1px 1px black;
+            color: white;
+            text-align: left;
+            font-family: bios;
+            font-size: 19px;
+            background: linear-gradient(90deg, #000, #FFFFFF30);
+            padding: 5px;
+            letter-spacing: 1px;
+            padding-right: 5px;
+            z-index: 9 !important;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 5px;
+        }
+
+
+
+        #speech-bubble {
+            width: 130px;
+            height: 180px;
+            background: #000000;
+            position: absolute;
+            margin-top: 170px;
+            transform: rotate(90deg);
+            left: 45px;
+            z-index: 4;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: 2px dotted white;
+        }
+
+        #speech-bubble:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            filter: drop-shadow(0px 1px white) drop-shadow(0 -2px white) drop-shadow(1px 0 black) drop-shadow(-1px 0 white);
+            z-index: 4;
+            border-top: 13px solid transparent;
+            border-right: 26px solid #000000;
+            border-bottom: 13px solid transparent;
+            margin: 147px 0 0 -25px;
+        }
+
+        #speechtext {
+            height: 120px;
+            overflow-y: scroll;
+            position: absolute;
+            margin-top: 205px;
+            left: 30px;
+            width: 170px;
+            z-index: 9;
+            display: inline-block;
+        }
+
+        #hands {
+            position: absolute;
+            margin-top: -15px;
+            right: 20px;
+        }
+
+        #hands img {
+            width: 220px;
+            filter: saturate(0)
+        }
+
+        #list {
+            background: #000000;
+            border: 1px dotted white;
+            position: absolute;
+            padding: 5px; 
+            margin-left: 190px;
+            margin-top: 195px;
+            padding-left: 8px;
+        }
+
+        #yuu {
+            position: absolute;
+            margin-top: 195px;
+            right: 100px;
+        }
+
+        #yuu img {
+            width: 65px;
+            filter: saturate(0)
+        } 
+    </style>
+    <div class="metext">
+        <h2>chapter 02: war</h2>
+    </div>
+    <br>
+
+    <div id="info1">
+        <mark>hi there!</mark> i'm <b>siff</b>rin or basil, they/them. i'm autistic and love to create, let it be this
+        site, art, editing, writing, anything really! i'm what could be described as a <u>neet</u>, as i find myself
+        rotting at my computer for a majority of my days, with little irl interaction. this means i have a <u>lot</u> of
+        time on
+        the internet, and what better to do than make something that's, well, my own? i'm currently looking for jobs in
+        the art field, but i love to play games and watch twitch in my free time! i constantly love to test myself and
+        try new things, even if i don't immediately go through with finishing them.
+    </div>
+    <div id="hands"><img src="https://file.garden/Zagf2LAXJwHlct9M/opera_B3cu6D1ysH.png"></div>
+    <div id="speechtext">
+        <iframe src="meint.html"
+            style="height:370px; width:480px; margin-left: -15px; border: 0; margin-top: -85px; overflow-y: none; overflow-x: none;"
+            name="speechtext"></iframe>
+
+    </div>
+    <div id="list">
+        <a href="meint.html" target="speechtext">interests</a>
+        <br>
+        <br>
+        <a href="https://fished.neocities.org/redo/mefriends" target="speechtext">friends</a>
+        <br>
+        <br>
+        <a href="mecharacters.html" target="speechtext">characters</a>
+        <br>
+        <br>
+        <a href="mesocials.html" target="speechtext">socials</a>
+    </div>
+    <div id="speech-bubble"></div>
+
+    <div id="yuu"><img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20friends/yuu.png"></div>
+
+    <div id="newmakoto"><img src="https://file.garden/Zagf2LAXJwHlct9M/gltt.png">
+    </div>
+
+    <div id="update">
+        <div
+            style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #151718; color: #ffffff; text-align:center; width:auto; font-size: 13px;">
+            oversharing!</div> my social interactions are heavily impacted as i am <u>chronically ill</u> and <u>plural</u>. please be patient with me on these aspects. feel free to ask about specifics, i don't mind.
+    </div>
+    </div>
