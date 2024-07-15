@@ -1,528 +1,201 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ⏑　siffspace </title>
-    <meta name="description" content="venture life, burn your dread!">
-    <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/Actor1.png">
-</script>  
 
-<style>
-        ::-webkit-scrollbar{
-display:none;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> the dying creek flows </title>
+  <meta name="description" content="venture life, burn your dread!">
+  <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/Actor1.png">
+  <link rel="stylesheet" rel="stylesheet" type="text/css" media="all" href="indexstyle.css">
+  <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+  <style>
+    @font-face {
+      font-family: bios;
+      src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
+    }
 
-::-moz-o-scrollbar{
-display: none;
-} 
-@font-face {
-      font-family: ms gothic;
-      src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
-    }
     @font-face {
-        font-family: bios;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
+      font-family: cyborg;
+      src: url(https://file.garden/Zagf2LAXJwHlct9M/CyborgSister.ttf);
     }
-    @font-face {
-        font-family: ms pgothic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
-    }
-    @font-face {
-        font-family: basiic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
-    }
-    @font-face {
-        font-family: anime;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/animeace2_reg.ttf);
-    }
-    #position {
-    position: absolute;
-    top: 12%;
-    left: 30%;
-    transform: translate(-40%, -0%);
-    transform: scale(1.18);
-    }
+
     body {
-        background: url("https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-08_231708044.png") no-repeat fixed center, linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-    text-align: center;
-    -moz-o-font-smoothing: grayscale;
-    background-blend-mode: color-burn;
-    }
-    html {
-scrollbar-width: 0px;
--webkit-font-smoothing: none;
-}
-    .about {
-	width:383px;
-	height:289px;
-	padding:4px;
-	margin:3px;
-	background:url('https://file.garden/Zagf2LAXJwHlct9M/chuuyito.png') no-repeat -25% -20%, url('https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-08_031256959.png') repeat-x scroll;
-position: absolute;
-    background-size:240px, 350px;
-	overflow:hidden;
-}
-
-    .scroll1 {
-        background-color:#FFFFFF;
-	margin-left:3px;
-	margin-top:340px;
-	text-align:center;
-    position: absolute;
-    font-family: ms gothic;
-    font-size: 13px;
-        width: 265px;
-        height: 155px;
-        z-index: 3;
-        overflow-y: scroll;
-        border: 1px solid black; 
-        padding-top:12px;
-        border-radius: 74px;
-        padding-left: 15px;
-        padding-right: 14px;
-        border-bottom-right-radius: 69px;
-        border-bottom-left-radius: 28px;
-        border-top-right-radius: 48px;
-        border-top-left-radius: 56px;
-        box-shadow: 1px 1px 1px black;
+      color: #c0c0c0;
+      height: 100%;
+      overflow-y: hidden;
+      font-family: 'bios';
+      line-height: 15px;
+      text-align: left;
+      background: none;
     }
 
-    .scroll2 {
-	background-color:#FFFFFF;
-	margin-left:134px;
-	margin-top:10px;
-	text-align:center;
-    position: absolute;
-    font-family: ms gothic;
-    font-size: 13px;
-        width: 220px;
-        height: 160px;
-        overflow-y: scroll;
-        border: 1px solid black; 
-        padding-top:12px;
-        padding-left: 13px;
-        padding-right: 13px;
-        border-radius: 74px;
-        border-bottom-right-radius: 69px;
-        border-top-left-radius: 76px;
-border-bottom-left-radius: 49px;
-        box-shadow: 1px 1px 1px black;
-        
+    mark {
+      border: 0px;
+      color: #837b7b;
+      font-size: 16px;
+      background: #1b1d27;
+      border-radius: 0px;
+      line-height: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
     }
 
-    .scroll3 {
-        background-color:#FFFFFF;
-        margin-left:415px;
-        margin-top:100px;
-	text-align:center;
-    position: absolute;
-    font-family: ms gothic;
-    font-size: 13px;
-    width: 224px;
-    height: 110px;
-        z-index: 3;
-        overflow-y: scroll;
-        border: 2px solid black; 
-        padding-top:12px;
-        border-radius: 74px;
-        padding-left: 15px;
-        padding-right: 8px;
-        border-bottom-right-radius: 8px;
-        border-bottom-left-radius: 6px;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 0px;
-        box-shadow: 1px 1px 1px black;
+    #calender {
+      position: absolute;
+      margin-left: 135px;
+      margin-top: 210px;
     }
 
-    .scroll4 {
-        background-color:#FFFFFF;
-	margin-left:415px;
-	margin-top:293px;
-	text-align:left;
-    position: absolute;
-    font-family: ms gothic;
-    font-size: 13px;
-        width: 224px;
-        height: 215px;
-        z-index: 3;
-        overflow-y: scroll;
-        border: 2px solid black; 
-        padding-top:12px;
-        border-radius: 74px;
-        padding-left: 15px;
-        padding-right: 8px;
-        border-bottom-right-radius: 49px;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 6px;
-        box-shadow: 1px 1px 1px black;
+    #info1 {
+      position: absolute;
+      width: 430px;
+      height: 75px;
+      padding: 12px;
+      margin-top: 7px;
+      margin-left: -6px;
+    }
+
+    #update {
+      position: absolute;
+      margin-top: 250px;
+      width: 150px;
+      margin-left: -2px;
+    }
+
+    #newmakoto {
+      position: absolute;
+      margin-top: 105px;
+      right: 2px;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    #newmakoto img {
+      width: 125px;
+      filter: saturate(25%);
+    }
+
+    #sitebutton {
+      margin-top: 218px;
+      width: 150px;
+      margin-left: 72px;
+      position: absolute;
+      z-index: 3;
+    }
+
+    #sitebutton img {
+      width: 70px;
+    }
+
+    #sitebutton img:hover, mark:hover, #counter:hover {
+      box-shadow: 2px -2px 2px -1px #FFFFFF;
+      transition: .3s ease-in-out;
+      border: 1px dashed white; 
+    }
+
+
+    #counter {
+      margin-left: 72px;
+      position: absolute;
+      margin-top: 228px;
+      margin-left: -1px;
+    }
+
+    #counter:hover {
+      box-shadow: 2px -2px 2px -1px #FFFFFF;
+      transition: .3s ease-in-out;
     }
 
     .metext {
-        position: absolute;
-        z-index: 4;
-        width: 220px;
-        margin-top: -49px;
-        
-        margin-left: -18px;
+      position: absolute;
+      z-index: 4;
+      width: 220px;
+      margin-top: -22px;
+      margin-left: -8px;
     }
+
     .metext h2 {
-  text-shadow: 1px 1px 1px black;
-  color: white;
-  text-align: left;
-  font-family: bios;
-  font-size: 19px;
-  background: linear-gradient(90deg, #000, #FFFFFF30);
-  border: 2px solid white;
-  padding: 5px;
-  letter-spacing: 1px;
-  padding-right: 5px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 5px;
+      text-shadow: 1px 1px 1px black;
+      color: white;
+      text-align: left;
+      font-family: bios;
+      font-size: 19px;
+      background: linear-gradient(90deg, #000, #FFFFFF30);
+      padding: 5px;
+      letter-spacing: 1px;
+      padding-right: 5px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 5px;
     }
 
-    .scroll3 h2, .scroll4 h1 {
-  text-shadow: 1px 1px 1px black;
-  color: white;
-  text-align: left;
-  font-family: bios;
-  font-size: 19px;
-  background: linear-gradient(90deg, #000, gray, #FFFFFF90);
-  border: 2px solid white;
-  padding: 5px;
-  padding-right: 2px;
-  width: 239px;
-  margin-left: -11px;
-  letter-spacing: 1px;
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 22px;
-  box-shadow: 1px 1px 1px black;
+    .contact {
+      position: absolute;
+      z-index: 4;
+      width: 350px;
+      margin-top: 155px;
+      margin-left: -8px;
     }
 
-    .anime {
-        font-family: anime;
-        font-size: 12px;
-        font-weight: bold;
-        text-align: center !important;
+    .contact h2 {
+      text-shadow: 1px 1px 1px black;
+      color: white;
+      text-align: left;
+      font-family: bios;
+      font-size: 14px;
+      background: linear-gradient(90deg, #000, #FFFFFF30);
+      padding: 5px;
+      letter-spacing: 1px;
+      padding-right: 5px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 5px;
     }
 
-    .div1 {
-        position: absolute;
-        margin-top: 270px;
-        z-index: -1;
-        pointer-events: none;
+    #email {
+      position: absolute;
+      margin-top: 198px;
+      margin-left: -1px;
     }
 
-    .div1 img {
-        width: 400px;
-        pointer-events: none;
+    hr {
+      border-style: dashed;
+      width: 250px;
     }
+  </style>
+  <div class="metext">
+    <h2>chapter 01: starry sky</h2>
+  </div>
+  <br>
+  <div class="contact">
+    <h2>contact me!</h2>
+  </div>
+  <div id="email"> → 　<mark>siffri@proton.me</mark>　<mark>fishsil</mark> on dc　<mark>basiidni</mark> on twitter</div>
+  <div id="calender">
+    <iframe style="height:260px;border:none;width:215px;" src="https://fished.neocities.org/redo/calendar"></iframe>
+  </div>
 
-
-    .text1 {
-        position: absolute;
-        margin-top: 50px;
-        margin-left: -50px;
-        pointer-events: none;
-        transform: rotate(-4deg);
-        
-    }
-
-    .text1 img {
-        width: 80px;
-        pointer-events: none;
-        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px #FFFFFF) drop-shadow(1px 0 #FFFFFF) drop-shadow(-3px 0 #FFFFFF);
-    }
-
-    .text2 {
-        position: absolute;
-        margin-top:170px;
-        margin-left: 260px;
-        pointer-events: none;
-    }
-
-    .text2 img {
-        width: 100px;
-        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px #FFFFFF) drop-shadow(1px 0 #FFFFFF) drop-shadow(-3px 0 #FFFFFF);
-        pointer-events: none;
-    }
-
-    .bg1 {
-        position: absolute;
-        margin-top: -40px;
-        margin-left: -25px;
-        border: 4px double black;
-        border-image: url('https://file.garden/Zagf2LAXJwHlct9M/wwwht.png') 5 fill round;
-        height: 564px; 
-        width: 690px;
-        z-index: -3;
-        border-radius: 2px;
-        border-top-right-radius: 48px;
-    }
-
-    .bg2 {
-        position: absolute;
-        margin-top: -33px;
-        margin-left: -15px;
-        border: 4px double black;
-        background: linear-gradient(360deg, rgba(0,0,0,0) 58%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 96%);
-        height: 550px; 
-        width: 418px;
-        z-index: -2;
-        border-radius: 2px;
-        border-bottom-left-radius: 48px;
-    }
-
-    .girls {
-        position: absolute;
-        margin-left: 280px;
-        margin-top: 260px;
-        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px #FFFFFF) drop-shadow(1px 0 #FFFFFF) drop-shadow(-3px 0 #FFFFFF);
-        pointer-events: none;
-        z-index: 3;
-    }
-
-    .girls img {
-        width: 140px;
-        filter: saturate(0%);
-        pointer-events: none;
-       
-    }
-
-    .hands1 {
-        position: absolute;
-        margin-left: 415px;
-        margin-top: -32px;
-        pointer-events: none;
-        
-        
-    }
-
-    .hands1 img {
-        width: 245px;
-        background: linear-gradient(360deg, rgba(0,0,0,0) 58%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 96%);
-        border: 3px double black;
-        pointer-events: none;
-        border-top-right-radius: 48px;
-    }
-
-    .hands2 {
-        position: absolute;
-        margin-left: 415px;
-        margin-top: 232px;
-        pointer-events: none;
-        
-    }
-
-    .hands2 img {
-        width: 245px;
-        background: linear-gradient(360deg, rgba(0,0,0,0) 58%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 96%);
-        border: 3px double black;
-        pointer-events: none;
-    }
-
-    .art2 {
-        position: absolute;
-        margin-top: 150px;
-        z-index: -2;
-        margin-left: 25px;
-        pointer-events: none;
-    }
-
-    .art2 img {
-        width: 255px;
-        pointer-events: none;
-    }
-
-
-    .scroll4 mark {
-    color: #2e2e2e;
-    font-size: 13.8px;
-                background: #a6a6a6; 
-                border-radius: 10px;
-                padding-left: 2px;
-                padding-right: 4px;
-            }
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    color: #000;
-    background: white; 
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    width: auto;
-    top: 48%;
-    left: -15%
- }
-          
- .tooltiptext {
-    border:3px double black;
-    font-size: 9px;         
-          }
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-    
-}    
-/* name / tooltip temp <div class="tooltip"> <img src="link"  width="65px" ><span class="tooltiptext">name</span></div> */ 
-
-@media only screen and (max-width: 640px) {
-
-    #position {
-    transform: scale(0.88);
-    left: 10%;
-    top: 7%;
-    }
-
-body {
-    background-size: cover;
-}
-
-.bg1 {
-    height: 814px; 
-        width: 425px;
-}
-.bg2 {
-    height: 804px; 
-        width: 410px;
-}
-
-.div1 {
-    margin-left: -2px;
-}
-
-.scroll2 {
-border-bottom-left-radius: 56px;
-font-family: ms gothic;
-}
-
-.scroll1 {
-    height: 155px;
-    font-family: ms gothic;
-}
-
-.scroll4 {
-    margin-left: 0px;
-    margin-top: 590px;
-    height: 160px;
-    width: 180px;
-    font-family: ms gothic;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 0px;
-}
-
-.scroll3 {
-    margin-left: 215px;
-    width: 150px;
-    height: 160px;
-    margin-top: 590px;
-    font-family: ms gothic;
-    border-bottom-right-radius: 39px;
-}
-
-.hands1 {
-    display: none;
-}
-
-.hands2 {
-margin-left: 2px;
-margin-top: 520px;
-}
-
-.hands2 img{
-    width: 380px;
-}
-
-}
- </style>
-<body>
- <div id="position">
-
-    <div class="metext"><h2>chapter 047: silence</h2></div>
-
-<div class="about"><div class="scroll2"><b>siff</b>rin <i>or</i> basil <br> they/them , 17 <br> <br> i hope to use this site to leave my mark on the internet in some form! i don't want it to be anything huge, just something that shows that... hey, i'm here, i'm alive! like i just climbed a really high mountain and put down the flag at the top! 
-</div>
-</div>
-    
-
-<div class="scroll1">for more about me as a person, i'm a neurodivergent artist / coder who resides in my room a lot due to both physical and mental illness, but i won't bore you with that.  i take comfort in the web and the vastness of it! my friends describe me as a loser (endearingly) and that checks out a lot! i'm also an avid twitch watcher! <br> despite the site name, i have no dni criteria. test your luck with me! </div>
-<div class="scroll3"><span class="anime">yuu-chan's friends!</span> <br> hover over icons to see names <br> not a complete list! 
-    
-<br>
-<br>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/mik.png"  width="65px" ><span class="tooltiptext">mika </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/tob.png"  width="65px" ><span class="tooltiptext">tobey </span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/jj.png"  width="65px" ><span class="tooltiptext">JJ </span></div>
-<div class="tooltip"><img src="https://file.garden/Zagf2LAXJwHlct9M/frien/wis.png"  width="65px" ><span class="tooltiptext">wisp </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/01.png"  width="65px" ><span class="tooltiptext">ame </span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/02.png"  width="65px" ><span class="tooltiptext">connie</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/03.png"  width="65px" ><span class="tooltiptext">mae</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/04.png"  width="65px" ><span class="tooltiptext">fuji</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/05.png"  width="65px" ><span class="tooltiptext">eve</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/06.png"  width="65px" ><span class="tooltiptext">froyo</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/07.png"  width="65px" ><span class="tooltiptext">ashley</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/08.png"  width="65px" ><span class="tooltiptext">ivory</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/09.png"  width="65px" ><span class="tooltiptext">crow</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/010.png"  width="65px" ><span class="tooltiptext">becky</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/011.png"  width="65px" ><span class="tooltiptext">mari</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/012.png"  width="65px" ><span class="tooltiptext">prince</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/013.png"  width="65px" ><span class="tooltiptext">adrina</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/014.png"  width="65px" ><span class="tooltiptext">waffle</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/015.png"  width="65px" ><span class="tooltiptext">red</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/016.png"  width="65px" ><span class="tooltiptext">yhs</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/frien/b/017.png"  width="65px" ><span class="tooltiptext">gecko</span></div>
-<h2>+++ </h2>
-<br>
-not a friend  but the best big sister i couldve ever asked for!
-<br> <br> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/ki.png"  width="65px" ><span class="tooltiptext">me & kiwo ^_^</span></div>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/ki2.png"  width="65px" ><span class="tooltiptext">also us.. we;re  the best!!</span></div>
-
-<br> 
-<br> 
-</div>
-<div class="scroll4"><span class="anime"><center>....things that i enjoy</center></span>
- <mark>highlighted</mark> is special interest
-
-<h1>games</h1>
-<b>persona 3</b>/5, omori, in stars and time, hotline miami, <mark><b>alan wake!!</b></mark>, <mark>milk inside a bag of milk</mark>, oneshot, cave story, lobcorp, the world ends with you
-    <h1>animanga</h1>
-    nichijou, <b>girls last tour</b>, space patrol luluco, kill la kill
-    <h1>content creators</h1>
-    <mark><b>prezoh</b></mark>, <b>chiblee</b>, aksually, bigt
-    <h1>media </h1>
-    dick figures, it's always sunny, smiling friends, <mark><b>slugterra</b></mark>, <br> i saw the tv glow, the bear
-    <h1>characters</h1>
-    <b>akihiko sanada,</b> <b>makoto yuki,</b> <mark><b>milk chan,</b></mark> <b>yuuri</b>, <b>siffrin</b>, <b>basil</b>, stranger, niko oneshot, alan wake, tarr fortnite
+  <div id="info1">
+    hello !! welcome to <mark>dni.lol</mark>, my home, my <b>personal graveyard</b> on the internet. <br>
+    <br> i don't have a direct purpose for what to use this site for, maybe to archive a piece of me to tell people hey,
+    i'm alive! this is my corner of the web, my place to show how much i'm improving and changing even if it's just a
+    few lines of code behind the screen. no matter if you decide to stay or leave, stay safe on your internet travels!
+    the web is a vast place! make the most of it!
     <br>
-    <br> 
-</div>
-<div class="art2"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-09_013441564.png"></div>
+    <br> feel free to link my button or reach me using one of my socials!
+  </div>
 
-<div class="div1"><img src="https://file.garden/Zagf2LAXJwHlct9M/image_2024-06-08_032422287.png"></div>
+  <div id="sitebutton"><img src="https://file.garden/Zagf2LAXJwHlct9M/newbutton.png"></div>
 
-<div class="text1"><img src="https://file.garden/Zagf2LAXJwHlct9M/weeeeeehh.png"></div>
-<div class="text2"><img src="https://file.garden/Zagf2LAXJwHlct9M/fweeeh.png"></div> 
+  <div id="counter">
+    <script type="text/javascript" src="//counter.websiteout.com/js/8/5/0/0"></script>
+  </div>
+  <div id="newmakoto"><img src="https://file.garden/Zagf2LAXJwHlct9M/fjhsilufhsdif.png">
+  </div>
 
-<div class="girls"><img src="https://file.garden/Zagf2LAXJwHlct9M/fjhsilufhsdif.png"></div>
-<div class="hands1"><img src="https://file.garden/Zagf2LAXJwHlct9M/opera_tY7HUg3aYs.png"></div>
-<div class="hands2"><img src="https://file.garden/Zagf2LAXJwHlct9M/opera_B3cu6D1ysH.png"></div>
-
-<div class="bg2"></div>
-<div class="bg1"></div>
-</body> 
+  <div id="update">
+    <div
+      style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #151718; color: #ffffff; text-align:center; width:auto; font-size: 13px;">
+      latest update!!</div> <br> <b>07/12/24</b> - site revamped! welcome to <mark>dni.lol</mark> v5.0!!!!!
+  </div>
+  </div>
