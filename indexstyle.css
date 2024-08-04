@@ -60,6 +60,7 @@ body {
     text-align: center;
     font-family: ms gothic;
     -moz-o-font-smoothing: grayscale;
+    scrollbar-width: none;
 }
 
 html {
@@ -262,7 +263,7 @@ mark {
     height: 115px;
     z-index: 9;
     background:#00000099;
-    border: 2px dotted white;
+    border: 1px dashed rgb(141, 138, 138);
     top: 430px !important;
     left: 364px !important;
     color: white;
