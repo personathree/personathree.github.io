@@ -1,10 +1,11 @@
 .lastfm {
-  color: white;
-  margin-top: -5px;
+  color: rgb(209, 209, 209);
+  margin-top: -20px;
   margin-left: 200px;
   position: absolute;
   font-family: bios;
   font-size: 13px;
+  line-height: 12px;
   filter: drop-shadow(0 3px #000000) drop-shadow(2px 0 #000000) drop-shadow(0 -2px #000000) drop-shadow(-3px 0 #000000);
 }
 
@@ -19,8 +20,8 @@
 
 .lastfm .scrbls {
   font-size: 13px;
-  width: 80px;
-  margin-left: 80px;
+  width: 90px;
+  margin-left: 70px;
   text-align: right;
   z-index: 3;
 }
@@ -36,7 +37,7 @@
 .lastfm .track {
   text-align: right;
   padding: 4px;
-  border: 1px solid #ebebeb;
+  border: 1px solid #8d8a8a;
   background: #000000;
   color: #d1d1d1;
   width: 95px;
