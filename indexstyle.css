@@ -45,10 +45,10 @@
 
 #wait {
     position: absolute;
-    top: 15%;
-    left: 50%;
+    top: 25%;
+    left: 42%;
     transform: translate(-50%, -50%);
-    transform: scale(1.30);
+    transform: scale(1.45);
 }
 
 body {
@@ -148,11 +148,11 @@ p {
 #links {
     text-align: left;
     padding: 5px;
-    width: 139px;
+    width: 459px;
     height: 130px;
-    margin-top: 20px;
+    margin-top: -40px;
     position: absolute;
-    margin-left: -133px;
+    margin-left: 50px;
     padding-top: -2px;
     padding-bottom: 16px;
     top: -5px !important;
@@ -171,13 +171,15 @@ p {
 #links a:hover {
     border: 0px;
     color: #50635d;
+    padding-right: 4px;
 }
 
 
 #statuscafe {
     padding: 0em;
+    line-height: 15px;
     position: absolute;
-    margin-left: -159px;
+    margin-left: 599px;
     margin-top: 179px;
     border: 1px dotted white;
     padding-left: 10px;
@@ -197,7 +199,7 @@ p {
 }
 
 #statuscafe-content {
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
     background: transparent;
     letter-spacing: 0em;
@@ -219,7 +221,7 @@ mark {
 }
 
 .marquee {
-    width: 470px;
+    width: 476px;
     height: 15px;
     right: 0px;
     padding: 3px;
@@ -229,7 +231,7 @@ mark {
     z-index: 1;
     padding-top: 2px;
     padding-bottom: 5px;
-    border: 4px double #d1d1d1;
+    border: 1px solid #d1d1d1;
     margin-top: -62px;
     background: #000000;
     font-family: bios;
@@ -238,7 +240,8 @@ mark {
 
 .chatango {
     position: absolute;
-    margin-top: 0px;
+    margin-top: -415px;
+    margin-left: -180px;
     z-index: -1;
     border: 2px solid #1b1d27;
 }
@@ -246,9 +249,10 @@ mark {
 .transring {
     position: absolute;
     font-family: "Bios";
-    margin-top: -11px;
-    right: 60px;
+    margin-top: -20px;
+    right: 400px;
     width: 335px;
+    z-index: 5;
     color: white;
     transform: scale(0.7);
 }
@@ -267,6 +271,7 @@ mark {
     top: 430px !important;
     left: 364px !important;
     color: white;
+    display: none;
 
 }
 
@@ -300,8 +305,8 @@ mark {
 
 #chiyuu {
     position: absolute;
-    margin-left: -165px;
-    margin-top: -50px;
+    margin-left: 585px;
+    margin-top: -110px;
     color: white; 
     font-family: bios; 
     filter:saturate(25%);
@@ -346,11 +351,11 @@ mark {
     }
 
     #links {
-        margin-top: 425px;
+        margin-top: 435px;
         line-height: 23px;
-        left: 495px;
+        left: 95px;
         height: 125px;
-        width: 125px;
+        width: 105px;
         order: 3;
         z-index: 5;
         border-top-left-radius: 0px;
