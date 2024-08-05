@@ -1,7 +1,7 @@
 .lastfm {
   color: rgb(209, 209, 209);
-  margin-top: -20px;
-  margin-left: 200px;
+  margin-top: -240px;
+  margin-left: -165px;
   position: absolute;
   font-family: bios;
   font-size: 13px;
@@ -24,6 +24,7 @@
   margin-left: 70px;
   text-align: right;
   z-index: 3;
+  display: none;
 }
 
 .lastfm .slimScrollDiv {
@@ -31,7 +32,7 @@
 }
 
 .slimScrollDiv {
-  height: 170px !important;
+  height: 180px !important;
 }
 
 .lastfm .track {
@@ -63,8 +64,8 @@
 
 @media only screen and (max-width: 640px) {
   .lastfm {
-    margin-top: -10px;
-    left: -15px;
+    margin-top: -20px;
+    left: 485px;
   }
 
   .lastfm .slimScrollDiv {
@@ -77,7 +78,7 @@
 
   .lastfm .scrbls {
     font-size: 17px;
-    width: 100px;
+    width: 160px;
     margin-left: -0px;
     text-align: right;
     z-index: 3;
