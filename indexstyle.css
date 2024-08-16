@@ -45,7 +45,7 @@
 
 #wait {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 42%;
     transform: translate(-50%, -50%);
     transform: scale(1.45);
@@ -180,7 +180,7 @@ p {
     line-height: 15px;
     position: absolute;
     margin-left: 599px;
-    margin-top: 179px;
+    margin-top: 139px;
     border: 1px dotted white;
     padding-left: 10px;
     padding-right: 10px;
@@ -250,7 +250,7 @@ mark {
     position: absolute;
     font-family: "Bios";
     margin-top: -20px;
-    right: 370px;
+    right: 420px;
     width: 335px;
     z-index: 5;
     color: white;
@@ -306,7 +306,7 @@ mark {
 #chiyuu {
     position: absolute;
     margin-left: 585px;
-    margin-top: -110px;
+    margin-top: -140px;
     color: white; 
     font-family: bios; 
     filter:saturate(25%);
