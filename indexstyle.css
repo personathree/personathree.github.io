@@ -293,7 +293,7 @@ mark {
     font-family: "Bios";
     margin-top: -45px;
     right: 92px;
-    width: 285px;
+    width: 290px;
     z-index: 13;
     color: white;
     transform: scale(0.7);
@@ -420,7 +420,7 @@ mark {
 
 
     #wait {
-        left: -30px;
+        left: -40px;
         transform: scale(0.8);
         top: 130px;
     }
