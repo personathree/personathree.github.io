@@ -293,7 +293,7 @@ mark {
     font-family: "Bios";
     margin-top: -45px;
     right: 92px;
-    width: 335px;
+    width: 275px;
     z-index: 13;
     color: white;
     transform: scale(0.7);
@@ -422,7 +422,7 @@ mark {
     #wait {
         left: -30px;
         transform: scale(0.8);
-        top: 190px;
+        top: 130px;
     }
     #aigis {
         margin-left: -190px;
@@ -465,5 +465,9 @@ mark {
     #imood {
         margin-left: 20px;
         margin-top: 90px; 
+    }
+
+    #snowflakes {
+        display: none;
     }
 }
