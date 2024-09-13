@@ -1,473 +1,107 @@
-::-webkit-scrollbar {
-    width: 10px;
-    height: 20px;
-    display: none;
-}
-
-::-webkit-scrollbar-track {
-    background: #28668f;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #70b0b2;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #404a4b;
-    transition: 0.9s;
-}
-
-@font-face {
-    font-family: ms gothic;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
-}
-
-@font-face {
-    font-family: bios;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
-}
-
-@font-face {
-    font-family: ms pgothic;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
-}
-
-@font-face {
-    font-family: basiic;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
-}
-
-@font-face {
-    font-family: dogica;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/site%203/dogica.otf);
-}
-
-@font-face {
-    font-family: pixel1;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/site%203/PIXELADE.TTF);
-}
-
-@font-face {
-    font-family: bmspace;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/site%203/BMSPA___.TTF);
-}
-
-#wait {
-    position: absolute;
-    top: 29%;
-    left: 39%;
-    transform: scale(1.6);
-}
-
-body {
-    background: url("https://file.garden/Zagf2LAXJwHlct9M/site%203/whhh.png") no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    font-family: ms gothic;
-    -moz-o-font-smoothing: grayscale;
-    scrollbar-width: none;
-    overflow-y: hidden;
-}
-
-html {
-    scrollbar-width: 0px;
-    -webkit-font-smoothing: none;
-}
-
-a {
-    color: #dbdbdb;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    border: 0px;
-    color: #50635d;
-    background: #515569;
-    border-radius: 0px;
-    padding-left: 3px;
-    padding-right: 35px;
-    box-shadow: none;
-}
-
-.train {
-    display: inline-block;
-    width: 480px;
-    height: 90px;
-}
-
-.marq {
-    color: white;
-    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
-    font-family: ms gothic;
-    font-size: 25px;
-    line-height: 1.1em;
-    padding: 0em;
-    width: 370px;
-}
-
-p {
-    margin: 0;
-    color: black;
-    font-size: 20px;
-}
-
-#hii {
-    margin-top: 0px !important;
-    width: 442px;
-    height: 285px;
-    z-index: 5;
-    border: 2px ridge rgb(0, 0, 0);
-    filter: drop-shadow(0 -1mm 1mm rgb(99, 113, 124));
-    border-top-left-radius: 25px;
-    padding: 3px 3px 3px 3px;
-    font-size: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #d9dee0c0;
-    background-blend-mode: soft-light; 
-    background-image: url("https://file.garden/Zagf2LAXJwHlct9M/img-2024-09-13-02-31-49.png");
-    background-size: cover; 
-    
-}
-
-#info {
-    width: 490px;
-    height: 320px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    line-height: 15px;
-    margin-top: 5px;
-    margin-left: -12px;
-    padding-top: 90px;
-    padding-right: 15px;
-    letter-spacing: 0.4px;
-    font-family: bios;
-    font-size: 14.2px;
-}
-
-#info mark {
-    border: 0px;
-    color: #34cdcf;
-    font-size: 13.8px;
-    background: #000000;
-    border-radius: 0px;
-    line-height: 5px;
-    padding-left: 3px;
-    padding-right: 4px;
-}
-
-
-#links {
-    text-align: left;
-    padding: 5px;
-    width: 459px;
-    height: 130px;
-    margin-top: 45px;
-    position: absolute;
-    margin-left: 30px;
-    padding-top: -2px;
-    padding-bottom: 16px;
-    top: -5px !important;
-    margin: 10 auto;
-    z-index: 6 !important;
-    font-size: 16px;
-    letter-spacing: -0.5px;
-    line-height: 23px;
-    color: #b4b9bb;
-    font-family: pixel1;
-}
-
-#links a {
-    color: #60828b;
-}
-
-#links a:hover {
-    border: 0px;
-    color: #b8d0d6;
-    padding-right: 4px;
-    padding-left: 2px;
-    font-weight: normal;
-}
-
-
-#statuscafe {
-    padding: 0em;
-    line-height: 15px;
-    position: absolute;
-    margin-left: 489px;
-    margin-top: 298px;
-    border: 1px dotted white;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 210px;
-    font-family: 'bios';
-    background: #5f7581dc;
-}
-
-#statuscafe-username {
-    margin-bottom: -0.1em;
-    text-align: left;
-    color: #ece7e7;
-    font-size: 12px;
-    letter-spacing: 0.02em;
-    background: transparent;
-}
-
-#statuscafe-content {
-    font-size: 13px;
-    text-align: left;
-    background: transparent;
-    letter-spacing: 0em;
-    width: auto;
-    padding: 5px;
-    color: #ebebeb;
-}
-
-#statuscafe-username a:hover {
-    padding-right: 2px;
-    color: white;
-}
-
-#imood {
-    position: absolute;
-    margin-left: 492px; 
-    margin-top: -82.5px;
-}
-
-#imood img {
-    border: 1px dotted white;
-    width: 50px;
-}
-
-mark {
-    border: 0px;
-    color: #34cdcf;
-    font-size: 13.8px;
-    background: #1b1d27;
-    border-radius: 0px;
-    line-height: 5px;
-    padding-left: 3px;
-    padding-right: 4px;
-}
-
-.marquee {
-    width: 376px;
-    height: 15px;
-    right: 60px;
-    padding: 3px;
-    position: absolute;
-    border-width: 2px;
-    font-size: 14px;
-    padding-top: 2px;
-    padding-bottom: 5px;
-    z-index: -6;
-    border-top-right-radius: 35px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    margin-top: -64px;
-    margin-left: 20px;
-    background: linear-gradient(280deg, rgb(96, 120, 133) 20%, rgba(255, 255, 255, 0) 100%);
-    font-family: bios;
-    color: #ebebeb;
-}
-
-.marquee a:hover {
-    padding-right: 2px;
-    color: white;
-}
-
-.chatango {
-    position: absolute;
-    margin-top: -130px;
-    margin-left: 265px;
-    z-index: 1;
-    border: 2px solid #1b1d27;
-}
-
-.transring {
-    position: absolute;
-    font-family: "Bios";
-    margin-top: -45px;
-    right: 92px;
-    width: 290px;
-    z-index: 13;
-    color: white;
-    transform: scale(0.7);
-}
-
-.transring a:hover {
-    padding: 2px;
-    padding-right: 2px;
-}
-
-
-#contain_moon {
-    position: absolute;
-    color: #eaeff0;
-    margin-top: -423px;
-    line-height: 17px;
-    margin-left: 380px;
-    font-family: bios;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4822129535407913) 0%, rgba(95, 131, 143, 0.5578432056416316) 23%, rgba(255, 255, 255, 0) 23%, rgba(255, 255, 255, 0) 100%);
-    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px white) drop-shadow(1px 0 white) drop-shadow(-1px 0 black);
-}
-
-#moontext {
-    position: absolute;
-    color: #1e2122;
-    margin-top: -373.4px;
-    line-height: 17px;
-    font-size: 14px;
-    margin-left: 379.5px;
-    text-shadow: -1px 0 #b9dddf, 0 1px #b9dddf, 1px 0 #b9dddf, 0 -1px #FFFFFF;
-    font-family: bios;
-}
-
-#buttons {
-    position: absolute;
-    margin-top: -390px;
-    margin-left: 70px;
-}
-
-#buttons img {
-    width: 70px;
-    border: 1px solid #71acaf;
-}
-
-#links h2 {
-    position: relative;
-    height: 20px;
-    padding-bottom: 2px;
-    width: 100%;
-    font-size: 12px;
-    font-family: ms gothic;
-    background: url('https://file.garden/Zagf2LAXJwHlct9M/whe.gif');
-    background-color: #2f2d33f1;
-    background-blend-mode: soft-light;
-    background-size: 160px;
-    background-position-y: -30px;
-    font-weight: bold;
-    color: #1a1a7a;
-    text-shadow: -1px 0 #b9dddf, 0 1px #b9dddf, 1px 0 #b9dddf, 0 -1px #FFFFFF;
-    display: inline-block;
-    margin: 0;
-    padding-top: 3px;
-}
-
-#aigis {
-    position: absolute;
-}
-
-#aigis img {
-    position: absolute;
-    pointer-events: none;
-    width: 440px;
-    z-index: -5;
-    margin-top: -190px;
-    margin-left: 280px;
-}
-
-#answer {
-    position: absolute;
-    font-family: bmspace;
-    font-size: 12px;
-    margin-top: -385px;
-    margin-left: 149px;
-    color: #dde3e6;
-    text-shadow: -1px 0 #738f91, 0 1px #738f91, 1px 0 #1d1818, 0 -1px #1d1818;
-    filter: drop-shadow(0 0.9mm 0.7mm rgb(165, 174, 180));
-}
-
-#snowflakes {
-    pointer-events: none;
-}
-
-#divline {
-    height: 9px;
-    width: 282px;  
-    z-index: 5; 
-    margin-top: -126px;
-    margin-left: 3px; 
-    position: absolute; 
-    color: rgba(0, 0, 0, 0); 
-    background: linear-gradient(270deg, rgba(244,247,248,1) 25%,  rgb(113, 135, 158) 100%);
-    filter: drop-shadow(0 1mm 1mm rgb(108, 111, 112));
-}
-
-#webring {
-    position: absolute;
-    margin-top: 220px; 
-}
-
-
-
-/* Below is the mobile optimisation. Mess with it if you want. */
-@media only screen and (max-width: 640px) {
-
-    body {
-        background-size: cover;
-    }
-
-    #box {
-        display: block;
-        width: 100%;
-        background-size: auto 100%;
-    }
-
-
-    #wait {
-        left: -40px;
-        transform: scale(0.8);
-        top: 130px;
-    }
-    #aigis {
-        margin-left: -190px;
-        transform: scale(1.2);
-        z-index: -9;
-    }
-
-    #hii {
-        font-family: ms gothic;
-        font-size: 13px;
-    }
-
-    #info {
-        font-family: ms gothic;
-        letter-spacing: -1px;
-    }
-
-    .transring {
-        display: flex;
-        left: 50px;
-        margin-top: 83px;
-    }
-
-    #statuscafe {
-        margin-left: 10px;
-        margin-top: 380px;
-        font-family: bios;
-        letter-spacing: 0px;
-    }
-
-    #statuscafe-content {
-        font-family: bios;
-        letter-spacing: 0px;
-    }
-
-    .marquee {
-        font-family: ms gothic;
-    }
-
-    #imood {
-        margin-left: 20px;
-        margin-top: 90px; 
-    }
-
-    #snowflakes {
-        display: none;
-    }
-}
+<!DOCTYPE html>
+<!-- hi!!! my html / css is very messy so please be warned if ur trying to inspo.. 
+ idc if u do but just be warned i am not the best source! :P best of luck -->
+
+<html lang="en">
+<html> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> disconnected </title>
+  <meta name="description" content="its you! the purest you!">
+  <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/site%203/iconn.png">
+  <link rel="stylesheet" rel="stylesheet" type="text/css" media="all" href="indexstyle.css">
+  <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+
+
+
+<body>
+
+  <div id="wait">
+    <div class="train">
+      <br>
+      <br>
+      <br>
+
+      <div id="statuscafe">
+        <div id="statuscafe-username"></div>
+        <div id="statuscafe-content"></div>
+        <script src="https://status.cafe/current-status.js?name=basil" defer></script>
+      </div>
+      <div class="marquee">
+        <marquee>optimized for pc, made on a 1920x1080 display ⠀⠀⠀⠀ layout revamp: <i>the answer</i>
+          ⠀⠀⠀⠀<a href="https://arab.org/click-to-help/palestine/">from the river to the sea, palestine will be
+            free</a>⠀⠀⠀⠀forever made and powered by love!
+        </marquee>
+      </div>
+      <div id="links">
+        ⠀⠀<a href="basepage.html" target="info">home</a>
+        ⠀/⠀<a href="404.html">profile</a>
+        ⠀/⠀<a href="404.html">blog</a>
+        ⠀/⠀<a href="404.html">resources</a>
+        ⠀/⠀<a href="404.html">shrines</a>
+      </div>
+      <div class="about">
+        <br>
+      </div>
+    </div>
+
+    <div id="aigis">
+      <img src="https://file.garden/Zagf2LAXJwHlct9M/site%203/aiggg.png">
+    </div>
+
+    <div id="hii">
+      <iframe src="basepage.html" 
+      style="height:290px; width:480px; margin-left: -15px; border: 0; margin-top: -5px; overflow-y: none; overflow-x: none;"
+      name="info"></iframe>
+      <div id="info">
+      </div>
+      <br>
+      <br>
+
+    </div>
+    <div
+      style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #151718; color: #ffffff; text-align:center; width:auto; font-size: 13px;">
+      　
+      　　　　　　　　　　　　<span class="transring">
+        <script src="https://transring.neocities.org/ring.js" data-widget="cloud"></script>
+      </span></div>
+
+    <div class="lastfm">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://melchor629.github.io/Last.fm-Web-Widget/lastSongs.comp.js"></script>
+      <script>$(".lastfm").lastSongs("isaacwhom", "e7dff00d4e7bc40af76f63fd82a0436b");</script>
+    </div>
+
+<div id="buttons">
+  <img src="https://files.catbox.moe/ksl3u5.png">  
+</div>
+<!-- © wdisseny --><div id="contain_moon" style="text-align:left;"><div style="font-weight:normal"></div><div style=""></div><div></div><div style="font-size:14px">.</div></div><script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=50&lightColor=rgb(245,245,245)&shadeColor=rgb(112,172,175)&t&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="50px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[3].innerHTML="Next full moon<br>"+b.nextFullMoon}};a.open("GET",url,true);a.send()})()</script>
+
+<div id="moontext">
+  Next full moon
+</div>
+
+<div id="answer">
+  find your answer to life.
+</div>
+
+<div id="snowflakes">
+  <script src="https://fished.neocities.org/redo/snowflakes.js"></script>
+</div>
+
+<div id="imood">
+  <a href="https://www.imood.com/users/digipak"><img src="https://moods.imood.com/display/uname-digipak/fg-ffffff/bg-5f7581/imood.gif" alt="The current mood of digipak at www.imood.com" border="0"></a>
+</div>
+
+<div id="divline">
+  . . . .
+</div>
+
+
+
+  </div>
+  </div>
+
+</body>
