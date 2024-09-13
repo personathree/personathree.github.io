@@ -1,12 +1,15 @@
 .lastfm {
-  color: rgb(209, 209, 209);
-  margin-top: -240px;
-  margin-left: -165px;
+  transform: scale(0.9);
+  color: rgb(71, 69, 80);
+  margin-top: -350px;
+  margin-left: -1px;
   position: absolute;
   font-family: bios;
   font-size: 13px;
   line-height: 12px;
-  filter: drop-shadow(0 3px #000000) drop-shadow(2px 0 #000000) drop-shadow(0 -2px #000000) drop-shadow(-3px 0 #000000);
+  z-index: 3;
+  filter: drop-shadow(0 3px #2c2727) drop-shadow(2px 0 #575e6d00) drop-shadow(0 -2px #302e2e) drop-shadow(-3px 0 #575e6d00);
+  filter: drop-shadow(0 -1mm 1mm rgb(89, 104, 116));
 }
 
 .lastfm .lfm-img {
@@ -20,7 +23,7 @@
 
 .lastfm .scrbls {
   font-size: 13px;
-  width: 90px;
+  width: 120px;
   margin-left: 70px;
   text-align: right;
   z-index: 3;
@@ -32,16 +35,16 @@
 }
 
 .slimScrollDiv {
-  height: 180px !important;
+  height: 210px !important;
 }
 
 .lastfm .track {
   text-align: right;
   padding: 4px;
-  border: 1px solid #8d8a8a;
-  background: #000000;
+  border: 1px solid #7693aa;
+  background: #34393f;
   color: #d1d1d1;
-  width: 95px;
+  width: 105px;
   margin: 2px;
   border-radius: 10px;
 }
@@ -58,14 +61,18 @@
 }
 
 .track.now {
-  color: #a3a3a3;
+  color: #b1ada0;
+}
+
+.lastfm .shd-cntA {
+  display: none; 
 }
 
 
 @media only screen and (max-width: 640px) {
   .lastfm {
-    margin-top: -20px;
-    left: 485px;
+    margin-top: -350px;
+    left: 5px;
   }
 
   .lastfm .slimScrollDiv {
@@ -73,7 +80,7 @@
   }
 
   .slimScrollDiv {
-    height: 182px !important;
+    height: 222px !important;
   }
 
   .lastfm .scrbls {
