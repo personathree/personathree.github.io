@@ -60,7 +60,7 @@
 }
 
 body {
-    background: url("https://file.garden/Zagf2LAXJwHlct9M/site%203/whhh.png") no-repeat fixed center;
+    background: url("https://file.garden/Zagf2LAXJwHlct9M/edits/newbg.png") no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -196,14 +196,15 @@ p {
 
 #statuscafe {
     padding: 0em;
-    line-height: 15px;
+    z-index: 120;
+    line-height: 13px;
     position: absolute;
-    margin-left: 489px;
-    margin-top: 298px;
+    margin-left: 165px;
+    margin-top: 72px;
     border: 1px dotted white;
     padding-left: 10px;
     padding-right: 10px;
-    width: 210px;
+    width: 130px;
     font-family: 'bios';
     background: #5f7581dc;
 }
@@ -212,13 +213,13 @@ p {
     margin-bottom: -0.1em;
     text-align: left;
     color: #ece7e7;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.02em;
     background: transparent;
 }
 
 #statuscafe-content {
-    font-size: 13px;
+    font-size: 12px;
     text-align: left;
     background: transparent;
     letter-spacing: 0em;
@@ -291,8 +292,8 @@ mark {
 .transring {
     position: absolute;
     font-family: "Bios";
-    margin-top: -45px;
-    right: 92px;
+    margin-top: -37px;
+    right: 182px;
     width: 295px;
     z-index: 13;
     color: white;
@@ -384,18 +385,6 @@ mark {
 
 #snowflakes {
     pointer-events: none;
-}
-
-#divline {
-    height: 9px;
-    width: 282px;  
-    z-index: 5; 
-    margin-top: -126px;
-    margin-left: 3px; 
-    position: absolute; 
-    color: rgba(0, 0, 0, 0); 
-    background: linear-gradient(270deg, rgba(244,247,248,1) 25%,  rgb(113, 135, 158) 100%);
-    filter: drop-shadow(0 1mm 1mm rgb(108, 111, 112));
 }
 
 #webring {
