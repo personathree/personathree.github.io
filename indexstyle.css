@@ -128,10 +128,11 @@ p {
     padding-left: 20px;
     padding-right: 20px;
     background: #d9dee0c0;
-    background-blend-mode: soft-light; 
+    background-blend-mode: soft-light;
     background-image: url("https://file.garden/Zagf2LAXJwHlct9M/img-2024-09-13-02-31-49.png");
-    background-size: cover; 
-    
+    background-size: cover;
+
+
 }
 
 #info {
@@ -165,10 +166,10 @@ p {
     text-align: left;
     padding: 5px;
     width: 459px;
-    height: 130px;
+    height: 20px;
     margin-top: 45px;
     position: absolute;
-    margin-left: 30px;
+    margin-left: 50px;
     padding-top: -2px;
     padding-bottom: 16px;
     top: -5px !important;
@@ -188,7 +189,7 @@ p {
 #links a:hover {
     border: 0px;
     color: #b8d0d6;
-    padding-right: 4px;
+    padding-right: 5px;
     padding-left: 2px;
     font-weight: normal;
 }
@@ -235,13 +236,17 @@ p {
 
 #imood {
     position: absolute;
-    margin-left: 492px; 
-    margin-top: -82.5px;
+    margin-left: 418px;
+    margin-top: -227.5px;
 }
 
 #imood img {
     border: 1px dotted white;
     width: 50px;
+}
+
+#imood a:hover {
+    padding-right: 2px;
 }
 
 mark {
@@ -269,7 +274,7 @@ mark {
     border-top-right-radius: 35px;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
-    margin-top: -64px;
+    margin-top: -60px;
     margin-left: 20px;
     background: linear-gradient(280deg, rgb(96, 120, 133) 20%, rgba(255, 255, 255, 0) 100%);
     font-family: bios;
@@ -292,8 +297,8 @@ mark {
 .transring {
     position: absolute;
     font-family: "Bios";
-    margin-top: -37px;
-    right: 182px;
+    margin-top: -47px;
+    right: 176px;
     width: 295px;
     z-index: 13;
     color: white;
@@ -389,12 +394,12 @@ mark {
 
 #webring {
     position: absolute;
-    margin-top: 220px; 
+    margin-top: 220px;
 }
 
 #flowers {
     position: absolute;
-    margin-top: 15px; 
+    margin-top: -8px;
     margin-left: -30px;
     z-index: 10;
 }
@@ -405,27 +410,27 @@ mark {
 }
 
 #flowers img:hover {
-    filter:opacity(30%);
-    transition: 1s fadein; 
+    filter: opacity(30%);
+    transition: 1s fadein;
 }
 
 #flowers2 {
     position: absolute;
-    margin-top: 275px; 
-    margin-left: 420px;
+    margin-top: 295px;
+    margin-left: 430px;
     z-index: 10;
     pointer-events: none;
     filter: drop-shadow(0 1mm 1mm rgb(74, 129, 148));
 }
 
-#flowers2 img{
+#flowers2 img {
     width: 95px;
-    filter:opacity(80%);
+    filter: opacity(80%);
 }
 
-#pagebg { 
-    position: absolute; 
-    color: transparent; 
+#pagebg {
+    position: absolute;
+    color: transparent;
     margin-top: -335px;
     margin-left: -5px;
     width: 452px;
@@ -438,7 +443,9 @@ mark {
     padding-left: 20px;
     padding-right: 20px;
     background: #d9dee0c0;
-    pointer-events: none; 
+    pointer-events: none;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 
@@ -462,6 +469,7 @@ mark {
         transform: scale(0.8);
         top: 130px;
     }
+
     #aigis {
         margin-left: -190px;
         transform: scale(1.2);
@@ -502,7 +510,7 @@ mark {
 
     #imood {
         margin-left: 20px;
-        margin-top: 90px; 
+        margin-top: 90px;
     }
 
     #snowflakes {
