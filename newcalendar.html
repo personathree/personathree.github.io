@@ -1,0 +1,332 @@
+<head>
+    <!----- 
+     
+                                         ,
+                  ,-.       _,---._ __  / \
+                 /  )    .-'       `./ /   \
+                (  (   ,'            `/    /|
+                 \  `-"             \'\   / |
+                  `.              ,  \ \ /  |
+                   /`.          ,'-`----Y   |
+                  (            ;        |   '
+                  |  ,-.    ,-'         |  /
+                  |  | (   |            | /
+                  )  |  \  `.___________|/
+                  `--'   `--'
+     
+        * nintendos calendar lovingly recreated by june @ loveberry.nekoweb.org / layercake.neocities.org
+         * source code: https://www.geeksforgeeks.org/how-to-design-a-simple-calendar-using-javascript/
+        * version WITH the navigation (arrows to see different months) for other version please go here
+            -> https://pastebin.com/YSuqBkg9
+                                                                        ----->
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+        
+        @font-face {
+                           font-family: ndsbios;
+                           src: url(https://dl.dropbox.com/s/5dkx1amr2yqmoda/ndsbios_memesbruh03.ttf);
+                       }
+    
+                       
+                   @font-face {
+      font-family: ndsarrow;
+      src: url(https://files.catbox.moe/3r5aha.ttf);
+    }
+    
+                       
+        * {
+        margin: 0;
+        padding: 0;
+        transform: scale(0.87);
+        margin-top: 13px;
+        overflow-x: none; 
+    }
+    
+    .calendar-container {
+        width: 290px;
+        font-family: ndsbios;
+        overflow-x: none; 
+    }
+    
+    .calendar-container header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header .calendar-navigation {
+        display: none;
+    }
+    
+    header .calendar-navigation span {
+        height: 28px;
+        width: 28px;
+        margin: 0 1px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 50%;
+        user-select: none;
+        color: #000;
+        font-size: 23px;
+        font-family:ndsarrow;
+        display: none; 
+    }
+    
+    header .calendar-current-date {
+        font-weight: 500;
+        font-size: 23px;
+        margin-left:5px;
+    }
+    
+    .calendar-body {
+        padding: 0;
+    }
+    
+    .calendar-body ul {
+        list-style: none;
+        flex-wrap: wrap;
+        display: flex;
+        text-align: center;
+    }
+    
+    .calendar-body .calendar-dates {
+        margin-bottom: 20px;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    .calendar-body li {
+        width: calc(98% / 7.2);
+        font-size: 23px;
+        color: #414141;
+    }
+    
+    .calendar-body .calendar-weekdays li {
+        cursor: default;
+        font-weight: 500;
+    }
+    
+    .calendar-body .calendar-dates li {
+        margin-top: 0px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        border:1px solid black;
+        border-width: 1px 1px 0 0;
+        height:25px;
+        padding-top:3px;
+    }
+    
+    .calendar-dates li:first-child, .calendar-dates li:nth-child(7n+1) {
+                background:#405058;
+                border-left:1px solid transparent;
+                color:#c5c9cf;
+                }
+                
+                .calendar-dates li:nth-child(7n+0) {
+          background: #707174;
+          color:#e1e2e7;
+        }
+        
+                
+    .calendar-dates li.inactive {
+        color: #aaa;
+    }
+    
+    .calendar-dates li.active {
+        color: #d1c9c9;
+    }
+    
+    .calendar-dates li::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .calendar-dates li.active::before {
+    background: #313a41b2;
+    border:1px dashed #464b4d;
+    }
+    
+    .calendar-dates li:not(.active):hover::before {
+        background: #c0e0f560;
+    }
+    
+                .calendar-weekdays li:first-child { 
+                    border:1px solid black;
+                    border-width: 1px 1px 0 1px;
+                    background:#405058;
+                    color:white;
+                }
+    
+                .calendar-weekdays li:last-child { 
+                    background:#636364;
+                    color:white;
+                }
+                
+                .calendar-weekdays li { 
+                    background:#c0e0f560;
+                    color:rgb(37, 35, 35);
+                    border:solid black;
+                    border-width: 1px 1px 0px 0;
+                    height:25px;
+                    padding-top:5px;
+                    padding-bottom: -12px;
+                }
+    
+    </style>
+    </head>
+    
+    <body>
+        <div class="calendar-container">
+            <header class="calendar-header">
+                <p class="calendar-current-date"></p>
+                <div class="calendar-navigation">
+                    <span id="calendar-prev" 
+                          class="dsarw">
+                        <
+                    </span>
+                    <span id="calendar-next" 
+                          class="dsarw">
+                        >
+                    </span>
+                </div>
+            </header>
+    
+            <div class="calendar-body">
+                <ul class="calendar-weekdays">
+                    <li>Su</li>
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                </ul>
+                <ul class="calendar-dates"></ul>
+            </div>
+        </div>
+        <script>
+        let date = new Date();
+    let year = date.getFullYear();
+    let month = date.getMonth();
+    
+    const day = document.querySelector(".calendar-dates");
+    
+    const currdate = document
+        .querySelector(".calendar-current-date");
+    
+    const prenexIcons = document
+        .querySelectorAll(".calendar-navigation span");
+    
+    // Array of month names
+    const months = [
+        "01 /",
+        "02 /",
+        "03 /",
+        "04 /",
+        "05 /",
+        "06 /",
+        "07 /",
+        "08 /",
+        "09 /",
+        "10 /",
+        "11 /",
+        "12 /"
+    ];
+    
+    // Function to generate the calendar
+    const manipulate = () => {
+    
+        // Get the first day of the month
+        let dayone = new Date(year, month, 1).getDay();
+    
+        // Get the last date of the month
+        let lastdate = new Date(year, month + 1, 0).getDate();
+    
+        // Get the day of the last date of the month
+        let dayend = new Date(year, month, lastdate).getDay();
+    
+        // Get the last date of the previous month
+        let monthlastdate = new Date(year, month, 0).getDate();
+    
+        // Variable to store the generated calendar HTML
+        let lit = "";
+    
+        // Loop to add the last dates of the previous month
+        for (let i = dayone; i > 0; i--) {
+            lit +=
+                `<li class="inactive">${monthlastdate - i + 1}</li>`;
+        }
+    
+        // Loop to add the dates of the current month
+        for (let i = 1; i <= lastdate; i++) {
+    
+            // Check if the current date is today
+            let isToday = i === date.getDate()
+                && month === new Date().getMonth()
+                && year === new Date().getFullYear()
+                ? "active"
+                : "";
+            lit += `<li class="${isToday}">${i}</li>`;
+        }
+    
+        // Loop to add the first dates of the next month
+        for (let i = dayend; i < 6; i++) {
+            lit += `<li class="inactive">${i - dayend + 1}</li>`
+        }
+    
+        // Update the text of the current date element 
+        // with the formatted current month and year
+        currdate.innerText = `${months[month]} ${year}`;
+    
+        // update the HTML of the dates element 
+        // with the generated calendar
+        day.innerHTML = lit;
+    }
+    
+    manipulate();
+    
+    // Attach a click event listener to each icon
+    prenexIcons.forEach(icon => {
+    
+        // When an icon is clicked
+        icon.addEventListener("click", () => {
+    
+            // Check if the icon is "calendar-prev"
+            // or "calendar-next"
+            month = icon.id === "calendar-prev" ? month - 1 : month + 1;
+    
+            // Check if the month is out of range
+            if (month < 0 || month > 11) {
+    
+                // Set the date to the first day of the 
+                // month with the new year
+                date = new Date(year, month, new Date().getDate());
+    
+                // Set the year to the new year
+                year = date.getFullYear();
+    
+                // Set the month to the new month
+                month = date.getMonth();
+            }
+    
+            else {
+    
+                // Set the date to the current date
+                date = new Date();
+            }
+    
+            // Call the manipulate function to 
+            // update the calendar display
+            manipulate();
+        });
+    });
+    </script>
