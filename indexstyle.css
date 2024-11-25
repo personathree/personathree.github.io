@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: bios;
-    src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
+    src: url(fonts/Nintendo-DS-BIOS.ttf);
 }
 
 @font-face {
@@ -165,30 +165,36 @@ p {
 #links {
     text-align: left;
     padding: 5px;
-    width: 459px;
+    width: 429px;
     height: 20px;
-    margin-top: 45px;
+    margin-top: 53px;
     position: absolute;
-    margin-left: 50px;
+    margin-left: 20px;
     padding-top: -2px;
     padding-bottom: 16px;
     top: -5px !important;
     margin: 10 auto;
-    z-index: 6 !important;
+    z-index: 90 !important;
     font-size: 16px;
     letter-spacing: -0.5px;
     line-height: 23px;
-    color: #b4b9bb;
+    color: #666869;
     font-family: pixel1;
 }
 
 #links a {
-    color: #60828b;
+    color: #4c6268;
+    background: rgb(199, 198, 198); 
+    padding-left: 3px;
+    padding-right: 3px;  
+    border: 1px solid #4c6268;
+    border-radius: 5px;  
+    filter: drop-shadow(0 1px 1mm rgb(99, 113, 124));
 }
 
 #links a:hover {
-    border: 0px;
     color: #b8d0d6;
+    background: #4c6268; 
     padding-right: 5px;
     padding-left: 2px;
     font-weight: normal;
@@ -200,20 +206,23 @@ p {
     z-index: 120;
     line-height: 13px;
     position: absolute;
-    margin-left: 165px;
-    margin-top: 72px;
-    border: 1px dotted white;
+    margin-left: 167px;
+    margin-top: 255px;
+    border: 1px dotted rgba(24, 10, 10, 0.322);
     padding-left: 10px;
     padding-right: 10px;
     width: 130px;
+    height: 15px;  
     font-family: 'bios';
-    background: #5f7581dc;
+    background: linear-gradient(280deg, rgba(95, 30, 30, 0.527) 20%, rgba(119, 152, 170, 0.651) 100%);
+    border-bottom-right-radius: 10px; 
+    filter: drop-shadow(0 1px 1mm rgb(19, 23, 26));
 }
 
 #statuscafe-username {
     margin-bottom: -0.1em;
     text-align: left;
-    color: #ece7e7;
+    color: #f0d8d8;
     font-size: 11px;
     letter-spacing: 0.02em;
     background: transparent;
@@ -221,28 +230,33 @@ p {
 
 #statuscafe-content {
     font-size: 12px;
+    margin-left: -px; 
     text-align: left;
     background: transparent;
     letter-spacing: 0em;
     width: auto;
     padding: 5px;
     color: #ebebeb;
+    border-radius: 50px; 
+    padding-left: 5px;
+    filter: drop-shadow(0 1px 1px rgb(19, 23, 26));
+    background: linear-gradient(280deg, rgba(95, 30, 30, 0.788) 20%, rgba(119, 152, 170, 0.904) 100%);
 }
 
 #statuscafe-username a:hover {
     padding-right: 2px;
-    color: white;
+    color: rgb(236, 227, 227);
 }
 
 #imood {
     position: absolute;
-    margin-left: 418px;
-    margin-top: -227.5px;
+    margin-left: 258px;
+    margin-top: -287.5px;
 }
 
 #imood img {
     border: 1px dotted white;
-    width: 50px;
+    width: 60px;
 }
 
 #imood a:hover {
@@ -261,9 +275,9 @@ mark {
 }
 
 .marquee {
-    width: 376px;
+    width: 326px;
     height: 15px;
-    right: 60px;
+    right: 65px;
     padding: 3px;
     position: absolute;
     border-width: 2px;
@@ -272,13 +286,14 @@ mark {
     padding-bottom: 5px;
     z-index: -6;
     border-top-right-radius: 35px;
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     border-top-left-radius: 15px;
-    margin-top: -60px;
-    margin-left: 20px;
+    margin-top: -40px;
+    margin-left: 30px;
     background: linear-gradient(280deg, rgb(96, 120, 133) 20%, rgba(255, 255, 255, 0) 100%);
     font-family: bios;
-    color: #ebebeb;
+    color: #ffffff;
 }
 
 .marquee a:hover {
@@ -298,7 +313,7 @@ mark {
     position: absolute;
     font-family: "Bios";
     margin-top: -47px;
-    right: 176px;
+    right: 96px;
     width: 295px;
     z-index: 13;
     color: white;
@@ -314,34 +329,34 @@ mark {
 #contain_moon {
     position: absolute;
     color: #eaeff0;
-    margin-top: -423px;
+    margin-top: -415px;
     line-height: 17px;
-    margin-left: 380px;
+    margin-left: 375px;
     font-family: bios;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4822129535407913) 0%, rgba(95, 131, 143, 0.5578432056416316) 23%, rgba(255, 255, 255, 0) 23%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4822129535407913) 0%, rgba(95, 131, 143, 0.5578432056416316) 23%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 1px black) drop-shadow(0 -1px white) drop-shadow(1px 0 white) drop-shadow(-1px 0 black);
 }
 
 #moontext {
     position: absolute;
     color: #1e2122;
-    margin-top: -373.4px;
+    margin-top: -365.5px;
     line-height: 17px;
     font-size: 14px;
-    margin-left: 379.5px;
+    margin-left: 373.9px;
     text-shadow: -1px 0 #b9dddf, 0 1px #b9dddf, 1px 0 #b9dddf, 0 -1px #FFFFFF;
     font-family: bios;
 }
 
 #buttons {
     position: absolute;
-    margin-top: -390px;
-    margin-left: 70px;
+    margin-top: -360px;
+    margin-left: 280px;
 }
 
 #buttons img {
-    width: 70px;
-    border: 1px solid #71acaf;
+    width: 60px;
+    border: 1px solid #30393a;
 }
 
 #links h2 {
@@ -375,17 +390,6 @@ mark {
     z-index: -5;
     margin-top: -190px;
     margin-left: 280px;
-}
-
-#answer {
-    position: absolute;
-    font-family: bmspace;
-    font-size: 12px;
-    margin-top: -385px;
-    margin-left: 149px;
-    color: #dde3e6;
-    text-shadow: -1px 0 #738f91, 0 1px #738f91, 1px 0 #1d1818, 0 -1px #1d1818;
-    filter: drop-shadow(0 0.9mm 0.7mm rgb(165, 174, 180));
 }
 
 #snowflakes {
@@ -446,6 +450,26 @@ mark {
     pointer-events: none;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+#linkbg {
+    position: absolute;
+    color: transparent;
+    margin-top: -365px;
+    margin-left: -5px;
+    width: 332px;
+    height: 345px;
+    z-index: -10;
+    border: 2px ridge rgb(0, 0, 0);
+    filter: drop-shadow(0 -1mm 1mm rgb(99, 113, 124));
+    padding: 3px 3px 3px 3px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #d9dee0c0;
+    pointer-events: none;
+    border-radius: 30px;
+    border-top-right-radius: 10px;  
 }
 
 
