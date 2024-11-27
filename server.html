@@ -16,7 +16,7 @@
 
     @font-face {
         font-family: bios;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
+        src: url(fonts/Nintendo-DS-BIOS.ttf);
     }
 
     @font-face {
@@ -100,6 +100,32 @@
         filter: drop-shadow(0px 2px black) drop-shadow(0 -1px black) drop-shadow(2px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 black);
     }
 
+    .tooltip .tooltiptext3 {
+        width: 150px;
+        visibility: hidden;
+        color: #202020;
+        background: #ececec;
+        text-align: center;
+        padding: 2px;
+        padding-top: -2px;
+        padding-bottom: -2px;
+        border-radius: 3px;
+        position: absolute;
+        z-index: 1;
+        top: 198%;
+        font-size: 12px;
+        left: -5%;
+        transition: .2s ease-in;
+        z-index: 95;
+    }
+
+    .tooltiptext3 {
+        border: 1px dotted black;
+        font-size: 9px;
+
+        filter: drop-shadow(0px 2px black) drop-shadow(0 -1px black) drop-shadow(2px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 black);
+    }
+
     .tooltip:hover .tooltiptext {
         visibility: visible;
         transition: .2s ease-in;
@@ -107,6 +133,12 @@
     }
 
     .tooltip:hover .tooltiptext2 {
+        visibility: visible;
+        transition: .2s ease-in;
+
+    }
+
+    .tooltip:hover .tooltiptext3 {
         visibility: visible;
         transition: .2s ease-in;
 
@@ -169,7 +201,7 @@
         overflow: auto;
         position: absolute;
         margin-left: 50px;
-        margin-top: 225px;
+        margin-top: 215px;
         line-height: 13px;
         z-index: 2;
         background: linear-gradient(90deg, rgba(244, 247, 248, 0) 0%, rgba(255, 255, 255, 0.904) 91%);
@@ -408,24 +440,27 @@
                     class="tooltiptext">did sys of 14 heavy amnesia </span></div>
             lesbian
             <br> prezoh / bigt mod <BUTTON ONCLICK="ShowAndHide()">+ ext</BUTTON>
-            <br> <br> <mark>likes</mark> <i>prezoh, aksually,</i> chiblee, bigt, persona <b>3</b>, omori,
-            milk
-            outside a bag of milk, roblox, <i>girls last tour</i>, bocchi the rock!, 1bitheart, rhythm games, alan wake,
+            <br> <br> <mark>likes</mark> <i>prezoh, aksually,</i> chiblee, bigt, <i>persona</i> <b>3</b>, omori,
+            milk outside a bag of milk, <div class="tooltip"><span class="redUnderline">roblox</span><span
+                    class="tooltiptext3">gasa4, regretevator, fruit juice tycoon, death in the box</span>, </div>
+            <i>girls last tour</i>, bocchi the rock!, 1bitheart, rhythm games, alan wake,
             oneshot, vylet pony, <div class="tooltip"><span class="redUnderline">my friends!</span><span
-                    class="tooltiptext2">friends house + faze + oomf servers</span> </div>
-            </div>
-
-            <DIV ID="scroll4" STYLE="display:none">
-                <mark>ext</mark> im not the most active outside of my own close circles,, im very reserved and antisocial so im trying
-                to
-                work on that ! /_ \
-                <br> <br> disabled both physically and mentally.. this heavily affects interactions / how long responses
-                take so please be patient!
-
-                <br> <br> i indulge in my interests very critically and im very open to conversation about them! ^__^
-            </DIV>
-            <div id="akihiko"><img src="https://files.catbox.moe/gp6cpw.png" width=230></div>
+                    class="tooltiptext2">friends house + faze + oomf servers</span> </div> slugterra, rhythm heaven,
+            poetry
         </div>
+
+        <DIV ID="scroll4" STYLE="display:none">
+            <mark>ext</mark> im not the most active outside of my own close circles,, im very reserved and antisocial so
+            im trying
+            to
+            work on that ! /_ \
+            <br> <br> disabled both physically and mentally.. this heavily affects interactions / how long responses
+            take so please be patient!
+
+            <br> <br> i indulge in my interests very critically and im very open to conversation about them! ^__^
+        </DIV>
+        <div id="akihiko"><img src="https://files.catbox.moe/gp6cpw.png" width=230></div>
+    </div>
     </div>
 </body>
 
