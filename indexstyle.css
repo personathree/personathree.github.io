@@ -207,7 +207,7 @@ p {
     line-height: 13px;
     position: absolute;
     margin-left: 167px;
-    margin-top: 255px;
+    margin-top: 260px;
     border: 1px dotted rgba(24, 10, 10, 0.322);
     padding-left: 10px;
     padding-right: 10px;
@@ -312,8 +312,8 @@ mark {
 .transring {
     position: absolute;
     font-family: "Bios";
-    margin-top: -47px;
-    right: 96px;
+    margin-top: -265px;
+    right: 76px;
     width: 295px;
     z-index: 13;
     color: white;
