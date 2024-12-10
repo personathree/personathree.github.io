@@ -229,14 +229,14 @@ p {
 
 #statuscafe-content {
     font-size: 12px;
-    margin-left: -px; 
-    text-align: left;
+    margin-left: -10px; 
+    text-align: center;
     background: transparent;
     letter-spacing: 0em;
-    width: auto;
+    width: 140px;
     padding: 5px;
     color: #ebebeb;
-    border-radius: 50px; 
+    border-radius: 15px; 
     padding-left: 5px;
     filter: drop-shadow(0 1px 1px rgb(19, 23, 26));
     background: linear-gradient(280deg, rgba(95, 30, 30, 0.788) 20%, rgba(119, 152, 170, 0.904) 100%);
