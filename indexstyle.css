@@ -471,6 +471,12 @@ mark {
     border-top-right-radius: 10px;  
 }
 
+#roring {
+    position: absolute;
+    transform:scale(0.4);
+    margin-left: 88px;
+    margin-top: -26px;
+}
 
 
 /* Below is the mobile optimisation. Mess with it if you want. */
