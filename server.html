@@ -1,466 +1,225 @@
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>all i need</title>
+<!doctype html>
 
-<style>
-    @font-face {
-        font-family: p3;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/9usuuk.ttf);
-    }
+<html lang="en">
 
-    @font-face {
-        font-family: ms gothic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
-    }
-
-    @font-face {
-        font-family: bios;
-        src: url(fonts/Nintendo-DS-BIOS.ttf);
-    }
-
-    @font-face {
-        font-family: ms pgothic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
-    }
-
-    @font-face {
-        font-family: basiic;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/basiic.ttf);
-    }
-
-    @font-face {
-        font-family: handwriting1;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/nadeznas.ttf);
-    }
-
-    @font-face {
-        font-family: omori;
-        src: url(https://file.garden/Zagf2LAXJwHlct9M/OMORI_GAME2.ttf);
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .tooltip {
-        position: relative;
-        display: inline-block;
-
-    }
-
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        color: #202020;
-        background: #ececec;
-        text-align: center;
-        padding: 2px;
-        padding-top: -2px;
-        padding-bottom: -2px;
-        border-radius: 3px;
-        position: absolute;
-        z-index: 1;
-        top: 98%;
-        font-size: 12px;
-        left: -195%;
-        transition: .2s ease-in;
-    }
-
-    .tooltiptext {
-        border: 1px dotted black;
-        font-size: 9px;
-
-        filter: drop-shadow(0px 2px black) drop-shadow(0 -1px black) drop-shadow(2px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 black);
-    }
-
-    .tooltip .tooltiptext2 {
-        width: 150px;
-        visibility: hidden;
-        color: #202020;
-        background: #ececec;
-        text-align: center;
-        padding: 2px;
-        padding-top: -2px;
-        padding-bottom: -2px;
-        border-radius: 3px;
-        position: absolute;
-        z-index: 1;
-        top: 98%;
-        font-size: 12px;
-        left: -215%;
-        transition: .2s ease-in;
-        z-index: 95;
-    }
-
-    .tooltiptext2 {
-        border: 1px dotted black;
-        font-size: 9px;
-
-        filter: drop-shadow(0px 2px black) drop-shadow(0 -1px black) drop-shadow(2px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 black);
-    }
-
-    .tooltip .tooltiptext3 {
-        width: 150px;
-        visibility: hidden;
-        color: #202020;
-        background: #ececec;
-        text-align: center;
-        padding: 2px;
-        padding-top: -2px;
-        padding-bottom: -2px;
-        border-radius: 3px;
-        position: absolute;
-        z-index: 1;
-        top: 198%;
-        font-size: 12px;
-        left: -5%;
-        transition: .2s ease-in;
-        z-index: 95;
-    }
-
-    .tooltiptext3 {
-        border: 1px dotted black;
-        font-size: 9px;
-
-        filter: drop-shadow(0px 2px black) drop-shadow(0 -1px black) drop-shadow(2px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 black);
-    }
-
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        transition: .2s ease-in;
-
-    }
-
-    .tooltip:hover .tooltiptext2 {
-        visibility: visible;
-        transition: .2s ease-in;
-
-    }
-
-    .tooltip:hover .tooltiptext3 {
-        visibility: visible;
-        transition: .2s ease-in;
-
-    }
-
-    #position {
-        position: absolute;
-        top: 15%;
-        left: 35%;
-        transform: scale(1.7);
-    }
-
-    body {
-        padding: 30px;
-        text-align: center;
-        color: black;
-        font-family: arial;
-        font-size: 25px;
-        background: url("https://files.catbox.moe/8b0xhr.png") no-repeat fixed center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto;
-
-    }
-
-    #scroll3 {
-        height: 130px;
-        width: 175px;
-        padding: 5px;
-        padding-left: 10px;
-        padding-top: 10px;
-        font-family: bios;
-        font-size: 14px;
-        letter-spacing: 0.2px;
-        overflow: auto;
-        text-align: left;
-        position: absolute;
-        margin-left: 50px;
-        margin-top: 50px;
-        line-height: 13px;
-        z-index: 3;
-        background: linear-gradient(90deg, rgba(244, 247, 248, 0) 0%, rgba(255, 255, 255, 0.815) 91%);
-        border-top-right-radius: 35px;
-        box-shadow: 2px 2px 2px 2px #ffffff5d;
-        border-bottom-right-radius: 35px;
-        overflow-y: hidden;
-    }
-
-    #scroll4 {
-        height: 130px;
-        width: 225px;
-        padding: 5px;
-        padding-left: 10px;
-        padding-top: 10px;
-        font-family: bios;
-        font-size: 14px;
-        letter-spacing: 0.2px;
-        overflow: auto;
-        position: absolute;
-        margin-left: 50px;
-        margin-top: 215px;
-        line-height: 13px;
-        z-index: 2;
-        background: linear-gradient(90deg, rgba(244, 247, 248, 0) 0%, rgba(255, 255, 255, 0.904) 91%);
-        border-top-right-radius: 35px;
-        box-shadow: 2px 2px 2px 2px #FFFFFF90;
-        border-bottom-right-radius: 35px;
-        text-align: left;
-        transform: rotate(0deg);
-
-
-    }
-
-    #akihiko {
-        position: absolute;
-        pointer-events: none;
-    }
-
-    #akihiko img {
-        position: absolute;
-        margin-left: 150px;
-        margin-top: 90px;
-        filter: drop-shadow(0px 1px transparent) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
-    }
-
-    #title {
-        position: absolute;
-        font-family: bios;
-        font-weight: bold;
-        font-size: 17px;
-        margin-left: -145px;
-        margin-top: 35px;
-        width: 320px;
-        color: white;
-        text-align: right;
-        letter-spacing: 3px;
-        filter: drop-shadow(0px 2px black) drop-shadow(0 -1px black) drop-shadow(2px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 black);
-    }
-
-    #flowers {
-        position: absolute;
-        transform: rotate(190deg);
-        margin-top: 250px;
-        margin-left: 240px;
-        z-index: 3;
-        pointer-events: none;
-    }
-
-    #flowers img {
-        width: 140px;
-    }
-
-    #moretext {
-        position: absolute;
-        font-family: p3;
-        font-weight: bold;
-        font-size: 13px;
-        margin-left: -10px;
-        margin-top: 5px;
-        letter-spacing: 1px;
-        width: 320px;
-        color: white;
-        text-align: left;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
-    }
-
-    mark {
-        background: #262530;
-        color: white;
-        border-radius: 2px;
-        padding-bottom: 2px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .bios {
-        font-family: bios;
-        text-align: left;
-    }
-
-    button {
-        background: #000000;
-        border: 2px solid black;
-        color: rgb(255, 255, 255);
-        border-radius: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: -2px;
-        padding-bottom: -2px;
-        font-size: 9px;
-        font-family: bios;
-    }
-
-    button:hover {
-        background: rgba(255, 255, 255, 0.158);
-        transition: .2s ease-in-out;
-        border: 2px solid white;
-        color: black;
-    }
-
-    #newbg {
-        position: absolute;
-        z-index: -100;
-        margin-left: -20px;
-        margin-top: 11px;
-        filter: drop-shadow(0px 2px black) drop-shadow(0 -1px black) drop-shadow(3px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 black);
-        pointer-events: none;
-    }
-
-    #newbg img {
-        width: 380px;
-    }
-
-    #flowers2 {
-        position: absolute;
-        z-index: -8;
-        margin-left: 180px;
-        margin-top: 90px;
-        pointer-events: none;
-    }
-
-    #flowers2 img {
-        width: 120px;
-    }
-
-    #hidewm {
-        position: absolute;
-        margin-top: 190px;
-        background: transparent;
-        margin-left: 80px;
-        pointer-events: none;
-    }
-
-    #hidewm img {
-        width: 190px;
-    }
-
-    #basilwalk {
-        position: absolute;
-        margin-left: 180px;
-        margin-top: 30px;
-        z-index: 5;
-        filter: saturate(20%);
-        pointer-events: none;
-    }
-
-    #basilwalk img {
-        width: 30px;
-    }
-
-    #stamps {
-        position: absolute;
-        margin-left: 240px;
-        margin-top: 40px;
-        filter: saturate(20%);
-        pointer-events: none;
-    }
-
-    #topthing {
-        position: absolute;
-        filter: drop-shadow(0px 2px black) drop-shadow(0 -1px black) drop-shadow(3px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 black);
-        z-index: -102 !important;
-        margin-top: -20px;
-        margin-left: 28px;
-        pointer-events: none;
-    }
-
-    .redUnderline {
-        color: #000000;
-        border-bottom: 1px dotted #555555;
-    }
-
-    #topthing img {
-        width: 120px;
-    }
-
-    @media only screen and (max-width: 640px) {
-        #position {
-            left: -40px;
-            transform: scale(1.3)
-        }
-    }
-</style>
-
-<SCRIPT>
-    function ShowAndHide() {
-        var x = document.getElementById('scroll4');
-        if (x.style.display == 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all i need</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
         }
 
-    }
-</SCRIPT>
-<script src="wobble.js"></script>
+        @font-face {
+            font-family: pixel;
+            src: url(https://dl.dropbox.com/s/kmhe7d3n18vdz5e/w95fa.woff?dl=0);
+        }
 
-<body>
+        @font-face {
+            font-family: bios;
+            src: url(fonts/Nintendo-DS-BIOS.ttf);
+        }
 
-    <div id="position">
-        <div id="newbg">
-            <img
-                src="https://rosepng.com/wp-content/uploads/2024/10/s11728_notebook_paper_isolated_on_white_background_-stylize__2c43970d-5ab9-457d-b6ea-ed1803d4dd3b_3-photoroom.png">
-        </div>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            height: 880px;
+            background: url("https://files.catbox.moe/8b0xhr.png") no-repeat fixed center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto;
+            transform: scale(1.40);
+        }
 
-        <div id="flowers">
-            <img src="https://file.garden/Zagf2LAXJwHlct9M/flower1.png">
-        </div>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: pixel;
+        }
 
-        <div id="flowers2">
-            <img src="https://file.garden/Zagf2LAXJwHlct9M/flower2.png">
-        </div>
+        #book {
+            width: 440px;
+            height: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 15px;
+            transform: rotate(2.9deg);
+        }
 
-        <div id="hidewm">
-            <img src="https://files.catbox.moe/i656sx.png">
-        </div>
+        #newbg {
+            position: absolute;
+            z-index: -5;
+        }
 
-        <div id="basilwalk">
-            <img src="https://files.catbox.moe/kjl1gd.png">
-        </div>
+        #newbg img {
+            width: 420px;
+            height: 490px;
+            transform:rotate(92deg);
+            margin-left: -10px;
+            margin-top: -30px;
+        }
 
-        <div id="stamps">
-            <img src="https://64.media.tumblr.com/d5fa53351d05ffd87693d9c3ca99a688/e30382943355d728-34/s100x200/16ad5a39283e243aee96a68543c5eaa0661dbbc2.pnj"
-                width=60>
+        .note {
+            width: 400px;
+            height: 277px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffffffa8;
+            background-size: 16px 16px;
+            background-image: repeating-linear-gradient(0deg, #cfdae3, #cfdae3 0.8px, #ffffff3f 0.8px, #ffffff28);
+            border: 1px solid #7ac8db;
+            color: #5E5E5E;
+            overflow: auto;
+            font-size: 15px;
+            overflow-x: hidden;
+        }
+
+        .note span {
+            font-size: 17px;
+        }
+
+        .note u {
+            text-decoration-style: wavy;
+            color: rgb(136, 130, 130);
+            text-decoration-color: #9fa3df;
+        }
+
+
+        #img {
+            width: 176px;
+        }
+
+        mark {
+            color: #fff;
+            background: none;
+            font-family: bios;
+            font-size: 20px;
+            filter: drop-shadow(0px 2px rgb(119, 176, 180)) drop-shadow(0 -1px rgb(128, 114, 192)) drop-shadow(2px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 rgb(113, 111, 141));
+            box-shadow: inset 0 0.3em 0.5em 0 #f3f4ff;
+            padding-right: 15px;
+            padding-left: 5px;
+            border-radius: 15px 0px 5px 5px;
+        }
+
+        a {
+            color: #5E5E5E !important;
+            text-decoration-style: dotted !important;
+        }
+
+        #pin1 {
+            width: 35px;
+            height: 15px;
+            background: #C2C2C2;
+            border-radius: 10px;
+            border: 1px solid #757575;
+            z-index: 99;
+            position: absolute;
+            color: #ffffff00;
+            margin-bottom: 245px;
+            box-shadow: inset 10px 0px 6px -10px #CFCFCF, inset -10px 0px 6px -10px #CFCFCF,
+                inset 0px 10px 6px -10px #FFF, inset 0px -10px 6px -10px #CFCFCF;
+        }
+
+        #pin2 {
+            width: 35px;
+            height: 15px;
+            background: #C2C2C2;
+            border-radius: 10px;
+            border: 1px solid #757575;
+            z-index: 99;
+            position: absolute;
+            color: #ffffff00;
+            margin-top: 180px;
+            box-shadow: inset 10px 0px 6px -10px #CFCFCF, inset -10px 0px 6px -10px #CFCFCF,
+                inset 0px 10px 6px -10px #FFF, inset 0px -10px 6px -10px #CFCFCF;
+        }
+
+        #flowers {
+            width: 110px;
+            position: absolute;
+            margin-right: 390px;
+            margin-top: -215px;
+            pointer-events: none;
+        }
+
+        #flowers2 {
+            width: 110px;
+            position: absolute;
+            margin-right: -390px;
+            margin-top: 235px;
+            pointer-events: none;
+        }
+
+        strong {
+            color: #EAAEAF !important;
+        }
+
+        #cred {
+            color: #fff;
+            text-shadow: -1px 0 #A3836C, 0 1px #A3836C, 1px 0 #A3836C, 0 -1px #A3836C, 0 0;
+        }
+
+        @media only screen and (max-width:600px) {
+            #scaling {
+                transform: scale(80%);
+            }
+        }
+    </style>
+
+    <script src="wobble.js"></script>
+
+</head>
+
+<body id="scaling">
+    <div id="book">
+        <div class="note">
+            <img src="https://media1.tenor.com/m/xb51eBXYLQ4AAAAd/dungeon-meshi-delicious-in-dungeon.gif" width="180px">
             <br>
-            <img src="https://64.media.tumblr.com/3ae7b64767d85c4566d5e3b0d2abb31d/6f77a12e73175f4a-03/s250x400/c0b4b179bfff3ced3f3a8431a3f086f0e1b0c6bb.pnj"
-                width=60>
-            <br>
-            <img src="https://64.media.tumblr.com/a87697863e671fc66bbc5bfcdca4627c/05957ce94db51307-c5/s500x750/e9d452edd716ab5f1713717b023f3ff477c30c9a.gifv"
-                width=60>
-        </div>
-
-        <div id="title"><span id="wobble">falin or basil</span></div>
-        <div id="scroll3">they<b>/</b>them 18 <div class="tooltip"><span class="redUnderline">plural</span><span
-                    class="tooltiptext">did sys of 14 heavy amnesia </span></div>
-            lesbian
-            <br> prezoh / bigt mod <BUTTON ONCLICK="ShowAndHide()">+ ext</BUTTON>
-            <br> <br> <mark>likes</mark> <i>prezoh, aksually,</i> chiblee, bigt, <i>persona</i> <b>3</b>, omori,
-            milk outside a bag of milk, <div class="tooltip"><span class="redUnderline">roblox</span><span
-                    class="tooltiptext3">gasa4, regretevator, fruit juice tycoon, death in the box</span>, </div>
-            <i>girls last tour</i>, bocchi the rock!, 1bitheart, rhythm games, alan wake,
-            oneshot, vylet pony, <div class="tooltip"><span class="redUnderline">my friends!</span><span
-                    class="tooltiptext2">friends house + faze + oomf servers</span> </div> slugterra, rhythm heaven,
-            poetry
-        </div>
-
-        <DIV ID="scroll4" STYLE="display:none">
-            <mark>ext</mark> im not the most active outside of my own close circles,, im very reserved and antisocial so
-            im trying
-            to
-            work on that ! /_ \
-            <br> <br> disabled both physically and mentally.. this heavily affects interactions / how long responses
-            take so please be patient!
-
+            <mark><span id="wobble">falin or basil</span></mark>
+            <img src="https://64.media.tumblr.com/3ae7b64767d85c4566d5e3b0d2abb31d/6f77a12e73175f4a-03/s250x400/c0b4b179bfff3ced3f3a8431a3f086f0e1b0c6bb.pnj" width="40px">
+            <br> they<b>/</b>none 18 <u>plural</u> taken
+            <br> disabled autistic lesbian 
+            <br> <p style="font-size: 12px; color: rgba(146, 143, 143, 0.89); ">did sys of 14, heavy amnesia</p>
+            <br> <mark>bfyi ｡(! > < )</mark>
+            <br>not the most active outside of my own <u>close circles</u>...
+            <br> <br> disabled both physically and mentally.. this heavily affects interactions / how long
+            responses take!!
             <br> <br> i indulge in my interests very critically and im very open to conversation about them! ^__^
-        </DIV>
-        <div id="akihiko"><img src="https://files.catbox.moe/gp6cpw.png" width=230></div>
+
+        </div>
+        <div class="note">
+            <mark>interests ｡(♥︎ ᴗ ᴗ )</mark> <br>
+            <i>prezoh, aksually,</i> chiblee, bigt, <i>persona</i> <b>3</b>, omori, milk outside a bag of milk,
+            <u>roblox</u>, <b>girls last tour</b>, bocchi the rock!, 1bitheart, rhythm games, <i>alan wake,</i> oneshot,
+            poetry, html/css, the bear, <b>madoka magica</b>, <i>henry danger,</i> tech errors, <u>(real)</u> anti piracy, l4d2
+            <br> <br>
+            <mark>music ｡(♥︎ ᴗ ᴗ )</mark> <br>
+            <b>glass beach, vylet pony</b>, radiohead, underscores, carly rae jepsen, <b>magdalena bay</b>, alex g, charli xcx, jane remover, girlfriends, yeule, sweet trip, mili, mgmt
+        </div>
     </div>
+
+    <div id="newbg">
+        <img src="https://rosepng.com/wp-content/uploads/2024/10/s11728_notebook_paper_isolated_on_white_background_-stylize__2c43970d-5ab9-457d-b6ea-ed1803d4dd3b_3-photoroom.png">
+    </div>
+
+    <div id="flowers">
+        <img src="https://file.garden/Zagf2LAXJwHlct9M/flower1.png" width="110">
+    </div>
+
+    <div id="flowers2">
+        <img src="https://file.garden/Zagf2LAXJwHlct9M/flower2.png" width="110">
     </div>
 </body>
 
