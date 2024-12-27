@@ -56,11 +56,11 @@
     position: absolute;
     top: 25%;
     left: 37%;
-    transform: scale(1.6);
+    transform: scale(1.8);
 }
 
 body {
-    background: url("https://file.garden/Zagf2LAXJwHlct9M/edits/newbg.png") no-repeat fixed center;
+    background: url("https://file.garden/Zagf2LAXJwHlct9M/img-2024-12-25-22-00-49.png") no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -85,8 +85,8 @@ a {
 
 a:hover {
     border: 0px;
-    color: #50635d;
-    background: #515569;
+    color: #372a38;
+    background: #743163;
     border-radius: 0px;
     padding-left: 3px;
     padding-right: 35px;
@@ -126,9 +126,9 @@ p {
     font-size: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    background: #d9dee0c0;
+    background: #e2dadfc0;
     background-blend-mode: soft-light;
-    background-image: url("https://file.garden/Zagf2LAXJwHlct9M/img-2024-09-13-02-31-49.png");
+    background-image: url("https://file.garden/Zagf2LAXJwHlct9M/img-2024-12-25-18-16-29.png");
     background-size: cover;
 
 
@@ -177,23 +177,23 @@ p {
     font-size: 16px;
     letter-spacing: -0.5px;
     line-height: 23px;
-    color: #666869;
+    color: #667869;
     font-family: pixel1;
 }
 
 #links a {
-    color: #4c6268;
-    background: rgb(199, 198, 198); 
+    color: #d3adc3;
+    background: rgb(66, 56, 56); 
     padding-left: 3px;
     padding-right: 3px;  
-    border: 1px solid #4c6268;
+    border: 1px solid #b86c6c;
     border-radius: 5px;  
-    filter: drop-shadow(0 1px 1mm rgb(99, 113, 124));
+    filter: drop-shadow(0 1mm 1mm rgb(116, 79, 93));
 }
 
 #links a:hover {
-    color: #b8d0d6;
-    background: #4c6268; 
+    color: #be97ae;
+    background: rgb(39, 33, 33);  
     padding-right: 5px;
     padding-left: 2px;
     font-weight: normal;
@@ -206,15 +206,16 @@ p {
     line-height: 13px;
     position: absolute;
     margin-left: 167px;
-    margin-top: 260px;
+    margin-top: 222px;
     border: 1px dotted rgba(24, 10, 10, 0.322);
     padding-left: 10px;
     padding-right: 10px;
-    width: 130px;
+    width: 130.5px;
     height: 15px;  
     font-family: 'bios';
-    background: linear-gradient(280deg, rgba(95, 30, 30, 0.527) 20%, rgba(119, 152, 170, 0.651) 100%);
-    border-bottom-right-radius: 10px; 
+    background: linear-gradient(280deg, rgba(49, 37, 37, 0.788) 20%, rgba(138, 132, 125, 0.904) 100%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;  
     filter: drop-shadow(0 1px 1mm rgb(19, 23, 26));
 }
 
@@ -236,10 +237,11 @@ p {
     width: 140px;
     padding: 5px;
     color: #ebebeb;
-    border-radius: 15px; 
+    border-radius: 2px;
+    margin-top: 52px;  
     padding-left: 5px;
     filter: drop-shadow(0 1px 1px rgb(19, 23, 26));
-    background: linear-gradient(280deg, rgba(95, 30, 30, 0.788) 20%, rgba(119, 152, 170, 0.904) 100%);
+    background: linear-gradient(280deg, rgba(49, 37, 37, 0.788) 20%, rgba(138, 132, 125, 0.904) 100%);
 }
 
 #statuscafe-username a:hover {
@@ -255,7 +257,7 @@ p {
 
 #imood img {
     border: 1px dotted white;
-    width: 60px;
+    width: 30px;
 }
 
 #imood a:hover {
@@ -290,9 +292,9 @@ mark {
     border-top-left-radius: 15px;
     margin-top: -40px;
     margin-left: 30px;
-    background: linear-gradient(280deg, rgb(96, 120, 133) 20%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(280deg, rgb(48, 13, 18) 20%, rgba(255, 255, 255, 0) 100%);
     font-family: bios;
-    color: #ffffff;
+    color: #dbc1c2;
 }
 
 .marquee a:hover {
@@ -327,23 +329,23 @@ mark {
 
 #contain_moon {
     position: absolute;
-    color: #eaeff0;
+    color: #e0d2d4;
     margin-top: -415px;
     line-height: 17px;
     margin-left: 375px;
     font-family: bios;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4822129535407913) 0%, rgba(95, 131, 143, 0.5578432056416316) 23%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 100%);
-    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px white) drop-shadow(1px 0 white) drop-shadow(-1px 0 black);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4822129535407913) 0%, rgba(143, 95, 95, 0.558) 23%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px #5c5152) drop-shadow(1px 0 #5c5152) drop-shadow(-1px 0 #5c5152);
 }
 
 #moontext {
     position: absolute;
-    color: #1e2122;
-    margin-top: -365.5px;
+    color: #f3efef;
+    margin-top: -365.4px;
     line-height: 17px;
     font-size: 14px;
-    margin-left: 373.9px;
-    text-shadow: -1px 0 #b9dddf, 0 1px #b9dddf, 1px 0 #b9dddf, 0 -1px #FFFFFF;
+    margin-left: 374px;
+    text-shadow: -1px 0 #6b474a, 0 1px #3b303a, 1px 0 #6b474a, 0 -1px #201a1a;
     font-family: bios;
 }
 
@@ -409,7 +411,7 @@ mark {
 
 #flowers img {
     width: 95px;
-    filter: drop-shadow(0 1mm 1mm rgb(74, 129, 148));
+    filter: drop-shadow(0 1mm 1mm rgb(116, 79, 93));
 }
 
 #flowers img:hover {
@@ -423,7 +425,7 @@ mark {
     margin-left: 430px;
     z-index: 10;
     pointer-events: none;
-    filter: drop-shadow(0 1mm 1mm rgb(74, 129, 148));
+    filter: drop-shadow(0 1mm 1mm rgb(116, 79, 93));
 }
 
 #flowers2 img {
@@ -439,13 +441,13 @@ mark {
     width: 452px;
     height: 335px;
     z-index: -5;
-    border: 2px ridge rgb(0, 0, 0);
-    filter: drop-shadow(0 -1mm 1mm rgb(99, 113, 124));
+    border: 2px outset rgb(88, 65, 79);
+    filter: drop-shadow(0 1mm 1mm rgb(116, 79, 93));
     padding: 3px 3px 3px 3px;
     font-size: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    background: #d9dee0c0;
+    background: #70383a69;
     pointer-events: none;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -457,17 +459,18 @@ mark {
     margin-top: -365px;
     margin-left: -5px;
     width: 332px;
-    height: 345px;
+    height: 23px;
     z-index: -10;
-    border: 2px ridge rgb(0, 0, 0);
-    filter: drop-shadow(0 -1mm 1mm rgb(99, 113, 124));
+    border: 2px outset rgb(88, 65, 79);
+    filter: drop-shadow(0 1mm 1mm rgb(116, 79, 93));
     padding: 3px 3px 3px 3px;
     font-size: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    background: #d9dee0c0;
+    background: #5e394354;
     pointer-events: none;
     border-radius: 30px;
+    border-bottom-right-radius: 0px; 
     border-top-right-radius: 10px;  
 }
 
