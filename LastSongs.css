@@ -9,7 +9,7 @@
   line-height: 12px;
   z-index: 3;
   filter: drop-shadow(0 3px #2c2727) drop-shadow(2px 0 #575e6d00) drop-shadow(0 -2px #302e2e) drop-shadow(-3px 0 #575e6d00);
-  filter: drop-shadow(0 -1mm 1mm rgb(89, 104, 116));
+  filter: drop-shadow(0 -1mm 1mm rgb(80, 61, 61));
 }
 
 .lastfm a {
@@ -46,9 +46,9 @@ pointer-events: none;
 .lastfm .track {
   text-align: right;
   padding: 4px;
-  border: 1px solid #7693aa;
-  background: #34393f;
-  color: #d1d1d1;
+  border: 1px solid #be8fa5;
+  background: #25151693;
+  color: #e2cbcb;
   width: 105px;
   margin: 2px;
   border-radius: 10px;
@@ -66,7 +66,7 @@ pointer-events: none;
 }
 
 .track.now {
-  color: #b1ada0;
+  color: #c09898;
 }
 
 .lastfm .shd-cntA {
