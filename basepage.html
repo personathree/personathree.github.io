@@ -54,32 +54,37 @@
             color: rgb(43, 41, 41);
             padding: 8px;
             margin-top: -15px;
-            margin-left: -47px;
-            border-radius: 30px;
+            margin-left: -37px;
+            border-radius: 3px;
             padding-left: 25px;
-            background: rgba(255, 255, 255, 0.548);
-            border: 2px groove rgb(168, 168, 168);
+            background: rgba(109, 90, 100, 0.87);
+            border: 2px groove rgb(58, 44, 49);
             line-height: 12px;
             font-size: 14px;
-            z-index: -2
+            z-index: -2;
         }
 
         #info1 {
             position: absolute;
-            width: 250px;
+            width: 275px;
             height: 40px;
             color: rgb(43, 41, 41);
             padding: 8px;
             margin-top: 95px;
-            margin-left: 160px;
-            border-radius: 20px;
+            margin-left: 150px;
+            border-radius: 5px;
             padding-left: 25px;
-            background: rgba(204, 203, 203, 0.774);
-            border: 2px groove rgb(168, 168, 168);
+            background: rgb(197, 185, 176) !important;
+            border: 2px groove rgb(168, 160, 160);
             line-height: 12px;
             font-size: 14px;
-           
-            z-index: 92;
+        }
+
+        #info1 u {
+            text-decoration-style: dotted;
+            text-decoration-thickness: 1.1px;
+            text-decoration-color: rgba(207, 171, 171, 0.281); 
+
         }
 
         #info2 {
@@ -105,26 +110,28 @@
 
         #aigis {
             position: absolute;
-            z-index: 90;
+            z-index: -1;
         }
 
         #aigis img {
-            margin-left: 412px;
+            margin-left: 405px;
             width: 110px;
-            margin-top: -25px;
+            margin-top: -15px;
             filter: saturate(30%);
-            filter: drop-shadow(0 -1mm 1mm rgb(99, 113, 124));
+            filter: drop-shadow(0 -1mm 1mm rgb(124, 99, 111));
         }
 
         #morning {
             position: absolute;
+            z-index: -10;
         }
 
         #morning img {
             position: absolute;
-            width: 120px;
-            margin-top: -22px;
-            margin-left: 350px;
+            width: 110px;
+            margin-top: -19px;
+            margin-left: 360px;
+            
         }
 
         #morningtext {
@@ -144,8 +151,8 @@
             font-size: 12px;
             line-height: 13px;
             margin-left: -9px;
-            color: rgb(79, 79, 95);
-            background: rgba(255, 255, 255, 0.377);
+            color: rgb(63, 44, 44);
+            background: rgba(221, 202, 202, 0.377);
             padding: 4px;
             z-index: 90;
         }
@@ -217,26 +224,27 @@
         #divline {
             height: 17px;
             width: 232px;
-            z-index: 5;
+            z-index: -5;
             margin-top: -16px;
             margin-left: 140px;
             position: absolute;
-            color: rgb(44, 43, 43);
+            color: rgb(29, 24, 24);
             font-size: 12px;
             padding-top: 4px;
             text-align: left;
             padding-left: 12px;
             font-family: bios;
-            background: linear-gradient(270deg, rgba(244, 247, 248, 1) 25%, rgb(113, 135, 158) 100%);
-            filter: drop-shadow(0 1mm 1mm rgb(108, 111, 112));
+            background: linear-gradient(270deg, rgb(209, 205, 205) 25%, rgb(141, 101, 111) 100%);
+            filter: drop-shadow(0 1mm 1mm rgb(82, 70, 79));
             border-bottom-left-radius: 10px;
             border-top-left-radius: 5px;
+            border-top-right-radius: 50px; 
         }
 
         #divline mark {
             padding-right: 5px;
-            background: rgb(56, 59, 75);
-            color: rgb(221, 211, 211);
+            background: rgb(88, 66, 75);
+            color: rgb(216, 198, 198);
             border-radius: 5px;
             font-size: 12px;
         }
@@ -271,15 +279,18 @@
         #farcille1 {
             position: absolute;
             margin-left: 155px;
-            margin-top: 200px;
+            margin-top: 165px;
             z-index: -3;
+            
         }
 
         #farcille1 img {
-            width: 150px;
-            height: 65px; 
+            width: 151px;
+            height: 105px; 
             border: 1px solid black;
-            filter:saturate(30%)
+            filter:saturate(30%);
+            border-top-left-radius: 10px; 
+            border-top-right-radius: 10px; 
         }
 
         #farcille2 {
@@ -300,34 +311,27 @@
     <br>
 
     <div id="aigis">
-        <img src="https://files.catbox.moe/0vjs61.png">
+        <img src="https://files.catbox.moe/v9yclf.png">
     </div>
 
 
     <div id="info1">
         <div id="outline"></div>
-        <p style="color:rgb(22, 22, 100); font-size: 20px; margin-left: -13px; padding-bottom: 4px; margin-top: -6px;">
-            aigis</p>
-        hello! welcome to my <span id="wobble">internet graveyard.</span> a place for me to express <i>myself</i> even
+        <p style="color:#e4b9b9; font-size: 15px; margin-left: -13px; padding-bottom: 4px; margin-top: -6px; background: #130a11c7; width: 75px; padding-left: 5px; padding-right: 5px; border-radius: 2px; padding-bottom: 2px; ">
+            <u>madoka kaname</u></p>
+        hello! welcome to my <span id="wobble">internet labyrinth.</span> a place for me to express <i>myself</i> even
         if it's through code. this
         site will forever be a work in progress as i change alongside it!
     </div>
     </div>
 
-    <div id="info2">
-        basil they/them 18 !!
-    </div>
 
     <div id="morning">
-        <img src="https://file.garden/Zagf2LAXJwHlct9M/altmorning.png">
+        <img src="https://file.garden/Zagf2LAXJwHlct9M/madotrim.png">
     </div>
 
     <div id="textbuddy">
         <img src="https://file.garden/Zagf2LAXJwHlct9M/forsite.png">
-    </div>
-
-    <div id="morningtext">
-        Morning
     </div>
 
     <div id="musicplayer">
@@ -346,17 +350,17 @@
     </div>
 
     <div id="divline">
-        <mark>•⠀12/9:</mark> small changes before vacation 
+        <mark>•⠀12/25:</mark> index retheme who couldve guessed 
     </div>
 
     <div id="farcille1">
-        <img src="https://files.catbox.moe/lmqrme.gif">
+        <img src="https://media1.tenor.com/m/oRf3Z4L0AeYAAAAd/madoka-magica-puella-magica-madoka-magica.gif">
     </div>
 
 
     <div id="update">
         <div
-            style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #405058; color: #ffffff; text-align:left; padding-left: 9px;  width:auto; font-size: 12px;">
+            style="overflow-y:auto; padding:6px; overflow-wrap:break-word; background: #574144; color: #ffffff; text-align:left; padding-left: 9px;  width:auto; font-size: 12px;">
             to-do list</div>
         <b>*</b> finish profile / diary / rsrc / shrine
         <br> <b>*</b> <s>fix up this page just a bit more</s>
