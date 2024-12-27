@@ -13,7 +13,7 @@
                   |  | (   |            | /
                   )  |  \  `.___________|/
                   `--'   `--'
-     
+    
         * nintendos calendar lovingly recreated by june @ loveberry.nekoweb.org / layercake.neocities.org
          * source code: https://www.geeksforgeeks.org/how-to-design-a-simple-calendar-using-javascript/
         * version WITH the navigation (arrows to see different months) for other version please go here
@@ -93,14 +93,15 @@
     
     .calendar-body .calendar-dates {
         margin-bottom: 20px;
-        border-left: 1px solid black;
-        border-bottom: 1px solid black;
+        background: rgb(119, 106, 106); 
+        border-left: 1px solid rgb(179, 175, 175);
+        border-bottom: 1px solid rgb(207, 197, 197);
     }
     
     .calendar-body li {
         width: calc(98% / 7.2);
         font-size: 23px;
-        color: #414141;
+        color: #e7d5d5;
     }
     
     .calendar-body .calendar-weekdays li {
@@ -120,13 +121,13 @@
     }
     
     .calendar-dates li:first-child, .calendar-dates li:nth-child(7n+1) {
-                background:#405058;
+                background:#50394c;
                 border-left:1px solid transparent;
                 color:#c5c9cf;
                 }
                 
                 .calendar-dates li:nth-child(7n+0) {
-          background: #707174;
+          background: #584054;
           color:#e1e2e7;
         }
         
@@ -136,7 +137,7 @@
     }
     
     .calendar-dates li.active {
-        color: #d1c9c9;
+        color: #5e4a4a;
     }
     
     .calendar-dates li::before {
@@ -151,28 +152,28 @@
     }
     
     .calendar-dates li.active::before {
-    background: #313a41b2;
-    border:1px dashed #464b4d;
+    background: #d4c7ca;
+    border:1px dashed #d4c7ca;
     }
     
     .calendar-dates li:not(.active):hover::before {
-        background: #c0e0f560;
+        background: #bbbec060;
     }
     
                 .calendar-weekdays li:first-child { 
                     border:1px solid black;
                     border-width: 1px 1px 0 1px;
-                    background:#405058;
-                    color:white;
+                    background: #584054; 
+                    color:rgb(240, 223, 223);
                 }
     
                 .calendar-weekdays li:last-child { 
-                    background:#636364;
+                    background: #584054;
                     color:white;
                 }
                 
                 .calendar-weekdays li { 
-                    background:#c0e0f560;
+                    background: rgb(224, 205, 205); 
                     color:rgb(37, 35, 35);
                     border:solid black;
                     border-width: 1px 1px 0px 0;
