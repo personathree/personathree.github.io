@@ -1,115 +1,360 @@
-<!DOCTYPE html>
-<!-- hi!!! my html / css is very messy so please be warned if ur trying to inspo.. 
- idc if u do but just be warned i am not the best source! :P best of luck -->
-<head>
-    <title>a chimera's den. ♡</title>
-    <link rel="icon" href="https://files.catbox.moe/f7nrig.gif">
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="falin.moe">
-    <meta property="og:description" content="my home on the net, forever!">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-</head>
-<script src="wobble.js"></script>
+@font-face {
+    font-family: bios;
+    src: url(fonts/Nintendo-DS-BIOS.ttf);
+}
 
-<body>
+@font-face {
+    font-family: dogica;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/site%203/dogica.otf);
+}
 
-    <div id="wait">
-        <div id="train">
-            <div class="head">
-                <div class="line" style="margin-top: -5px; padding-bottom: 2px; width:531px; margin-left: -5px;">
-                    http://127.0.0.1/c:/Users/VISITOR/falinmoe/index.html</div>
-            </div>
-            <div class="side1">
-                <div id="links">
-                    <div class="line">NAVIGATION</div>
-                    • ⠀<a href="/me">about</a><br>
-                    • ⠀<a href="/404.html">diary</a><br>
-                    • ⠀<a href="/404.html">my art</a> <br>
-                    • ⠀<a href="/404.html">resources</a><br>
-                    • ⠀<a href="/404.html">media log</a><br>
-                    • ⠀<a href="/404.html">shrines</a><br>
-                    • ⠀<a href="/404.html">sitemap</a><br>
-                    • ⠀<a href="/404.html">outgoing </a><br>
-                </div>
-            </div>
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+    display: none;
+}
 
-            <div class="main">
-                <div id="about">
-                    <hr>
-                    hello! you've stumbled upon <span id="wobble">falin.moe</span>, the chimeras den and my cozy escape
-                    on the vastness of the web!
-                    a place for me to both work on <i>myself</i> and my coding. though this site is held
-                    together with nothing but tape , i hope you enjoy your stay!
-                    <p style="width:280px"><u>but why ?</u> i wanted a personal hub to put things that show the world who <b>i</b> am, and a place to freely change  alongside myself as i grow<b>.</b> </p>
-                    <div id="smallinfo">
-                        <b>falin</b>, eighteen
-                        <br> they/them <img src="https://i.postimg.cc/XqBqZ6CB/strawberrylesbian.png" width=11>
-                        <div class="line" style="margin-top: 5px; padding-bottom: 2px; width:105px; margin-left: -5px;"> (/__\) . z Z
-                        </div> </div>
-                </div>
-                <div id="float">
-                    <div class="pagedoll">
-                        <img src="https://files.catbox.moe/t63dqx.png">
-                    </div>
-                </div>
-                <div class="statuscafe">
-                    <div id="statuscafe">
-                        <div id="statuscafe-username"></div>
-                        <div id="statuscafe-content"></div>
-                    </div>
-                    <script src="https://status.cafe/current-status.js?name=falin" defer></script>
-                    <div id="statusbuddy">
-                        <img src="https://files.catbox.moe/6hty9g.png">
-                    </div>
-                </div>
-                <div class="main2">
-                    <div class="latest">
-                        <hr>
-                        <b>2/25 <img src="https://i.postimg.cc/hJkKspD6/mo104.gif"></b> added my <i>about</i> page, <br> started on the diary <br>
-                        <div id="littlefalin">
-                            <img src="https://files.catbox.moe/nziph2.png" width=75>
-                        </div>
-                    </div>
-                </div>
-                <div class="siteinfo">
-                    <b>FALIN.MOE</b> 2023 - forever <span><b>♡</b></span>
-                </div>
-            </div>
-            <div class="siteinfo2">
-                best suited for a 1920x1080 display on firefox
-            </div>
-        </div>
-        <div id="calendar">
-            <iframe src="newcalendar.html"
-                style="height:320px; width:290px; margin-left: 290px; border: 0; margin-top: -199px; overflow-y: none; overflow-x: none;"
-                name="info"></iframe>
-        </div>
-        <div id="wait2">
-            <div id="train2"> </div>
-            <div class="line"
-                style="margin-top: -24px; margin-left: 265px; position: absolute; font-size: 12px;  width: 122px;">
-                lastsongs.css</div>
-            <div class="lastfm">
-                <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                <script src="https://melchor629.github.io/Last.fm-Web-Widget/lastSongs.comp.js"></script>
-                <script>$(".lastfm").lastSongs("isaacwhom", "e7dff00d4e7bc40af76f63fd82a0436b");</script>
-            </div>
-            <div id="transring">
-                <script src="https://transring.neocities.org/ring.js" data-widget="cloud"></script>
-            </div>
-            <div id="roring">
-                <table>
-                    <tr>
-                        <td><a href="https://lopster.neocities.org/roring/lolzers/prev.html?id=82"> <img
-                                    src="https://lopster.neocities.org/roring/fotos/mother34.png" height="10"></a></td>
-                        <td><a href="https://lopster.neocities.org/roring/roring.html"><img
-                                    src="https://lopster.neocities.org/roring/fotos/bullsheez.png" width="50"></a></td>
-                        <td><a href="https://lopster.neocities.org/roring/lolzers/next.html?id=82"><img
-                                    src="https://lopster.neocities.org/roring/fotos/mother3.png" height="10"></a></td>
-                    </tr>
-                </table>
-        </div>
-    </div>
-</body>
+#wait {
+    height: 100px;
+    width: 520px;
+    margin: auto;
+    margin-top: 210px;
+    transform: scale(1.25);
+}
+
+#wait2 {
+    height: 100px;
+    width: 140px;
+    margin: auto;
+    margin-top: -350px;
+    transform: scale(1.25);
+}
+
+body {
+    background: url("https://f2.toyhou.se/file/f2-toyhou-se/images/92841272_3ekOFD8lC3YIvdI.png") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: bios;
+    font-size: 20px;
+    color: rgb(27, 27, 27);
+    word-wrap: break-word;
+
+}
+
+a {
+    color: rgb(102, 89, 84);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1.4px;
+}
+
+a:hover {
+    color: rgb(230, 223, 221);
+    background: black;
+    padding-left: 2px;
+    padding-right: 1px; 
+    text-decoration: none;
+    padding-bottom: 1px;
+    transition: 0.2s ease-in-out;
+}
+
+hr {
+    border: 0.2px dashed rgb(2, 2, 2);
+}
+
+#train {
+    background-color: white;
+    border: 1px double rgb(0, 0, 0);
+    padding: 5px;
+    width: 100%;
+    height: 340px;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-gap: 5px 5px;
+}
+
+#train2 {
+    background-color: white;
+    position: absolute;
+    border: 1px double rgb(0, 0, 0);
+    padding: 5px;
+    width: 110px;
+    margin-left: 265px;
+    margin-top: -12px;
+    height: 145px;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-gap: 5px 5px;
+}
+
+.side1 {
+    grid-area: 'sidebar';
+    grid-row: 2 / 4;
+    padding: 2px;
+    background-color: rgba(143, 143, 143, 0.034);
+}
+
+.head {
+    grid-column: 1 / 4;
+}
+
+.main {
+    grid-area: 'main';
+    background: url(https://files.catbox.moe/l7kq48.png) no-repeat fixed right; 
+    padding: 5px;
+}
+
+#about {
+    width: auto;
+    margin-top: -22px;
+    font-size: 18px;
+}
+
+#about span {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+}
+
+#about u {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: rgb(255, 255, 255);
+    background: black;
+    padding: 2px;
+    padding-bottom: 5px;
+}
+
+#links {
+    margin-top: -15px;
+    padding-left: 5px; 
+    font-size: 16px;
+    width: auto;
+    color: rgb(138, 138, 138);
+}
+
+.line {
+    background: black;
+    text-align: center;
+    font-weight: bold;
+    width: auto;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.latest {
+    padding: 5px;
+    width: 210px;
+    height: 110px;
+    font-size: 17px;
+    margin-top: -19px;
+}
+
+.pagedoll {
+    position: absolute;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+}
+
+.pagedoll img {
+    width: 190px;
+    margin-left: 340px;
+    margin-top: -50px;
+    filter: saturate(30%)
+}
+
+.pagedoll img:hover {
+    filter: opacity(20%);
+}
+
+.siteinfo {
+    width: 220px;
+    position: absolute;
+    color: white;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    margin-left: 162px;
+    margin-top: 30px;
+}
+
+.siteinfo span {
+    color: rgb(24, 23, 23);
+    padding-right: 2px;
+    padding-left: 2px;
+    background: rgb(233, 233, 233);
+}
+
+.siteinfo2 {
+    width: 220px;
+    font-size: 12px; 
+    position: absolute;
+    color: white;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    margin-left: -5px;
+    margin-top: -22px;
+}
+
+.siteinfo2 span {
+    color: rgb(24, 23, 23);
+    padding-right: 2px;
+    padding-left: 2px;
+    background: rgb(233, 233, 233);
+}
+
+#statuscafe {
+    padding: 0em;
+    z-index: 120;
+    line-height: 13px;
+    position: absolute;
+    margin-left: -177px;
+    margin-top: 25px;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 180px;
+    height: 230px;
+    font-family: 'bios';
+    background: url(https://files.catbox.moe/g3eqaa.png)no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 200px;
+    background-position-y: 0.3px;
+    background-position-x: -5px;
+
+}
+
+#statuscafe-username {
+    margin-top: -40px;
+    text-align: right;
+    padding-right: 9px;
+    color: #e7e5e5;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    background: transparent;
+}
+
+#statuscafe-content {
+    font-size: 15px;
+    margin-left: -10px;
+    margin-top: -0px;
+    text-align: center;
+    background: transparent;
+    letter-spacing: 0em;
+    width: 180px;
+    height: 120px;
+    color: #ebebeb;
+    border-radius: 15px;
+    padding-left: 5px;
+    filter: drop-shadow(0 1px 1px rgb(19, 23, 26));
+    background-position-y: -420px;
+}
+
+#statuscafe-username a {
+    padding-right: 2px;
+    text-decoration: none;
+    color: rgb(172, 168, 168);
+}
+
+#statuscafe-username a:hover {
+    padding-right: 2px;
+    color: rgb(236, 227, 227);
+}
+
+#statusbuddy {
+    position: absolute;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+}
+
+#statusbuddy img {
+    width: 120px;
+    margin-top: -15px;
+    margin-left: -145px;
+    filter: saturate(30%);
+    
+}
+
+#statusbuddy img:hover {
+    filter: opacity(20%);
+}
+
+#lastfm {
+    margin-left: 820px;
+}
+
+#float {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+#calendar {
+    position: absolute; 
+}
+
+#littlefalin {
+    position: absolute;
+}
+
+#littlefalin img {
+    margin-top: 5px;
+    border: 2px solid black; 
+}
+
+#smallinfo {
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 90px;
+}
+
+#transring {
+    position: absolute;
+    margin-top: 300px;
+}
+
+#transring img {
+    width: 80px;
+}
+
+#roring {
+    position: absolute;
+    margin-top: 255px;
+    margin-left: 260px; 
+}
+
+
+@media screen and (max-width: 650px) {
+
+    #wait {
+        transform: scale(0.7);
+        margin-left: -60px;
+    }
+
+    #wait2 {
+        transform: scale (0.7);
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+
+    .pagedoll {
+        margin-top: 220px !important;
+        margin-left: -340px;  
+    }
+
+    #transring {
+        display: none;
+    }
+    #roring {
+        display: none;
+    }
+}
