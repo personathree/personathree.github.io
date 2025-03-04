@@ -60,7 +60,7 @@ a:hover {
     transition: 0.2s ease-in-out;
 }
 
-hr { 
+hr {
     border: 0.2px dashed rgb(2, 2, 2);
 }
 
@@ -102,7 +102,7 @@ hr {
 
 .main {
     grid-area: 'main';
-    background: url(https://files.catbox.moe/l7kq48.png) no-repeat fixed right; 
+    background: url(https://files.catbox.moe/98z422.png) no-repeat fixed right; 
     padding: 5px;
 }
 
