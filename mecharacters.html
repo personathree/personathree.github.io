@@ -8,8 +8,17 @@
     <meta name="description" content="venture life, burn your dread!">
     <link rel="icon" type="image/x-icon" href="https://file.garden/Zagf2LAXJwHlct9M/Actor1.png">
     <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <style>
+        @font-face {
+            font-family: bios;
+            src: url(https://file.garden/Zagf2LAXJwHlct9M/newsite/Nintendo-DS-BIOS.ttf);
+        }
+
+        @font-face {
+            font-family: pixel;
+            src: url(https://dl.dropbox.com/s/kmhe7d3n18vdz5e/w95fa.woff?dl=0);
+        }
 
 @font-face {
             font-family: bios;
@@ -17,14 +26,36 @@
         }
 
         mark {
-            border: 0px;
-            color: #837b7b;
-            font-size: 16px;
-            background: #1b1d27;
-            border-radius: 0px;
-            line-height: 5px;
-            padding-left: 5px;
-            padding-right: 5px;
+            font-family: pixel;
+            text-decoration: none;
+            background: #9b5092;
+            color: white;
+            padding: 2px; 
+            border-radius: 3px;
+            text-shadow: none;
+        }
+
+
+        body {
+            color: #6b3751;
+            overflow-y: hidden;
+            font-family: 'pixel';
+            line-height: 15px;
+            background: none;
+            height: 190px;
+            overflow-y: scroll;
+            position: absolute;
+            left: 15px;
+            width: 200px;
+            margin-top: 90px;
+            z-index: 9;
+            display: inline-block;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
         }
 
         a {
@@ -38,22 +69,6 @@
             padding-right: 5px;
         }
 
-
-        body {
-            color: #c0c0c0;
-            font-family: 'bios';
-            line-height: 13px;
-            background: none;
-            height: 40px;
-            overflow-y: none;
-            position: absolute;
-            left: 10px;
-            width: 170px;
-            margin-top: 90px;
-            z-index: 9;
-            display: inline-block;
-        }
-
         .tooltip {
     position: relative;
     display: inline-block;
@@ -61,46 +76,55 @@
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    color: #837b7b;
-    background: #1b1d27;
+    width: 230px;
+    color: rgb(197, 192, 192);
+    background: #3b1c35dc;
     text-align: center;
     padding: 3px;
+    padding-right: 4px;
     border-radius: 3px;
     position: absolute;
     z-index: 1;
     width: auto;
-    top: 48%;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 20%;
+    top: 68%;
     font-size: 12px;
-    left: 55%
+    left: 55%;
+    transition: 0.5s ease-in-out;
  }
           
  .tooltiptext {
-    border:3px double black;
+    border:1px double rgb(172, 160, 160);
     font-size: 9px;         
           }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  transition: 0.2s ease-in-out;
     
 } 
     </style>
-some characters that remind me of... me<mark>!</mark> take these as you wish  and <mark>hover for names ^_^</mark>
-<br> 
+<mark>hover for names ^_^</mark>
 <br>
 <hr>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/yuuri.png"  width="45px" ><span class="tooltiptext">yuuri </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/milk.png"  width="45px" ><span class="tooltiptext">milkchan </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/luluco.png"  width="45px" ><span class="tooltiptext">luluco </span></div> 
+<div class="tooltip"> <img src="img/chars/boc.png"  width="60px" ><span class="tooltiptext">bocchi</span></div> 
+<div class="tooltip"> <img src="img/chars/nik.png"  width="60px" ><span class="tooltiptext">niko</span></div> 
+<div class="tooltip"> <img src="img/chars/mil.png"  width="60px" ><span class="tooltiptext">milkchan</span></div> 
 <br>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/bocchi.png"  width="45px" ><span class="tooltiptext">bocchi </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/siff.png"  width="45px" ><span class="tooltiptext">siffrin </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/makoto.png"  width="45px" ><span class="tooltiptext">makoto </span></div> 
+<div class="tooltip"> <img src="img/chars/ang.png"  width="60px" ><span class="tooltiptext">angeldevil</span></div> 
+<div class="tooltip"> <img src="img/chars/yuu.png"  width="60px" ><span class="tooltiptext">yuuri</span></div> 
+<div class="tooltip"> <img src="img/chars/mak.png"  width="60px" ><span class="tooltiptext">makoto</span></div> 
 <br>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/mio.png"  width="45px" ><span class="tooltiptext">mio </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/basil.png"  width="45px" ><span class="tooltiptext">basil </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/stranger.png"  width="45px" ><span class="tooltiptext">stranger </span></div> 
+<div class="tooltip"> <img src="img/chars/sif.png"  width="60px" ><span class="tooltiptext">siffrin</span></div> 
+<div class="tooltip"> <img src="img/chars/fal.png"  width="60px" ><span class="tooltiptext">falin</span></div> 
+<div class="tooltip"> <img src="img/chars/nan.png"  width="60px" ><span class="tooltiptext">nanase</span></div> 
 <br>
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/niko.png"  width="45px" ><span class="tooltiptext">niko </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/carmy.png"  width="45px" ><span class="tooltiptext">carmy </span></div> 
-<div class="tooltip"> <img src="https://file.garden/Zagf2LAXJwHlct9M/siff%20characters/nokotan.png"  width="45px" ><span class="tooltiptext">nokotan </span></div> 
+<div class="tooltip"> <img src="img/chars/kah.png"  width="60px" ><span class="tooltiptext">kaho</span></div> 
+<div class="tooltip"> <img src="img/chars/hik.png"  width="60px" ><span class="tooltiptext">hikari</span></div> 
+<div class="tooltip"> <img src="img/chars/tri.png"  width="60px" ><span class="tooltiptext">trixie</span></div>  
+<br>
+<div class="tooltip"> <img src="img/chars/sta.png"  width="60px" ><span class="tooltiptext">starlord</span></div> 
+<div class="tooltip"> <img src="img/chars/jef.png"  width="60px" ><span class="tooltiptext">jeff</span></div> 
+<div class="tooltip"> <img src="img/chars/kar.png"  width="60px" ><span class="tooltiptext">karen</span></div>  
+<hr>
