@@ -194,7 +194,7 @@ hr {
 .pagedoll img {
     width: 170px;
     margin-left: 340px;
-    margin-top: -20px;
+    margin-top: -40px;
     filter: saturate(70%)
 }
 
@@ -352,6 +352,7 @@ hr {
     position: absolute;
     margin-top: 300px;
     color: rgba(255, 255, 255, 0); 
+    display: none; 
 }
 
 #transring img {
