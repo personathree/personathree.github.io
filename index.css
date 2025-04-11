@@ -31,7 +31,9 @@
 }
 
 body {
-    background: url("https://f2.toyhou.se/file/f2-toyhou-se/images/92841272_3ekOFD8lC3YIvdI.png") no-repeat fixed center;
+    background: url("https://files.catbox.moe/lohs0r.png") no-repeat fixed center;
+    background-color: #535461;
+    background-blend-mode: overlay; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,7 +46,7 @@ body {
 }
 
 a {
-    color: rgb(102, 89, 84);
+    color: rgb(173, 151, 156);
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 1.4px;
@@ -61,11 +63,11 @@ a:hover {
 }
 
 hr {
-    border: 0.2px dashed rgb(2, 2, 2);
+    border: 0.1px dashed rgb(126, 95, 113);
 }
 
 #train {
-    background-color: white;
+    background-color: rgba(22, 20, 20, 0.904);
     border: 1px double rgb(0, 0, 0);
     padding: 5px;
     width: 100%;
@@ -73,12 +75,14 @@ hr {
     display: grid;
     grid-template-columns: 25% 70%;
     grid-gap: 5px 5px;
+    border-bottom-right-radius: 20px; 
 }
 
 #train2 {
-    background-color: white;
+    background-color: rgba(25, 47, 54, 0.432);
+    background-blend-mode: overlay; 
     position: absolute;
-    border: 1px double rgb(0, 0, 0);
+    border: 1px double rgb(116, 36, 36);
     padding: 5px;
     width: 110px;
     margin-left: 265px;
@@ -102,14 +106,19 @@ hr {
 
 .main {
     grid-area: 'main';
-    background: url(https://files.catbox.moe/98z422.png) no-repeat fixed right; 
+    background: url(img/back2.png) no-repeat fixed right; 
+    background-color: #2c425234;
+    background-blend-mode: overlay; 
+    background-size: 170px; 
+    background-position-x: 210px; 
     padding: 5px;
 }
 
 #about {
     width: auto;
     margin-top: -22px;
-    font-size: 18px;
+    font-size: 16px;
+    color: white;
 }
 
 #about span {
@@ -121,14 +130,14 @@ hr {
 #about u {
     text-decoration: underline;
     text-decoration-style: dotted;
-    color: rgb(255, 255, 255);
-    background: black;
+    color: rgb(236, 223, 223);
+    background: rgb(56, 78, 85);
     padding: 2px;
     padding-bottom: 5px;
 }
 
 #links {
-    margin-top: -15px;
+    margin-top: -25px;
     padding-left: 5px; 
     font-size: 16px;
     width: auto;
@@ -136,9 +145,30 @@ hr {
 }
 
 .line {
-    background: black;
+    background: rgb(94, 30, 39);
     text-align: center;
-    font-weight: bold;
+    width: auto;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.line2 {
+    background: rgb(40, 54, 73);
+    text-align: center;
+    width: auto;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.line3 {
+    background: rgb(138, 77, 95);
+    text-align: center;
     width: auto;
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
@@ -151,8 +181,9 @@ hr {
     padding: 5px;
     width: 210px;
     height: 110px;
-    font-size: 17px;
+    font-size: 15px;
     margin-top: -19px;
+    color: rgb(184, 187, 190); 
 }
 
 .pagedoll {
@@ -161,10 +192,10 @@ hr {
 }
 
 .pagedoll img {
-    width: 190px;
+    width: 170px;
     margin-left: 340px;
-    margin-top: -50px;
-    filter: saturate(30%)
+    margin-top: -20px;
+    filter: saturate(70%)
 }
 
 .pagedoll img:hover {
@@ -191,7 +222,7 @@ hr {
     width: 220px;
     font-size: 12px; 
     position: absolute;
-    color: white;
+    color: rgba(241, 184, 184, 0.911);
     filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
     margin-left: -5px;
     margin-top: -22px;
@@ -217,7 +248,7 @@ hr {
     width: 180px;
     height: 230px;
     font-family: 'bios';
-    background: url(https://files.catbox.moe/g3eqaa.png)no-repeat fixed center;
+    background: url(img/speech2.png)no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -273,7 +304,7 @@ hr {
     width: 120px;
     margin-top: -15px;
     margin-left: -145px;
-    filter: saturate(30%);
+    filter: saturate(60%);
     
 }
 
@@ -294,7 +325,7 @@ hr {
 
 @keyframes floating {
     0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 10px); }
+    50%  { transform: translate(0, 5px); }
     100%   { transform: translate(0, -0px); }    
 }
 
@@ -307,7 +338,7 @@ hr {
 }
 
 #littlefalin img {
-    margin-top: 5px;
+    margin-top: 9px;
     border: 2px solid black; 
 }
 
@@ -320,6 +351,7 @@ hr {
 #transring {
     position: absolute;
     margin-top: 300px;
+    color: rgba(255, 255, 255, 0); 
 }
 
 #transring img {
