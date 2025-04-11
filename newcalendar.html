@@ -106,13 +106,14 @@
     .calendar-body li {
         width: calc(98% / 7.2);
         font-size: 23px;
-        color: #414141;
+        color: #dddde6;
         pointer-events: none;
     }
     
     .calendar-body .calendar-weekdays li {
         cursor: default;
         font-weight: 500;
+        display: none;
     }
     
     .calendar-body .calendar-dates li {
@@ -124,23 +125,23 @@
         border-width: 1px 1px 0 0;
         height:25px;
         padding-top:3px;
-        background: white; 
+        background: rgb(27, 27, 32); 
     }
     
     .calendar-dates li:first-child, .calendar-dates li:nth-child(7n+1) {
-                background:#000000;
+                background:#332a32;
                 border-left:1px solid transparent;
-                color:#dbdee2;
+                color:#bbc2ca;
                 }
                 
                 .calendar-dates li:nth-child(7n+0) {
-          background: #5e5e5e;
+          background: #3a3131;
           color:#e1e2e7;
         }
         
                 
     .calendar-dates li.inactive {
-        color: #aaa;
+        color: #7e5c5c;
     }
     
     .calendar-dates li.active {
@@ -164,23 +165,23 @@
     }
     
     .calendar-dates li:not(.active):hover::before {
-        background: #c0e0f560;
+        background: #3c495260;
     }
     
                 .calendar-weekdays li:first-child { 
                     border:1px solid black;
                     border-width: 1px 1px 0 1px;
                     background:#1a1a1a;
-                    color:white;
+                    color:rgb(163, 165, 170);
                 }
     
                 .calendar-weekdays li:last-child { 
                     background:#636364;
-                    color:white;
+                    color:rgb(207, 207, 211);
                 }
                 
                 .calendar-weekdays li { 
-                    background:#bbbbbb60;
+                    background:#b9b3b360;
                     color:rgb(37, 35, 35);
                     border:solid black;
                     border-width: 1px 1px 0px 0;
