@@ -3,7 +3,14 @@ body {
     background: #1d1d1d;
     font-family: calibri;
     font-size: 13px;
-    padding-left: 30px;
+    padding-left: 250px;
+    background: url(img/beach.png) no-repeat fixed center;
+    background-color: rgb(97, 87, 87);
+    background-blend-mode: overlay;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 #hdr {
@@ -31,7 +38,8 @@ body {
     height: 738px;
     width: 560px;
     background: #FFF;
-    border: 0.2px dashed rgb(112, 110, 110);
+    border: 3px solid #261c1d;
+    border-bottom-left-radius: 30px;
 }
 
 .sidebar {
@@ -39,7 +47,7 @@ body {
     left: 585px;
     top: 0;
     min-width: 200px;
-    color: white;
+    color: rgb(121, 92, 87);
 }
 
 .links a {
@@ -52,22 +60,45 @@ body {
 
 .links a:hover {
     text-decoration: underline dotted;
-    color: gray; 
+    color: rgb(207, 130, 130);
     padding-left: 3px;
     transition: 0.3s;
 }
 
 hr {
     width: 120px;
-    text-align: left; 
-    color: rgb(97, 93, 93) !important;
+    text-align: left;
+    color: rgba(145, 91, 91, 0.466) !important;
+}
+
+#aes {
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 370px;
+    z-index: -99;
+}
+
+#aes img {
+    width: 390px;
+    border: 3px solid #261c1d;
+}
+
+#aes2 {
+    position: absolute;
+    margin-top: -750px;
+    margin-left: -40px;
+}
+
+#aes2 img {
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    width: 120px;
 }
 
 @media screen and (max-width: 650px) {
 
     body {
         transform: scale(0.8);
-        margin-left: 120px;
+        margin-left: -70px;
     }
 
     #post {
