@@ -98,7 +98,7 @@ hr {
 
     body {
         transform: scale(0.8);
-        margin-left: -70px;
+        margin-left: -200px;
     }
 
     #post {
@@ -106,7 +106,7 @@ hr {
     }
 
     #hdrtxt {
-        margin-left: 190px;
+        margin-left: 20px;
     }
 
     #hdr img {
@@ -114,7 +114,12 @@ hr {
     }
 
     .sidebar {
-        margin-top: 7px;
-        margin-left: -744px;
+        margin-top: 750px;
+        margin-left: -604px;
+        background: rgba(0, 0, 0, 0.267); 
+    }
+
+    #aes {
+        margin-left: 42px;
     }
 }
