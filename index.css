@@ -19,7 +19,7 @@
     width: 520px;
     margin: auto;
     margin-top: 240px;
-    transform: scale(1.25);
+    transform: scale(1.35);
 }
 
 #wait2 {
@@ -46,7 +46,7 @@ body {
 }
 
 a {
-    color: rgb(173, 151, 156);
+    color: rgb(168, 169, 179);
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 1.4px;
