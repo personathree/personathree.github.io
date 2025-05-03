@@ -135,8 +135,8 @@ hr {
 #about u {
     text-decoration: underline;
     text-decoration-style: dotted;
-    color: rgb(236, 223, 223);
-    background: rgb(56, 78, 85);
+    color: rgb(238, 238, 238);
+    background: rgb(97, 64, 80);
     padding: 2px;
     padding-bottom: 5px;
 }
@@ -161,7 +161,7 @@ hr {
 }
 
 .line2 {
-    background: rgb(40, 54, 73);
+    background: rgb(64, 41, 65);
     text-align: center;
     width: auto;
     color: rgb(255, 255, 255);
@@ -172,7 +172,7 @@ hr {
 }
 
 .line3 {
-    background: rgb(138, 77, 95);
+    background: rgb(52, 50, 65);
     text-align: center;
     width: auto;
     color: rgb(255, 255, 255);
