@@ -18,7 +18,7 @@
     height: 100px;
     width: 520px;
     margin: auto;
-    margin-top: 240px;
+    margin-top: 230px;
     transform: scale(1.35);
 }
 
@@ -80,7 +80,7 @@ hr {
     display: grid;
     grid-template-columns: 25% 70%;
     grid-gap: 5px 5px;
-    border-bottom-right-radius: 20px; 
+    border-bottom-right-radius: 10px; 
 }
 
 #train2 {
