@@ -1,0 +1,170 @@
+@font-face {
+    font-family: bios;
+    src: url(fonts/Nintendo-DS-BIOS.ttf);
+}
+
+@font-face {
+    font-family: dogica;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/site%203/dogica.otf);
+}
+
+@media screen and (max-width: 650px) {
+
+.body {
+    flex-direction: column; 
+    width: 390px !important; 
+    height: 450px !important; 
+    margin-top: 220px !important; 
+}
+
+    .hayy {
+        margin-top: 52px;
+        width: 190px !important;    
+        left: -140px !important; 
+        font-size: 17px; 
+    }
+
+    .socials {
+        width: 380px !important; 
+        margin-top: -80px !important; 
+    }
+
+    .image {
+        margin-left: -140px;
+        margin-top: 60px !important; 
+    }
+
+}
+
+body {
+    font-family: 'bios';
+    font-size: 20px;
+    line-height: 23px;
+    background: url(img/twt.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(212, 205, 205);
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 340px;
+    margin-top: 242px;
+    width: 105%;
+    max-width: 669px;
+    padding-right: 30px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.911);
+}
+
+.body b {
+    color: rgb(137, 137, 175); 
+}
+
+.body u {
+    color: rgb(219, 143, 81);
+    text-decoration-style: dotted;
+}
+
+.body i {
+    color: rgb(192, 138, 107); 
+}
+
+.hayy {
+    position: absolute;
+    width: 340px;
+    margin-left: 350px !important;
+}
+
+.tli {
+    position: absolute;
+    margin-left: 450px !important;
+    margin-top: -342px;
+    z-index: 99 !important
+}
+.tli img {
+    width: 290px;
+    z-index: 99 !important;
+    pointer-events: none;
+}
+
+.song {
+    position: absolute;
+    margin-top: -420px;
+    height: 15px;
+    margin-left: 210px;
+    border: none;
+}
+
+iframe {
+    border: 0px; 
+}
+
+a {
+    color: rgb(219, 143, 81);
+    text-decoration-style: dotted;
+}
+
+.socials {
+    background: rgba(0, 0, 0, 0.767);
+    width: 420px;
+    padding: 5px;
+    position: absolute;
+    margin-top: 420px;
+    padding-left: 50px;
+}
+
+.socials i {
+    color: rgb(99, 99, 141);
+    padding-right: 12px;  
+}
+
+.image {
+    margin-top: -20px;
+    padding-right: 12px;
+    width: 350px;
+}
+
+.u {
+    text-decoration: dashed;
+
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 230px;
+    color: rgb(197, 192, 192);
+    background: #131213dc;
+    text-align: center;
+    padding: 2px;
+    padding-right: 5px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 20%;
+    top: 68%;
+    font-size: 15px;
+    left: 55%;
+}
+
+.tooltiptext {
+    border: 1px double rgb(172, 160, 160);
+    font-size: 9px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: 0.2s ease-in-out;
+
+}
