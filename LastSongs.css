@@ -1,6 +1,6 @@
 .lastfm {
   transform: scale(0.7);
-  color: rgba(61, 55, 87, 0);
+  color: rgba(57, 54, 70, 0);
   margin-top: -110px;
   margin-left: 222px;
   position: absolute;
@@ -64,9 +64,9 @@ pointer-events: none;
 }
 
 .track.now {
-  color: #f7c66d;
-  background: #070605;
-  border: 1px solid #f7c66d;
+  color: yellow;
+  background: #000000;
+  border: 1px solid yellow;
 }
 
 .lastfm .shd-cntA {
@@ -76,8 +76,8 @@ pointer-events: none;
 
 @media only screen and (max-width: 640px) {
   .lastfm {
-    margin-top: -60px;
-    left: -7px;
+    margin-top: -110px;
+    left: -3px;
   }
 
   .lastfm .slimScrollDiv {
