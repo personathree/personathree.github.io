@@ -106,7 +106,7 @@
     .calendar-body li {
         width: calc(98% / 7.2);
         font-size: 23px;
-        color: #dddde6;
+        color: #ffffff;
         pointer-events: none;
     }
     
@@ -129,23 +129,23 @@
     }
     
     .calendar-dates li:first-child, .calendar-dates li:nth-child(7n+1) {
-                background:#332a32;
+                background:#000000;
                 border-left:1px solid transparent;
-                color:#bbc2ca;
+                color:#cacaca;
                 }
                 
                 .calendar-dates li:nth-child(7n+0) {
-          background: #3a3131;
+          background: #111111;
           color:#e1e2e7;
         }
         
                 
     .calendar-dates li.inactive {
-        color: #7e5c5c;
+        color: #80753b;
     }
     
     .calendar-dates li.active {
-        color: #d1c9c9;
+        color: #ffc60a;
     }
     
     .calendar-dates li::before {
@@ -160,8 +160,9 @@
     }
     
     .calendar-dates li.active::before {
-    background: #313a41b2;
-    border:1px dashed #464b4d;
+    background: #000000b2;
+    border:0.1px solid #ffffff;
+    padding: 2px;
     }
     
     .calendar-dates li:not(.active):hover::before {
@@ -172,16 +173,16 @@
                     border:1px solid black;
                     border-width: 1px 1px 0 1px;
                     background:#1a1a1a;
-                    color:rgb(163, 165, 170);
+                    color:rgb(133, 133, 133);
                 }
     
                 .calendar-weekdays li:last-child { 
-                    background:#636364;
+                    background:#6d6d6d;
                     color:rgb(207, 207, 211);
                 }
                 
                 .calendar-weekdays li { 
-                    background:#b9b3b360;
+                    background:#29292960;
                     color:rgb(37, 35, 35);
                     border:solid black;
                     border-width: 1px 1px 0px 0;
