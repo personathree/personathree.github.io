@@ -1,458 +1,94 @@
 <!DOCTYPE html>
-<html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
+    <title>HERO_SWORD</title>
+    <link rel="icon" href="img/bg/kris5.png">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> △○□× </title>
-    <meta name="description" content="venture life, burn your dread!">
-    <link rel="icon" type="image/x-icon" href="https://static.wikia.nocookie.net/1bitheart/images/f/fa/Nanashi_(1).png">
+    <meta property="og:title" content="falin.moe">
+    <meta property="og:description" content="how much longer now?">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-    </script>
+    <!-- style coding; how it all appears and goes together -->
+
+
     <style>
-        ::-webkit-scrollbar {
-            width: 10px;
-            height: 20px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: white;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #ff1273;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #a0798c;
-        }
-
-        @font-face {
-            font-family: ms gothic;
-            src: url(https://file.garden/Zagf2LAXJwHlct9M/MSGOTHIC.TTF);
-        }
-
-        @font-face {
-            font-family: ms pgothic;
-            src: url(https://file.garden/Zagf2LAXJwHlct9M/MS%20PGothic.ttf);
-        }
-
-
-        @font-face {
-            font-family: pixel;
-            src: url(https://dl.dropbox.com/s/kmhe7d3n18vdz5e/w95fa.woff?dl=0);
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-
         body {
-            color: #000000;
-            background: url("img/wallp.png") no-repeat fixed center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            position: absolute;
-            font-family: 'MS pGothic';
-            top: 15%;
-            right: 0;
-            bottom: 0px;
-            left: 0%;
-            filter:saturate(60%);
+            font-family: deltarune;
         }
 
-        .position {
-            width: 715px;
-            margin: auto;
+        #all {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        .nanase1 {
-            width: 100.8%;
-            height: 130px;
-            background: url('https://static.tumblr.com/d83qsi7/ijfnqc8fj/box2.png') center;
-            background-size: 715px 660px;
-            background-position-y: 0px;
-            background-position-x: 3px;
+        #textbox {
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            text-align: center;
+            font-size: 15px;
+            color: #fcfcfc;
+            width: 490px;
+            height: 330px;
+            padding: 13px;
+            border-radius: 2px;
+            background-color: #000000;
+            border-radius: 2px;
+            border: 2px solid white;
         }
 
-        .nanase1 img {
-            height: 106.2px;
-            margin-top: 23.3px;
-            margin-left: 6px;
-            border-bottom: 5px double #232434;
-        }
-
-        #nanase2 {
-            position: absolute;
-            margin-left: 72px;
-            z-index: 6;
-            pointer-events: none;
-            filter: drop-shadow(0px 1px rgb(15, 11, 11)) drop-shadow(0 -2px rgb(15, 11, 11)) drop-shadow(1px 0 #dfd0c3) drop-shadow(-1px 0 rgb(15, 11, 11));
-        }
-
-        .test {
-            width: 713px;
-            display: flex;
-            flex-wrap: wrap;
-            margin: auto;
-            padding: 0.5%;
-            background: url('https://static.tumblr.com/d83qsi7/ijfnqc8fj/box2.png') center;
-            background-size: 715px 527px;
-            background-position-y: -25px;
-            background-position-x: 3px;
-            height: 496px;
-        }
-
-        #position2 {
-            width: 200%;
-            padding: 5px;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            margin: auto;
-            justify-content: center;
-        }
-
-        .column {
-            width: 173px;
-        }
-
-        .left {
-            width: 180px;
-            margin-top: 5px;
-            padding: 12px;
-            height: 235px;
-            background: #f8f8f0;
-            background: url('https://static.tumblr.com/d83qsi7/Kronqdn7t/box3.png') center;
-            background-size: 201px 259px;
-            background-position-y: 0px;
-            background-position-x: 2px;
-            font-family: pixel;
-        }
-
-        .left u {
-            text-decoration-style: wavy;
-            color: #7a4175;
-        }
-
-        .left2 {
-            width: 181px;
-            margin-top: 5px;
-            padding-top: 11px;
-            padding-left: 12px;
-            padding-right: 12px;
-            padding-bottom: 22px;
-            margin-left: 7px;
-            height: 163px;
-            background: #f8f8f0;
-            background: url('https://static.tumblr.com/d83qsi7/Kronqdn7t/box3.png') center no-repeat;
-            background-size: 192px 179px;
-            background-position-y: 5px;
-            background-position-x: 5px;
-            font-family: pixel;
-            line-height: 24px;
-        }
-
-        .left2 p {
-            margin-top: 20px;
-        }
-
-        .left2 u {
-            text-decoration-style: wavy;
-            color: #9b6796;
-        }
-
-        .left2 b {
-            color: #8b4884;
-        }
-
-        .left2 mark {
-            background: #bc5cb1;
-            color: white;
-            padding: 5px;
-            border-radius: 3px;
-            text-shadow: none;
+        #kris {
+            margin-left: 420px;
+            margin-top: -50px;
+            width: 150px;
+            position: fixed;
+            z-index: 99;
         }
 
         a {
-            color: #bc5c8c;
-        }
-
-        a:hover {
-            color: #a0798c;
-            transition: color 1s;
-        }
-
-        .about {
-            width: 425px;
-            background: url('https://static.tumblr.com/d83qsi7/ijfnqc8fj/box2.png') center;
-            background-size: 446px 448px;
-            background-position-y: 0px;
-            background-position-x: 2px;
-            margin-top: 6px;
-            padding-top: 49px;
-            padding: 10px;
-            padding-left: 15px;
-            margin-left: 50px;
-            height: 430px;
-        }
-
-        mark {
-            background-color: transparent;
-            color: #bc5cb1;
-            border-radius: 3px;
-            text-shadow: none;
-        }
-
-        a:hover {
-            background: rgb(99, 61, 92);
-            color: rgb(172, 156, 165); 
-            padding-left: 3px; 
-            padding-right: 3px;
-            padding: 1px;
-            transition: 0.5s ease-in-out; 
-        }
-
-        .amount {
-            height: 12px;
-            float: left;
-        }
-
-        #hp {
-            background-color: #ff1273;
-            width: 17%;
-        }
-
-        #sp {
-            background-color: #4dbbbd;
-            width: 20%;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-        }
-
-        #speech-bubble {
-            width: 230px;
-            height: 220px;
-            background: #dfd0c3;
-            position: absolute;
-            margin-top: 195px;
-            margin-left: -5px;
-            transform: rotate(90deg);
-            z-index: 4;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-            border: 2px outset rgb(15, 6, 6);
-            scrollbar-width: none;
-        }
-
-        #speech-bubble:before {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            filter: drop-shadow(0px 1px rgb(15, 11, 11)) drop-shadow(0 -2px rgb(15, 11, 11)) drop-shadow(1px 0 #dfd0c3) drop-shadow(-1px 0 rgb(15, 11, 11));
-            z-index: 4;
-            border-top: 13px solid transparent;
-            border-right: 26px solid #dfd0c3;
-            border-bottom: 13px solid transparent;
-            margin: 52px 0 0 -25px;
-        }
-
-        #speechtext {
-            height: 210px;
-            overflow-y: scroll;
-            position: absolute;
-            margin-top: 205px;
-            width: 450px;
-            margin-left: 10px; 
-            z-index: 9;
-            display: inline-block;
-            scrollbar-width: none;
-        }
-
-        #list {
-            background: #e6cdd0;
-            border: 2px outset rgba(15, 6, 6, 0.822);
-            position: absolute;
-            padding: 5px;
-            margin-left: 3px;
-            width: 150px; 
-            margin-top: 10px;
-            padding-left: 8px;
-            line-height: 36px;
-            z-index: 5;
-            border-bottom-right-radius: 75px; 
-            border-top-right-radius: 25px; 
-        }
-
-        #list a {
-            font-family: pixel;
             text-decoration: none;
-            background: #bc5cb1;
-            color: white;
-            padding: 5px;
-            border-radius: 3px;
-            text-shadow: none;
         }
 
-        #list a:hover {
-            font-family: pixel;
-            text-decoration: none;
-            background: #85437d;
-            color: white;
-            padding: 5px;
-            border-radius: 3px;
-            text-shadow: none;
-            transition: 0.1s ease;
-        }
+        @media screen and (max-width: 650px) {
 
-        #health {
-            margin-left: 190px;
-            z-index: 10;
-        }
-
-        .amount {
-            margin-left: 190px;
-        }
-
-        .banner2 {
-            position: absolute;
-            margin-top: 125px;
-            margin-left: 109px;
-            pointer-events: none;
-        }
-
-        .banner2 img {
-            width: 370px;
-            z-index: 3;
-        }
-
-        .img {
-            position: absolute; 
-        }
-
-        .img img {
-            width: 120px;
-            margin-left: 490px;
-            margin-top: 35px; 
-        }
-
-        .extabt {
-            position: absolute; 
-            color: #64345f;
-            font-family: pixel; 
-            margin-top: 169px;
-            margin-left: 459px;
-            z-index: 20; 
-            width: 200px; 
-            height: 30px;
-        }
-
-        .extabt u {
-            text-decoration-style: wavy;
-            color: #9b6796;
-
-        }
-        /* Below is the mobile optimisation. Mess with it if you want. */
-@media only screen and (max-width: 640px) {
-
-body {
-    background-size: cover;
-    transform:scale(0.6);
-    left: -25%;
-}
+    #all {
+        transform:scale(0.74);
+                    top: 30%;
+            left: -10%;
+    }
 }
     </style>
+
 </head>
 
 <body>
-    <script src="wobble.js"></script>
-    <div class="position">
-        <div class="nanase1">
-            <img src="https://files.catbox.moe/qgda4y.png">
+    <div id="all">
+        <img src="img/bg/kris3.gif" id="kris">
+        <div id="textbox">
+            <font size="1px">There appears to be a warning before you proceed.</font>
+            <br>
+            <font color="yellow">* VERY TEMPORARY PAGE! WARNING!!</font>
+            <br> <br>i'm <a href="https://en.pronouns.page/@oomf">
+                <font color="yellow">siffrin</font>
+            </a>, but i also use a bunch of other names depending on where
+            you know me from
+            <br> <br> 18 <font color="yellow">(7/19)</font>, they/them, real life mourning dove
+            <br>
+            <font size="1px" color="yellow">* taken on december 8th 2024! my wife means the world to me... </font>
+            <br> <br> kind of disorded and disabled, but no specifics here. it does affect how i talk to people so i
+            felt it should be noted
+            <br> <br> annoyingly fond of <font color="yellow">andy samberg, brooklyn 99, deltarune, palm springs,</font>
+            madoka magica, bocchi the rock, night in the woods, persona 3, girls last tour, vylet pony, the lonely
+            island, & more
+            <br> <br>
+            hobbyist "photographer", artist, and coder
         </div>
-
-        <div class="test">
-            <div id="position2">
-                <div class="column">
-
-                    <div class="left">
-                        <img src="https://static.wikia.nocookie.net/1bitheart/images/6/63/7389572.png" width=160>
-                        <u>welcome</u> to where you can learn more about, well, <mark><i>me!</i></mark> i'm
-                        <mark>falin</mark> / <u>siffrin</u>, a <span id="wobble">net wanderer!</span>
-                        hobbyist coder and internet loser. <a href="/index">go back</a>
-
-                    </div>
-                    <div class="left2">
-                        <br>
-                        <mark>name</mark> <b>falin</b> or <b><u>siff</u>rin</b> <br>
-                        <mark>age</mark> <b>eighteen</b> (07 19) <br>
-                        <mark>pronouns</mark> <a href="https://en.pronouns.page/@oomf"><b>they</b>/them</a> <br>
-                        <mark>id</mark> nb <b>biromantic</b> <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/50960568_glM5hrrVOlRYYFS.png?1656594339" width=20><img
-                            src="https://f2.toyhou.se/file/f2-toyhou-se/images/46187503_PHPfM2eNNqgULKl.png" width=20> <br>
-                        <mark>species???</mark> <a href="https://i.pinimg.com/736x/7a/7d/84/7a7d84174769faf5dd3de35e488db55f.jpg">rivals starlord</a> <br>
-                    </div>
-                </div>
-
-                <div class="extabt">
-                    <br> 
-                    as for more about <u>me</u>, i'd like to say i'm an <mark>"average"</mark> person.
-                    <br> i am <u>disabled</u>, but i will not go into any specifics. i'm a very introverted person and for the most part have left a lot of <i>'major'</i> social media sites to stick to my close circles, but i like to branch out when i can!
-                    <br>  
-                    <hr>
-                    i also love my wife <u><a href="/wife">ashley</a></u> a lot she is soft and cute and i love her hi to my wife click her name
-                </div>
-
-                <div class="img">
-                    <img src="img/1442241.png">
-                </div>
-                <div class="center">
-                    <div class="banner2">
-                        <img src="https://file.garden/Zagf2LAXJwHlct9M/img-2024-12-10-20-12-16.png">
-                    </div>
-                    <div class="about">
-                        <div id="speechtext">
-                            <iframe src="meint.html"
-                                style="height:450px; width:540px; margin-left: -15px; border: 0; margin-top: -85px; overflow-y: none; overflow-x: none;"
-                                name="speechtext"></iframe>
-
-                        </div>
-                        <div id="list">
-                            <a href="meint.html" target="speechtext">interests</a>
-                            <br>
-                            <a href="me404.html" target="speechtext">friends</a>
-                            <br>
-                            <a href="mecharacters.html" target="speechtext">characters</a>
-                            <br>
-                            <a href="memusic.html" target="speechtext">music</a>
-                        </div>
-                        <div id="speech-bubble"></div>
-                        <div id="nanase2"><img src="img/lll.png" width=120></div>
-                        <br <br>
-                        <div id="health">
-                            <b>HP</b>
-                            18/<text style="font-size: 12px;">20</text>
-                        </div>
-                        <span class="bar">
-                            <div class="amount" id="hp"></div>
-                        </span>
-                        <br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<b>SP</b> 18/<text style="font-size: 12px;">18</text> <br>
-                        <span class="bar"><span class="amount" id="sp"></span></span>
-                        <br>
-                    
-
-                        <br>
-                    </div>
-                </div>
-
-
 </body>
 
 </html>
