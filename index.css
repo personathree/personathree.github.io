@@ -368,6 +368,19 @@ hr {
     padding: 0px;
 }
 
+#extra {
+    position: absolute; 
+    font-size: 7px;
+    color: white; 
+    margin-top: -302px;
+    margin-left: 192px;  
+}
+
+#blinkies {
+    position: absolute;
+    margin-top: -301px;
+    margin-left: 425px;
+}
 
 
 @media screen and (max-width: 650px) {
@@ -406,5 +419,13 @@ hr {
 
     .line {
         margin-left: 232px !important; 
+    }
+
+    #extra {
+        margin-top: -402px; 
+    }
+
+    #blinkies {
+    display: none;
     }
 }
