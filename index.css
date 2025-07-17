@@ -395,4 +395,16 @@ hr {
     #calendar {
         margin-left: -121px; 
     }
+
+    .hud {
+        margin-top: -272px;
+    }
+
+    #train2 {
+        margin-left: 232px;
+    }
+
+    .line {
+        margin-left: 232px !important; 
+    }
 }
