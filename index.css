@@ -87,7 +87,7 @@ hr {
     background-color: rgba(25, 47, 54, 0.432);
     background-blend-mode: overlay;
     position: absolute;
-    background: rgb(8, 8, 8);
+    background: rgb(0, 0, 0);
     border: 1px solid white;
     padding: 5px;
     width: 110px;
@@ -149,7 +149,7 @@ hr {
 }
 
 .line {
-    background: rgb(8, 8, 8);
+    background: rgb(0, 0, 0);
     text-align: center;
     width: auto;
     color: rgb(255, 255, 255);
@@ -374,11 +374,12 @@ hr {
     color: white; 
     margin-top: -302px;
     margin-left: 192px;  
+    display: none; 
 }
 
 #blinkies {
     position: absolute;
-    margin-top: -301px;
+    margin-top: -285px;
     margin-left: 425px;
 }
 
