@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<head>
+    <title>HERO_SWORD</title>
+    <link rel="icon" href="img/bg/kris5.png">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="falin.moe">
+    <meta property="og:description" content="how much longer now?">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+
+    <style>
+        body {
+            background: url("img/dr/fountain.gif") no-repeat fixed center;
+            background-color: #444550;
+            background-blend-mode: overlay;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: white;
+            font-size: 13px;
+        }
+
+        #contain {
+            display: grid;
+            gap: 10px 15px;
+            grid-template-areas:
+                "l c c r";
+            padding: 5px;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translateX(-50%) translateY(-50%);
+            height: 615px;
+            width: 695px;
+        }
+
+        #left,
+        #center {
+            border: 2px solid;
+            padding: 9px;
+            background: black;
+            overflow: auto;
+        }
+
+        #head {
+            grid-area: h;
+        }
+
+        #inks {
+            grid-area: i;
+        }
+
+        #left {
+            grid-area: l;
+            height: 210px;
+            width: 190px;
+            margin-top: -22px;
+        }
+
+        #center {
+            grid-area: c;
+        }
+
+        .hl {
+            background: #9c5370;
+            color: black;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        .photopile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            position: absolute;
+            margin-top: 420px;
+            margin-left: 50px;
+        }
+
+        .photopile figure {
+            display: inline-block;
+            background: rgb(0, 0, 0);
+            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.55);
+            transform: rotate(2deg);
+            margin: 0 -25px;
+            border: 1px solid white;
+        }
+
+        .photopile figure img {
+            width: 120px;
+            margin: 1rem 1rem 0 1rem;
+            border: 2px rgb(0, 0, 0, 0.55) inset;
+        }
+
+        .photopile figcaption,
+        .popovers figcaption {
+            font-family: deltarune;
+            text-align: center;
+            margin: 0.5rem 1rem 1rem 1rem;
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+        }
+
+        .photopile button {
+            background: none;
+            border: none;
+            max-width: 40%;
+        }
+
+        .photopile button:hover,
+        .photopile button:focus {
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        .photopile button:nth-child(2n) {
+            transform: rotate(-10deg);
+        }
+
+        .photopile button:nth-child(3n) {
+            transform: rotate(5deg);
+        }
+
+        .photopile button:nth-child(4n) {
+            transform: rotate(4deg);
+        }
+
+        .photopile button:nth-child(5n) {
+            transform: rotate(-2deg);
+        }
+
+        .photopile button:nth-child(6n) {
+            transform: rotate(-7deg);
+        }
+
+        .countup span {
+            font-family: deltarune;
+            letter-spacing: 5px;
+            font-size: 30px;
+            font-weight: normal;
+            color: #2aeefe;
+        }
+
+        .countup #d8te {
+            display: inline-block;
+            min-width: 80px;
+            color: #1c4ada;
+        }
+
+        .countup #d9te {
+            display: inline-block;
+            min-width: 80px;
+            color: #9c5370;
+        }
+
+        .countup {
+            position: absolute;
+            font-family: deltarune;
+            letter-spacing: 5px;
+            font-size: 20px;
+            font-weight: normal;
+            padding: 10px;
+            color: #2aeefe;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .blinkies {
+            position: absolute;
+            margin-top: 222px;
+            margin-left: 7px;
+            z-index: 99;
+        }
+
+        .blinkies img {
+            width: 208px;
+        }
+
+        @media screen and (max-width: 650px) {
+
+    #contain {
+        transform: scale(0.6);
+        top: -0%;
+        left: -25%;
+    }
+
+}
+    </style>
+
+    <script>
+        window.onload = function () {
+            // Month Day, Year Hour:Minute:Second, id-of-element-container
+            countUpFromTime("Dec 08, 2024 21:35:00", 'countup1'); // ****** Change this line!
+        };
+        function countUpFromTime(countFrom, id) {
+            countFrom = new Date(countFrom).getTime();
+            var now = new Date(),
+                countFrom = new Date(countFrom),
+                timeDifference = (now - countFrom);
+
+            var secondsInADay = 60 * 60 * 1000 * 24,
+                secondsInAHour = 60 * 60 * 1000;
+
+            days = Math.floor(timeDifference / (secondsInADay) * 1);
+            years = Math.floor(days / 365);
+            if (years > 0) { days = days - (years * 365) }
+            hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+            mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+            secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+            var idEl = document.getElementById(id);
+            idEl.getElementsByClassName('years')[0].innerHTML = years;
+            idEl.getElementsByClassName('days')[0].innerHTML = days;
+            idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+            idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+            idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+            clearTimeout(countUpFromTime.interval);
+            countUpFromTime.interval = setTimeout(function () { countUpFromTime(countFrom, id); }, 1000);
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div id="contain">
+        <aside id="left">
+            <br>
+            <font color="#25c2fc">* 07/26/24</font>
+            <br> pre-dating but our first irl meetup, insane foreshadowing
+            <br> <br>
+            <font color="#2aeefe">* 12/17/24</font>
+            <br> friendsmas :') first meetup as a couple!!!
+            <br> <br>
+            <font color="#9c5370">* 07/05/25</font>
+            <br> most recent meetup, shared airbnb!! <3 </aside>
+                <div class="blinkies">
+                    <img src="img/wife/blinkie.gif">
+                    <br> <img src="img/wife/lift.png" style="width: 150px; border: 2px solid white;  margin-top: 5px; margin-left:60px; ">
+                </div>
+
+                <main id="center">
+                    <div class="countup" id="countup1">
+                        <div id="d9te"><span class="timeel years">00</span>Y</div>
+                        <div id="d9te"><span class="timeel days">00</span>D</div>
+                        <div id="d9te"><span class="timeel hours">00</span>H</div>
+                        <div id="d8te"><span class="timeel minutes">00</span>M</div>
+                        <div id="d8te"><span class="timeel seconds">00</span>S</div>
+                    </div>
+
+                    <img src="img/wife/kyos.png" style="width:100%;">
+                    <div id="home">
+                        <span class="hl">a small page</span> for my dearest and how grateful i am to have her in my life, to wake up every day
+                        so hopeful and <font color="#25c2fc">head over heels!!!</font> i write so much about us but i always fear of coming across as
+                        sappy, so this is the best place to dump it. my eternal internet void, my rules!
+                        <br>
+                        <span class="hl" style="background:#25c2fc;">i hope</span> you know how bright the stars shine for you; the light you have in you that you give so
+                        much of to others <font color="#25c2fc">:')</font> i
+                        feel you in the warm comfort of sunlight peeking in through the
+                        <p style="text-align: left;  margin-left:200px; margin-top: -0.1px;"> blinds and the quiet of
+                            the rain tapping against a
+                            windowsill in hopes of experiencing these mundanes with you. you are the
+                            beautiful feeling of being up before the world moves.
+                            <br>
+                            <br>
+                            <font color="#25c2fc">my true everything; my deltarune, my soul gem.</font>
+                        </p>
+                    
+
+                </main>
+        </aside>
+        <div class="photopile">
+            <button popovertarget="photo1">
+                <figure>
+                    <img src="img/wife/01.png">
+                    <figcaption>07/29/24
+                        <br>
+                        <font size="1px" color="#2aeefe">i saw the tv glow</font>
+                    </figcaption>
+                </figure>
+            </button>
+            <button popovertarget="photo2">
+                <figure>
+                    <img src="img/wife/02.png">
+                    <figcaption>12/23/24
+                        <br>
+                        <font size="1px" color="1c4ada">happier than ever</font>
+                    </figcaption>
+                </figure>
+            </button>
+            <button popovertarget="photo3">
+                <figure>
+                    <img src="img/wife/03.png">
+                    <figcaption>07/09/25
+                        <br>
+                        <font size="1px" color="#9c5370">palm springs</font>
+                    </figcaption>
+                </figure>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
