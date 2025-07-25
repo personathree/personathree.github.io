@@ -243,6 +243,16 @@ hr {
     background: rgb(233, 233, 233);
 }
 
+#transring {
+    position: absolute;
+    margin-top: -320px;
+    margin-left: 425px;
+}
+
+#transring img {
+    width: 120px; 
+}
+
 #statuscafe {
     padding: 0em;
     z-index: 120;
