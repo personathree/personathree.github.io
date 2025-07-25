@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
 <head>
     <title>HERO_SWORD</title>
     <link rel="icon" href="img/bg/kris5.png">
@@ -27,68 +24,108 @@
             transform: translate(-50%, -50%);
         }
 
+        #bg {
+            background: black;
+            width: 680px;
+            color: black; 
+            height: 450px;
+            margin-left: -50px; 
+            margin-top: -420px;
+            position: absolute;
+            z-index: -99;
+            pointer-events: none;
+        }
+
         #textbox {
             position: relative;
             overflow-y: hidden;
             overflow-x: hidden;
             text-align: center;
-            font-size: 15px;
+            font-size: 14px;
             color: #fcfcfc;
-            width: 490px;
-            height: 330px;
+            width: 565px;
+            height: 304px;
             padding: 13px;
             border-radius: 2px;
-            background-color: #000000;
-            border-radius: 2px;
-            border: 2px solid white;
+            background: url(img/dr/menu/bg.png);
+            background-size: 590px;
         }
 
         #kris {
-            margin-left: 420px;
-            margin-top: -20px;
-            width: 150px;
+            margin-left: 530px;
+            margin-top: 240px;
+            width: 190px;
             position: fixed;
             z-index: 99;
+            filter: drop-shadow(0px 1px white) drop-shadow(0 -2px white) drop-shadow(1px 0 white) drop-shadow(-1px 0 white);
         }
 
         a {
             text-decoration: none;
         }
 
+        #hud2 {
+            position: absolute;
+            margin-top: -70px;
+        }
+
+        .menu {
+            position: absolute;
+            top: -61px !important;
+            margin-left: 123px;
+            width: 324px;
+            z-index: 99 !important;
+        }
+
+        .menu img {
+            margin: 3px;
+            width: 61px;
+        }
+
+        .menu img:hover {
+            filter: sepia(10) saturate(600%) brightness(180%);
+        }
+
+        .menu a:hover {
+            padding: 0px;
+        }
+
         @media screen and (max-width: 650px) {
 
-    #all {
-        transform:scale(0.64);
-                    top: 30%;
-            left: -13%;
-    }
-}
+            #all {
+                transform: scale(0.64);
+                top: 30%;
+                left: -13%;
+            }
+        }
     </style>
 
 </head>
 
 <body>
-    <div id="all">
-        <img src="img/bg/kris3.gif" id="kris">
-        <font size="1px" color="white">* There appears to be a warning before you proceed.</font> <a href="/index"><font color="yellow" size="1px">Go back?</font></a>
-        <div id="textbox">
-        
-            <font color="yellow">* WARNING!! VERY TEMPORARY PAGE! </font>
-            <br>
-            <br> <br>i'm <a href="https://en.pronouns.page/@oomf">
-                <font color="yellow">siffrin,</font>
-            </a>kris, or any other name, depending on where
-            you know me from. <font color="yellow" size="1px">#identitycrisis</font>
-            <br> <br> 18 <font color="yellow">(7/19)</font>, they/them, real life mourning dove
-            <br>
-            <font size="1px" color="yellow">* i am taken!! my wife is soft and i love her...  </font>
-            <br> <br> kind of disorded and disabled, but no specifics here. it does affect how i talk to people so i
-            felt it should be noted
-            <br> <br> annoyingly fond of <font color="yellow">andy samberg, brooklyn 99, deltarune, palm springs,</font>
-            madoka magica, bocchi the rock, night in the woods, persona 3, girls last tour, vylet pony, the lonely
-            island, & more
-            <br> <br>
-            <font size="2px">hobbyist "photographer", artist, writer, and coder.</font>
+
+
+
+        <div id="all">
+            <div id="hud2">
+                <img src="img/dr/menu/hud.png" width="590">
+            </div>
+
+            <div class="menu">
+                <a href="item.html" target="info"><img src=img/dr/menu/1.png></a>
+                <a href="dog.html" target="info"><img src=img/dr/menu/2.png></a>
+                <a href="dog.html" target="info"><img src=img/dr/menu/3.png></a>
+                <a href="dog.html" target="info"><img src=img/dr/menu/4.png></a>
+            </div>
+            <img src="img/bg/kris3.gif" id="kris">
+            </a>
+            <div id="textbox">
+                <iframe src="item.html"
+                    style="height:290px; width:620px; height: 420px; margin-left:-13px; border: 0; margin-top:1px; overflow-y: none; overflow-x: none;"
+                    name="info"></iframe>
+            </div>
+        <div id="bg">
+
         </div>
 </body>
 
