@@ -9,11 +9,16 @@
     <meta property="og:title" content="falin.moe">
     <meta property="og:description" content="how much longer now?">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
 
     <style>
         body {
-            background: url("img/dr/fountain.gif") no-repeat fixed center;
-            background-color: #444550;
+            background: url("img/wife/gridania.avif") no-repeat fixed center;
+            background-color: #3a3831;
             background-blend-mode: overlay;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -21,6 +26,7 @@
             background-size: cover;
             color: white;
             font-size: 13px;
+            font-family: "Open Sans", sans-serif;
         }
 
         #contain {
@@ -31,7 +37,7 @@
             padding: 5px;
             position: absolute;
             left: 50%;
-            top: 45%;
+            top: 55%;
             transform: translateX(-50%) translateY(-50%);
             height: 615px;
             width: 695px;
@@ -39,10 +45,14 @@
 
         #left,
         #center {
-            border: 2px solid;
-            padding: 9px;
-            background: black;
-            overflow: auto;
+            background: url("img/wife/ff14.png");
+            border-radius: 12px;
+            border-width: 6px;
+            border-color: #a99965;
+            border-style: ridge;
+            position: absolute;
+            color: #11110f;
+            font-weight: 500;
         }
 
         #head {
@@ -55,13 +65,26 @@
 
         #left {
             grid-area: l;
-            height: 210px;
-            width: 190px;
-            margin-top: -22px;
+            height: 280px;
+            padding: 9px;
+            width: 170px;
+            margin-top: -82px;
+            z-index: 99;
+            color: rgb(218, 194, 172);
         }
 
         #center {
             grid-area: c;
+            width: 380px;
+            background: url("img/wife/questbg.png") no-repeat;
+            background-size: 100% 100%;
+            padding: 3px 52px 0px;
+            border: none;
+            height: 440px;
+            padding-right: 40px;
+            padding-bottom: 9px;
+            margin-top: -42px;
+            line-height: 20px;
         }
 
         .hl {
@@ -71,110 +94,85 @@
             padding-right: 2px;
         }
 
-        .photopile {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            max-width: 100%;
-            position: absolute;
-            margin-top: 420px;
-            margin-left: 50px;
-        }
-
-        .photopile figure {
-            display: inline-block;
-            background: rgb(0, 0, 0);
-            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.55);
-            transform: rotate(2deg);
-            margin: 0 -25px;
-            border: 1px solid white;
-        }
-
-        .photopile figure img {
-            width: 120px;
-            margin: 1rem 1rem 0 1rem;
-            border: 2px rgb(0, 0, 0, 0.55) inset;
-        }
-
-        .photopile figcaption,
-        .popovers figcaption {
-            font-family: deltarune;
-            text-align: center;
-            margin: 0.5rem 1rem 1rem 1rem;
-            font-size: 12px;
-            color: rgb(255, 255, 255);
-        }
-
-        .photopile button {
-            background: none;
-            border: none;
-            max-width: 40%;
-        }
-
-        .photopile button:hover,
-        .photopile button:focus {
-            z-index: 3;
-            cursor: pointer;
-        }
-
-        .photopile button:nth-child(2n) {
-            transform: rotate(-10deg);
-        }
-
-        .photopile button:nth-child(3n) {
-            transform: rotate(5deg);
-        }
-
-        .photopile button:nth-child(4n) {
-            transform: rotate(4deg);
-        }
-
-        .photopile button:nth-child(5n) {
-            transform: rotate(-2deg);
-        }
-
-        .photopile button:nth-child(6n) {
-            transform: rotate(-7deg);
+        .ff14 {
+            background: url("img/wife/ff14b.png") no-repeat;
+            background-size: 100% 30px;
+            height: 30px;
+            padding: 3px 22px 0px;
+            padding-right: 70px;
+            padding-bottom: 9px;
         }
 
         .countup span {
-            font-family: deltarune;
+            font-family: Open Sans;
             letter-spacing: 5px;
-            font-size: 30px;
+            font-size: 15px;
             font-weight: normal;
-            color: #2aeefe;
+            color: #000000;
+            font-weight: 500;
         }
 
         .countup #saya {
             display: inline-block;
-            min-width: 80px;
-            color: #1c4ada;
+            min-width: 30px;
+            font-size: 15px;
+            color: #000000;
+            font-weight: 500;
         }
 
         .countup #kyo {
             display: inline-block;
-            min-width: 80px;
-            color: #9c5370;
+            min-width: 30px;
+            font-size: 14px;
+            color: #000000;
+            font-weight: 500;
         }
 
         .countup {
             position: absolute;
-            font-family: deltarune;
             letter-spacing: 5px;
-            font-size: 20px;
+            font-size: 12px;
             font-weight: normal;
             padding: 10px;
-            color: #2aeefe;
+            margin-top: 432px;
+            margin-left: 110px;
+            z-index: 99;
+            color: #ffffff;
             display: flex;
             justify-content: space-evenly;
+        }
+
+        #dialogue {
+            background: url("img/wife/ff14tb.png") no-repeat fixed center;
+            position: absolute;
+            width: 590px;
+            height: 170px;
+            margin-top: 350px;
+            margin-left: -50px;
+            background-size: 100% 100%;
+            padding: 3px 22px 0px;
+            padding-right: 70px;
+            padding-bottom: 9px;
+            color: transparent;
+        }
+
+        #dialogue2 {
+            color: rgb(20, 13, 13);
+            position: absolute;
+            font-weight: 500;
+            margin-top: 409px;
+            margin-left: 40px;
+            font-size: 15px;
+            z-index: 109;
+            line-height: 21px;
+
         }
 
         .blinkies {
             position: absolute;
             margin-top: 222px;
             margin-left: 7px;
-            z-index: 99;
+            z-index: ;
         }
 
         .blinkies img {
@@ -185,6 +183,51 @@
             position: absolute;
             margin-top: -455px;
             margin-left: 222px;
+        }
+
+        #scenario {
+            background: url("img/wife/mainsce.png") no-repeat fixed center;
+            position: absolute;
+            width: 200px;
+            height: 40px;
+            margin-top: -50px;
+            margin-left: 220px;
+            z-index: -30;
+            background-size: 100% 100%;
+            padding: 3px 22px 0px;
+            padding-right: 70px;
+            padding-bottom: 9px;
+        }
+
+        #scenariotext {
+            position: absolute;
+            margin-top: -31px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 270px;
+            color: rgb(107, 9, 9);
+            z-index: 109;
+        }
+
+        #currentmain {
+            position: absolute;
+            margin-top: -66px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 270px;
+            color: rgb(236, 231, 231);
+            background: rgba(54, 53, 53, 0.904);
+            border-radius: 20px;
+            padding: 5px; 
+            padding-left: 19px;
+            padding-right: 23px; 
+            z-index: 109;
+        }
+
+        #quest {
+            font-size: 13px;
+            color: rgb(206, 237, 240);
+            filter: drop-shadow(0px 1px rgba(19, 49, 54, 0.849)) drop-shadow(0 -1px rgba(30, 80, 88, 0.849)) drop-shadow(1px 0 rgba(30, 78, 87, 0.849)) drop-shadow(-1px 0 rgba(46, 111, 122, 0.849));
         }
 
         @media screen and (max-width: 650px) {
@@ -238,87 +281,76 @@
     <div id="contain">
         <aside id="left">
             <br>
-            <font color="#25c2fc">* 07/26/24</font>
-            <br> pre-dating but our first irl meetup, insane foreshadowing
+            <span class="ff14">07.26.2024</span>
+            <br>
+            <br> Foreshadowing <img src="img/wife/ff14i.png" style="margin-top: -3px; position: absolute; ">
+            <br> <span id="quest">Pre-dating, but our first IRL meetup! :D <b>✓</b> </span>
             <br> <br>
-            <font color="#2aeefe">* 12/17/24</font>
-            <br> friendsmas :') first meetup as a couple!!!
+            <span class="ff14">12.17.2024</span>
+            <br>
+            <br> FRIENDSMAS! <img src="img/wife/ff14i.png" style="margin-top: -3px; position: absolute; ">
+            <br> <span id="quest">First meetup as a couple :') Best Christmas ever... <b>✓</b> </span>
             <br> <br>
-            <font color="#9c5370">* 07/05/25</font>
-            <br> most recent meetup, our shared place!! </aside>
-                <div class="blinkies">
-                    <img src="img/wife/blinkie.gif">
-                    <br> <img src="img/wife/lift.png"
-                        style="width: 150px; border: 2px solid white;  margin-top: 5px; margin-left:60px; ">
-                    <div id="music">
-                        <iframe style="border: 0; width: 390px; height: 102px;"
-                            src="https://bandcamp.com/EmbeddedPlayer/album=2511184890/size=small/bgcol=333333/linkcol=0f91ff/track=3768509046/transparent=true/"
-                            seamless><a href="https://tobyfox.bandcamp.com/album/deltarune-chapter-2-ost">DELTARUNE
-                                Chapter 2 OST by Toby Fox</a></iframe>
-                    </div>
-                </div>
-
-
-                <main id="center">
-                    <div class="countup" id="countup1">
-                        <div id="kyo"><span class="timeel years">00</span>Y</div>
-                        <div id="kyo"><span class="timeel days">00</span>D</div>
-                        <div id="kyo"><span class="timeel hours">00</span>H</div>
-                        <div id="saya"><span class="timeel minutes">00</span>M</div>
-                        <div id="saya"><span class="timeel seconds">00</span>S</div>
-                    </div>
-
-                    <img src="img/wife/kyos.png" style="width:100%;">
-                    <div id="home">
-                        <span class="hl">a small page</span> for my dearest and how grateful i am to have her in my
-                        life, to wake up every day
-                        so hopeful and <font color="#25c2fc">head over heels!!!</font> i write so much about us but i
-                        always fear of coming across as
-                        corny, so this is the best place to dump it. my eternal internet void, my rules!
-                        <br>
-                        <span class="hl" style="background:#25c2fc;">i hope</span> you know how bright the stars shine
-                        for you with the light that you give to so many others <font color="#25c2fc">:')</font> i
-                        feel you in the warm comfort of sunlight peeking in through closed
-                        <p style="text-align: left;  margin-left:200px; margin-top: -0.1px;"> blinds and the
-                            beauty of being up early to watch the world come to life in it's purest form. the
-                            hope to experience these mundanes with you every day and have it become a normal life has
-                            been my biggest motivator <font color="#25c2fc">^__^</font>
-                            <br> <br> 
-                        <font size="1px" color="#1c4ada">you're not getting too much out of me on a public site though!</font>
-                        </p>
-
-
-                </main>
+            <span class="ff14">07.05.2025</span>
+            <br>
+            <br> Shared AirBNB <img src="img/wife/ff14i.png" style="margin-top: -3px; position: absolute; ">
+            <br> <span id="quest">Our own shared place! I miss her... cries loudly.. <b>✓</b> </span>
         </aside>
-        <div class="photopile">
-            <button popovertarget="photo1">
-                <figure>
-                    <img src="img/wife/01.png">
-                    <figcaption>07/29/24
-                        <br>
-                        <font size="1px" color="#2aeefe">i saw the tv glow</font>
-                    </figcaption>
-                </figure>
-            </button>
-            <button popovertarget="photo2">
-                <figure>
-                    <img src="img/wife/02.png">
-                    <figcaption>12/23/24
-                        <br>
-                        <font size="1px" color="1c4ada">happier than ever</font>
-                    </figcaption>
-                </figure>
-            </button>
-            <button popovertarget="photo3">
-                <figure>
-                    <img src="img/wife/03.png">
-                    <figcaption>07/09/25
-                        <br>
-                        <font size="1px" color="#9c5370">palm springs</font>
-                    </figcaption>
-                </figure>
-            </button>
+        <div class="blinkies">
+
+            <br> <img src="img/wife/siffsh.png" style="width: 150px;  border-radius: 12px;
+            border-width: 6px;
+            border-color: #a99965;
+            border-style: ridge;
+            position: absolute;
+            z-index: -30 !important;
+            color: #ede0c3; margin-top: 15px; margin-left:0px; ">
         </div>
+
+
+        <main id="center">
+            <div class="countup" id="countup1">
+                <div id="kyo"><span class="timeel years">00</span>Y</div>
+                <div id="kyo"><span class="timeel days">00</span>D</div>
+                <div id="kyo"><span class="timeel hours">00</span>H</div>
+                <div id="saya"><span class="timeel minutes">00</span>M</div>
+                <div id="saya"><span class="timeel seconds">00</span>S</div>
+            </div>
+
+
+            <div id="home">
+                <br> <br> <br> <br> <br>
+                <p style="padding-left: 15px; padding-right: 20px; margin-top: -12px;">AH !! a page for my girlfriend
+                    who i adore with
+                    my whole being... she means more than the world to me and i am in love with her just
+                    a normal amount . .
+                    <br> <img src="https://ffxiv.gamerescape.com/w/images/c/c5/Fisher_Icon_1.png" width=20> ( the liar's
+                    fish flops . )
+                    <br> <br>
+                    i don't want
+                    to be too open on a public website but just know i care about this very lovely girl a lot and i will
+                    shout to the night sky so even the stars know of her beauty cause i know they will adore her just as
+                    i do <img src="https://ffxiv.gamerescape.com/w/images/f/f1/066412_hr1.png" width=20>
+                    <br> <br> may we eventually become eternally bonded <img
+                        src="https://ffxiv.gamerescape.com/w/images/d/d6/066409_hr1.png" width=20> on XIV and in real
+                    life :')
+                </p>
+                <br> <br>
+
+                </p>
+
+
+        </main>
+        </aside>
+        <div id="dialogue2">Siffrin and Ashley have been together for...⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀!!
+            <br> And counting... An incredible feat!
+        </div>
+        <div id="dialogue"> . </div>
+
+        <div id="scenariotext">Magdalena Bay!!</div>
+        <div id="scenario">.</div>
+        <div id="currentmain">Current Main Scenario Quest</div>
+
     </div>
 </body>
 
