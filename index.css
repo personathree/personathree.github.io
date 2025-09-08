@@ -171,9 +171,10 @@ hr {
 
 #transring {
     position: relative;
-    margin-top: 175px;
+    margin-top: 475px;
     margin-left: -400px;
     transform: scale(0.97);
+    z-index: 9999;
 }
 
 
