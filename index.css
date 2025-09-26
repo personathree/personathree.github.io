@@ -1,149 +1,552 @@
-<!DOCTYPE html>
-<!-- hi!!! my html / css is very messy so please be warned if ur trying to inspo.. 
- idc if u do but just be warned i am not the best source! :P best of luck -->
+@font-face {
+    font-family: bios;
+    src: url(fonts/Nintendo-DS-BIOS.ttf);
+}
 
-<head>
-    <title>MY DELTARUNE.</title>
-    <link rel="icon" href="https://static.wikia.nocookie.net/deltarune/images/e/e6/Site-logo.png">
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="falin.moe">
-    <meta property="og:description" content="how much longer now?">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-</head>
-<script src="wobble.js"></script>
-<script src="https://kit.fontawesome.com/1b3980aa8f.js" crossorigin="anonymous"></script>
+@font-face {
+    font-family: deltarune;
+    src: url(fonts/undertale-deltarune-text-font-extended.ttf);
+}
 
-<body>
+@font-face {
+    font-family: dogica;
+    src: url(https://file.garden/Zagf2LAXJwHlct9M/site%203/dogica.otf);
+}
 
-    <div id="wait">
-        <div id="train">
-            <img src="img/dr/icons/6.png" style="filter:hue-rotate(310deg);">
-            <div class="main">
-                <div id="about">
-                    <br> <br>
-                    <br>
-                    <font color="gray">*</font> FALIN.MOE <font color="#f25b7e3">-</font> An internet <font
-                        color="#f25b7e3">aquarium.</font> Quiet and isolated, this appears to
-                    be someone's home.
-                    <br>
-                    <br>
-                    <font color="gray">*</font> Below is the <font color="#7fb18b"><span id="wobble">ANATOMY OF
-                            THE VESSEL.</span></font>
-                    Use it
-                    <br> to navigate their mindscape.
-                    </p>
-                </div>
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+    display: none;
+}
 
-                <div id="moretext">
-                    <img src="https://64.media.tumblr.com/2fa52acc122c352d1bfd16b2aed28829/2e973d618c052ada-1e/s2048x3072/ce34350aef40234e7d1edf5edaf5d43d38b694ce.jpg"
-                        width="240" style="filter:hue-rotate(40deg);">
-                </div>
+::selection {
+    background: rgb(136, 103, 65);
+    color: black; 
+}
 
-                <div id="artcredit">
+#wait {
+    height: 100px;
+    width: 450px;
+    margin: auto;
+    margin-top: 190px;
+    transform: scale(1.4);
+}
 
-                    <a href="https://www.tumblr.com/szivarvanyturmix">art credit <img
-                            src="https://files.catbox.moe/gl89ak.gif" width=7px> </a>
-                </div>
+#train {
+    background-color: rgba(0, 0, 0, 0.904);
+    border: 2px solid #7fb18b;
+    padding: 5px;
+    font-size: 2px;
+    width: 90%;
+    height: 360px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-gap: 5px 5px;
+}
 
-                <div id="profcard">
-                    <img src="img/bnd.png" width="120" style="float:right ;padding-right: 5px; ">
-                    <font color="#ffab94"> <img
-                            src="https://static.wikia.nocookie.net/villains/images/f/fe/Undertale_SOUL.png"
-                            style="width:6px; ">⠀* who are you? </font>
-                    <br> <br> siffrin. 19, they
-                    <br>
-                    <font color=#f25b7e3>peter parker kin</font>
-                </div>
+#wait2 {
+    height: 100px;
+    width: 140px;
+    margin: auto;
+    margin-top: -30px;
+    transform: scale(1.25);
+}
 
-                <!-- there was definitely an easier way to do that im lazy rn IJBOL -->
+body {
+    background: url("img/bg/delta.gif") no-repeat fixed center;
+    background-color: #535461;
+    background-blend-mode: overlay;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: deltarune;
+    font-size: 20px;
+    color: rgb(27, 27, 27);
+    word-wrap: break-word;
 
-                <div class="statuscafe">
-                    <div id="statuscafe">
-                        <div id="statuscafe-username"></div>
-                        <div id="statuscafe-content"></div>
-                    </div>
-                    <script src="https://status.cafe/current-status.js?name=falin" defer></script>
-                </div>
-                <div class="main2">
-                    <div id="calendar">
-                        <iframe src="newcalendar.html"
-                            style="height:220px; width:290px; margin-left: 120px; border: 0; margin-top:152px; overflow-y: none; overflow-x: none;"
-                            name="info"></iframe>
-                    </div>
-                    <div id="wait2">
-                        <div class="pagedoll">
-                            <img src="img/bg/kris1.gif">
-                        </div>
-                        <div id="train2"> </div>
-                        <div class="line"
-                            style="margin-top: -74px; margin-left: 225px; position: absolute; font-size: 12px;  width: 120px; padding-top: 3px; ">
-                            K-ACTION</div>
-                        <div class="lastfm">
-                            <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                            <script src="https://melchor629.github.io/Last.fm-Web-Widget/lastSongs.comp.js"></script>
-                            <script>$(".lastfm").lastSongs("isaacwhom", "e7dff00d4e7bc40af76f63fd82a0436b");</script>
-                        </div>
-                    </div>
+}
 
-                    <div id="blinkies">
-                        <div id="transring">
-                            <script src="https://transring.neocities.org/ring.js" data-widget="cloud"></script>
-                        </div>
-                    </div>
-                    <div id="linklist">
-                        <div id="kris">
-                            <div class="tooltip"> <img src="img/krisg.png" width="39"><span class="tooltiptext">artist:
-                                    tambersome</span></div>
-                        </div>
+a {
+    color: rgb(168, 169, 179);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1.4px;
+    transition: .5s ease all;
+}
 
-                        <div id="newlinks">
-                            <h1><a href="/me">about⠀⠀⠀⠀</a></h1>
-                            <h1><a href="https://aijo.dreamwidth.org/633.html">blog⠀⠀</a></h1>
-                            <h1><a href="/404">art⠀⠀</a></h1>
-                            <h1><a href="/404">resources</a></h1>
-                            <h1><a href="javascript:void(0)"
-                                    onclick="document.getElementById('shrines').style.display='block';">shrines⠀⠀⠀</a>
-                            </h1>
-                            <h1><a href="javascript:void(0)"
-                                    onclick="document.getElementById('links').style.display='block';">links</a></h1>
-                            <h1><a href="javascript:void(0)"
-                                    onclick="document.getElementById('sitemap').style.display='block';">sitemap ⠀⠀</a>
-                            </h1>
-                        </div>
-                    </div>
+a:hover {
+    color: rgb(230, 223, 221);
+    background: black;
+    padding-left: 2px;
+    padding-right: 1px;
+    text-decoration: none;
+    padding-bottom: 1px;
+}
 
-                    <div id="links" class="link_content"> <a href="https://1beatheart.tumblr.com"><i
-                                class="fa-brands fa-tumblr"></i> <a href="https://toyhou.se/siffrin"><i
-                                    class="fa-solid fa-house-user"></i></a> <a href="https://twitter.com/cynicell"><i
-                                    class="fa-brands fa-twitter"></i></a> <a href="https://letterboxd.com/touden"><i
-                                    class="fa-brands fa-letterboxd"></i></a>
-                            <div class="tooltip"> <img
-                                    src="https://raw.githubusercontent.com/personathree/personathree.github.io/refs/heads/main/img/8831.png"
-                                    width="39"><span class="tooltiptext">linking is ok !</span></div>
+hr {
+    border: 0.1px dashed rgb(126, 95, 113);
+}
 
-                    </div>
+#train2 {
+    background-color: rgba(25, 47, 54, 0.432);
+    background-blend-mode: overlay;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    border: 1px solid white;
+    padding: 5px;
+    width: 110px;
+    margin-left: 225px;
+    margin-top: -59px;
+    height: 145px;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-gap: 5px 5px;
+}
 
-                    <div id="shrines" class="shrine_content"> <img
-                            src="https://static.wikia.nocookie.net/undertale/images/7/7d/Annoying_Dog_sprite_bone.gif"
-                            width=30 style="float:left; padding-right:5px; margin-left: -10px; margin-top: -10px; "> *
-                        ... He's busy. Come back later.</div>
+.side1 {
+    grid-area: 'sidebar';
+    grid-row: 2 / 4;
+    padding: 2px;
+    background-color: rgba(143, 143, 143, 0.034);
+}
 
-                    <div id="sitemap" class="sitemap_content">
-                        ://<a href="/index">/index</a>/sitemap <br>
-                        <br> <a href="/me">about</a> / <a href="/wife">gf :3</a>
-                        <br> <a href="https://aijo.dreamwidth.org/633.html">my blog</a> / <a href="/404">my art</a>
-                        <br> <a href="/404">web resources</a>
-                    </div>
+.head {
+    grid-column: 1 / 4;
+}
 
-                    <div id="kriselle">
-                        <img src="img/krisellie.png" </div>
+.main {
+    grid-area: 'main';
+    background-blend-mode: overlay;
+    background-size: 170px;
+    background-position-x: 210px;
+    padding: 5px;
+}
 
-                        <div id="marq">
-                            <marquee direction="left" behavior="alternate">falin.moe falin.moe falin.moe falin.moe
-                                falin.moe falin.moe falin.moe falin.moe falin.moe
-                            </marquee>
-                        </div>
+#about {
+    width: auto;
+    margin-top: -22px;
+    font-size: 11px;
+    color: white;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    z-index: 99 !important;
+}
 
-</body>
+
+#about u {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: rgb(238, 238, 238);
+    background: rgb(97, 64, 80);
+    padding: 2px;
+    padding-bottom: 5px;
+}
+
+
+.line {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    width: auto;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid white;
+    border-bottom: 0px;
+}
+
+.pagedoll {
+    position: absolute;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    z-index: 99;
+    pointer-events: none;
+    display: none;
+}
+
+.pagedoll img {
+    width: 60px;
+    margin-left: 340px;
+    margin-top: 0px;
+    filter: saturate(70%)
+}
+
+.pagedoll img:hover {
+    filter: opacity(20%);
+}
+
+
+#transring {
+    position: relative;
+    margin-top: 475px;
+    margin-left: -400px;
+    transform: scale(0.97);
+    z-index: 9999;
+}
+
+
+#statuscafe {
+    padding: 0em;
+    z-index: 999;
+    line-height: 13px;
+    position: absolute;
+    margin-left: 207px;
+    margin-top: 292px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 180px;
+    height: 40px;
+    font-family: 'bios';
+    display: none;
+
+}
+
+#statuscafe-username {
+    margin-top: -40px;
+    text-align: right;
+    padding-right: 20px;
+    color: #e7e5e5;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    background: transparent;
+    filter: drop-shadow(0 1px 1px rgb(19, 23, 26));
+}
+
+#statuscafe-content {
+    font-size: 15px;
+    margin-left: -10px;
+    margin-top: -0px;
+    text-align: center;
+    background: #000;
+    letter-spacing: 0em;
+    width: 160px;
+    height: 33px;
+    color: #ebebeb;
+    padding-left: 5px;
+    padding-top: 3px;
+    filter: drop-shadow(0 1px 1px rgb(19, 23, 26));
+}
+
+#statuscafe-username a {
+    padding-right: 2px;
+    text-decoration: none;
+    color: rgb(245, 212, 24);
+
+}
+
+#statuscafe-username a:hover {
+    padding-right: 2px;
+    color: rgb(236, 227, 227);
+}
+
+#lastfm {
+    margin-left: 820px;
+}
+
+#float {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#linklist {
+    position: absolute;
+    margin-top: 119px;
+    margin-left: -90px;
+}
+
+#kris {
+    position: absolute;
+    margin-top: -40px;
+    z-index: 999;
+    margin-left: -0px;
+    pointer-events: none;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+}
+
+#kris img {
+    width: 280px;
+}
+
+
+#newlinks {
+    position: absolute;
+    color: white;
+    font-size: 6px;
+    z-index: 997;
+    width: 230px;
+    margin-top: -144px;
+    margin-left: 35px;
+    line-height: 25px;
+    transition: .5s ease all;
+    transform: rotate(-90deg);
+}
+
+#newlinks a {
+    text-decoration: none;
+    transition: .5s ease all;
+    font-weight: 10;
+    background: black;
+}
+
+h1 a:hover {
+    margin-left: -30px;
+    color: rgba(238, 233, 235, 0.726);
+}
+
+h1 {
+    overflow: hidden;
+    text-align: right;
+}
+
+h1::before {
+    background-color: #ffab9498;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 340px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h1::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+#kriselle {
+    position: absolute;
+    margin-top: -95px;
+    margin-left: 210px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#kriselle img {
+    width: 140px;
+}
+
+#moretext {
+    position: absolute;
+    font-size: 10px;
+    margin-top: 9px;
+    color: rgba(243, 242, 232, 0.747);
+    font-weight: 10;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+}
+
+#profcard {
+    position: absolute;
+
+    width: 170px;
+    padding: 8px;
+    margin-top: 100px;
+    margin-left: 175px;
+    color: white;
+    font-size: 9px;
+}
+
+#profcard img {
+    width: 50px;
+}
+
+#artcredit {
+    position: absolute;
+    font-size: 7px;
+    margin-top: -3px;
+    margin-left: 279px;
+    
+    color: rgba(243, 242, 232, 0.747);
+    font-weight: 10;
+    z-index: 22;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+}
+
+#artcredit a {
+    text-decoration: none;
+}
+
+#marq {
+    position: absolute;
+    color: #c49c8a;
+    z-index: 99;
+    font-size: 9px;
+    width: 418px;
+    margin-top: -209px;
+    margin-left: -267px;
+
+}
+
+.shrine_content {
+    display: none;
+    position: absolute;
+    overflow-y: hidden;
+    left: 429px;
+    width: 116px;
+    margin-top: 12px;
+    height: 9px;
+    padding: 16px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 8px;
+}
+
+.link_content {
+    display: none;
+    position: absolute;
+    left: 429px;
+    width: 116px;
+    height: 14px;
+    margin-top: 62px;
+    padding: 16px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 10px;
+}
+
+.link_content a {
+    text-decoration: none;
+}
+
+.link_content a:hover {
+    background: transparent;
+    padding: 0px;
+}
+
+.sitemap_content {
+    display: none;
+    position: absolute;
+    left: 429px;
+    width: 116px;
+    top: 292px;
+    height: 50px;
+    padding: 16px;
+    padding-top: 12px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 10px;
+    z-index: 9999;
+}
+
+.sitemap_content a {
+    text-decoration: none;
+}
+
+.sitemap_content a:hover {
+    background: transparent;
+    padding: 0px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+#calendar {
+    position: absolute;
+    pointer-events: none;
+}
+
+#blinkies {
+    position: absolute;
+    margin-top: -285px;
+    margin-left: 425px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px !important;
+    color: rgb(102, 171, 228);
+    background: #000000;
+    text-align: center;
+    padding: 3px;
+    padding-right: 4px;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    top: 68%;
+    font-size: 9px;
+    left: 55%;
+}
+
+.tooltiptext {
+    border: 1px double rgb(172, 160, 160);
+    font-size: 9px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+    #wait {
+        transform: scale(0.7);
+        margin-left: -60px;
+    }
+
+    #wait2 {
+        transform: scale (0.7);
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+
+    #train2 {
+        margin-left: 152px;
+        margin-top: 190px;
+    }
+
+    #linklist {
+        margin-top: 4px;
+    }
+
+    #kriselle {
+        margin-top: -190px;
+    }
+
+    #calendar {
+        margin-top: -120px;
+    }
+
+    .line {
+        margin-left: 152px !important;
+        margin-top: 174px !important;
+    }
+
+    .link_content {
+        margin-top: 170px;
+        margin-left: -350px;
+    }
+
+    .shrine_content {
+        margin-top: 120px;
+        margin-left: -350px;
+    }
+
+    .sitemap_content {
+        margin-top: 230px;
+        margin-left: -350px;
+    }
+}
