@@ -331,7 +331,7 @@ h1::before {
 
 #moretext {
     position: absolute;
-    margin-left: -4px;
+    margin-left: 0px;
     font-size: 10px;
     margin-top: 9px;
     color: rgba(243, 242, 232, 0.747);
