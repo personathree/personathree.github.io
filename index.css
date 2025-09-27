@@ -287,11 +287,12 @@ hr {
     text-decoration: none;
     transition: .5s ease all;
     font-weight: 10;
-    background: black;
+     filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
 }
 
 h1 a:hover {
     margin-left: -30px;
+    background: none;
     color: rgba(238, 233, 235, 0.726);
 }
 
@@ -330,6 +331,7 @@ h1::before {
 
 #moretext {
     position: absolute;
+    margin-left: -4px;
     font-size: 10px;
     margin-top: 9px;
     color: rgba(243, 242, 232, 0.747);
@@ -527,7 +529,7 @@ h1::before {
     }
 
     #calendar {
-        margin-top: -120px;
+        margin-top: -100px;
     }
 
     .line {
