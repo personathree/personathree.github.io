@@ -1,226 +1,273 @@
-<!doctype html>
+<html>
 
-<html lang="en">
 
 <head>
+    <title>- LIGHTNERS LIVE</title>
+    <link rel="icon" href="https://static.wikia.nocookie.net/deltarune/images/e/e3/Keisremkstcaer.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>all i need</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <script src="wobble.js"></script>
     <style>
+        @font-face {
+            font-family: deltarune;
+            src: url(fonts/undertale-deltarune-text-font-extended.ttf);
+        }
+
         ::-webkit-scrollbar {
-            display: none;
+            width: 0px;
         }
 
-        @font-face {
-            font-family: pixel;
-            src: url(https://dl.dropbox.com/s/kmhe7d3n18vdz5e/w95fa.woff?dl=0);
-        }
-
-        @font-face {
-            font-family: bios;
-            src: url(fonts/Nintendo-DS-BIOS.ttf);
+        #center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow-x: hidden;
-            overflow-y: hidden;
-            height: 880px;
-            background: url("https://files.catbox.moe/8b0xhr.png") no-repeat fixed center;
+            background: url("img/bg/delta.gif");
+            background-color: #5c575c;
+            background-blend-mode: overlay;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto;
-            transform: scale(1.40);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: pixel;
-        }
-
-        #book {
-            width: 440px;
-            height: 300px;
-            padding: 10px;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            gap: 15px;
-            transform: rotate(2.9deg);
-        }
-
-        #newbg {
-            position: absolute;
-            z-index: -5;
-        }
-
-        #newbg img {
-            width: 420px;
-            height: 490px;
-            transform:rotate(92deg);
-            margin-left: -10px;
-            margin-top: -30px;
-        }
-
-        .note {
-            width: 400px;
-            height: 277px;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #ffffffa8;
-            background-size: 16px 16px;
-            background-image: repeating-linear-gradient(0deg, #cfdae3, #cfdae3 0.8px, #ffffff3f 0.8px, #ffffff28);
-            border: 1px solid #7ac8db;
-            color: #5E5E5E;
-            overflow: auto;
-            font-size: 15px;
-            overflow-x: hidden;
-        }
-
-        .note span {
-            font-size: 17px;
-        }
-
-        .note u {
+        u {
             text-decoration-style: wavy;
-            color: rgb(136, 130, 130);
-            text-decoration-color: #9fa3df;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #eceb8d;
+            color: rgb(229, 231, 229);
         }
 
-
-        #img {
-            width: 176px;
+        s {
+            color: rgb(255, 255, 255);
+            text-decoration-thickness: 2px;
+            text-decoration-color: #96886f;
         }
 
-        mark {
-            color: #fff;
-            background: none;
-            font-family: bios;
-            font-size: 20px;
-            filter: drop-shadow(0px 2px rgb(119, 176, 180)) drop-shadow(0 -1px rgb(128, 114, 192)) drop-shadow(2px 0 rgba(0, 0, 0, 0.288)) drop-shadow(-1px 0 rgb(113, 111, 141));
-            box-shadow: inset 0 0.3em 0.5em 0 #f3f4ff;
-            padding-right: 15px;
-            padding-left: 5px;
-            border-radius: 15px 0px 5px 5px;
+        b {
+            color: rgb(238, 223, 196);
+
+        }
+
+        i {
+            color: rgb(199, 209, 176); 
+        }
+
+        .container {
+            padding: 3px;
+            width: 370px;
+            height: 445px;
+            border: 2px ridge rgb(80, 78, 78);
+            outline: 1px solid rgb(228, 228, 228);
+            background-color: #000000;
+            font-size: 30px;
+        }
+
+        .icon {
+            margin-bottom: 5px;
+            float: left;
+            padding: 1px;
+            width: 150px;
+            height: auto;
+        }
+
+        .icon img {
+            width: 148px;
+        }
+
+        .info {
+            float: left;
+            font-size: 32px;
+            margin-top: 3px;
+            padding: 5px;
+            width: 200px;
+            height: 135px;
+            color: white;
+            font-size: 19px;
+            padding-left: 9px;
+            font-family: deltarune;
         }
 
         a {
-            color: #5E5E5E !important;
-            text-decoration-style: dotted !important;
+            color: yellow;
+            text-decoration: wavy;
+            transition: .5s ease all;
         }
 
-        #pin1 {
-            width: 35px;
-            height: 15px;
-            background: #C2C2C2;
-            border-radius: 10px;
-            border: 1px solid #757575;
-            z-index: 99;
-            position: absolute;
-            color: #ffffff00;
-            margin-bottom: 245px;
-            box-shadow: inset 10px 0px 6px -10px #CFCFCF, inset -10px 0px 6px -10px #CFCFCF,
-                inset 0px 10px 6px -10px #FFF, inset 0px -10px 6px -10px #CFCFCF;
+        a:hover {
+            padding: 12px;
+            transition: .5s ease all; 
         }
 
-        #pin2 {
-            width: 35px;
-            height: 15px;
-            background: #C2C2C2;
-            border-radius: 10px;
-            border: 1px solid #757575;
-            z-index: 99;
-            position: absolute;
-            color: #ffffff00;
-            margin-top: 180px;
-            box-shadow: inset 10px 0px 6px -10px #CFCFCF, inset -10px 0px 6px -10px #CFCFCF,
-                inset 0px 10px 6px -10px #FFF, inset 0px -10px 6px -10px #CFCFCF;
+        .scrollbox {
+            float: center;
+            font-family: helvetica;
+            width: 357px;
+            height: 290px;
+            padding-right: 3px;
+            overflow-y: hidden;
+            background: rgb(5, 5, 5);
+            color: white;
+            border: 1px dashed rgba(128, 128, 128, 0.315);
+            padding-left: 8px;
+            font-size: 15px;
         }
 
-        #flowers {
-            width: 110px;
-            position: absolute;
-            margin-right: 390px;
-            margin-top: -215px;
-            pointer-events: none;
+        /* text1 */
+
+        .prinzessin mark {
+            font-family: arial;
+            font-size: 15px;
+            font-weight: bold;
+            background: none;
+            color: rgb(255, 255, 255);
+            animation: princess 2s infinite;
+            animation-timing-function: cubic-bezier(0.25, 0.85, 0.4, 1);
         }
 
-        #flowers2 {
-            width: 110px;
-            position: absolute;
-            margin-right: -390px;
-            margin-top: 235px;
-            pointer-events: none;
+        .prinzessin mark:nth-child(1) {
+            animation-delay: 0s;
+            display: inline-block;
         }
 
-        strong {
-            color: #EAAEAF !important;
+        .prinzessin mark:nth-child(2) {
+            animation-delay: 0.2s;
+            display: inline-block;
         }
 
-        #cred {
-            color: #fff;
-            text-shadow: -1px 0 #A3836C, 0 1px #A3836C, 1px 0 #A3836C, 0 -1px #A3836C, 0 0;
+        .prinzessin mark:nth-child(3) {
+            animation-delay: 0.4s;
+            display: inline-block;
         }
 
-        @media only screen and (max-width:600px) {
-            #scaling {
-                transform: scale(80%);
+        .prinzessin mark:nth-child(4) {
+            animation-delay: 0.6s;
+            display: inline-block;
+        }
+
+        .prinzessin mark:nth-child(5) {
+            animation-delay: 0.8s;
+            display: inline-block;
+        }
+
+        .prinzessin mark:nth-child(6) {
+            animation-delay: 1s;
+            display: inline-block;
+        }
+
+        .prinzessin mark:nth-child(7) {
+            animation-delay: 1.2s;
+            display: inline-block;
+        }
+
+        .prinzessin mark:nth-child(8) {
+            animation-delay: 1.4s;
+            display: inline-block;
+        }
+
+        .prinzessin mark:nth-child(9) {
+            animation-delay: 1.6s;
+            display: inline-block;
+        }
+
+        .prinzessin mark:nth-child(10) {
+            animation-delay: 1.8s;
+            display: inline-block;
+        }
+
+        @-webkit-keyframes princess {
+            from {
+                transform: scale(0.90);
+                color: rgb(255, 255, 255);
+            }
+
+            50% {
+                transform: scale(1);
+                color: rgb(255, 245, 105);
+            }
+
+            to {
+                transform: scale(0.90);
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        @keyframes princess {
+            from {
+                transform: scale(0.90);
+                color: rgb(252, 224, 183);
+            }
+
+            50% {
+                transform: scale(1);
+                color: rgb(190, 255, 105);
+            }
+
+            to {
+                transform: scale(0.90);
+                color: rgb(255, 255, 255);
+            }
+        }
+
+                @media screen and (max-width: 650px) {
+
+            body {
+                transform: scale(0.631);
+                right: 30%;
+                top: 15%;
             }
         }
     </style>
-
-    <script src="wobble.js"></script>
-
 </head>
 
-<body id="scaling">
-    <div id="book">
-        <div class="note">
-            <img src="https://media1.tenor.com/m/xb51eBXYLQ4AAAAd/dungeon-meshi-delicious-in-dungeon.gif" width="180px">
-            <br>
-            <mark><span id="wobble">falin or basil</span></mark>
-            <img src="https://64.media.tumblr.com/3ae7b64767d85c4566d5e3b0d2abb31d/6f77a12e73175f4a-03/s250x400/c0b4b179bfff3ced3f3a8431a3f086f0e1b0c6bb.pnj" width="40px">
-            <br> they<b>/</b>none 18 <u>plural</u> taken
-            <br> disabled autistic lesbian 
-            <br> <p style="font-size: 12px; color: rgba(146, 143, 143, 0.89); ">did sys of 14, heavy amnesia</p>
-            <br> <mark>bfyi ｡(! > < )</mark>
-            <br>not the most active outside of my own <u>close circles</u>...
-            <br> <br> disabled both physically and mentally.. this heavily affects interactions / how long
-            responses take!!
-            <br> <br> i indulge in my interests very critically and im very open to conversation about them! ^__^
+<body>
 
+
+
+    <div id="center">
+        <div class="container">
+            <div class="icon">
+                <img src="https://files.catbox.moe/ie3oeu.png">
+            </div>
+            <div class="info">
+                <img src="https://64.media.tumblr.com/744984e3fa0b7e67aed14919966a1939/a78137f84c723545-7b/s500x750/0695e213618f5484fea6994fe771f408d7c4b575.gifv"
+                    width=90px style="float:right; padding-left: 5px;">
+                <font color=yellow>⚥</font> <span id="wobble">FALIN</span> or KRIS <br> It/They 19. <font
+                    color="yellow">TKN</font>
+                <br> <br>
+                <font size="2px">disabled coder / artist medicore twitch viewer</font>
+
+            </div>
+            <div class="scrollbox">
+
+                <div class="prinzessin"> <img
+                        src="https://wilardo.crd.co/assets/images/gallery28/d275f877.gif?v=f32c5ae3"
+                        style="padding-right: 5px; ">
+                    <mark>m</mark><mark>e</mark><mark>o</mark><mark>w</mark><mark>d</mark><mark>y</mark><mark>!</mark><mark>!</mark>
+                    welcome to <b> my domain </b>
+                </div>
+                <font size="2px">(aka the about that i use for any public servers)</font>
+
+                <br> <br>
+                i like <i>deltarune</i>, <u>spiderman</u>, persona 3, marvel rivals, bocchi the rock, <s>prezoh</s>,
+                <b>andy
+                samberg,</b> alan wake, night in the woods, <b>peacemaker,</b> vylet pony, magdalena bay, <i>rhythm games,</i> and lots more!
+                <br> <br>
+                pings / dms are completely fine- just know that i'm bad with consistently starting conversations <br>
+                <font size="2px" style="color:rgba(233, 217, 147, 0.842)">please do not dm me if you are under 18 !! ty
+                    !!</font>
+                <br> <br>
+                as for <u>system</u> stuff, there are about <i>8</i> of us that are "active" per say. i'm pretty closed off about it outside of alters proxying, but i have a hefty resource site that can be found <a href="https://kirby.nekoweb.org">here!</a> 
+
+            </div>
         </div>
-        <div class="note">
-            <mark>interests ｡(♥︎ ᴗ ᴗ )</mark> <br>
-            <i>prezoh, aksually,</i> chiblee, bigt, <i>persona</i> <b>3</b>, omori, milk outside a bag of milk,
-            <u>roblox</u>, <b>girls last tour</b>, bocchi the rock!, 1bitheart, rhythm games, <i>alan wake,</i> oneshot,
-            poetry, html/css, the bear, <b>madoka magica</b>, <i>henry danger,</i> tech errors, <u>(real)</u> anti piracy, l4d2
-            <br> <br>
-            <mark>music ｡(♥︎ ᴗ ᴗ )</mark> <br>
-            <b>glass beach, vylet pony</b>, radiohead, underscores, carly rae jepsen, <b>magdalena bay</b>, alex g, charli xcx, jane remover, girlfriends, yeule, sweet trip, mili, mgmt
-        </div>
-    </div>
 
-    <div id="newbg">
-        <img src="https://rosepng.com/wp-content/uploads/2024/10/s11728_notebook_paper_isolated_on_white_background_-stylize__2c43970d-5ab9-457d-b6ea-ed1803d4dd3b_3-photoroom.png">
-    </div>
 
-    <div id="flowers">
-        <img src="https://file.garden/Zagf2LAXJwHlct9M/flower1.png" width="110">
-    </div>
 
-    <div id="flowers2">
-        <img src="https://file.garden/Zagf2LAXJwHlct9M/flower2.png" width="110">
-    </div>
 </body>
 
 </html>
