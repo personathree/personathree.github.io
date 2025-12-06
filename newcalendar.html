@@ -41,13 +41,13 @@
         margin: 0;
         padding: 0;
         transform: scale(0.91);
-        margin-top: 5px;
+        margin-top: 0px;
         overflow-x: none; 
         pointer-events: none;
     }
     
     .calendar-container {
-        width: 290px;
+        width: 300px;
         font-family: ndsbios;
         overflow-x: none; 
         pointer-events: none;
@@ -72,7 +72,7 @@
         text-align: center;
         border-radius: 50%;
         user-select: none;
-        color: #000;
+        color: #261f59;
         font-size: 23px;
         font-family:ndsarrow;
         display: none; 
@@ -95,18 +95,20 @@
         display: flex;
         text-align: center;
         pointer-events: none;
+        border: 2px solid #9f97db;  
+ 
     }
     
     .calendar-body .calendar-dates {
         margin-bottom: 20px;
-        border-left: 1px solid black;
-        border-bottom: 1px solid black;
+        border-left: 1px solid #261f59;
+        border-bottom: 1px solid #261f59;
     }
     
     .calendar-body li {
         width: calc(98% / 7.2);
         font-size: 23px;
-        color: #dabdbd;
+        color: #e5bcff;
         pointer-events: none;
     }
     
@@ -122,34 +124,35 @@
         position: relative;
         z-index: 1;
         cursor: pointer;
-        border:1px solid black;
+        border:1px solid #261f59;
         border-width: 1px 1px 0 0;
         height:25px;
         padding-top:3px;
         background: rgb(27, 27, 32); 
-        border: 1px solid rgb(120, 167, 131); 
+        border: 1px solid #e5bcff; 
     }
     
     .calendar-dates li:first-child, .calendar-dates li:nth-child(7n+1) {
-                background:#000000;
+                background:#261f59;
                 border-left:1px solid transparent;
                 color:#acbecf;
-                border: 1px solid rgb(223, 211, 102); 
+                border: 1px solid #e5bcff; 
                 }
                 
                 .calendar-dates li:nth-child(7n+0) {
-          background: #111111;
-          color:#9babad;
+          background: #261f59;
+          color:#8a6b7d;
         }
         
                 
     .calendar-dates li.inactive {
-        color: #a06161;
-        border: 1px solid rgb(221, 147, 129); 
+        color: #636174;
+        border: 1px solid rgba(129, 207, 221, 0.664); 
     }
     
     .calendar-dates li.active {
-        color: #ffab94;
+        color: #261f59;
+        font-weight: bold;
     }
     
     .calendar-dates li::before {
@@ -164,9 +167,11 @@
     }
     
     .calendar-dates li.active::before {
-    background: #000000b2;
-    border:0.1px solid #5e5e805e;
-    padding: 2px;
+    background: #9f97db;
+    border:0.1px solid #261f59;
+    color:
+    padding-left: 5px;
+    padding-right: 5px; 
     }
     
     .calendar-dates li:not(.active):hover::before {
