@@ -33,7 +33,7 @@ html {
     width: 270px;
     margin: auto;
     margin-top: 120px;
-    transform: scale(1.66);
+    transform: scale(1.67);
 
 }
 
@@ -256,7 +256,7 @@ body {
 #transring {
     position: absolute;
     margin-top: 85px;
-    margin-left: 110px;
+    margin-left: 115px;
     transform: scale(0.97);
     z-index: 9999;
 }
