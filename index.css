@@ -32,8 +32,8 @@ html {
     height: 100px;
     width: 270px;
     margin: auto;
-    margin-top: 160px;
-    transform: scale(1.7);
+    margin-top: 130px;
+    transform: scale(1.6);
 
 }
 
@@ -255,7 +255,7 @@ body {
 
 #transring {
     position: absolute;
-    margin-top: 155px;
+    margin-top: 85px;
     margin-left: 190px;
     transform: scale(0.97);
     z-index: 9999;
