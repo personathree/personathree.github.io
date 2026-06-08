@@ -1,0 +1,330 @@
+<html>
+
+<head>
+    <link rel="icon"
+        href="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/2915460/24a0e40dabb7f9793238c9abf3193daa1707563e.png">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how much longer now?</title>
+    <meta property="og:description" content="how much longer now?">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+</head>
+
+<style>
+    @font-face {
+        font-family: bios;
+        src: url(Nintendo-DS-BIOS.ttf);
+    }
+
+    @font-face {
+        font-family: pmd;
+        src: url(pmd.ttf);
+    }
+
+    ::selection {
+        color: rgb(229, 232, 234);
+        background: rgb(125, 155, 178);
+    }
+
+    #position {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    body {
+        background: url("https://file.garden/Zagf2LAXJwHlct9M/edits/newbg.png") no-repeat fixed center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        font-family: bios;
+        font-size: 22px;
+        color: rgb(49, 63, 88);
+    }
+
+    a {
+        font-family: pmd;
+        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        cursor: help;
+        color: black;
+        filter: drop-shadow(0px 1px white) drop-shadow(0 -1px white) drop-shadow(1px 0 white) drop-shadow(-1px 0 white);
+        animation: rainbow 5s infinite;
+    }
+
+    b {
+        color: #6980a9;
+    }
+
+    i {
+        color: rgb(90, 128, 138);
+    }
+
+    mark {
+        background: rgb(96, 124, 165);
+        padding: 4px;
+        color: white;
+    }
+
+    hr {
+        color: rgb(190, 204, 228);
+    }
+
+    .main {
+        padding: 20px;
+        margin-left: 420px;
+        margin-top: -60px;
+        width: 415px;
+        height: 520px;
+        border: 2px solid #4c6268;
+        border-radius: 5px 20px;
+        filter: drop-shadow(0 1mm 1mm rgb(74, 129, 148));
+        outline: 1px solid black;
+        background: #e4e9ec1e;
+        background-blend-mode: soft-light;
+        background-image: url("https://file.garden/Zagf2LAXJwHlct9M/img-2024-09-13-02-31-49.png");
+        background-size: cover;
+    }
+
+
+    .tab {
+        padding: 4px;
+        width: 379px;
+        height: auto;
+        text-align: left;
+        padding-left: 30px;
+        border-radius: 0px 20px 0px 0px;
+        background: rgb(44, 61, 78);
+        box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+    }
+
+    .tab button {
+        background-color: transparent;
+        border: none;
+        color: rgb(208, 224, 225);
+        font-size: 18px;
+        display: inline;
+        cursor: crosshair;
+    }
+
+    .tab button:hover {
+        text-decoration: underline;
+    }
+
+    .tabcontent {
+        display: none;
+        border-top: none;
+    }
+
+    .box {
+        margin-top: 5px;
+        padding: 8px;
+        width: 398px;
+        height: 469px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+        background: rgba(231, 235, 236, 0.9);
+    }
+
+    #faves {
+        padding-bottom: 5px;
+    }
+
+    .aigis {
+        position: absolute;
+        margin-left: 810px;
+        opacity: 90%;
+        margin-top: 93px;
+        z-index: 999;
+        pointer-events: none;
+        filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    }
+
+    .ac {
+        position: absolute;
+        margin-top: -89px;
+        margin-left: 785px;
+        color: white; 
+        background: rgb(39, 46, 56); 
+        padding: 4px 9px 4px 9px; 
+        font-size: 19px; 
+        border-radius: 10px 10px 0px 0px; 
+    }
+
+        @media only screen and (max-width: 640px) {
+        #position {
+            left: -400px;
+            top: 290px; 
+            transform: scale(0.7)
+        }
+    }
+</style>
+
+
+<body>
+
+    <div id="position">
+        <div class="aigis">
+            <img src="aigy.png">
+        </div>
+        <div class="main">
+            <div class="tab">
+
+                <button class="tablinks" onclick="openCity(event, '1')" id="defaultOpen">INFO</button>
+                /
+                <button class="tablinks" onclick="openCity(event, '2')" id="defaultOpen">CHARACTERS</button>
+                /
+                <button class="tablinks" onclick="openCity(event, '3')" id="defaultOpen">INTERESTS</button>
+
+
+                <script>
+                    function openCity(evt, cityName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+                </script>
+
+            </div>
+            <div class="box">
+                <div id="1" class="tabcontent">
+                    <a href="https://x.com/puretoma17/status/1692516348063289615/photo/1"><img style="width: 130px; float: left; padding-right: 3px;" src="aigis.png"></a>
+<br>
+                    <font color="#7f92b3">▄▀▄▀▄▀▄▀▄▀▄▀▄▀</font>
+                    
+                    <br>⠀⠀⠀ IT/ITS <b>+</b> THEY/THEM <b>,</b> ADULT
+
+
+                    <br>
+                    <font size="4px" color="#4e71ae">infp 4w5 496 so/sp melancholic</font>
+                    <br>
+                    <hr>
+                    helloo <b>!</b> i am <b>siffrin</b>
+                    or march! a digital trout with love for art and music! i'm an  anxious person, but i
+                    always
+                    love to chat, even if i take a bit to reply! :D reciprocated kindness and all that
+
+                    <br>
+                    <font size=4px color="#6179a1">i was sworn to my paladin <b>ashley</b> on december 8th,
+                        2024!
+                    </font>
+                    <br>
+
+                    <hr>
+                    i <b>currently</b> love <mark>the boys</mark>, revue starlight, <b>severance</b>, the lonely island,
+                    <b>persona 3</b>, iasip, palm springs, deltarune, <i>hotline miami,</i> and <b>JACK QUAID!!! </b>
+                    <br> <br>
+                    <img src="bh2.gif" width=320px>
+
+
+                    <script>
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+                <div id="2" class="tabcontent">
+                    <div id="faves">
+                       some characters i see myself in to some capacity! not really a kinlist, but take it as you wish
+                  <br> <font color="blue">if it's clickable, then it's fanart that links  back to the source!</font> <font size="4px">this goes for other art on this site too! </font>
+                  <br> <br> 
+                  
+                <img src="char/bocchi.png" width="100px" style="outline: 1px solid black;">
+                <img src="char/milk.png" width="100px" style="outline: 1px solid black;">
+                <img src="char/yuuri.png" width="100px" style="outline: 1px solid black;">
+                <a href="https://asuuree.tumblr.com/post/746514971888926720"><img src="char/siff.png" width="100px" style="outline: 1px solid black;"></a>
+                <img src="char/hughie.png" width="100px" style="outline: 1px solid black;">
+                <a href="https://www.tumblr.com/bitterhands/781470064998334464/whatever-go-my-mcnally?source=share"><img src="char/simon.png" width="100px" style="outline: 1px solid black;"></a>
+                <img src="char/march.png" width="100px" style="outline: 1px solid black;"> 
+                <img src="char/karen.png" width="100px" style="outline: 1px solid black;">
+                <img src="char/kyomoto.png" width="100px" style="outline: 1px solid black;">
+                <a href="https://x.com/gm70t/status/1919689479838957978/photo/1"><img src="char/makot.png" width="100px" style="outline: 1px solid black;"></a>
+                <a href="https://www.tumblr.com/mahawavy/762538842848968704?source=share"><img src="char/jacket.png" width="100px" style="outline: 1px solid black;"></a>
+                <img src="char/denji.png" width="100px" style="outline: 1px solid black;">
+                <a href="https://www.pixiv.net/en/artworks/48983149?"><img src="char/nanase.png" width="100px" style="outline: 1px solid black;"></a>
+                <img src="char/mark.png" width="100px" style="outline: 1px solid black;"> 
+                <img src="char/angel.png" width="100px" style="outline: 1px solid black;">
+                    </div>
+                </div>
+                <div id="3" class="tabcontent">
+                    <br>
+                    <img style="width: 75px; float: right; padding-right: 3px;" src="aig2.png">
+                    <font color="#60748f">
+                        
+                        some things that make me.. well , me !
+                        <br> 
+                    </font> 
+                    <img src="https://64.media.tumblr.com/33b3dddbeaeb7f8b9d49b2fb4fcc1018/705b76c11ed800bd-b7/s640x960/a6a89f08c57233889ebc940b2ba66f839c090313.pnj"
+                        width=270px>
+
+                    <p style="text-align: left; padding-left: 9px;"><mark>animanga</mark>
+                        <br> <b>revue starlight</b>, <b>bocchi the rock</b>, <b>girls last tour</b>,
+                        <i>madoka magica</i>, <i>chainsaw man</i>, space patrol luluco
+                        <br>
+                    </p>
+                    <p style="text-align: right; padding-right: 9px;">
+                        <mark>movies</mark>
+                        <br> <b><i>palm springs</i></b>, <b>guardians of the galaxy</b>, <i>mcu spiderman</i>,
+                        <i>baby driver</i>, scott pilgrim, whiplash,
+                        aftersun, nimona, spiderverse, drive, i saw the tv glow
+                    </p>
+
+                    <p style="text-align: left; padding-left: 9px;">
+                        <mark>tv shows</mark>
+                        <br> <b>severance</b>, <b>the boys</b>, <i>it's always sunny</i>, <i>parks and recreation</i>,
+                        breaking bad, the good place, peacemaker, rick and morty, brooklyn 99, strip law
+
+                    </p>
+
+                    <br> <img src="sev.gif" width="320px">
+
+                    <p style="text-align: right; padding-right: 9px;">
+                        <mark>games</mark>
+                        <br> <b>persona 3</b>, <b>deltarune</b>, <b>cave story</b>, <b>left 4 dead 2</b>, <b>milk in
+                            / outside a bag of milk</b>, <i>alan wake</i>, <i>hotline miami</i>, <i>rhythm heaven</i>
+                        , night in the woods, omori, oneshot, transistor, danganronpa, ff14, momodora
+                    </p>
+                    <p style="text-align: left; padding-left: 9px;">
+                        <mark>miscellaneous</mark>
+                        <br> <b>jack quaid</b>, <b>flowers</b>, <i>art</i>, <i>poetry</i>, photography, andy samberg,
+                        adam scott, oc work
+                        <br>
+                    </p>
+
+                    <p style="text-align: right; padding-right: 9px;">
+                        <mark>jack quaid-specific</mark>
+                        <br> <b>novocaine</b>, <b>scheme squad</b>, <i>neighborhood watch</i>, sea oak, heads of state, star trek: lower decks,
+                        sasquatch
+                    </p>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
